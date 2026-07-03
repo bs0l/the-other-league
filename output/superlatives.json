@@ -1,0 +1,710 @@
+{
+  "allTime": {
+    "highestScore": {
+      "score": 443.22,
+      "team": "Takin the Browns to Super Bowl",
+      "teamId": 2,
+      "owner": "Mike Kovacs",
+      "opponent": "Why Was I on the 415 Shuttle?",
+      "opponentScore": 350.72,
+      "year": 2024,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScore": {
+      "score": 30.3,
+      "team": "Tommy F'n Cutlets",
+      "teamId": 3,
+      "owner": "Sal DeRose",
+      "opponent": "Titty Sprinkles",
+      "opponentScore": 149.2,
+      "year": 2025,
+      "week": 9,
+      "matchupPeriodId": 9
+    },
+    "top10HighestScores": [
+      {
+        "score": 443.22,
+        "team": "Takin the Browns to Super Bowl",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Why Was I on the 415 Shuttle?",
+        "opponentScore": 350.72,
+        "year": 2024,
+        "week": 14,
+        "matchupPeriodId": 14
+      },
+      {
+        "score": 390.52,
+        "team": "Chasing the Repeat",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Why Was I on the 415 Shuttle?",
+        "opponentScore": 300.5,
+        "year": 2025,
+        "week": 16,
+        "matchupPeriodId": 16
+      },
+      {
+        "score": 386.32,
+        "team": "Takin the Browns to Super Bowl",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Pop Rockin' Beats",
+        "opponentScore": 320.66,
+        "year": 2024,
+        "week": 16,
+        "matchupPeriodId": 16
+      },
+      {
+        "score": 371.92,
+        "team": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "owner": "Daniel Keating",
+        "opponent": "The Other Team",
+        "opponentScore": 300.8,
+        "year": 2024,
+        "week": 16,
+        "matchupPeriodId": 16
+      },
+      {
+        "score": 367.5,
+        "team": "Chili's Eat Fresh",
+        "teamId": 4,
+        "owner": "Joe Jaramillo",
+        "opponent": "Franoc knthall",
+        "opponentScore": 308.64,
+        "year": 2024,
+        "week": 16,
+        "matchupPeriodId": 16
+      },
+      {
+        "score": 357.94,
+        "team": "To See or Not Kelce",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Business Expert Nathan Fielder",
+        "opponentScore": 290.86,
+        "year": 2021,
+        "week": 16,
+        "matchupPeriodId": 16
+      },
+      {
+        "score": 356.6,
+        "team": "Turbo Team Termites",
+        "teamId": 1,
+        "owner": "Bill Solecki",
+        "opponent": "Tommy F'n Cutlets",
+        "opponentScore": 293.46,
+        "year": 2024,
+        "week": 16,
+        "matchupPeriodId": 16
+      },
+      {
+        "score": 352.36,
+        "team": "Josh Allen's Blueberries",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "The Other Team",
+        "opponentScore": 202.16,
+        "year": 2025,
+        "week": 14,
+        "matchupPeriodId": 14
+      },
+      {
+        "score": 350.72,
+        "team": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "owner": "Daniel Keating",
+        "opponent": "Takin the Browns to Super Bowl",
+        "opponentScore": 443.22,
+        "year": 2024,
+        "week": 14,
+        "matchupPeriodId": 14
+      },
+      {
+        "score": 350.3,
+        "team": "Pop Rockin' Beats",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "The Other Team",
+        "opponentScore": 296.06,
+        "year": 2024,
+        "week": 14,
+        "matchupPeriodId": 14
+      }
+    ],
+    "top10LowestScores": [
+      {
+        "score": 30.3,
+        "team": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "owner": "Sal DeRose",
+        "opponent": "Titty Sprinkles",
+        "opponentScore": 149.2,
+        "year": 2025,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
+        "score": 40.18,
+        "team": "Alabama of Europe",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "DJ Khalad",
+        "opponentScore": 150.52,
+        "year": 2019,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 41.32,
+        "team": "Alabama of Europe",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "Why Was I On The 415 Shuttle",
+        "opponentScore": 83.66,
+        "year": 2019,
+        "week": 6,
+        "matchupPeriodId": 6
+      },
+      {
+        "score": 41.8,
+        "team": "Alabama of Europe",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "RKO Out of Nowhere",
+        "opponentScore": 102.36,
+        "year": 2015,
+        "week": 2,
+        "matchupPeriodId": 2
+      },
+      {
+        "score": 43.68,
+        "team": "Bradys and Edelman",
+        "teamId": 9,
+        "owner": "Daniel Keating",
+        "opponent": "Balls to the Rawls",
+        "opponentScore": 88.02,
+        "year": 2015,
+        "week": 11,
+        "matchupPeriodId": 11
+      },
+      {
+        "score": 45.32,
+        "team": "Balls to the Rawls",
+        "teamId": 8,
+        "owner": "Ray Engleking",
+        "opponent": "DJ Khalad",
+        "opponentScore": 77.48,
+        "year": 2015,
+        "week": 4,
+        "matchupPeriodId": 4
+      },
+      {
+        "score": 46.72,
+        "team": "DJ Khalad",
+        "teamId": 6,
+        "owner": "Pete Solecki",
+        "opponent": "Get CTE or Die Tryin",
+        "opponentScore": 79.84,
+        "year": 2017,
+        "week": 10,
+        "matchupPeriodId": 10
+      },
+      {
+        "score": 48.12,
+        "team": "Free Candy and Wins",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "SAM DARNOLD IS LITERALLY JESUS",
+        "opponentScore": 104.1,
+        "year": 2018,
+        "week": 6,
+        "matchupPeriodId": 6
+      },
+      {
+        "score": 48.36,
+        "team": "Adams, Cooper and Prescott",
+        "teamId": 3,
+        "owner": "Sal DeRose",
+        "opponent": "Get CTE or Die Tryin",
+        "opponentScore": 105.66,
+        "year": 2017,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 48.54,
+        "team": "DJ Khalad",
+        "teamId": 6,
+        "owner": "Pete Solecki",
+        "opponent": "Bradys and Edelman",
+        "opponentScore": 74.02,
+        "year": 2016,
+        "week": 9,
+        "matchupPeriodId": 9
+      }
+    ],
+    "closestWin": {
+      "margin": 0.09999999999999432,
+      "winner": "Sal's Infirmary",
+      "winnerTeamId": 3,
+      "winnerScore": 135.9,
+      "loser": "Pop Rockin' Beats",
+      "loserScore": 135.8,
+      "year": 2022,
+      "week": 7,
+      "matchupPeriodId": 7
+    },
+    "biggestBlowout": {
+      "margin": 150.20000000000002,
+      "winner": "Josh Allen's Blueberries",
+      "winnerTeamId": 5,
+      "winnerScore": 352.36,
+      "loser": "The Other Team",
+      "loserScore": 202.16,
+      "year": 2025,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "highestScoringGame": {
+      "total": 793.94,
+      "team1": "Why Was I on the 415 Shuttle?",
+      "owner1": "Daniel Keating",
+      "score1": 350.72,
+      "team2": "Takin the Browns to Super Bowl",
+      "owner2": "Mike Kovacs",
+      "score2": 443.22,
+      "year": 2024,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScoringGame": {
+      "total": 103.56,
+      "team1": "RKO Out of Nowhere",
+      "owner1": "Joe Jaramillo",
+      "score1": 54.4,
+      "team2": "Alabama of Europe",
+      "owner2": "Randell Crawford",
+      "score2": 49.16,
+      "year": 2015,
+      "week": 11,
+      "matchupPeriodId": 11
+    },
+    "longestWinStreak": {
+      "owner": "Daniel Keating",
+      "length": 11,
+      "teamName": "Why Was I on the 415 Shuttle?",
+      "startYear": 2024,
+      "startWeek": 1,
+      "endYear": 2024,
+      "endWeek": 11,
+      "isOngoing": false
+    },
+    "longestLossStreak": {
+      "owner": "Ben Bingert",
+      "length": 14,
+      "teamName": "Free Candy and Wins",
+      "startYear": 2017,
+      "startWeek": 13,
+      "endYear": 2018,
+      "endWeek": 12,
+      "isOngoing": false
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Mike Kovacs",
+      "count": 34
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Pete Solecki",
+      "count": 28
+    }
+  },
+  "regularSeason": {
+    "highestScore": {
+      "score": 219.08,
+      "team": "Pop Rockin' Beats",
+      "teamId": 10,
+      "owner": "Randell Crawford",
+      "opponent": "Why Was I on the 415 Shuttle?",
+      "opponentScore": 112.3,
+      "year": 2024,
+      "week": 12,
+      "matchupPeriodId": 12
+    },
+    "lowestScore": {
+      "score": 30.3,
+      "team": "Tommy F'n Cutlets",
+      "teamId": 3,
+      "owner": "Sal DeRose",
+      "opponent": "Titty Sprinkles",
+      "opponentScore": 149.2,
+      "year": 2025,
+      "week": 9,
+      "matchupPeriodId": 9
+    },
+    "top10HighestScores": [
+      {
+        "score": 219.08,
+        "team": "Pop Rockin' Beats",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "Why Was I on the 415 Shuttle?",
+        "opponentScore": 112.3,
+        "year": 2024,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 218.9,
+        "team": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "owner": "Daniel Keating",
+        "opponent": "Franoc knthall",
+        "opponentScore": 188.6,
+        "year": 2024,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
+        "score": 214.06,
+        "team": "Takin the Browns to Super Bowl",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Tommy F'n Cutlets",
+        "opponentScore": 131.68,
+        "year": 2024,
+        "week": 11,
+        "matchupPeriodId": 11
+      },
+      {
+        "score": 213.48,
+        "team": "Takin the Browns to Super Bowl",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Franoc knthall",
+        "opponentScore": 113.8,
+        "year": 2024,
+        "week": 10,
+        "matchupPeriodId": 10
+      },
+      {
+        "score": 193.1,
+        "team": "Business Expert Nathan Fielder",
+        "teamId": 1,
+        "owner": "Bill Solecki",
+        "opponent": "Titty Sprinkles",
+        "opponentScore": 121.56,
+        "year": 2021,
+        "week": 5,
+        "matchupPeriodId": 5
+      },
+      {
+        "score": 191.54,
+        "team": "Takin the Browns to Super Bowl",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Chili's Eat Fresh",
+        "opponentScore": 174.46,
+        "year": 2024,
+        "week": 8,
+        "matchupPeriodId": 8
+      },
+      {
+        "score": 191.16,
+        "team": "Franoc knthall",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "Chili's Eat Fresh",
+        "opponentScore": 145.5,
+        "year": 2024,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 190.86,
+        "team": "Dan sits when he pees",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "Brady Sits When he Pees",
+        "opponentScore": 112.68,
+        "year": 2023,
+        "week": 5,
+        "matchupPeriodId": 5
+      },
+      {
+        "score": 189.14,
+        "team": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "owner": "Sal DeRose",
+        "opponent": "Chili's Eat Fresh",
+        "opponentScore": 161.34,
+        "year": 2024,
+        "week": 13,
+        "matchupPeriodId": 13
+      },
+      {
+        "score": 188.6,
+        "team": "Franoc knthall",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "Why Was I on the 415 Shuttle?",
+        "opponentScore": 218.9,
+        "year": 2024,
+        "week": 9,
+        "matchupPeriodId": 9
+      }
+    ],
+    "top10LowestScores": [
+      {
+        "score": 30.3,
+        "team": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "owner": "Sal DeRose",
+        "opponent": "Titty Sprinkles",
+        "opponentScore": 149.2,
+        "year": 2025,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
+        "score": 40.18,
+        "team": "Alabama of Europe",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "DJ Khalad",
+        "opponentScore": 150.52,
+        "year": 2019,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 41.32,
+        "team": "Alabama of Europe",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "Why Was I On The 415 Shuttle",
+        "opponentScore": 83.66,
+        "year": 2019,
+        "week": 6,
+        "matchupPeriodId": 6
+      },
+      {
+        "score": 41.8,
+        "team": "Alabama of Europe",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "RKO Out of Nowhere",
+        "opponentScore": 102.36,
+        "year": 2015,
+        "week": 2,
+        "matchupPeriodId": 2
+      },
+      {
+        "score": 43.68,
+        "team": "Bradys and Edelman",
+        "teamId": 9,
+        "owner": "Daniel Keating",
+        "opponent": "Balls to the Rawls",
+        "opponentScore": 88.02,
+        "year": 2015,
+        "week": 11,
+        "matchupPeriodId": 11
+      },
+      {
+        "score": 45.32,
+        "team": "Balls to the Rawls",
+        "teamId": 8,
+        "owner": "Ray Engleking",
+        "opponent": "DJ Khalad",
+        "opponentScore": 77.48,
+        "year": 2015,
+        "week": 4,
+        "matchupPeriodId": 4
+      },
+      {
+        "score": 46.72,
+        "team": "DJ Khalad",
+        "teamId": 6,
+        "owner": "Pete Solecki",
+        "opponent": "Get CTE or Die Tryin",
+        "opponentScore": 79.84,
+        "year": 2017,
+        "week": 10,
+        "matchupPeriodId": 10
+      },
+      {
+        "score": 48.12,
+        "team": "Free Candy and Wins",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "SAM DARNOLD IS LITERALLY JESUS",
+        "opponentScore": 104.1,
+        "year": 2018,
+        "week": 6,
+        "matchupPeriodId": 6
+      },
+      {
+        "score": 48.36,
+        "team": "Adams, Cooper and Prescott",
+        "teamId": 3,
+        "owner": "Sal DeRose",
+        "opponent": "Get CTE or Die Tryin",
+        "opponentScore": 105.66,
+        "year": 2017,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 48.54,
+        "team": "DJ Khalad",
+        "teamId": 6,
+        "owner": "Pete Solecki",
+        "opponent": "Bradys and Edelman",
+        "opponentScore": 74.02,
+        "year": 2016,
+        "week": 9,
+        "matchupPeriodId": 9
+      }
+    ],
+    "closestWin": {
+      "margin": 0.09999999999999432,
+      "winner": "Sal's Infirmary",
+      "winnerTeamId": 3,
+      "winnerScore": 135.9,
+      "loser": "Pop Rockin' Beats",
+      "loserScore": 135.8,
+      "year": 2022,
+      "week": 7,
+      "matchupPeriodId": 7
+    },
+    "biggestBlowout": {
+      "margin": 118.89999999999999,
+      "winner": "Titty Sprinkles",
+      "winnerTeamId": 7,
+      "winnerScore": 149.2,
+      "loser": "Tommy F'n Cutlets",
+      "loserScore": 30.3,
+      "year": 2025,
+      "week": 9,
+      "matchupPeriodId": 9
+    },
+    "highestScoringGame": {
+      "total": 407.5,
+      "team1": "Franoc knthall",
+      "owner1": "Ben Bingert",
+      "score1": 188.6,
+      "team2": "Why Was I on the 415 Shuttle?",
+      "owner2": "Daniel Keating",
+      "score2": 218.9,
+      "year": 2024,
+      "week": 9,
+      "matchupPeriodId": 9
+    },
+    "lowestScoringGame": {
+      "total": 103.56,
+      "team1": "RKO Out of Nowhere",
+      "owner1": "Joe Jaramillo",
+      "score1": 54.4,
+      "team2": "Alabama of Europe",
+      "owner2": "Randell Crawford",
+      "score2": 49.16,
+      "year": 2015,
+      "week": 11,
+      "matchupPeriodId": 11
+    },
+    "longestWinStreak": {
+      "owner": "Daniel Keating",
+      "length": 12,
+      "teamName": "Why Was I on the 415 Shuttle?",
+      "startYear": 2023,
+      "startWeek": 13,
+      "endYear": 2024,
+      "endWeek": 11,
+      "isOngoing": false
+    },
+    "longestLossStreak": {
+      "owner": "Ben Bingert",
+      "length": 12,
+      "teamName": "Free Candy and Wins",
+      "startYear": 2018,
+      "startWeek": 1,
+      "endYear": 2018,
+      "endWeek": 12,
+      "isOngoing": false
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Mike Kovacs",
+      "count": 23
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Pete Solecki",
+      "count": 21
+    },
+    "mostPointsAgainstSeasons": [
+      {
+        "owner": "Sal DeRose",
+        "teamName": "Tommy F'n Cutlets",
+        "year": 2024,
+        "pointsAgainst": 2119.5
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "teamName": "Chili's Eat Fresh",
+        "year": 2024,
+        "pointsAgainst": 2108.08
+      },
+      {
+        "owner": "Ben Bingert",
+        "teamName": "Franoc knthall",
+        "year": 2024,
+        "pointsAgainst": 2100.78
+      },
+      {
+        "owner": "Bill Solecki",
+        "teamName": "Turbo Team Termites",
+        "year": 2024,
+        "pointsAgainst": 1999.26
+      },
+      {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "year": 2024,
+        "pointsAgainst": 1955.9799999999998
+      }
+    ],
+    "fewestPointsAgainstSeasons": [
+      {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "year": 2015,
+        "pointsAgainst": 960.4599999999999
+      },
+      {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "year": 2019,
+        "pointsAgainst": 962.5
+      },
+      {
+        "owner": "Ben Bingert",
+        "teamName": "Harry Hats",
+        "year": 2015,
+        "pointsAgainst": 985.4600000000002
+      },
+      {
+        "owner": "Ben Bingert",
+        "teamName": "Willy 3rd Place",
+        "year": 2019,
+        "pointsAgainst": 1002.3399999999999
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "teamName": "RKO Out of Nowhere",
+        "year": 2015,
+        "pointsAgainst": 1006.38
+      }
+    ]
+  }
+}

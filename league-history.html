@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League History - The Other League</title>
+    <style>
+        :root {
+            --electric-blue: #00d4ff;
+            --gold: #ffd700;
+            --dark-bg: #0a0e27;
+            --card-bg: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(255,215,0,0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(0,212,255,0.3);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle { 
+			font-size: 1.2rem; 
+			color: var(--text-secondary); 
+			}
+
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            padding: 12px 25px;
+            background: rgba(0,212,255,0.1);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.4);
+        }
+
+        /* ── In-page nav ── */
+        .inpage-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .inpage-nav a {
+            padding: 5px 13px;
+            background: transparent;
+            border: 1px solid rgba(255,215,0,0.35);
+            border-radius: 20px;
+            color: rgba(255,215,0,0.75);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            transition: background 0.15s, color 0.15s, border-color 0.15s;
+            white-space: nowrap;
+        }
+
+        .inpage-nav a:hover {
+            background: rgba(255,215,0,0.12);
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* Year sections */
+        .year-section {
+            background: var(--card-bg);
+            padding: 22px 25px;
+            border-radius: 15px;
+            border: 2px solid rgba(0,212,255,0.15);
+            margin-bottom: 20px;
+        }
+
+        .year-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+            border-bottom: 2px solid rgba(255,215,0,0.25);
+            padding-bottom: 8px;
+        }
+
+        .change-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+
+        .change-item {
+            padding: 9px 14px;
+            border-radius: 7px;
+            line-height: 1.55;
+            font-size: 0.93rem;
+            border-left: 4px solid;
+        }
+
+        /* Category colours */
+        .cat-founding { background: rgba(0, 212, 255, 0.08); border-left-color: #00d4ff; }
+        .cat-buyin    { background: rgba(255, 215, 0, 0.08);  border-left-color: #ffd700; }
+        .cat-payout   { background: rgba(0, 255, 100, 0.08);  border-left-color: #00ff64; }
+        .cat-roster   { background: rgba(255, 160, 50, 0.10); border-left-color: #ffa032; }
+        .cat-rule     { background: rgba(255, 80, 80, 0.09);  border-left-color: #ff5050; }
+        .cat-draft    { background: rgba(180, 100, 255, 0.10);border-left-color: #b464ff; }
+        .cat-admin    { background: rgba(255, 255, 255, 0.04);border-left-color: rgba(255,255,255,0.25); }
+
+        .label {
+            display: inline-block;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 7px;
+            letter-spacing: 0.3px;
+        }
+
+        .lbl-founding  { background: rgba(0,212,255,0.25);    color: #00d4ff; }
+        .lbl-buyin     { background: rgba(255,215,0,0.25);    color: #ffd700; }
+        .lbl-payout    { background: rgba(0,255,100,0.22);    color: #00ff64; }
+        .lbl-roster    { background: rgba(255,160,50,0.25);   color: #ffa032; }
+        .lbl-rule      { background: rgba(255,80,80,0.22);    color: #ff5050; }
+        .lbl-draft     { background: rgba(180,100,255,0.22);  color: #b464ff; }
+        .lbl-admin     { background: rgba(255,255,255,0.12);  color: var(--text-secondary); }
+
+        .current-rules {
+            background: var(--card-bg);
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            border-radius: 15px;
+            padding: 28px 30px;
+            margin-bottom: 40px;
+        }
+        .current-rules-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: var(--electric-blue);
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+        .rules-group {
+            background: rgba(255,255,255,0.03);
+            border-radius: 10px;
+            padding: 14px 16px;
+            border-left: 3px solid var(--electric-blue);
+        }
+        .rules-group-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--electric-blue);
+            margin-bottom: 10px;
+        }
+        .rules-group ul { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .rules-group li {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            padding-left: 10px;
+            position: relative;
+        }
+        .rules-group li::before { content: '·'; position: absolute; left: 0; color: var(--electric-blue); }
+        .rules-group li strong { color: var(--text); }
+
+        .api-changes {
+            background: var(--card-bg);
+            border: 2px solid rgba(255, 80, 80, 0.25);
+            border-radius: 15px;
+            padding: 28px 30px;
+            margin-bottom: 40px;
+        }
+        .api-changes-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: #ff5050;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+        .api-changes-subtitle {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .api-years-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 14px;
+        }
+        .api-year-block {
+            background: rgba(255,255,255,0.03);
+            border-radius: 10px;
+            padding: 12px 14px;
+            border-top: 2px solid rgba(255, 80, 80, 0.3);
+        }
+        .api-year-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+        .api-change-item {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            padding: 3px 0 3px 10px;
+            border-left: 2px solid rgba(255, 80, 80, 0.4);
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        .api-change-item.no-change {
+            border-left-color: rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.2);
+            font-style: italic;
+        }
+        .loading-msg { color: var(--text-secondary); font-style: italic; font-size: 0.9rem; }
+
+
+        /* ── Pinned hamburger button ── */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .nav-toggle .chevron {
+            font-style: normal;
+            transition: transform 0.25s ease;
+        }
+        .nav-toggle.open .chevron { transform: rotate(180deg); }
+
+        html { scroll-behavior: smooth; }
+
+        .section-anchor { scroll-margin-top: 20px; }
+
+        /* ── Mobile ── */
+        @media (max-width: 768px) {
+            body { padding: 12px; }
+            h1 { font-size: 2rem; }
+            .subtitle { font-size: 1rem; }
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
+
+            /* Show hamburger button */
+            .nav-toggle { display: flex; }
+
+            /* Slide-in nav panel */
+            nav#mainNav {
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
+                flex-direction: column;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                margin-bottom: 0;
+            }
+            nav#mainNav.collapsed { transform: translateX(110%); }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
+
+            .inpage-nav { gap: 5px; margin-bottom: 16px; }
+            .inpage-nav a { font-size: 0.75rem; padding: 4px 12px; }
+
+            .current-rules { padding: 18px 14px; }
+            .rules-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+            .rules-group { padding: 10px 12px; }
+            .rules-group li { font-size: 0.82rem; }
+
+            .year-section { padding: 14px 14px; }
+            .year-header { font-size: 1.4rem; }
+            .change-item { font-size: 0.86rem; padding: 8px 10px; }
+
+            .api-changes { padding: 16px 14px; }
+            .api-years-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+            .api-year-block { padding: 10px 10px; }
+            .api-change-item { font-size: 0.78rem; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <div class="container">
+        <header>
+            <h1>League History</h1>
+            <div class="subtitle">Rule Changes &amp; Evolution (2013–2025)</div>
+        </header>
+
+        <nav id="mainNav">
+            <a href="index.html">All-Time Records</a>
+            <a href="regular-season.html">Regular Season</a>
+            <a href="teams.html">Owner Stats</a>
+            <a href="head-to-head.html">Head-to-Head</a>
+            <a href="season-stats.html">Season Stats</a>
+            <a href="league-history.html" class="active">League History</a>
+            <!--<a href="rosters.html">Rosters</a>-->
+            <!--<a href="roasts.html">Roasts</a>-->
+        </nav>
+
+        <!-- ── In-page nav ── -->
+        <div class="inpage-nav">
+            <a href="#section-current-rules">📋 Current Rules</a>
+            <a href="#section-changelog">📅 Change Log</a>
+            <a href="#section-espn-api">🔢 ESPN API</a>
+        </div>
+
+        
+
+        <div id="section-current-rules" class="section-anchor current-rules">
+            <div class="current-rules-title">Current Ruleset</div>
+            <div class="rules-grid">
+                <div class="rules-group">
+                    <div class="rules-group-title">League &amp; Format</div>
+                    <ul>
+                        <li><strong>10 teams</strong>, PPR scoring</li>
+                        <li><strong>13-week</strong> regular season</li>
+                        <li>4-team playoffs, <strong>2 rounds</strong>, 2 weeks each</li>
+                        <li>Rounds 1 &amp; 2: weeks 14–15 and 16–17</li>
+                        <li>Non-playoff teams: <strong>roster locked</strong> during playoffs</li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Buy-In &amp; Payouts</div>
+                    <ul>
+                        <li><strong>$5</strong> buy-in due August 1st</li>
+                        <li>Late payment: miss 5 bonus points week 1 (introduced 2025)</li>
+                        <li>1st place: <strong>$35</strong></li>
+                        <li>2nd place: <strong>$10</strong></li>
+                        <li>3rd place: <strong>$5</strong></li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Scoring</div>
+                    <ul>
+                        <li><strong>PPR</strong> (1 pt per reception)</li>
+                        <li>TD passes: <strong>6 pts</strong></li>
+                        <li>Forced fumble: <strong>1.5 pts</strong></li>
+                        <li>Recovered fumble: <strong>1.5 pts</strong></li>
+                        <li>Missed PATs: <strong>−0.5 pts</strong></li>
+                        <li>1.5 pts per net punt, 1 pt fair catch, 1 pt inside 20, 1 pt inside 10</li>
+                        <li>Blocked punt: <strong>−2 pts</strong></li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Keepers</div>
+                    <ul>
+                        <li><strong>2 keepers</strong> per team, due 1 week before draft</li>
+                        <li>Drafted players: kept at <strong>original draft round − 1</strong></li>
+                        <li>Undrafted players: kept at <strong>ADP + 1 round</strong></li>
+                        <li>Max <strong>2 seasons</strong> kept (introduced 2022)</li>
+                        <li>Cannot keep <strong>1st-round</strong> picks</li>
+                        <li>Custom keeper rounds managed via ESPN platform (2022+)</li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Draft</div>
+                    <ul>
+                        <li>Snake draft</li>
+                        <li>Order set to <strong>inverse of prior season standings</strong></li>
+                        <li>Trade review enabled (2024+)</li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Roster</div>
+                    <ul>
+                        <li><strong>2 FLEX</strong> slots (2024+)</li>
+                        <li>No IR slots (removed 2025)</li>
+                        <li>No punter slot (removed 2025)</li>
+                        <li>League winner receives well-wishes from Dan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-changelog" class="section-anchor"></div>
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-item"><div class="legend-dot" style="background:#00d4ff;"></div>Founding / Platform</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#ffd700;"></div>Buy-In Change</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#00ff64;"></div>Payout Change</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#ffa032;"></div>Teams / Owners</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#ff5050;"></div>Scoring / Format</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#b464ff;"></div>Draft</div>
+            <div class="legend-item"><div class="legend-dot" style="background:rgba(255,255,255,0.25);"></div>Admin / Minor</div>
+        </div>
+
+        <!-- ─── 2025 ─── -->
+        <div id="section-2025" class="year-section">
+            <div class="year-header">2025</div>
+            <ul class="change-list">
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    League dues due by August 1st. Late payment forfeits <strong>5 bonus points in week 1</strong>.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    Punters removed from scoring. QBs revert to standard 4-point passing TDs — the 0.5-pts-per-completion rule removed. QBs now score <strong>6 pts per TD pass</strong>.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Roster</span>
+                    Both IR slots removed. Punter roster slot removed.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2024 ─── -->
+        <div id="section-2024" class="year-section">
+            <div class="year-header">2024</div>
+            <ul class="change-list">
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Roster</span>
+                    <strong>2nd FLEX slot added.</strong> Punters added as a scoreable position.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    QBs now earn <strong>0.5 pts per completion</strong>. Punter scoring introduced: 1.5 pts per net punt, 1 pt fair catch, 1 pt inside 20, 1 pt inside 10, −2 pts blocked.
+                </li>
+                <li class="change-item cat-draft">
+                    <span class="label lbl-draft">Draft</span>
+                    Draft order set to <strong>inverse order of prior season standings</strong>. Trade review enabled.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Playoffs</span>
+                    Non-playoff teams have <strong>roster lock</strong> during playoffs — no transactions allowed.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2023 ─── -->
+        <div id="section-2023" class="year-section">
+            <div class="year-header">2023</div>
+            <ul class="change-list">
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    <strong>$5 buy-in introduced</strong> — first year with any financial stakes.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2022 ─── -->
+        <div id="section-2022" class="year-section">
+            <div class="year-header">2022</div>
+            <ul class="change-list">
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Keepers</span>
+                    <strong>Custom keeper round rules introduced</strong> via ESPN platform: drafted players kept at original round − 1, undrafted at ADP + 1. Max 2 seasons kept. Cannot keep 1st-round picks.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2017 ─── -->
+        <div id="section-2017" class="year-section">
+            <div class="year-header">2017</div>
+            <ul class="change-list">
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Keepers</span>
+                    Keepers introduced — 2 per team. Rules predating ESPN's custom keeper platform (pre-2022); keepers were 1st and 2nd round picks.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2015 ─── -->
+        <div id="section-2015" class="year-section">
+            <div class="year-header">2015</div>
+            <ul class="change-list">
+                <li class="change-item cat-roster">
+                    <span class="label lbl-roster">Teams</span>
+                    League expanded from 8 → <strong>10 teams</strong> (first full 10-team season).
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2014 ─── -->
+        <div id="section-2014" class="year-section">
+            <div class="year-header">2014 — League Founded</div>
+            <ul class="change-list">
+                <li class="change-item cat-founding">
+                    <span class="label lbl-founding">Founded</span>
+                    League created as <strong>"The Other League!"</strong> on ESPN with 8 teams.
+                </li>
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    No buy-in — bragging rights only.
+                </li>
+            </ul>
+        </div>
+
+        <div id="section-espn-api" class="section-anchor api-changes">
+            <div class="api-changes-title">Scoring &amp; Settings History (ESPN API)</div>
+            <div class="api-changes-subtitle">Year-over-year changes detected from ESPN's league settings — most recent first</div>
+            <div id="api-changes-container"><div class="loading-msg">Loading...</div></div>
+        </div>
+
+    </div>
+
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+               width:42px; height:42px; border-radius:50%;
+               border:2px solid var(--electric-blue);
+               background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+               color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+               box-shadow:0 4px 16px rgba(0,212,255,0.3); transition:opacity 0.2s ease;">
+        ↑
+    </button>
+
+    <script>
+        // ── Hamburger nav ──────────────────────────────────────────────────────
+        (function () {
+            const btn     = document.getElementById('navToggle');
+            const nav     = document.getElementById('mainNav');
+            const overlay = document.getElementById('navOverlay');
+            if (!btn || !nav || !overlay) return;
+
+            function isMobile() { return window.innerWidth <= 768; }
+
+            function closeNav() {
+                nav.classList.add('collapsed');
+                btn.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+                overlay.style.display = 'none';
+            }
+
+            function applyState() {
+                if (isMobile()) {
+                    btn.style.display = 'flex';
+                } else {
+                    btn.style.display = 'none';
+                    nav.classList.remove('collapsed');
+                    overlay.style.display = 'none';
+                }
+            }
+
+            btn.addEventListener('click', function () {
+                const nowCollapsed = nav.classList.toggle('collapsed');
+                btn.setAttribute('aria-expanded', String(!nowCollapsed));
+                btn.classList.toggle('open', !nowCollapsed);
+                overlay.style.display = nowCollapsed ? 'none' : 'block';
+            });
+
+            overlay.addEventListener('click', closeNav);
+
+            if (isMobile()) nav.classList.add('collapsed');
+            applyState();
+            window.addEventListener('resize', applyState);
+        })();
+
+        // ── Back to top ────────────────────────────────────────────────────────
+        (function () {
+            const btt = document.getElementById('backToTop');
+            if (!btt) return;
+            window.addEventListener('scroll', function () {
+                btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+            });
+        })();
+
+    </script>
+
+    <script>
+        fetch('output/settings_history.json')
+            .then(r => r.json())
+            .then(data => {
+                const container = document.getElementById('api-changes-container');
+                if (!data || !data.length) {
+                    container.innerHTML = '<div class="loading-msg">No settings history available.</div>';
+                    return;
+                }
+                const sorted = [...data].sort((a, b) => b.year - a.year);
+                container.innerHTML = `<div class="api-years-grid">${sorted.map(yearData => `
+                    <div class="api-year-block">
+                        <div class="api-year-label">${yearData.year}</div>
+                        ${yearData.changes.length
+                            ? yearData.changes.map(c => `<div class="api-change-item">${c}</div>`).join('')
+                            : '<div class="api-change-item no-change">No detected changes</div>'}
+                    </div>
+                `).join('')}</div>`;
+            })
+            .catch(() => {
+                document.getElementById('api-changes-container').innerHTML =
+                    '<div class="loading-msg">Run the data collector to populate this section.</div>';
+            });
+    </script>
+</body>
+</html>

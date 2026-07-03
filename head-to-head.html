@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head-to-Head - The Other League</title>
+    <style>
+        :root {
+            --electric-blue: #00d4ff;
+            --gold: #ffd700;
+            --dark-bg: #0a0e27;
+            --card-bg: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 215, 0, 0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            padding: 12px 25px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .selector-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 212, 255, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .selector-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .owner-select {
+            width: 100%;
+        }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            background: var(--dark-bg);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .vs-text {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold);
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .h2h-summary {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 212, 255, 0.2);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .record-display {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--electric-blue);
+            font-family: 'Bebas Neue', sans-serif;
+            margin: 20px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--electric-blue), var(--gold));
+        }
+
+        .stat-title {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--electric-blue);
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .matchup-log {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .matchup-log h2 {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+        }
+
+        .matchup-item {
+            background: rgba(0, 212, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--electric-blue);
+        }
+
+        .matchup-item.win {
+            border-left-color: #00ff64;
+        }
+
+        .matchup-item.loss {
+            border-left-color: #ff6b6b;
+        }
+
+        .matchup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .matchup-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .matchup-score {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        /* ── Pinned hamburger ────────────────────────────────────────────────── */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 12px; }
+            h1 { font-size: 2rem; }
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
+            .subtitle { font-size: 1rem; }
+
+            .nav-toggle { display: flex; }
+
+            nav#mainNav {
+                position: fixed;
+                top: 0; right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                margin-bottom: 0;
+            }
+            nav#mainNav.collapsed { transform: translateX(110%); }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
+
+            /* Selector section */
+            .selector-section { padding: 16px; margin-bottom: 20px; }
+            .selector-grid { grid-template-columns: 1fr; gap: 10px; }
+            .vs-text { display: none; }
+            select { padding: 10px 12px; font-size: 0.88rem; border-radius: 8px; }
+
+            /* Summary */
+            .h2h-summary { padding: 20px 16px; margin-bottom: 20px; }
+            .h2h-summary h2 { font-size: 1.1rem; }
+            .record-display { font-size: 2.8rem; margin: 10px 0; }
+
+            /* Stat cards — 2 columns */
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+            .stat-card { padding: 12px 10px; border-radius: 10px; }
+            .stat-title { font-size: 0.72rem; letter-spacing: 0.4px; margin-bottom: 6px; }
+            .stat-value { font-size: 1.4rem; }
+            .stat-card p { font-size: 0.75rem; margin-top: 4px; }
+
+            /* Game log */
+            .matchup-log { padding: 16px; }
+            .matchup-log h2 { font-size: 1.3rem; margin-bottom: 12px; }
+            .matchup-item { padding: 8px 10px; margin-bottom: 6px; border-radius: 7px; border-left-width: 3px; }
+            .matchup-date { font-size: 0.78rem; }
+            .matchup-score { font-size: 0.95rem; }
+            .matchup-item > div:last-child { font-size: 0.75rem; margin-top: 2px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <div class="container">
+        <header>
+            <h1>Head-to-Head Matchups</h1>
+            <div class="subtitle">Compare owner records and performance</div>
+        </header>
+
+        <nav id="mainNav">
+            <a href="index.html">All-Time Records</a>
+            <a href="regular-season.html">Regular Season</a>
+            <a href="teams.html">Owner Stats</a>
+            <a href="head-to-head.html" class="active">Head-to-Head</a>
+            <a href="season-stats.html">Season Stats</a>
+            <a href="league-history.html">League History</a>
+            <!--<a href="rosters.html">Rosters</a>-->
+            <!--<a href="roasts.html">Roasts</a>-->
+        </nav>
+
+        <div class="selector-section">
+            <div class="selector-grid">
+                <div class="owner-select">
+                    <select id="owner1-select">
+                        <option value="">Select Owner 1</option>
+                    </select>
+                </div>
+                <div class="vs-text">VS</div>
+                <div class="owner-select">
+                    <select id="owner2-select">
+                        <option value="">Select Owner 2</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="results-container">
+            <div class="no-data">Select two owners to view their head-to-head record</div>
+        </div>
+    </div>
+
+	<script>
+		const LEAGUE_ID = 1517226;
+		let h2hData = {};
+		let ownerStats = {};
+
+		async function loadData() {
+			try {
+				const [h2h, owners] = await Promise.all([
+					fetch('output/head_to_head.json').then(r => r.json()),
+					fetch('output/team_stats.json').then(r => r.json())
+				]);
+
+				h2hData = h2h;
+				ownerStats = owners;
+
+				populateSelectors();
+			} catch (error) {
+				console.error('Error loading data:', error);
+				document.getElementById('results-container').innerHTML = `
+					<div class="no-data">Error loading head-to-head data</div>
+				`;
+			}
+		}
+
+		function createMatchupLink(year, week, matchupPeriodId, teamId) {
+			// For years before 2019, just link to scoreboard overview
+			// ESPN doesn't support individual matchup links for old years
+			if (year < 2019) {
+				return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&seasonId=${year}`;
+			}
+			// For 2019+, link to specific matchup
+			return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&scoringPeriodId=${week}&seasonId=${year}&teamId=${teamId}&view=scoringperiod`;
+		}
+
+		function populateSelectors() {
+			const activeOwners = [];
+			const inactiveOwners = [];
+
+			Object.keys(ownerStats).forEach(owner => {
+				const data = {
+					owner: owner,
+					teamName: ownerStats[owner].teamName,
+					isActive: ownerStats[owner].isActive
+				};
+
+				if (data.isActive) {
+					activeOwners.push(data);
+				} else {
+					inactiveOwners.push(data);
+				}
+			});
+
+			// Sort alphabetically by owner name
+			activeOwners.sort((a, b) => a.owner.localeCompare(b.owner));
+			inactiveOwners.sort((a, b) => a.owner.localeCompare(b.owner));
+
+			const select1 = document.getElementById('owner1-select');
+			const select2 = document.getElementById('owner2-select');
+
+			// Add active owners
+			activeOwners.forEach(data => {
+				const option1 = document.createElement('option');
+				option1.value = data.owner;
+				option1.textContent = `${data.owner} (${data.teamName})`;
+				select1.appendChild(option1);
+
+				const option2 = document.createElement('option');
+				option2.value = data.owner;
+				option2.textContent = `${data.owner} (${data.teamName})`;
+				select2.appendChild(option2);
+			});
+
+			// Add separator and inactive owners
+			if (inactiveOwners.length > 0) {
+				const separator1 = document.createElement('option');
+				separator1.disabled = true;
+				separator1.textContent = '─────── Inactive ───────';
+				select1.appendChild(separator1);
+
+				const separator2 = document.createElement('option');
+				separator2.disabled = true;
+				separator2.textContent = '─────── Inactive ───────';
+				select2.appendChild(separator2);
+
+				inactiveOwners.forEach(data => {
+					const option1 = document.createElement('option');
+					option1.value = data.owner;
+					option1.textContent = `${data.owner} (${data.teamName}) [Inactive]`;
+					select1.appendChild(option1);
+
+					const option2 = document.createElement('option');
+					option2.value = data.owner;
+					option2.textContent = `${data.owner} (${data.teamName}) [Inactive]`;
+					select2.appendChild(option2);
+				});
+			}
+		}
+
+		function displayHeadToHead() {
+			const owner1 = document.getElementById('owner1-select').value;
+			const owner2 = document.getElementById('owner2-select').value;
+
+			if (!owner1 || !owner2) {
+				document.getElementById('results-container').innerHTML = `
+					<div class="no-data">Select two owners to view their head-to-head record</div>
+				`;
+				return;
+			}
+
+			if (owner1 === owner2) {
+				document.getElementById('results-container').innerHTML = `
+					<div class="no-data">Please select two different owners</div>
+				`;
+				return;
+			}
+
+			const h2h1 = h2hData[owner1]?.[owner2];
+			const h2h2 = h2hData[owner2]?.[owner1];
+
+			if (!h2h1 || h2h1.totalGames === 0) {
+				document.getElementById('results-container').innerHTML = `
+					<div class="no-data">These owners have never faced each other</div>
+				`;
+				return;
+			}
+
+			const owner1Name = owner1;
+			const owner2Name = owner2;
+
+			// Find specific games for superlatives
+			const highestScoreGame1 = h2h1.matchups.find(m => {
+				const myScore = m.home.owner === owner1 ? m.home.score : m.away.score;
+				return myScore === h2h1.highestScore;
+			});
+
+			const lowestScoreGame1 = h2h1.matchups.find(m => {
+				const myScore = m.home.owner === owner1 ? m.home.score : m.away.score;
+				return myScore === h2h1.lowestScore;
+			});
+
+			const biggestWinGame = h2h1.matchups.find(m => {
+				const isHome = m.home.owner === owner1;
+				const myScore = isHome ? m.home.score : m.away.score;
+				const oppScore = isHome ? m.away.score : m.home.score;
+				const margin = myScore - oppScore;
+				const won = (isHome && m.winner === 'HOME') || (!isHome && m.winner === 'AWAY');
+				return won && margin === h2h1.biggestWin;
+			});
+
+			const closestWinGame = h2h1.matchups.find(m => {
+				const isHome = m.home.owner === owner1;
+				const myScore = isHome ? m.home.score : m.away.score;
+				const oppScore = isHome ? m.away.score : m.home.score;
+				const margin = myScore - oppScore;
+				const won = (isHome && m.winner === 'HOME') || (!isHome && m.winner === 'AWAY');
+				return won && margin === h2h1.closestWin;
+			});
+
+			const container = document.getElementById('results-container');
+			container.innerHTML = `
+				<div class="h2h-summary">
+					<h2>${owner1Name}</h2>
+					<div class="record-display">${h2h1.wins} - ${h2h1.losses}${h2h1.ties > 0 ? ` - ${h2h1.ties}` : ''}</div>
+					<h2>vs ${owner2Name}</h2>
+					<p style="color: var(--text-secondary); margin-top: 15px;">
+						${owner1Name} Win Percentage: ${(h2h1.winPercentage * 100).toFixed(1)}% | 
+						${h2h1.totalGames} Total Games
+					</p>
+				</div>
+
+				<div class="stats-grid">
+					<div class="stat-card">
+						<div class="stat-title">${owner1Name} - Points Scored</div>
+						<div class="stat-value">${h2h1.pointsFor.toFixed(2)}</div>
+						<p style="color: var(--text-secondary); margin-top: 5px;">
+							Avg: ${h2h1.avgPointsFor.toFixed(2)} per game
+						</p>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">${owner2Name} - Points Scored</div>
+						<div class="stat-value">${h2h2.pointsFor.toFixed(2)}</div>
+						<p style="color: var(--text-secondary); margin-top: 5px;">
+							Avg: ${h2h2.avgPointsFor.toFixed(2)} per game
+						</p>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">${owner1Name} - Points Against</div>
+						<div class="stat-value">${h2h1.pointsAgainst.toFixed(2)}</div>
+						<p style="color: var(--text-secondary); margin-top: 5px;">
+							Avg: ${h2h1.avgPointsAgainst.toFixed(2)} per game
+						</p>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">${owner2Name} - Points Against</div>
+						<div class="stat-value">${h2h2.pointsAgainst.toFixed(2)}</div>
+						<p style="color: var(--text-secondary); margin-top: 5px;">
+							Avg: ${h2h2.avgPointsAgainst.toFixed(2)} per game
+						</p>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">${owner1Name} - Highest Score</div>
+						<div class="stat-value">${h2h1.highestScore.toFixed(2)}</div>
+						${highestScoreGame1 ? `
+							<p style="color: var(--text-secondary); margin-top: 5px;">
+								<a href="${createMatchupLink(highestScoreGame1.year, highestScoreGame1.week, highestScoreGame1.matchupPeriodId, highestScoreGame1.home.owner === owner1 ? highestScoreGame1.home.teamId : highestScoreGame1.away.teamId)}" 
+								   target="_blank" style="color: var(--electric-blue);">
+									${highestScoreGame1.year} Week ${highestScoreGame1.week}
+								</a>
+							</p>
+						` : ''}
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">${owner1Name} - Lowest Score</div>
+						<div class="stat-value">${h2h1.lowestScore.toFixed(2)}</div>
+						${lowestScoreGame1 ? `
+							<p style="color: var(--text-secondary); margin-top: 5px;">
+								<a href="${createMatchupLink(lowestScoreGame1.year, lowestScoreGame1.week, lowestScoreGame1.matchupPeriodId, lowestScoreGame1.home.owner === owner1 ? lowestScoreGame1.home.teamId : lowestScoreGame1.away.teamId)}" 
+								   target="_blank" style="color: var(--electric-blue);">
+									${lowestScoreGame1.year} Week ${lowestScoreGame1.week}
+								</a>
+							</p>
+						` : ''}
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">${owner1Name} - Biggest Win</div>
+						<div class="stat-value">${h2h1.biggestWin > 0 ? '+' : ''}${h2h1.biggestWin.toFixed(2)}</div>
+						${biggestWinGame ? `
+							<p style="color: var(--text-secondary); margin-top: 5px;">
+								<a href="${createMatchupLink(biggestWinGame.year, biggestWinGame.week, biggestWinGame.matchupPeriodId, biggestWinGame.home.owner === owner1 ? biggestWinGame.home.teamId : biggestWinGame.away.teamId)}" 
+								   target="_blank" style="color: var(--electric-blue);">
+									${biggestWinGame.year} Week ${biggestWinGame.week}
+								</a>
+							</p>
+						` : ''}
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">${owner1Name} - Closest Win</div>
+						<div class="stat-value">${h2h1.closestWin > 0 ? '+' : ''}${h2h1.closestWin.toFixed(2)}</div>
+						${closestWinGame ? `
+							<p style="color: var(--text-secondary); margin-top: 5px;">
+								<a href="${createMatchupLink(closestWinGame.year, closestWinGame.week, closestWinGame.matchupPeriodId, closestWinGame.home.owner === owner1 ? closestWinGame.home.teamId : closestWinGame.away.teamId)}" 
+								   target="_blank" style="color: var(--electric-blue);">
+									${closestWinGame.year} Week ${closestWinGame.week}
+								</a>
+							</p>
+						` : ''}
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">Longest Win Streak</div>
+						<div class="stat-value">${Math.max(h2h1.longestWinStreak, h2h2.longestWinStreak)}</div>
+						<p style="color: var(--text-secondary); margin-top: 5px;">
+							${h2h1.longestWinStreak >= h2h2.longestWinStreak ? owner1Name : owner2Name}
+						</p>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-title">Current Streak</div>
+						<div class="stat-value">
+							${h2h1.currentStreak.type === 'WIN' ? 'W' : h2h1.currentStreak.type === 'LOSS' ? 'L' : '-'} 
+							${h2h1.currentStreak.length || 0}
+						</div>
+						<p style="color: var(--text-secondary); margin-top: 5px;">
+							${h2h1.currentStreak.type === 'WIN' ? owner1Name : h2h1.currentStreak.type === 'LOSS' ? owner2Name : 'None'}
+						</p>
+					</div>
+				</div>
+
+				<div class="matchup-log">
+					<h2>Complete Game Log (${h2h1.matchups.length} games)</h2>
+					${h2h1.matchups.slice().reverse().map(m => {
+						const isOwner1Home = m.home.owner === owner1;
+						const owner1Score = isOwner1Home ? m.home.score : m.away.score;
+						const owner2Score = isOwner1Home ? m.away.score : m.home.score;
+						const owner1Won = (isOwner1Home && m.winner === 'HOME') || (!isOwner1Home && m.winner === 'AWAY');
+						const resultClass = owner1Won ? 'win' : (m.winner === 'TIE' ? '' : 'loss');
+						
+						return `
+							<div class="matchup-item ${resultClass}">
+								<div class="matchup-header">
+									<div class="matchup-date">
+										<a href="${createMatchupLink(m.year, m.week, m.matchupPeriodId, isOwner1Home ? m.home.teamId : m.away.teamId)}" 
+										   target="_blank" style="color: var(--electric-blue); text-decoration: none;">
+											${m.year} Week ${m.week} ${m.isPlayoff ? '(Playoffs)' : ''}
+										</a>
+									</div>
+									<div class="matchup-score">
+										${owner1Score.toFixed(2)} - ${owner2Score.toFixed(2)}
+									</div>
+								</div>
+								<div style="color: var(--text-secondary); font-size: 0.9rem;">
+									${isOwner1Home ? m.home.teamName : m.away.teamName} vs ${isOwner1Home ? m.away.teamName : m.home.teamName}
+								</div>
+							</div>
+						`;
+					}).join('')}
+				</div>
+			`;
+		}
+
+		document.getElementById('owner1-select').addEventListener('change', displayHeadToHead);
+		document.getElementById('owner2-select').addEventListener('change', displayHeadToHead);
+
+		// ── Hamburger nav + overlay ────────────────────────────────────────────
+		(function () {
+			const btn     = document.getElementById('navToggle');
+			const nav     = document.getElementById('mainNav');
+			const overlay = document.getElementById('navOverlay');
+			if (!btn || !nav || !overlay) return;
+
+			function isMobile() { return window.innerWidth <= 768; }
+
+			function closeNav() {
+				nav.classList.add('collapsed');
+				btn.setAttribute('aria-expanded', 'false');
+				overlay.style.display = 'none';
+			}
+
+			function applyState() {
+				if (isMobile()) {
+					btn.style.display = 'flex';
+				} else {
+					btn.style.display = 'none';
+					nav.classList.remove('collapsed');
+					overlay.style.display = 'none';
+				}
+			}
+
+			btn.addEventListener('click', function () {
+				const nowCollapsed = nav.classList.toggle('collapsed');
+				btn.setAttribute('aria-expanded', String(!nowCollapsed));
+				overlay.style.display = nowCollapsed ? 'none' : 'block';
+			});
+
+			overlay.addEventListener('click', closeNav);
+			if (isMobile()) nav.classList.add('collapsed');
+			applyState();
+			window.addEventListener('resize', applyState);
+		})();
+
+		// ── Back to top ────────────────────────────────────────────────────────
+		window.addEventListener('scroll', function () {
+			const btt = document.getElementById('backToTop');
+			if (btt) btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+		});
+
+		loadData();
+	</script>
+
+	<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+		style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+		       width:42px; height:42px; border-radius:50%;
+		       border:2px solid var(--electric-blue);
+		       background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+		       color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+		       box-shadow:0 4px 16px rgba(0,212,255,0.3);">
+		↑
+	</button>
+</body>
+</html>

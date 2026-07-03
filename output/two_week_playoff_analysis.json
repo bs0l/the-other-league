@@ -1,0 +1,344 @@
+{
+  "totalTwoWeekMatchups": 14,
+  "comebacks": 0,
+  "comebackRate": 0.0,
+  "matchups": [
+    {
+      "year": 2019,
+      "week1": 13,
+      "week2": 14,
+      "teamA": {
+        "name": "SAL is Literally Jesus",
+        "owner": "Joe Jaramillo",
+        "week1Score": 157.0,
+        "week2Score": 157.0,
+        "totalScore": 314.0
+      },
+      "teamB": {
+        "name": "Why Was I On The 415 Shuttle",
+        "owner": "Daniel Keating",
+        "week1Score": 165.8,
+        "week2Score": 165.8,
+        "totalScore": 331.6
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 8.800000000000011,
+      "finalMargin": 17.600000000000023
+    },
+    {
+      "year": 2019,
+      "week1": 15,
+      "week2": 16,
+      "teamA": {
+        "name": "Titty Sprinkles",
+        "owner": "Carl Cummins",
+        "week1Score": 209.54,
+        "week2Score": 209.54,
+        "totalScore": 419.08
+      },
+      "teamB": {
+        "name": "Why Was I On The 415 Shuttle",
+        "owner": "Daniel Keating",
+        "week1Score": 140.86,
+        "week2Score": 140.86,
+        "totalScore": 281.72
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 68.67999999999998,
+      "finalMargin": 137.35999999999996
+    },
+    {
+      "year": 2020,
+      "week1": 13,
+      "week2": 14,
+      "teamA": {
+        "name": "Bucket, Mop; Macaroni, Pot",
+        "owner": "Bill Solecki",
+        "week1Score": 270.32,
+        "week2Score": 270.32,
+        "totalScore": 540.64
+      },
+      "teamB": {
+        "name": "DANIEL JONES IS LITERALLY TRASH",
+        "owner": "Sal DeRose",
+        "week1Score": 258.52,
+        "week2Score": 258.52,
+        "totalScore": 517.04
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 11.800000000000011,
+      "finalMargin": 23.600000000000023
+    },
+    {
+      "year": 2020,
+      "week1": 15,
+      "week2": 16,
+      "teamA": {
+        "name": "Bucket, Mop; Macaroni, Pot",
+        "owner": "Bill Solecki",
+        "week1Score": 296.44,
+        "week2Score": 296.44,
+        "totalScore": 592.88
+      },
+      "teamB": {
+        "name": "Tua Time",
+        "owner": "Joe Jaramillo",
+        "week1Score": 299.68,
+        "week2Score": 299.68,
+        "totalScore": 599.36
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 3.240000000000009,
+      "finalMargin": 6.480000000000018
+    },
+    {
+      "year": 2021,
+      "week1": 14,
+      "week2": 15,
+      "teamA": {
+        "name": "Bobby Boots",
+        "owner": "Ben Bingert",
+        "week1Score": 208.02,
+        "week2Score": 208.02,
+        "totalScore": 416.04
+      },
+      "teamB": {
+        "name": "DJ Khalad",
+        "owner": "Pete Solecki",
+        "week1Score": 255.82,
+        "week2Score": 255.82,
+        "totalScore": 511.64
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 47.79999999999998,
+      "finalMargin": 95.59999999999997
+    },
+    {
+      "year": 2021,
+      "week1": 16,
+      "week2": 17,
+      "teamA": {
+        "name": "Titty Sprinkles",
+        "owner": "Carl Cummins",
+        "week1Score": 273.02,
+        "week2Score": 273.02,
+        "totalScore": 546.04
+      },
+      "teamB": {
+        "name": "DJ Khalad",
+        "owner": "Pete Solecki",
+        "week1Score": 214.68,
+        "week2Score": 214.68,
+        "totalScore": 429.36
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 58.339999999999975,
+      "finalMargin": 116.67999999999995
+    },
+    {
+      "year": 2022,
+      "week1": 14,
+      "week2": 15,
+      "teamA": {
+        "name": "My Ba ss Hurts",
+        "owner": "Mike Kovacs",
+        "week1Score": 275.78,
+        "week2Score": 275.78,
+        "totalScore": 551.56
+      },
+      "teamB": {
+        "name": "This Sauce Is Boss",
+        "owner": "Pete Solecki",
+        "week1Score": 205.9,
+        "week2Score": 205.9,
+        "totalScore": 411.8
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 69.87999999999997,
+      "finalMargin": 139.75999999999993
+    },
+    {
+      "year": 2022,
+      "week1": 16,
+      "week2": 17,
+      "teamA": {
+        "name": "My Ba ss Hurts",
+        "owner": "Mike Kovacs",
+        "week1Score": 230.46,
+        "week2Score": 230.46,
+        "totalScore": 460.92
+      },
+      "teamB": {
+        "name": "#1 Best Weekly Meme Team",
+        "owner": "Bill Solecki",
+        "week1Score": 174.28,
+        "week2Score": 174.28,
+        "totalScore": 348.56
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 56.18000000000001,
+      "finalMargin": 112.36000000000001
+    },
+    {
+      "year": 2023,
+      "week1": 14,
+      "week2": 15,
+      "teamA": {
+        "name": "My Ba ss Hurts",
+        "owner": "Mike Kovacs",
+        "week1Score": 220.8,
+        "week2Score": 220.8,
+        "totalScore": 441.6
+      },
+      "teamB": {
+        "name": "Why Was I on the 415 Shuttle?",
+        "owner": "Daniel Keating",
+        "week1Score": 238.94,
+        "week2Score": 238.94,
+        "totalScore": 477.88
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 18.139999999999986,
+      "finalMargin": 36.27999999999997
+    },
+    {
+      "year": 2023,
+      "week1": 16,
+      "week2": 17,
+      "teamA": {
+        "name": "Tommy F'n Cutlets",
+        "owner": "Sal DeRose",
+        "week1Score": 274.24,
+        "week2Score": 274.24,
+        "totalScore": 548.48
+      },
+      "teamB": {
+        "name": "Why Was I on the 415 Shuttle?",
+        "owner": "Daniel Keating",
+        "week1Score": 255.4,
+        "week2Score": 255.4,
+        "totalScore": 510.8
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 18.840000000000003,
+      "finalMargin": 37.68000000000001
+    },
+    {
+      "year": 2024,
+      "week1": 14,
+      "week2": 15,
+      "teamA": {
+        "name": "Pop Rockin' Beats",
+        "owner": "Randell Crawford",
+        "week1Score": 350.3,
+        "week2Score": 350.3,
+        "totalScore": 700.6
+      },
+      "teamB": {
+        "name": "The Other Team",
+        "owner": "Ray Engleking",
+        "week1Score": 296.06,
+        "week2Score": 296.06,
+        "totalScore": 592.12
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 54.24000000000001,
+      "finalMargin": 108.48000000000002
+    },
+    {
+      "year": 2024,
+      "week1": 16,
+      "week2": 17,
+      "teamA": {
+        "name": "Pop Rockin' Beats",
+        "owner": "Randell Crawford",
+        "week1Score": 320.66,
+        "week2Score": 320.66,
+        "totalScore": 641.32
+      },
+      "teamB": {
+        "name": "Takin the Browns to Super Bowl",
+        "owner": "Mike Kovacs",
+        "week1Score": 386.32,
+        "week2Score": 386.32,
+        "totalScore": 772.64
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 65.65999999999997,
+      "finalMargin": 131.31999999999994
+    },
+    {
+      "year": 2025,
+      "week1": 14,
+      "week2": 15,
+      "teamA": {
+        "name": "Pop Rockin' Beats",
+        "owner": "Randell Crawford",
+        "week1Score": 288.9,
+        "week2Score": 288.9,
+        "totalScore": 577.8
+      },
+      "teamB": {
+        "name": "Why Was I on the 415 Shuttle?",
+        "owner": "Daniel Keating",
+        "week1Score": 276.46,
+        "week2Score": 276.46,
+        "totalScore": 552.92
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 12.439999999999998,
+      "finalMargin": 24.879999999999995
+    },
+    {
+      "year": 2025,
+      "week1": 16,
+      "week2": 17,
+      "teamA": {
+        "name": "Pop Rockin' Beats",
+        "owner": "Randell Crawford",
+        "week1Score": 223.98,
+        "week2Score": 223.98,
+        "totalScore": 447.96
+      },
+      "teamB": {
+        "name": "We Tried Our Best",
+        "owner": "Pete Solecki",
+        "week1Score": 262.94,
+        "week2Score": 262.94,
+        "totalScore": 525.88
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 38.96000000000001,
+      "finalMargin": 77.92000000000002
+    }
+  ],
+  "comebackMatchups": []
+}

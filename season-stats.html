@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season Statistics - The Other League</title>
+    <style>
+        :root {
+            --electric-blue: #00d4ff;
+            --gold: #ffd700;
+            --dark-bg: #0a0e27;
+            --card-bg: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(255,215,0,0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(0,212,255,0.3);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle { font-size: 1.2rem; color: var(--text-secondary); }
+
+        /* ── Main nav ── */
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            padding: 12px 25px;
+            background: rgba(0,212,255,0.1);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.4);
+        }
+
+        /* ── Hamburger button ── */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .nav-toggle .chevron {
+            font-style: normal;
+            transition: transform 0.25s ease;
+        }
+        .nav-toggle.open .chevron { transform: rotate(180deg); }
+
+        /* ── Page-level in-page nav ── */
+        html { scroll-behavior: smooth; }
+
+        .page-nav {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+        .page-nav a {
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.35);
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            transition: all 0.2s ease;
+            background: rgba(255, 215, 0, 0.06);
+        }
+        .page-nav a:hover {
+            background: rgba(255, 215, 0, 0.18);
+            border-color: var(--gold);
+        }
+        .section-anchor { scroll-margin-top: 20px; }
+
+        /* ── Season selector (focus mode) ── */
+        .season-selector-wrap {
+            margin-bottom: 28px;
+        }
+        .season-selector-label {
+            text-align: center;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .season-pills {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .season-pill {
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(0,212,255,0.3);
+            color: var(--text-secondary);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: rgba(0,212,255,0.05);
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .season-pill:hover {
+            border-color: var(--electric-blue);
+            color: var(--electric-blue);
+            background: rgba(0,212,255,0.12);
+        }
+        .season-pill.active {
+            background: var(--electric-blue);
+            border-color: var(--electric-blue);
+            color: var(--dark-bg);
+            font-weight: 700;
+        }
+
+        /* ── Season panel ── */
+        .season-section {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 14px;
+            border: 2px solid rgba(0,212,255,0.2);
+            margin-bottom: 8px;
+            display: none; /* hidden by default; JS shows one at a time */
+        }
+        .season-section.visible { display: block; }
+
+        .season-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.2rem;
+            color: var(--gold);
+            margin-bottom: 16px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,215,0,0.2);
+            padding-bottom: 10px;
+        }
+
+        .stats-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 8px;
+        }
+
+        .stat-box {
+            background: rgba(0,212,255,0.05);
+            padding: 9px 12px;
+            border-radius: 8px;
+            border-left: 3px solid var(--electric-blue);
+        }
+
+        .stat-title {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 3px;
+        }
+
+        .stat-content {
+            font-size: 0.97rem;
+            font-weight: 700;
+            color: var(--electric-blue);
+        }
+
+        .stat-details {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+            line-height: 1.4;
+        }
+        .stat-details a { color: var(--electric-blue); }
+
+        .season-note {
+            font-size: 0.74rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            padding: 7px 9px;
+            background: rgba(255,215,0,0.05);
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        /* ── Season navigator (prev / next) ── */
+        .season-nav-arrows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 18px;
+        }
+        .season-arrow {
+            padding: 7px 18px;
+            border-radius: 8px;
+            border: 1.5px solid rgba(0,212,255,0.35);
+            background: rgba(0,212,255,0.07);
+            color: var(--electric-blue);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .season-arrow:hover:not(:disabled) {
+            background: rgba(0,212,255,0.18);
+            border-color: var(--electric-blue);
+        }
+        .season-arrow:disabled {
+            opacity: 0.25;
+            cursor: default;
+        }
+        .season-arrow-label {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+        }
+
+        /* ── Payout section ── */
+        .payout-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(255,215,0,0.3);
+            margin-top: 40px;
+        }
+
+        .payout-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Year cards grid */
+        .payout-year-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-bottom: 30px;
+            align-items: start;
+        }
+
+        .payout-year-card {
+            background: rgba(0,212,255,0.05);
+            padding: 13px;
+            border-radius: 10px;
+            border: 1px solid rgba(0,212,255,0.2);
+        }
+
+        .payout-year-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.35rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .payout-owner-row {
+            background: rgba(0,212,255,0.05);
+            padding: 6px 8px;
+            border-radius: 6px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .payout-owner-info { flex: 1; min-width: 0; }
+
+        .payout-owner-name {
+            font-weight: 700;
+            font-size: 0.88rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .payout-owner-breakdown {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            line-height: 1.3;
+        }
+        .payout-owner-breakdown a { color: var(--electric-blue); }
+
+        .payout-owner-total {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.15rem;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+
+        /* ── All-time totals — condensed ── */
+        .payout-total {
+            background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(255,215,0,0.08));
+            padding: 18px;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+            overflow: hidden; /* ensure nothing escapes the border */
+        }
+
+        .payout-total-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        /* Compact table-style rows instead of big cards */
+        .payout-all-time-table-wrap {
+            max-width: 560px;
+            margin: 0 auto;
+        }
+        .payout-all-time-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        /* Name col fluid; numeric cols fixed so they never get squeezed */
+        .payout-all-time-table col.col-name   { width: auto; }
+        .payout-all-time-table col.col-earned  { width: 80px; }
+        .payout-all-time-table col.col-buyin   { width: 80px; }
+        .payout-all-time-table col.col-net     { width: 80px; }
+        .payout-all-time-table th {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-secondary);
+            padding: 6px 10px;
+            text-align: right;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+        }
+        .payout-all-time-table th:first-child { text-align: left; }
+        .payout-all-time-table td {
+            font-size: 0.95rem;
+            padding: 9px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            text-align: right;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .payout-all-time-table td:first-child {
+            text-align: left;
+            font-weight: 700;
+            text-overflow: ellipsis;
+        }
+        .payout-all-time-table tr:last-child td { border-bottom: none; }
+        .payout-all-time-table tbody tr:hover td { background: rgba(0,212,255,0.06); }
+        .col-gross { color: var(--gold); font-family: 'Bebas Neue', sans-serif; font-size: 1.15rem; }
+        .net-positive { color: #00ff64; font-weight: 700; }
+        .net-negative { color: #ff6b6b; font-weight: 700; }
+
+        a { color: var(--electric-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ── Mobile ── */
+        @media (max-width: 768px) {
+            body { padding: 12px; }
+            h1 { font-size: 2rem; }
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
+            .subtitle { font-size: 1rem; }
+
+            .nav-toggle { display: flex; }
+
+            nav#mainNav {
+                position: fixed;
+                top: 0; right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
+                flex-direction: column;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                margin-bottom: 0;
+            }
+            nav#mainNav.collapsed { transform: translateX(110%); }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
+
+            .page-nav { gap: 5px; margin-bottom: 10px; }
+            .page-nav a { padding: 5px 10px; font-size: 0.75rem; }
+
+            .payout-year-grid { grid-template-columns: 1fr !important; }
+            .stats-list { grid-template-columns: repeat(2, 1fr) !important; }
+
+            /* Give the table more horizontal room on narrow screens */
+            .payout-section { padding: 16px 10px; }
+            .payout-total { padding: 14px 10px; }
+            .payout-all-time-table-wrap { max-width: 100%; }
+            .payout-all-time-table col.col-earned,
+            .payout-all-time-table col.col-buyin,
+            .payout-all-time-table col.col-net { width: 60px; }
+            .payout-all-time-table td,
+            .payout-all-time-table th { padding: 6px 6px; font-size: 0.82rem; }
+            .col-gross { font-size: 0.95rem; }
+        }
+
+        @media (max-width: 500px) {
+            .season-pills { gap: 4px; }
+            .season-pill { padding: 5px 10px; font-size: 0.75rem; }
+        }
+
+        /* ── Keeper Analysis section ── */
+        .keeper-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(255,215,0,0.3);
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+
+        .keeper-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .keeper-section-note {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .keeper-selector-wrap {
+            margin-bottom: 20px;
+        }
+        .keeper-selector-label {
+            text-align: center;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .keeper-pills {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .keeper-pill {
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,215,0,0.35);
+            color: var(--gold);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: rgba(255,215,0,0.06);
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .keeper-pill:hover {
+            border-color: var(--gold);
+            background: rgba(255,215,0,0.15);
+        }
+        .keeper-pill.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--dark-bg);
+            font-weight: 700;
+        }
+
+        .keeper-panel {
+            display: none;
+        }
+        .keeper-panel.visible {
+            display: block;
+        }
+
+        .keeper-year-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,215,0,0.2);
+            padding-bottom: 8px;
+        }
+
+        /* Table */
+        .keeper-table-wrap {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .keeper-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .keeper-table th {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-secondary);
+            padding: 7px 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            white-space: nowrap;
+        }
+        .keeper-table th.col-num { text-align: right; }
+        .keeper-table td {
+            padding: 9px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            vertical-align: middle;
+        }
+        .keeper-table td.col-num { text-align: right; }
+        .keeper-table tbody tr:hover td { background: rgba(255,215,0,0.04); }
+        .keeper-table tr:last-child td { border-bottom: none; }
+
+        /* Player / owner cells */
+        .keeper-player { font-weight: 700; color: var(--text); }
+        .keeper-owner  { font-size: 0.78rem; color: var(--text-secondary); margin-top: 2px; }
+        .keeper-dropped {
+            display: inline-block;
+            font-size: 0.68rem;
+            color: #ff9944;
+            background: rgba(255,153,68,0.12);
+            border-radius: 4px;
+            padding: 1px 5px;
+            margin-top: 3px;
+        }
+        .keeper-note {
+            display: block;
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.35);
+            font-style: italic;
+            margin-top: 3px;
+            line-height: 1.3;
+        }
+
+        /* Verdict badges */
+        .verdict-badge {
+            display: inline-block;
+            padding: 3px 9px;
+            border-radius: 12px;
+            font-size: 0.73rem;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            white-space: nowrap;
+        }
+        .verdict-steal   { background: rgba(0,255,100,0.15); color: #00ff64; border: 1px solid rgba(0,255,100,0.3); }
+        .verdict-average { background: rgba(0,212,255,0.1);  color: var(--electric-blue); border: 1px solid rgba(0,212,255,0.25); }
+        .verdict-bust    { background: rgba(255,80,80,0.12); color: #ff6b6b; border: 1px solid rgba(255,80,80,0.3); }
+        .verdict-nodata  { color: rgba(255,255,255,0.3); font-size: 0.8rem; font-style: italic; }
+
+        /* Numeric highlight */
+        .num-steal { color: #00ff64; font-weight: 700; }
+        .num-bust  { color: #ff6b6b; font-weight: 700; }
+        .num-dim   { color: rgba(255,255,255,0.3); }
+
+        @media (max-width: 768px) {
+            .keeper-section { padding: 16px 10px; }
+            .keeper-table th, .keeper-table td { padding: 7px 6px; font-size: 0.8rem; }
+            /* Hide round-avg and vs-avg columns on small screens */
+            .keeper-table .col-avg,
+            .keeper-table .col-vsavg { display: none; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+
+<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+<div class="container">
+    <header>
+        <h1>Season Statistics</h1>
+        <div class="subtitle">Year-by-Year Records &amp; Payouts</div>
+    </header>
+
+    <nav id="mainNav">
+        <a href="index.html">All-Time Records</a>
+        <a href="regular-season.html">Regular Season</a>
+        <a href="teams.html">Owner Stats</a>
+        <a href="head-to-head.html">Head-to-Head</a>
+        <a href="season-stats.html" class="active">Season Stats</a>
+        <a href="league-history.html">League History</a>
+        <!--<a href="rosters.html">Rosters</a>-->
+        <!--<a href="roasts.html">Roasts</a>-->
+    </nav>
+
+    <div class="page-nav">
+        <a href="#section-seasons">📅 Season Stats</a>
+        <a href="#section-keepers">🔑 Keeper Analysis</a>
+        <a href="#section-payouts">💰 Payout Tracker</a>
+        <a href="#section-alltime">🏆 All-Time Payouts</a>
+    </div>
+
+    <!-- Season Stats -->
+    <div id="section-seasons" class="section-anchor"></div>
+
+    <div class="season-selector-wrap" id="season-selector-wrap" style="display:none;">
+        <div class="season-selector-label">Select Season</div>
+        <div class="season-pills" id="season-pills"></div>
+    </div>
+
+    <div id="seasons-container"></div>
+
+    <!-- Keeper Analysis -->
+    <div id="section-keepers" class="section-anchor keeper-section">
+        <div class="keeper-header">🔑 Keeper Analysis</div>
+        <div class="keeper-section-note" id="keeper-section-note"></div>
+        <div class="keeper-selector-wrap" id="keeper-selector-wrap" style="display:none;">
+            <div class="keeper-selector-label">Select Season</div>
+            <div class="keeper-pills" id="keeper-pills"></div>
+        </div>
+        <div id="keeper-panels-container"></div>
+    </div>
+
+    <!-- Payout Tracker -->
+    <div id="section-payouts" class="section-anchor payout-section">
+        <div class="payout-header">💰 Payout Tracker</div>
+        <div id="payout-container"></div>
+    </div>
+</div>
+
+<!-- Back to top -->
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+           width:42px; height:42px; border-radius:50%;
+           border:2px solid var(--electric-blue);
+           background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+           color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+           box-shadow:0 4px 16px rgba(0,212,255,0.3); transition:opacity 0.2s ease;">
+    ↑
+</button>
+
+<script>
+    const LEAGUE_ID = 1517226;
+
+    // $5 buy-in introduced in 2023; no buy-in before that.
+    const BUY_INS = {
+        2014: 0, 2015: 0, 2016: 0, 2017: 0, 2018: 0,
+        2019: 0, 2020: 0, 2021: 0, 2022: 0, 2023: 5, 2024: 5, 2025: 5
+    };
+
+    function createMatchupLink(year, week) {
+        return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${week}&seasonId=${year}`;
+    }
+
+    function createStandingsLink(year) {
+        return `https://fantasy.espn.com/football/league/standings?leagueId=${LEAGUE_ID}&seasonId=${year}`;
+    }
+
+    // ── Season focus-mode state ──────────────────────────────────────────────
+    let allSeasonYears = [];   // sorted newest-first
+    let activeYear = null;
+
+    function showSeason(year) {
+        activeYear = year;
+
+        // Update pills
+        document.querySelectorAll('.season-pill').forEach(p => {
+            p.classList.toggle('active', parseInt(p.dataset.year) === year);
+        });
+
+        // Show/hide panels
+        document.querySelectorAll('.season-section').forEach(el => {
+            el.classList.toggle('visible', parseInt(el.dataset.year) === year);
+        });
+
+        // Update prev/next arrows
+        const idx = allSeasonYears.indexOf(year);
+        const newerYear = allSeasonYears[idx - 1];  // index lower = newer
+        const olderYear = allSeasonYears[idx + 1];
+
+        document.querySelectorAll('.season-section.visible .btn-prev').forEach(btn => {
+            btn.disabled = !newerYear;
+            btn.dataset.target = newerYear || '';
+            const lbl = btn.querySelector('.season-arrow-label');
+            if (lbl) lbl.textContent = newerYear ? newerYear : '';
+        });
+        document.querySelectorAll('.season-section.visible .btn-next').forEach(btn => {
+            btn.disabled = !olderYear;
+            btn.dataset.target = olderYear || '';
+            const lbl = btn.querySelector('.season-arrow-label');
+            if (lbl) lbl.textContent = olderYear ? olderYear : '';
+        });
+    }
+
+    // ── Render season panels ─────────────────────────────────────────────────
+    function renderSeasons(seasonStats) {
+        const seasons = Object.values(seasonStats).sort((a, b) => b.year - a.year);
+        allSeasonYears = seasons.map(s => s.year);
+
+        // Build pills
+        const pillsEl = document.getElementById('season-pills');
+        pillsEl.innerHTML = allSeasonYears.map(y =>
+            `<span class="season-pill" data-year="${y}">${y}</span>`
+        ).join('');
+        pillsEl.addEventListener('click', e => {
+            const pill = e.target.closest('.season-pill');
+            if (pill) showSeason(parseInt(pill.dataset.year));
+        });
+        document.getElementById('season-selector-wrap').style.display = '';
+
+        // Build panels
+        const container = document.getElementById('seasons-container');
+        container.innerHTML = seasons.map(season => {
+            const notes = [];
+            if (!season.mostWeeklyHighScores?.owner)
+                notes.push('Multiple teams tied for most weekly high scores');
+            if (!season.mostWeeklyLowScores?.owner)
+                notes.push('Multiple teams tied for most weekly low scores');
+            if (!season.bestBenchWarmers)
+                notes.push('Bench scoring data is not available for this season');
+
+            // No consolation dollar mechanic in this league.
+
+            const noteHTML = notes.length ? `<div class="season-note">Note: ${notes.join('. ')}.</div>` : '';
+
+            return `
+            <div class="season-section" data-year="${season.year}">
+                <div class="season-header">${season.year} Season</div>
+                <div class="stats-list">
+
+                    ${season.highestScore ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Highest Score</div>
+                        <div class="stat-content">${season.highestScore.score.toFixed(2)}</div>
+                        <div class="stat-details">${season.highestScore.team}<br>
+                            <a href="${createMatchupLink(season.year, season.highestScore.week)}" target="_blank">Wk ${season.highestScore.week}</a>
+                        </div>
+                    </div>` : ''}
+
+                    ${season.lowestScore ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Lowest Score</div>
+                        <div class="stat-content">${season.lowestScore.score.toFixed(2)}</div>
+                        <div class="stat-details">${season.lowestScore.team}<br>
+                            <a href="${createMatchupLink(season.year, season.lowestScore.week)}" target="_blank">Wk ${season.lowestScore.week}</a>
+                        </div>
+                    </div>` : ''}
+
+                    ${season.closestWin ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Closest Win</div>
+                        <div class="stat-content">${season.closestWin.margin.toFixed(2)}</div>
+                        <div class="stat-details">${season.closestWin.winner} vs ${season.closestWin.loser}<br>
+                            <a href="${createMatchupLink(season.year, season.closestWin.week)}" target="_blank">Wk ${season.closestWin.week}</a>
+                        </div>
+                    </div>` : ''}
+
+                    ${season.biggestBlowout ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Biggest Blowout</div>
+                        <div class="stat-content">${season.biggestBlowout.margin.toFixed(2)}</div>
+                        <div class="stat-details">${season.biggestBlowout.winner} vs ${season.biggestBlowout.loser}<br>
+                            <a href="${createMatchupLink(season.year, season.biggestBlowout.week)}" target="_blank">Wk ${season.biggestBlowout.week}</a>
+                        </div>
+                    </div>` : ''}
+
+                    ${season.longestWinStreak?.owner ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Longest Win Streak</div>
+                        <div class="stat-content">${season.longestWinStreak.length} games</div>
+                        <div class="stat-details">${season.longestWinStreak.owner}<br>
+                            ${(season.longestWinStreak.weeks || []).map(w =>
+                                `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                            ).join(', ')}
+                        </div>
+                    </div>` : ''}
+
+                    ${season.longestLossStreak?.owner ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Longest Loss Streak</div>
+                        <div class="stat-content">${season.longestLossStreak.length} games</div>
+                        <div class="stat-details">${season.longestLossStreak.owner}<br>
+                            ${(season.longestLossStreak.weeks || []).map(w =>
+                                `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                            ).join(', ')}
+                        </div>
+                    </div>` : ''}
+
+                    ${season.mostWeeklyHighScores?.owner ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Most Weekly High Scores</div>
+                        <div class="stat-content">${season.mostWeeklyHighScores.count}</div>
+                        <div class="stat-details">${season.mostWeeklyHighScores.owner}<br>
+                            ${(season.mostWeeklyHighScores.weeks || []).map(w =>
+                                `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                            ).join(', ')}
+                        </div>
+                    </div>` : ''}
+
+                    ${season.mostWeeklyLowScores?.owner ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Most Weekly Low Scores</div>
+                        <div class="stat-content">${season.mostWeeklyLowScores.count}</div>
+                        <div class="stat-details">${season.mostWeeklyLowScores.owner}<br>
+                            ${(season.mostWeeklyLowScores.weeks || []).map(w =>
+                                `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                            ).join(', ')}
+                        </div>
+                    </div>` : ''}
+
+
+                    ${season.bestBenchWarmers ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Best Benchwarmers</div>
+                        <div class="stat-content">${season.bestBenchWarmers.benchPoints.toFixed(2)}</div>
+                        <div class="stat-details">
+                            ${season.bestBenchWarmers.teamName}
+                            <br><em style="font-size:0.75rem;">Or: Worst Manager? 😉</em>
+                        </div>
+                    </div>` : ''}
+
+                </div>
+                ${noteHTML}
+
+                <!-- Prev / Next arrows -->
+                <div class="season-nav-arrows">
+                    <button class="season-arrow btn-prev" data-target="" onclick="showSeason(parseInt(this.dataset.target))" disabled>
+                        ← <span class="season-arrow-label"></span>
+                    </button>
+                    <button class="season-arrow btn-next" data-target="" onclick="showSeason(parseInt(this.dataset.target))" disabled>
+                        <span class="season-arrow-label"></span> →
+                    </button>
+                </div>
+            </div>`;
+        }).join('');
+
+        // Show the most recent season by default
+        showSeason(allSeasonYears[0]);
+    }
+
+    // ── Render payouts ───────────────────────────────────────────────────────
+    function renderPayouts(seasonStats, ownersByYear) {
+        const container = document.getElementById('payout-container');
+        const seasons = Object.values(seasonStats).sort((a, b) => b.year - a.year);
+
+        const allTimeGross = {};
+        let yearCardsHTML = '';
+
+        seasons.forEach(season => {
+            // No payouts before 2023 — skip those years entirely
+            if (season.year < 2023) return;
+
+            const ownerPayouts = {};
+
+            function ensure(owner) {
+                if (!ownerPayouts[owner]) ownerPayouts[owner] = { total: 0, playoff: null };
+                if (!allTimeGross[owner]) allTimeGross[owner] = 0;
+            }
+
+            (season.playoffPayouts || []).forEach(p => {
+                ensure(p.owner);
+                ownerPayouts[p.owner].total += p.amount;
+                ownerPayouts[p.owner].playoff = p.place;
+                allTimeGross[p.owner] += p.amount;
+            });
+
+            const sortedOwners = Object.entries(ownerPayouts).sort((a, b) => b[1].total - a[1].total);
+
+            if (sortedOwners.length > 0) {
+                yearCardsHTML += `
+                <div class="payout-year-card">
+                    <div class="payout-year-label">${season.year}</div>
+                    ${sortedOwners.map(([owner, data]) => {
+                        const breakdown = [];
+                        if (data.playoff) {
+                            const label = data.playoff === '1st' ? 'Championship' : data.playoff === '2nd' ? 'Runner-up' : '3rd Place';
+                            breakdown.push(`<a href="${createStandingsLink(season.year)}" target="_blank">${label}</a>`);
+                        }
+                        return `
+                        <div class="payout-owner-row">
+                            <div class="payout-owner-info">
+                                <div class="payout-owner-name">${owner}</div>
+                                ${breakdown.length ? `<div class="payout-owner-breakdown">${breakdown.join(' · ')}</div>` : ''}
+                            </div>
+                            <div class="payout-owner-total">$${data.total}</div>
+                        </div>`;
+                    }).join('')}
+                </div>`;
+            }
+        });
+
+        // ── All-time totals — compact table ──
+        const ownerBuyinTotals = {};
+        Object.entries(ownersByYear).forEach(([yr, owners]) => {
+            // Only count buy-ins from 2023 onward — no money before that
+            if (parseInt(yr) < 2023) return;
+            const buyIn = BUY_INS[parseInt(yr)] || 0;
+            owners.forEach(owner => {
+                if (!ownerBuyinTotals[owner]) ownerBuyinTotals[owner] = 0;
+                ownerBuyinTotals[owner] += buyIn;
+            });
+        });
+
+        const allOwners = new Set([...Object.keys(allTimeGross), ...Object.keys(ownerBuyinTotals)]);
+        const sortedAllTime = [...allOwners]
+            .map(owner => ({ owner, gross: allTimeGross[owner] || 0, buyIn: ownerBuyinTotals[owner] || 0 }))
+            .sort((a, b) => b.gross - a.gross);
+
+        const tableRows = sortedAllTime.map(({ owner, gross, buyIn }) => {
+            const net = gross - buyIn;
+            const netClass = net >= 0 ? 'net-positive' : 'net-negative';
+            const netStr = net >= 0 ? `+$${net.toFixed(0)}` : `-$${Math.abs(net).toFixed(0)}`;
+            return `<tr>
+                <td title="${owner}">${owner}</td>
+                <td class="col-gross">$${gross}</td>
+                <td style="color:var(--text-secondary);">$${buyIn.toFixed(0)}</td>
+                <td class="${netClass}">${netStr}</td>
+            </tr>`;
+        }).join('');
+
+        const allTimeTotalsHTML = `
+        <div id="section-alltime" class="section-anchor payout-total">
+            <div class="payout-total-title">Total Payouts (All-Time)</div>
+            <div class="payout-all-time-table-wrap"><table class="payout-all-time-table">
+                <colgroup>
+                    <col class="col-name">
+                    <col class="col-earned">
+                    <col class="col-buyin">
+                    <col class="col-net">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Owner</th>
+                        <th>Earned</th>
+                        <th>Buy-ins</th>
+                        <th>Net</th>
+                    </tr>
+                </thead>
+                <tbody>${tableRows}</tbody>
+            </table></div>
+        </div>`;
+
+        const payoutNoteHTML = `
+            <p style="color:var(--text-secondary); font-size:0.85rem; margin: 0 0 18px 0; text-align:center;">
+                💡 League buy-in and payouts introduced in 2023. No financial records exist for prior seasons.
+            </p>`;
+        container.innerHTML = payoutNoteHTML + `<div class="payout-year-grid">${yearCardsHTML}</div>${allTimeTotalsHTML}`;
+    }
+
+
+    // ── Keeper Analysis ──────────────────────────────────────────────────────
+    let activeKeeperYear = null;
+
+    function showKeeperYear(year) {
+        activeKeeperYear = year;
+        document.querySelectorAll('.keeper-pill').forEach(p => {
+            p.classList.toggle('active', parseInt(p.dataset.year) === year);
+        });
+        document.querySelectorAll('.keeper-panel').forEach(el => {
+            el.classList.toggle('visible', parseInt(el.dataset.year) === year);
+        });
+    }
+
+    function renderKeepers(seasonStats) {
+        // Derived from the season_stats.json keys rather than a hardcoded
+        // range, so this section never needs manual updates in future years.
+        const ALL_YEARS = Object.keys(seasonStats).map(Number).sort((a, b) => a - b);
+
+        // Determine which years have keeper data
+        const yearsWithData = [];
+        const yearsWithout  = [];
+
+        ALL_YEARS.forEach(y => {
+            const s = seasonStats[y];
+            const keepers = s && s.keeperAnalysis && s.keeperAnalysis.keepers;
+            if (keepers && keepers.length > 0) {
+                yearsWithData.push(y);
+            } else {
+                yearsWithout.push(y);
+            }
+        });
+
+        // Build the availability note
+        const noteEl = document.getElementById('keeper-section-note');
+        if (yearsWithout.length > 0) {
+            noteEl.textContent =
+                'Keeper data is not available for: ' + yearsWithout.join(', ') + '.';
+        }
+
+        if (yearsWithData.length === 0) {
+            document.getElementById('keeper-panels-container').innerHTML =
+                '<p style="text-align:center;color:var(--text-secondary);padding:20px;">No keeper data available yet.</p>';
+            return;
+        }
+
+        // Build pills (newest first)
+        const pillsEl = document.getElementById('keeper-pills');
+        const sortedYears = [...yearsWithData].sort((a, b) => b - a);
+        pillsEl.innerHTML = sortedYears.map(y =>
+            `<span class="keeper-pill" data-year="${y}">${y}</span>`
+        ).join('');
+        pillsEl.addEventListener('click', e => {
+            const pill = e.target.closest('.keeper-pill');
+            if (pill) showKeeperYear(parseInt(pill.dataset.year));
+        });
+        document.getElementById('keeper-selector-wrap').style.display = '';
+
+        // Sort order for verdict
+        const VERDICT_ORDER = { STEAL: 0, AVERAGE: 1, BUST: 2, NO_DATA: 3 };
+
+        // Build panels
+        const container = document.getElementById('keeper-panels-container');
+        container.innerHTML = sortedYears.map(year => {
+            const keepers = [...(seasonStats[year].keeperAnalysis.keepers || [])]
+                .sort((a, b) => {
+                    const vo = (VERDICT_ORDER[a.verdict] ?? 3) - (VERDICT_ORDER[b.verdict] ?? 3);
+                    if (vo !== 0) return vo;
+                    return a.owner.localeCompare(b.owner);
+                });
+
+            const rows = keepers.map(k => {
+                const noData = k.verdict === 'NO_DATA';
+
+                // Verdict badge
+                let badgeHTML;
+                if (k.verdict === 'STEAL') {
+                    badgeHTML = `<span class="verdict-badge verdict-steal">STEAL</span>`;
+                } else if (k.verdict === 'BUST') {
+                    badgeHTML = `<span class="verdict-badge verdict-bust">BUST</span>`;
+                } else if (k.verdict === 'AVERAGE') {
+                    badgeHTML = `<span class="verdict-badge verdict-average">AVERAGE</span>`;
+                } else {
+                    badgeHTML = `<span class="verdict-nodata">—</span>`;
+                }
+
+                // Points vs avg — colored + signed
+                let vsAvgHTML = '<span class="num-dim">—</span>';
+                if (!noData && k.pointsVsAvgPct != null) {
+                    const pct = (k.pointsVsAvgPct * 100).toFixed(1);
+                    const cls = k.pointsVsAvgPct > 0 ? 'num-steal' : 'num-bust';
+                    const sign = k.pointsVsAvgPct > 0 ? '+' : '';
+                    vsAvgHTML = `<span class="${cls}">${sign}${pct}%</span>`;
+                }
+
+                // Dropped indicator
+                const droppedHTML = (k.droppedMidSeason && !k.note)
+                    ? `<span class="keeper-dropped">dropped Wk ${k.lastActiveWeek}</span>`
+                    : '';
+                const noteHTML = k.note
+                    ? `<span class="keeper-note">${k.note}</span>`
+                    : '';
+
+                const dimClass = noData ? ' class="num-dim"' : '';
+
+                return `<tr>
+                    <td>
+                        <div class="keeper-player${noData ? ' num-dim' : ''}">${k.player}</div>
+                        <div class="keeper-owner">${k.owner}</div>
+                        ${droppedHTML}
+                        ${noteHTML}
+                    </td>
+                    <td class="col-num"${dimClass}>Rd ${k.roundKept}</td>
+                    <td class="col-num col-avg"${dimClass}>${noData ? '—' : k.pointsScored != null ? k.pointsScored.toFixed(1) : '—'}</td>
+                    <td class="col-num col-avg"${dimClass}>${noData ? '—' : k.roundAvgPoints != null ? k.roundAvgPoints.toFixed(1) : '—'}</td>
+                    <td class="col-num col-vsavg">${vsAvgHTML}</td>
+                    <td>${badgeHTML}</td>
+                </tr>`;
+            }).join('');
+
+            return `
+            <div class="keeper-panel" data-year="${year}">
+                <div class="keeper-year-header">${year} Keepers</div>
+                <div class="keeper-table-wrap">
+                    <table class="keeper-table">
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th class="col-num">Round</th>
+                                <th class="col-num col-avg">Pts Scored</th>
+                                <th class="col-num col-avg">Round Avg</th>
+                                <th class="col-num col-vsavg">vs Avg</th>
+                                <th>Verdict</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            </div>`;
+        }).join('');
+
+        // Show most recent year by default
+        showKeeperYear(sortedYears[0]);
+    }
+
+    // ── Data loading ─────────────────────────────────────────────────────────
+    async function loadData() {
+        try {
+            const [seasonStats, matchups] = await Promise.all([
+                fetch('output/season_stats.json').then(r => r.json()),
+                fetch('output/matchups.json').then(r => r.json())
+            ]);
+
+            const ownersByYear = {};
+            matchups.forEach(m => {
+                const yr = m.year;
+                if (!ownersByYear[yr]) ownersByYear[yr] = new Set();
+                if (m.home?.owner) ownersByYear[yr].add(m.home.owner);
+                if (m.away?.owner) ownersByYear[yr].add(m.away.owner);
+            });
+
+            renderSeasons(seasonStats);
+            renderPayouts(seasonStats, ownersByYear);
+            renderKeepers(seasonStats);
+        } catch (error) {
+            console.error('Error loading data:', error);
+        }
+    }
+
+    // ── Hamburger nav ────────────────────────────────────────────────────────
+    (function () {
+        const btn     = document.getElementById('navToggle');
+        const nav     = document.getElementById('mainNav');
+        const overlay = document.getElementById('navOverlay');
+        if (!btn || !nav || !overlay) return;
+
+        function isMobile() { return window.innerWidth <= 768; }
+
+        function closeNav() {
+            nav.classList.add('collapsed');
+            btn.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+            overlay.style.display = 'none';
+        }
+
+        function applyState() {
+            if (isMobile()) {
+                btn.style.display = 'flex';
+            } else {
+                btn.style.display = 'none';
+                nav.classList.remove('collapsed');
+                overlay.style.display = 'none';
+            }
+        }
+
+        btn.addEventListener('click', function () {
+            const nowCollapsed = nav.classList.toggle('collapsed');
+            btn.setAttribute('aria-expanded', String(!nowCollapsed));
+            btn.classList.toggle('open', !nowCollapsed);
+            overlay.style.display = nowCollapsed ? 'none' : 'block';
+        });
+
+        overlay.addEventListener('click', closeNav);
+
+        if (isMobile()) nav.classList.add('collapsed');
+        applyState();
+        window.addEventListener('resize', applyState);
+    })();
+
+    // ── Back to top ──────────────────────────────────────────────────────────
+    (function () {
+        const btt = document.getElementById('backToTop');
+        if (!btt) return;
+        window.addEventListener('scroll', function () {
+            btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+    })();
+
+    loadData();
+</script>
+</body>
+</html>

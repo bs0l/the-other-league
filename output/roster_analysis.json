@@ -1,0 +1,1245 @@
+{
+  "trades": [],
+  "draft_analysis_2025": {
+    "Bill Solecki": {
+      "owner": "Bill Solecki",
+      "teamName": "RIP AC Shrader",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 9,
+      "draftedPointsScored": 2094.14,
+      "waiverPickups": 7,
+      "waiverPointsScored": 1258.38,
+      "draftRetentionRate": 56.25,
+      "draftedPlayers": [
+        {
+          "name": "CeeDee Lamb",
+          "round": 1,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 200.9
+        },
+        {
+          "name": "Drake London",
+          "round": 2,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 201.9
+        },
+        {
+          "name": "Tee Higgins",
+          "round": 3,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 211.6
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "round": 4,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 359.9
+        },
+        {
+          "name": "David Montgomery",
+          "round": 5,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 166.92
+        },
+        {
+          "name": "Baker Mayfield",
+          "round": 6,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 271.92
+        },
+        {
+          "name": "Tyrone Tracy Jr.",
+          "round": 7,
+          "pick": 4,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Stefon Diggs",
+          "round": 8,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 210.3
+        },
+        {
+          "name": "J.K. Dobbins",
+          "round": 9,
+          "pick": 4,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Chase Brown",
+          "round": 10,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 282.6
+        },
+        {
+          "name": "Brian Robinson Jr.",
+          "round": 11,
+          "pick": 4,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Chuba Hubbard",
+          "round": 12,
+          "pick": 7,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Eagles D/ST",
+          "round": 13,
+          "pick": 4,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jake Bates",
+          "round": 14,
+          "pick": 7,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jake Ferguson",
+          "round": 15,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 188.1
+        },
+        {
+          "name": "Josh Downs",
+          "round": 16,
+          "pick": 7,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        }
+      ]
+    },
+    "Mike Kovacs": {
+      "owner": "Mike Kovacs",
+      "teamName": "Chasing the Repeat",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 9,
+      "draftedPointsScored": 2216.3399999999997,
+      "waiverPickups": 7,
+      "waiverPointsScored": 990.1199999999999,
+      "draftRetentionRate": 56.25,
+      "draftedPlayers": [
+        {
+          "name": "Derrick Henry",
+          "round": 1,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 279.5
+        },
+        {
+          "name": "Puka Nacua",
+          "round": 2,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 375.0
+        },
+        {
+          "name": "James Conner",
+          "round": 3,
+          "pick": 10,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "George Kittle",
+          "round": 4,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 161.5
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "round": 5,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 313.6
+        },
+        {
+          "name": "Jameson Williams",
+          "round": 6,
+          "pick": 1,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jaylen Warren",
+          "round": 7,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 217.1
+        },
+        {
+          "name": "Emeka Egbuka",
+          "round": 8,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 195.7
+        },
+        {
+          "name": "Bo Nix",
+          "round": 9,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 304.84
+        },
+        {
+          "name": "Ladd McConkey",
+          "round": 10,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 180.9
+        },
+        {
+          "name": "Deebo Samuel",
+          "round": 11,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 188.2
+        },
+        {
+          "name": "Jerome Ford",
+          "round": 12,
+          "pick": 1,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Vikings D/ST",
+          "round": 13,
+          "pick": 10,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Cameron Dicker",
+          "round": 14,
+          "pick": 1,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "DeMario Douglas",
+          "round": 15,
+          "pick": 10,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Ollie Gordon II",
+          "round": 16,
+          "pick": 1,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        }
+      ]
+    },
+    "Sal DeRose": {
+      "owner": "Sal DeRose",
+      "teamName": "Tommy F'n Cutlets",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 13,
+      "draftedPointsScored": 2301.2,
+      "waiverPickups": 3,
+      "waiverPointsScored": 311.8,
+      "draftRetentionRate": 81.25,
+      "draftedPlayers": [
+        {
+          "name": "Saquon Barkley",
+          "round": 1,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 232.3
+        },
+        {
+          "name": "Davante Adams",
+          "round": 2,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 222.9
+        },
+        {
+          "name": "Jalen Hurts",
+          "round": 3,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 299.06
+        },
+        {
+          "name": "DK Metcalf",
+          "round": 4,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 187.2
+        },
+        {
+          "name": "D'Andre Swift",
+          "round": 5,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 228.6
+        },
+        {
+          "name": "Matthew Golden",
+          "round": 6,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 70.0
+        },
+        {
+          "name": "T.J. Hockenson",
+          "round": 7,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 112.8
+        },
+        {
+          "name": "Joe Mixon",
+          "round": 8,
+          "pick": 8,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jakobi Meyers",
+          "round": 9,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 175.8
+        },
+        {
+          "name": "C.J. Stroud",
+          "round": 10,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 208.54
+        },
+        {
+          "name": "Colston Loveland",
+          "round": 11,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 165.1
+        },
+        {
+          "name": "Seahawks D/ST",
+          "round": 12,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 177.0
+        },
+        {
+          "name": "Ravens D/ST",
+          "round": 13,
+          "pick": 3,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Marvin Mims Jr.",
+          "round": 14,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 93.0
+        },
+        {
+          "name": "Matt Gay",
+          "round": 15,
+          "pick": 3,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jordan Mason",
+          "round": 16,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 128.9
+        }
+      ]
+    },
+    "Joe Jaramillo": {
+      "owner": "Joe Jaramillo",
+      "teamName": "Chili's Eat Fresh",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 8,
+      "draftedPointsScored": 1590.32,
+      "waiverPickups": 8,
+      "waiverPointsScored": 1269.9,
+      "draftRetentionRate": 50.0,
+      "draftedPlayers": [
+        {
+          "name": "Amon-Ra St. Brown",
+          "round": 1,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 324.0
+        },
+        {
+          "name": "Bucky Irving",
+          "round": 2,
+          "pick": 5,
+          "keptToPlayoffs": true,
+          "totalPoints": 138.5
+        },
+        {
+          "name": "James Cook III",
+          "round": 3,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 302.2
+        },
+        {
+          "name": "Mike Evans",
+          "round": 4,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Sam LaPorta",
+          "round": 5,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 106.9
+        },
+        {
+          "name": "Isiah Pacheco",
+          "round": 6,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jaylen Waddle",
+          "round": 7,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 194.12
+        },
+        {
+          "name": "Evan Engram",
+          "round": 8,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jayden Daniels",
+          "round": 9,
+          "pick": 6,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Brian Thomas Jr.",
+          "round": 10,
+          "pick": 5,
+          "keptToPlayoffs": true,
+          "totalPoints": 138.8
+        },
+        {
+          "name": "Ricky Pearsall",
+          "round": 11,
+          "pick": 6,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Javonte Williams",
+          "round": 12,
+          "pick": 5,
+          "keptToPlayoffs": true,
+          "totalPoints": 242.8
+        },
+        {
+          "name": "Rachaad White",
+          "round": 13,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 143.0
+        },
+        {
+          "name": "Jaydon Blue",
+          "round": 14,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Lions D/ST",
+          "round": 15,
+          "pick": 6,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Tyler Bass",
+          "round": 16,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        }
+      ]
+    },
+    "Ben Bingert": {
+      "owner": "Ben Bingert",
+      "teamName": "Josh Allen's Blueberries",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 10,
+      "draftedPointsScored": 2025.5199999999998,
+      "waiverPickups": 6,
+      "waiverPointsScored": 1198.1599999999999,
+      "draftRetentionRate": 62.5,
+      "draftedPlayers": [
+        {
+          "name": "Jahmyr Gibbs",
+          "round": 1,
+          "pick": 5,
+          "keptToPlayoffs": true,
+          "totalPoints": 366.9
+        },
+        {
+          "name": "Trey McBride",
+          "round": 2,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 315.9
+        },
+        {
+          "name": "Josh Allen",
+          "round": 3,
+          "pick": 5,
+          "keptToPlayoffs": true,
+          "totalPoints": 364.62
+        },
+        {
+          "name": "Marvin Harrison Jr.",
+          "round": 4,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 127.8
+        },
+        {
+          "name": "Rashee Rice",
+          "round": 5,
+          "pick": 5,
+          "keptToPlayoffs": true,
+          "totalPoints": 150.1
+        },
+        {
+          "name": "Tony Pollard",
+          "round": 6,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 185.8
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "round": 7,
+          "pick": 5,
+          "keptToPlayoffs": true,
+          "totalPoints": 140.3
+        },
+        {
+          "name": "Rome Odunze",
+          "round": 8,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 146.1
+        },
+        {
+          "name": "Kaleb Johnson",
+          "round": 9,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Chris Godwin Jr.",
+          "round": 10,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 83.0
+        },
+        {
+          "name": "Justin Fields",
+          "round": 11,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Broncos D/ST",
+          "round": 12,
+          "pick": 6,
+          "keptToPlayoffs": true,
+          "totalPoints": 145.0
+        },
+        {
+          "name": "Dallas Goedert",
+          "round": 13,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jake Elliott",
+          "round": 14,
+          "pick": 6,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Braelon Allen",
+          "round": 15,
+          "pick": 5,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Ray Davis",
+          "round": 16,
+          "pick": 6,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        }
+      ]
+    },
+    "Pete Solecki": {
+      "owner": "Pete Solecki",
+      "teamName": "We Tried Our Best",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 11,
+      "draftedPointsScored": 2144.54,
+      "waiverPickups": 5,
+      "waiverPointsScored": 919.5,
+      "draftRetentionRate": 68.75,
+      "draftedPlayers": [
+        {
+          "name": "Bijan Robinson",
+          "round": 1,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 370.8
+        },
+        {
+          "name": "Malik Nabers",
+          "round": 2,
+          "pick": 10,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "A.J. Brown",
+          "round": 3,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 220.3
+        },
+        {
+          "name": "Breece Hall",
+          "round": 4,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 207.66
+        },
+        {
+          "name": "DJ Moore",
+          "round": 5,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 170.18
+        },
+        {
+          "name": "Jerry Jeudy",
+          "round": 6,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 120.7
+        },
+        {
+          "name": "Tetairoa McMillan",
+          "round": 7,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 211.4
+        },
+        {
+          "name": "Michael Pittman Jr.",
+          "round": 8,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 202.4
+        },
+        {
+          "name": "Kyler Murray",
+          "round": 9,
+          "pick": 1,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Tyler Warren",
+          "round": 10,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 188.5
+        },
+        {
+          "name": "Jordan Addison",
+          "round": 11,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 135.1
+        },
+        {
+          "name": "Jayden Higgins",
+          "round": 12,
+          "pick": 10,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Texans D/ST",
+          "round": 13,
+          "pick": 1,
+          "keptToPlayoffs": true,
+          "totalPoints": 168.0
+        },
+        {
+          "name": "Chase McLaughlin",
+          "round": 14,
+          "pick": 10,
+          "keptToPlayoffs": true,
+          "totalPoints": 149.5
+        },
+        {
+          "name": "Tyjae Spears",
+          "round": 15,
+          "pick": 1,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Trey Benson",
+          "round": 16,
+          "pick": 10,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        }
+      ]
+    },
+    "Carl Cummins": {
+      "owner": "Carl Cummins",
+      "teamName": "Titty Sprinkles",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 12,
+      "draftedPointsScored": 2239.6800000000003,
+      "waiverPickups": 4,
+      "waiverPointsScored": 614.56,
+      "draftRetentionRate": 75.0,
+      "draftedPlayers": [
+        {
+          "name": "Justin Jefferson",
+          "round": 1,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 201.5
+        },
+        {
+          "name": "Kyren Williams",
+          "round": 2,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 263.3
+        },
+        {
+          "name": "Omarion Hampton",
+          "round": 3,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 135.7
+        },
+        {
+          "name": "Garrett Wilson",
+          "round": 4,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 99.5
+        },
+        {
+          "name": "Aaron Jones Sr.",
+          "round": 5,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 118.7
+        },
+        {
+          "name": "Courtland Sutton",
+          "round": 6,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 219.7
+        },
+        {
+          "name": "Dak Prescott",
+          "round": 7,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 313.78
+        },
+        {
+          "name": "Brock Bowers",
+          "round": 8,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 176.2
+        },
+        {
+          "name": "Keon Coleman",
+          "round": 9,
+          "pick": 2,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jauan Jennings",
+          "round": 10,
+          "pick": 9,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Travis Etienne Jr.",
+          "round": 11,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 253.9
+        },
+        {
+          "name": "Darnell Mooney",
+          "round": 12,
+          "pick": 9,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Zach Charbonnet",
+          "round": 13,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 181.4
+        },
+        {
+          "name": "Nick Chubb",
+          "round": 14,
+          "pick": 9,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Patriots D/ST",
+          "round": 15,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 130.5
+        },
+        {
+          "name": "Chris Boswell",
+          "round": 16,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 145.5
+        }
+      ]
+    },
+    "Ray Engleking": {
+      "owner": "Ray Engleking",
+      "teamName": "The Other Team",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 11,
+      "draftedPointsScored": 2191.2400000000002,
+      "waiverPickups": 5,
+      "waiverPointsScored": 708.4000000000001,
+      "draftRetentionRate": 68.75,
+      "draftedPlayers": [
+        {
+          "name": "Ashton Jeanty",
+          "round": 1,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 245.1
+        },
+        {
+          "name": "Nico Collins",
+          "round": 2,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 226.2
+        },
+        {
+          "name": "Terry McLaurin",
+          "round": 3,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 114.2
+        },
+        {
+          "name": "Lamar Jackson",
+          "round": 4,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 214.86
+        },
+        {
+          "name": "Calvin Ridley",
+          "round": 5,
+          "pick": 7,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "George Pickens",
+          "round": 6,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 291.9
+        },
+        {
+          "name": "Chris Olave",
+          "round": 7,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 268.0
+        },
+        {
+          "name": "Patrick Mahomes",
+          "round": 8,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 285.68
+        },
+        {
+          "name": "Rhamondre Stevenson",
+          "round": 9,
+          "pick": 7,
+          "keptToPlayoffs": true,
+          "totalPoints": 178.8
+        },
+        {
+          "name": "Kenneth Walker III",
+          "round": 10,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 191.9
+        },
+        {
+          "name": "Tank Bigsby",
+          "round": 11,
+          "pick": 7,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Dalton Kincaid",
+          "round": 12,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 126.1
+        },
+        {
+          "name": "Xavier Legette",
+          "round": 13,
+          "pick": 7,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jayden Reed",
+          "round": 14,
+          "pick": 4,
+          "keptToPlayoffs": true,
+          "totalPoints": 48.5
+        },
+        {
+          "name": "Bills D/ST",
+          "round": 15,
+          "pick": 7,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Jason Sanders",
+          "round": 16,
+          "pick": 4,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        }
+      ]
+    },
+    "Daniel Keating": {
+      "owner": "Daniel Keating",
+      "teamName": "Why Was I on the 415 Shuttle?",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 8,
+      "draftedPointsScored": 1831.68,
+      "waiverPickups": 8,
+      "waiverPointsScored": 1169.0,
+      "draftRetentionRate": 50.0,
+      "draftedPlayers": [
+        {
+          "name": "Christian McCaffrey",
+          "round": 1,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 416.6
+        },
+        {
+          "name": "De'Von Achane",
+          "round": 2,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 322.8
+        },
+        {
+          "name": "Tyreek Hill",
+          "round": 3,
+          "pick": 8,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "TreVeyon Henderson",
+          "round": 4,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 206.2
+        },
+        {
+          "name": "Travis Hunter",
+          "round": 5,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 63.8
+        },
+        {
+          "name": "RJ Harvey",
+          "round": 6,
+          "pick": 3,
+          "keptToPlayoffs": true,
+          "totalPoints": 206.6
+        },
+        {
+          "name": "Mark Andrews",
+          "round": 7,
+          "pick": 8,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Xavier Worthy",
+          "round": 8,
+          "pick": 3,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Cam Skattebo",
+          "round": 9,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 127.7
+        },
+        {
+          "name": "David Njoku",
+          "round": 10,
+          "pick": 3,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Quinshon Judkins",
+          "round": 11,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 169.8
+        },
+        {
+          "name": "Trevor Lawrence",
+          "round": 12,
+          "pick": 3,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Caleb Williams",
+          "round": 13,
+          "pick": 8,
+          "keptToPlayoffs": true,
+          "totalPoints": 318.18
+        },
+        {
+          "name": "Rashid Shaheed",
+          "round": 14,
+          "pick": 3,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Harrison Butker",
+          "round": 15,
+          "pick": 8,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Cardinals D/ST",
+          "round": 16,
+          "pick": 3,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        }
+      ]
+    },
+    "Randell Crawford": {
+      "owner": "Randell Crawford",
+      "teamName": "Pop Rockin' Beats",
+      "totalDrafted": 16,
+      "draftedKeptToPlayoffs": 9,
+      "draftedPointsScored": 1833.0000000000002,
+      "waiverPickups": 7,
+      "waiverPointsScored": 1296.1799999999998,
+      "draftRetentionRate": 56.25,
+      "draftedPlayers": [
+        {
+          "name": "Jonathan Taylor",
+          "round": 1,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 362.3
+        },
+        {
+          "name": "Josh Jacobs",
+          "round": 2,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 237.1
+        },
+        {
+          "name": "Joe Burrow",
+          "round": 3,
+          "pick": 9,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Alvin Kamara",
+          "round": 4,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 100.7
+        },
+        {
+          "name": "Zay Flowers",
+          "round": 5,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 243.3
+        },
+        {
+          "name": "DeVonta Smith",
+          "round": 6,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 201.8
+        },
+        {
+          "name": "Cooper Kupp",
+          "round": 7,
+          "pick": 9,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Travis Kelce",
+          "round": 8,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 193.2
+        },
+        {
+          "name": "Khalil Shakir",
+          "round": 9,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 166.4
+        },
+        {
+          "name": "Austin Ekeler",
+          "round": 10,
+          "pick": 2,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Keenan Allen",
+          "round": 11,
+          "pick": 9,
+          "keptToPlayoffs": true,
+          "totalPoints": 182.7
+        },
+        {
+          "name": "Steelers D/ST",
+          "round": 12,
+          "pick": 2,
+          "keptToPlayoffs": true,
+          "totalPoints": 145.5
+        },
+        {
+          "name": "Brock Purdy",
+          "round": 13,
+          "pick": 9,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Tucker Kraft",
+          "round": 14,
+          "pick": 2,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Brandon Aubrey",
+          "round": 15,
+          "pick": 9,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        },
+        {
+          "name": "Luther Burden III",
+          "round": 16,
+          "pick": 2,
+          "keptToPlayoffs": false,
+          "totalPoints": 0
+        }
+      ]
+    }
+  }
+}

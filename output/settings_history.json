@@ -1,0 +1,102 @@
+[
+  {
+    "year": 2014,
+    "changes": [
+      "League founded \u2014 8 teams, 13-week regular season",
+      "Divisions: 1 division(s): The Division",
+      "Draft: SNAKE, 60s per pick, pick trading disabled",
+      "Roster: 7 bench slots, 0 IR slot(s), 1 FLEX slot(s)",
+      "Undroppable player list: enabled",
+      "Trade deadline: Nov 20, 2014",
+      "Scoring: 51 active rules"
+    ]
+  },
+  {
+    "year": 2015,
+    "changes": [
+      "Teams: 8 \u2192 10",
+      "Regular season: 13 \u2192 12 weeks",
+      "Draft pick trading: enabled",
+      "Trade deadline: Nov 20, 2014 \u2192 Nov 25, 2015",
+      "Scoring added (3 rules) \u2014 Passing Yards (+0.04 pts), Rushing Yards (+0.1 pts), Receiving Yards (+0.1 pts)",
+      "Scoring removed (20 rules) \u2014 Every 25 passing yards (was +1 pts), StatID 12 (was +1 pts), 300-399 yard passing game (was +1 pts), StatID 28 (was +1 pts), StatID 33 (was +1 pts), 50+ yard TD rush bonus (was +1 pts), 100-199 yard rushing game (was +1 pts), 200+ yard rushing game (was +1 pts), 50+ yard TD rec bonus (was +1 pts), StatID 48 (was +1 pts), StatID 54 (was +1 pts), 100-199 yard receiving game (was +1 pts), <100 total yards allowed (was +5 pts), 100-199 yards allowed (was +3 pts), 200-299 yards allowed (was +2 pts), 350-399 yards allowed (was -1 pts), 400-449 yards allowed (was -3 pts), 450-499 yards allowed (was -5 pts), 500-549 yards allowed (was -6 pts), 550+ yards allowed (was -7 pts)",
+      "Scoring changed \u2014 TD Pass: +6 \u2192 +4 pts"
+    ]
+  },
+  {
+    "year": 2016,
+    "changes": [
+      "IR slots: 0 \u2192 1",
+      "Bench slots: 7 \u2192 6",
+      "Trade deadline: Nov 25, 2015 \u2192 none"
+    ]
+  },
+  {
+    "year": 2017,
+    "changes": [
+      "Keepers per team: 0 \u2192 2"
+    ]
+  },
+  {
+    "year": 2018,
+    "changes": [
+      "Trade deadline: none \u2192 Nov 29, 2018"
+    ]
+  },
+  {
+    "year": 2019,
+    "changes": [
+      "Draft pick trading: disabled",
+      "Trade deadline: Nov 29, 2018 \u2192 Nov 29, 2019"
+    ]
+  },
+  {
+    "year": 2020,
+    "changes": [
+      "IR slots: 1 \u2192 2",
+      "Trade deadline: Nov 29, 2019 \u2192 Dec 04, 2020",
+      "Scoring added (5 rules) \u2014 Each Reception (PPR) (+1 pts), Each PAT Missed (-0.5 pts), Each Fumble Forced (+1.5 pts), FG Made (50-59 yards) (+5 pts), FG Made (60+ yards) (+5 pts)",
+      "Scoring removed \u2014 FG Made (50+ yards) (was +5 pts)",
+      "Scoring changed \u2014 Each Fumble Recovered: +2 \u2192 +1.5 pts"
+    ]
+  },
+  {
+    "year": 2021,
+    "changes": [
+      "Regular season: 12 \u2192 13 weeks",
+      "Trade deadline: Dec 04, 2020 \u2192 Dec 10, 2021"
+    ]
+  },
+  {
+    "year": 2022,
+    "changes": [
+      "Draft pick trading: enabled",
+      "Trade deadline: Dec 10, 2021 \u2192 Dec 09, 2022"
+    ]
+  },
+  {
+    "year": 2023,
+    "changes": [
+      "Trade deadline: Dec 09, 2022 \u2192 Dec 08, 2023"
+    ]
+  },
+  {
+    "year": 2024,
+    "changes": [
+      "FLEX slots: 1 \u2192 2",
+      "Punter slot added (0 \u2192 1)",
+      "Draft pick trading: disabled",
+      "Trade deadline: Dec 08, 2023 \u2192 Dec 06, 2024",
+      "Scoring added (6 rules) \u2014 Each Pass Completed (+0.5 pts), Net Punts (+1.5 pts), Punts Inside the 10 (+1 pts), Punts Inside the 20 (+1 pts), Blocked Punts (-2 pts), Punt Fair Catches (+1 pts)"
+    ]
+  },
+  {
+    "year": 2025,
+    "changes": [
+      "IR slots: 2 \u2192 0",
+      "Punter slot removed (1 \u2192 0)",
+      "Trade deadline: Dec 06, 2024 \u2192 Dec 03, 2025",
+      "Scoring removed (6 rules) \u2014 Each Pass Completed (was +0.5 pts), Net Punts (was +1.5 pts), Punts Inside the 10 (was +1 pts), Punts Inside the 20 (was +1 pts), Blocked Punts (was -2 pts), Punt Fair Catches (was +1 pts)"
+    ]
+  }
+]

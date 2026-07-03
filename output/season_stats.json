@@ -1,0 +1,2455 @@
+{
+  "2014": {
+    "year": 2014,
+    "highestScore": {
+      "score": 315.0,
+      "team": "Joey Jorts",
+      "owner": "Ben Bingert",
+      "opponent": "Underwoods Underlings",
+      "opponentScore": 187.0,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScore": {
+      "score": 54.0,
+      "team": "Indian Kickers",
+      "owner": "Brian Dorward",
+      "opponent": "Titty Sprinkles",
+      "opponentScore": 137.0,
+      "week": 10,
+      "matchupPeriodId": 10
+    },
+    "closestWin": {
+      "margin": 2.0,
+      "winner": "Joey Jorts",
+      "winnerOwner": "Ben Bingert",
+      "winnerScore": 127.0,
+      "loser": "Denver Bronkers",
+      "loserScore": 125.0,
+      "week": 4,
+      "matchupPeriodId": 4
+    },
+    "biggestBlowout": {
+      "margin": 128.0,
+      "winner": "Joey Jorts",
+      "winnerOwner": "Ben Bingert",
+      "winnerScore": 315.0,
+      "loser": "Underwoods Underlings",
+      "loserScore": 187.0,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "longestWinStreak": {
+      "owner": "Ben Bingert",
+      "length": 5
+    },
+    "longestLossStreak": {
+      "owner": "Pete Solecki",
+      "length": 5
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Ben Bingert",
+      "count": 3
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Phil Torres",
+      "count": 3
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Daniel Keating",
+        "team": "Denver Bronkers",
+        "amount": 0,
+        "place": "3rd"
+      },
+      {
+        "owner": "Mike Kovacs",
+        "team": "Guess Whos Back Shindig's Back",
+        "amount": 0,
+        "place": "1st"
+      },
+      {
+        "owner": "Ben Bingert",
+        "team": "Joey Jorts",
+        "amount": 0,
+        "place": "2nd"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [],
+      "roundBenchmarks": {}
+    }
+  },
+  "2015": {
+    "year": 2015,
+    "highestScore": {
+      "score": 282.4,
+      "team": "Titty Sprinkles",
+      "owner": "Carl Cummins",
+      "opponent": "Harry Hats",
+      "opponentScore": 198.57999999999998,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScore": {
+      "score": 41.8,
+      "team": "Alabama of Europe",
+      "owner": "Randell Crawford",
+      "opponent": "RKO Out of Nowhere",
+      "opponentScore": 102.36,
+      "week": 2,
+      "matchupPeriodId": 2
+    },
+    "closestWin": {
+      "margin": 0.10000000000000853,
+      "winner": "John Cena",
+      "winnerOwner": "Bill Solecki",
+      "winnerScore": 88.84,
+      "loser": "Titty Sprinkles",
+      "loserScore": 88.74,
+      "week": 2,
+      "matchupPeriodId": 2
+    },
+    "biggestBlowout": {
+      "margin": 96.89999999999998,
+      "winner": "Drew Stanton Celebrations",
+      "winnerOwner": "Sal DeRose",
+      "winnerScore": 230.14,
+      "loser": "John Cena",
+      "loserScore": 133.24,
+      "week": 13,
+      "matchupPeriodId": 13
+    },
+    "longestWinStreak": {
+      "owner": "Carl Cummins",
+      "length": 5
+    },
+    "longestLossStreak": {
+      "owner": "Ray Engleking",
+      "length": 7
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Sal DeRose",
+      "count": 4
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Ray Engleking",
+      "count": 3
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Ben Bingert",
+        "team": "Harry Hats",
+        "amount": 0,
+        "place": "2nd"
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Titty Sprinkles",
+        "amount": 0,
+        "place": "1st"
+      },
+      {
+        "owner": "Randell Crawford",
+        "team": "Alabama of Europe",
+        "amount": 0,
+        "place": "3rd"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [],
+      "roundBenchmarks": {}
+    }
+  },
+  "2016": {
+    "year": 2016,
+    "highestScore": {
+      "score": 237.42000000000002,
+      "team": "Boyz n da Hood",
+      "owner": "Bill Solecki",
+      "opponent": "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
+      "opponentScore": 204.72,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScore": {
+      "score": 48.54,
+      "team": "DJ Khalad",
+      "owner": "Pete Solecki",
+      "opponent": "Bradys and Edelman",
+      "opponentScore": 74.02,
+      "week": 9,
+      "matchupPeriodId": 9
+    },
+    "closestWin": {
+      "margin": 1.5,
+      "winner": "Titty Sprinkles",
+      "winnerOwner": "Carl Cummins",
+      "winnerScore": 85.22,
+      "loser": "Kenny Kilts",
+      "loserScore": 83.72,
+      "week": 8,
+      "matchupPeriodId": 8
+    },
+    "biggestBlowout": {
+      "margin": 68.75999999999999,
+      "winner": "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
+      "winnerOwner": "Mike Kovacs",
+      "winnerScore": 132.38,
+      "loser": "Titty Sprinkles",
+      "loserScore": 63.62,
+      "week": 6,
+      "matchupPeriodId": 6
+    },
+    "longestWinStreak": {
+      "owner": "Bill Solecki",
+      "length": 4
+    },
+    "longestLossStreak": {
+      "owner": "Pete Solecki",
+      "length": 6
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Mike Kovacs",
+      "count": 3
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Pete Solecki",
+      "count": 3
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Bill Solecki",
+        "team": "Boyz n da Hood",
+        "amount": 0,
+        "place": "3rd"
+      },
+      {
+        "owner": "Ben Bingert",
+        "team": "Kenny Kilts",
+        "amount": 0,
+        "place": "1st"
+      },
+      {
+        "owner": "Randell Crawford",
+        "team": "Alabama of Europe",
+        "amount": 0,
+        "place": "2nd"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [],
+      "roundBenchmarks": {}
+    }
+  },
+  "2017": {
+    "year": 2017,
+    "highestScore": {
+      "score": 283.88,
+      "team": "Get CTE or Die Tryin",
+      "owner": "Bill Solecki",
+      "opponent": "So Fresh So Kareem",
+      "opponentScore": 218.3,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScore": {
+      "score": 46.72,
+      "team": "DJ Khalad",
+      "owner": "Pete Solecki",
+      "opponent": "Get CTE or Die Tryin",
+      "opponentScore": 79.84,
+      "week": 10,
+      "matchupPeriodId": 10
+    },
+    "closestWin": {
+      "margin": 0.7199999999999989,
+      "winner": "Titty Sprinkles",
+      "winnerOwner": "Carl Cummins",
+      "winnerScore": 96.8,
+      "loser": "RKO Out of Nowhere",
+      "loserScore": 96.08,
+      "week": 11,
+      "matchupPeriodId": 11
+    },
+    "biggestBlowout": {
+      "margin": 118.26000000000002,
+      "winner": "Bradys and Edelman",
+      "winnerOwner": "Daniel Keating",
+      "winnerScore": 203.48000000000002,
+      "loser": "Adams, Cooper and Prescott",
+      "loserScore": 85.22,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "longestWinStreak": {
+      "owner": "Pete Solecki",
+      "length": 6
+    },
+    "longestLossStreak": {
+      "owner": "Sal DeRose",
+      "length": 7
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Ray Engleking",
+      "count": 4
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Sal DeRose",
+      "count": 3
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Bill Solecki",
+        "team": "Get CTE or Die Tryin",
+        "amount": 0,
+        "place": "3rd"
+      },
+      {
+        "owner": "Mike Kovacs",
+        "team": "Frankly, Ameer, IDontGiveaDamn",
+        "amount": 0,
+        "place": "2nd"
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Titty Sprinkles",
+        "amount": 0,
+        "place": "1st"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Ben Bingert",
+          "player": "David Johnson",
+          "roundKept": 1,
+          "pointsScored": 7.0,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": -126.3,
+          "pointsVsAvgPct": -0.9475,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 1,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Ezekiel Elliott",
+          "roundKept": 1,
+          "pointsScored": 151.3,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": 18.0,
+          "pointsVsAvgPct": 0.135,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 9,
+          "note": null
+        },
+        {
+          "owner": "Pete Solecki",
+          "player": "Antonio Brown",
+          "roundKept": 1,
+          "pointsScored": 132.4,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": -0.9,
+          "pointsVsAvgPct": -0.0068,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Odell Beckham Jr.",
+          "roundKept": 1,
+          "pointsScored": 49.0,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": -84.3,
+          "pointsVsAvgPct": -0.6324,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 5,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Jordan Howard",
+          "roundKept": 1,
+          "pointsScored": 121.8,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": -11.5,
+          "pointsVsAvgPct": -0.0863,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Amari Cooper",
+          "roundKept": 1,
+          "pointsScored": 43.7,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": -89.6,
+          "pointsVsAvgPct": -0.6722,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Julio Jones",
+          "roundKept": 1,
+          "pointsScored": 123.4,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": -9.9,
+          "pointsVsAvgPct": -0.0743,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Randell Crawford",
+          "player": "Le'Veon Bell",
+          "roundKept": 1,
+          "pointsScored": 163.7,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": 30.4,
+          "pointsVsAvgPct": 0.2281,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Rob Gronkowski",
+          "roundKept": 1,
+          "pointsScored": 112.2,
+          "roundAvgPoints": 133.3,
+          "pointsVsAvg": -21.1,
+          "pointsVsAvgPct": -0.1583,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ben Bingert",
+          "player": "Melvin Gordon",
+          "roundKept": 2,
+          "pointsScored": 151.1,
+          "roundAvgPoints": 81.17,
+          "pointsVsAvg": 69.93,
+          "pointsVsAvgPct": 0.8615,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Pete Solecki",
+          "player": "Alex Smith",
+          "roundKept": 2,
+          "pointsScored": 210.42,
+          "roundAvgPoints": 81.17,
+          "pointsVsAvg": 129.25,
+          "pointsVsAvgPct": 1.5923,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Brandin Cooks",
+          "roundKept": 2,
+          "pointsScored": 121.0,
+          "roundAvgPoints": 81.17,
+          "pointsVsAvg": 39.83,
+          "pointsVsAvgPct": 0.4907,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Dak Prescott",
+          "roundKept": 2,
+          "pointsScored": 187.42,
+          "roundAvgPoints": 81.17,
+          "pointsVsAvg": 106.25,
+          "pointsVsAvgPct": 1.309,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Mike Evans",
+          "roundKept": 2,
+          "pointsScored": 94.2,
+          "roundAvgPoints": 81.17,
+          "pointsVsAvg": 13.03,
+          "pointsVsAvgPct": 0.1605,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Randell Crawford",
+          "player": "Aaron Rodgers",
+          "roundKept": 2,
+          "pointsScored": 107.7,
+          "roundAvgPoints": 81.17,
+          "pointsVsAvg": 26.53,
+          "pointsVsAvgPct": 0.3268,
+          "verdict": "STEAL",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 6,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Tom Brady",
+          "roundKept": 2,
+          "pointsScored": 231.36,
+          "roundAvgPoints": 81.17,
+          "pointsVsAvg": 150.19,
+          "pointsVsAvgPct": 1.8503,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "5": 89.6,
+        "8": 49.69,
+        "2": 81.17,
+        "15": 17.54,
+        "14": 65.97,
+        "3": 100.11,
+        "9": 34.99,
+        "4": 66.57,
+        "6": 59.34,
+        "7": 27.03,
+        "10": 56.51,
+        "12": 55.3,
+        "13": 58.21,
+        "11": 43.83,
+        "1": 133.3
+      }
+    }
+  },
+  "2018": {
+    "year": 2018,
+    "highestScore": {
+      "score": 229.64,
+      "team": "The Other Team",
+      "owner": "Ray Engleking",
+      "opponent": "Get CTE or Die Tryin",
+      "opponentScore": 177.82,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScore": {
+      "score": 48.12,
+      "team": "Free Candy and Wins",
+      "owner": "Ben Bingert",
+      "opponent": "SAM DARNOLD IS LITERALLY JESUS",
+      "opponentScore": 104.1,
+      "week": 6,
+      "matchupPeriodId": 6
+    },
+    "closestWin": {
+      "margin": 0.8400000000000034,
+      "winner": "Free Candy and Wins",
+      "winnerOwner": "Ben Bingert",
+      "winnerScore": 148.36,
+      "loser": "Alabama of Europe",
+      "loserScore": 147.52,
+      "week": 13,
+      "matchupPeriodId": 13
+    },
+    "biggestBlowout": {
+      "margin": 77.60000000000001,
+      "winner": "SAM DARNOLD IS LITERALLY JESUS",
+      "winnerOwner": "Sal DeRose",
+      "winnerScore": 149.86,
+      "loser": "Alabama of Europe",
+      "loserScore": 72.26,
+      "week": 4,
+      "matchupPeriodId": 4
+    },
+    "longestWinStreak": {
+      "owner": "Ray Engleking",
+      "length": 7
+    },
+    "longestLossStreak": {
+      "owner": "Ben Bingert",
+      "length": 12
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Ray Engleking",
+      "count": 4
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Ben Bingert",
+      "count": 6
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Bill Solecki",
+        "team": "Get CTE or Die Tryin",
+        "amount": 0,
+        "place": "2nd"
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "For When the Bell Tolls",
+        "amount": 0,
+        "place": "3rd"
+      },
+      {
+        "owner": "Ray Engleking",
+        "team": "The Other Team",
+        "amount": 0,
+        "place": "1st"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Daniel Keating",
+          "player": "Rob Gronkowski",
+          "roundKept": 1,
+          "pointsScored": 109.2,
+          "roundAvgPoints": 313.17,
+          "pointsVsAvg": -203.97,
+          "pointsVsAvgPct": -0.6513,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ben Bingert",
+          "player": "David Johnson",
+          "roundKept": 1,
+          "pointsScored": 283.5,
+          "roundAvgPoints": 313.17,
+          "pointsVsAvg": -29.67,
+          "pointsVsAvgPct": -0.0947,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Tom Brady",
+          "roundKept": 2,
+          "pointsScored": 369.86,
+          "roundAvgPoints": 322.2,
+          "pointsVsAvg": 47.66,
+          "pointsVsAvgPct": 0.1479,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ben Bingert",
+          "player": "Derrick Henry",
+          "roundKept": 2,
+          "pointsScored": 143.14,
+          "roundAvgPoints": 322.2,
+          "pointsVsAvg": -179.06,
+          "pointsVsAvgPct": -0.5557,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "2": 322.2,
+        "8": 192.7,
+        "6": 171.59,
+        "13": 181.35,
+        "4": 230.84,
+        "1": 313.17,
+        "5": 190.8,
+        "10": 258.66,
+        "15": 187.71,
+        "3": 280.06,
+        "9": 156.12,
+        "12": 257.21,
+        "14": 247.5,
+        "7": 238.93,
+        "11": 184.12
+      }
+    }
+  },
+  "2019": {
+    "year": 2019,
+    "highestScore": {
+      "score": 241.78,
+      "team": "Alabama of Europe",
+      "owner": "Randell Crawford",
+      "opponent": "DJ Khalad",
+      "opponentScore": 173.82,
+      "week": 15,
+      "matchupPeriodId": 15
+    },
+    "lowestScore": {
+      "score": 40.18,
+      "team": "Alabama of Europe",
+      "owner": "Randell Crawford",
+      "opponent": "DJ Khalad",
+      "opponentScore": 150.52,
+      "week": 12,
+      "matchupPeriodId": 12
+    },
+    "closestWin": {
+      "margin": 0.4000000000000057,
+      "winner": "DANIEL JONES IS LITERALLY TRASH",
+      "winnerOwner": "Sal DeRose",
+      "winnerScore": 96.0,
+      "loser": "SAL is Literally Jesus",
+      "loserScore": 95.6,
+      "week": 4,
+      "matchupPeriodId": 4
+    },
+    "biggestBlowout": {
+      "margin": 110.34,
+      "winner": "DJ Khalad",
+      "winnerOwner": "Pete Solecki",
+      "winnerScore": 150.52,
+      "loser": "Alabama of Europe",
+      "loserScore": 40.18,
+      "week": 12,
+      "matchupPeriodId": 12
+    },
+    "longestWinStreak": {
+      "owner": "Carl Cummins",
+      "length": 8
+    },
+    "longestLossStreak": {
+      "owner": "Mike Kovacs",
+      "length": 8
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Joe Jaramillo",
+      "count": 6
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Randell Crawford",
+      "count": 4
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Ben Bingert",
+        "team": "Willy 3rd Place",
+        "amount": 0,
+        "place": "3rd"
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Titty Sprinkles",
+        "amount": 0,
+        "place": "1st"
+      },
+      {
+        "owner": "Daniel Keating",
+        "team": "Why Was I On The 415 Shuttle",
+        "amount": 0,
+        "place": "2nd"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Daniel Keating",
+          "player": "Tom Brady",
+          "roundKept": 1,
+          "pointsScored": 355.86,
+          "roundAvgPoints": 223.53,
+          "pointsVsAvg": 132.33,
+          "pointsVsAvgPct": 0.592,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Zach Ertz",
+          "roundKept": 1,
+          "pointsScored": 163.3,
+          "roundAvgPoints": 223.53,
+          "pointsVsAvg": -60.23,
+          "pointsVsAvgPct": -0.2694,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Le'Veon Bell",
+          "roundKept": 1,
+          "pointsScored": 222.2,
+          "roundAvgPoints": 223.53,
+          "pointsVsAvg": -1.33,
+          "pointsVsAvgPct": -0.0059,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Christian McCaffrey",
+          "roundKept": 2,
+          "pointsScored": 512.5,
+          "roundAvgPoints": 204.21,
+          "pointsVsAvg": 308.29,
+          "pointsVsAvgPct": 1.5097,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "2": 204.21,
+        "4": 231.6,
+        "5": 267.69,
+        "10": 164.82,
+        "12": 254.59,
+        "7": 137.79,
+        "6": 185.72,
+        "1": 223.53,
+        "3": 246.52,
+        "14": 162.6,
+        "15": 152.55,
+        "9": 227.35,
+        "8": 175.22,
+        "11": 170.25,
+        "13": 225.67
+      }
+    }
+  },
+  "2020": {
+    "year": 2020,
+    "highestScore": {
+      "score": 299.68,
+      "team": "Tua Time",
+      "owner": "Joe Jaramillo",
+      "opponent": "Bucket, Mop; Macaroni, Pot",
+      "opponentScore": 296.44,
+      "week": 15,
+      "matchupPeriodId": 15
+    },
+    "lowestScore": {
+      "score": 65.08,
+      "team": "Why Was I On The 415 Shuttle",
+      "owner": "Daniel Keating",
+      "opponent": "Titty Sprinkles",
+      "opponentScore": 148.68,
+      "week": 3,
+      "matchupPeriodId": 3
+    },
+    "closestWin": {
+      "margin": 0.8799999999999955,
+      "winner": "The Other Team",
+      "winnerOwner": "Ray Engleking",
+      "winnerScore": 125.0,
+      "loser": "Fresh Prince of Helaire",
+      "loserScore": 124.12,
+      "week": 5,
+      "matchupPeriodId": 5
+    },
+    "biggestBlowout": {
+      "margin": 83.60000000000001,
+      "winner": "Titty Sprinkles",
+      "winnerOwner": "Carl Cummins",
+      "winnerScore": 148.68,
+      "loser": "Why Was I On The 415 Shuttle",
+      "loserScore": 65.08,
+      "week": 3,
+      "matchupPeriodId": 3
+    },
+    "longestWinStreak": {
+      "owner": "Ray Engleking",
+      "length": 6
+    },
+    "longestLossStreak": {
+      "owner": "Daniel Keating",
+      "length": 8
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Bill Solecki",
+      "count": 5
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Daniel Keating",
+      "count": 5
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Bill Solecki",
+        "team": "Bucket, Mop; Macaroni, Pot",
+        "amount": 0,
+        "place": "2nd"
+      },
+      {
+        "owner": "Sal DeRose",
+        "team": "DANIEL JONES IS LITERALLY TRASH",
+        "amount": 0,
+        "place": "3rd"
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "Tua Time",
+        "amount": 0,
+        "place": "1st"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Ray Engleking",
+          "player": "DeAndre Hopkins",
+          "roundKept": 1,
+          "pointsScored": 380.9,
+          "roundAvgPoints": 287.54,
+          "pointsVsAvg": 93.36,
+          "pointsVsAvgPct": 0.3247,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Lamar Jackson",
+          "roundKept": 1,
+          "pointsScored": 394.84,
+          "roundAvgPoints": 287.54,
+          "pointsVsAvg": 107.3,
+          "pointsVsAvgPct": 0.3732,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ben Bingert",
+          "player": "Josh Jacobs",
+          "roundKept": 1,
+          "pointsScored": 340.0,
+          "roundAvgPoints": 287.54,
+          "pointsVsAvg": 52.46,
+          "pointsVsAvgPct": 0.1824,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Patrick Mahomes",
+          "roundKept": 2,
+          "pointsScored": 551.48,
+          "roundAvgPoints": 330.71,
+          "pointsVsAvg": 220.77,
+          "pointsVsAvgPct": 0.6676,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Christian McCaffrey",
+          "roundKept": 2,
+          "pointsScored": 180.8,
+          "roundAvgPoints": 330.71,
+          "pointsVsAvg": -149.91,
+          "pointsVsAvgPct": -0.4533,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 10,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "1": 287.54,
+        "2": 330.71,
+        "4": 283.27,
+        "5": 295.51,
+        "6": 297.05,
+        "8": 266.87,
+        "14": 205.78,
+        "12": 209.28,
+        "9": 211.53,
+        "3": 262.85,
+        "7": 285.99,
+        "13": 281.24,
+        "10": 261.99,
+        "11": 199.9,
+        "15": 202.61
+      }
+    }
+  },
+  "2021": {
+    "year": 2021,
+    "highestScore": {
+      "score": 357.94,
+      "team": "To See or Not Kelce",
+      "owner": "Mike Kovacs",
+      "opponent": "Business Expert Nathan Fielder",
+      "opponentScore": 290.86,
+      "week": 16,
+      "matchupPeriodId": 16
+    },
+    "lowestScore": {
+      "score": 67.32,
+      "team": "Belt Sanders",
+      "owner": "Joe Jaramillo",
+      "opponent": "Titty Sprinkles",
+      "opponentScore": 147.0,
+      "week": 2,
+      "matchupPeriodId": 2
+    },
+    "closestWin": {
+      "margin": 0.28000000000000114,
+      "winner": "Bobby Boots",
+      "winnerOwner": "Ben Bingert",
+      "winnerScore": 110.36,
+      "loser": "The Other Team",
+      "loserScore": 110.08,
+      "week": 12,
+      "matchupPeriodId": 12
+    },
+    "biggestBlowout": {
+      "margin": 86.99999999999997,
+      "winner": "The Other Team",
+      "winnerOwner": "Ray Engleking",
+      "winnerScore": 298.84,
+      "loser": "Qaaron Rodgers",
+      "loserScore": 211.84,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "longestWinStreak": {
+      "owner": "Joe Jaramillo",
+      "length": 6
+    },
+    "longestLossStreak": {
+      "owner": "Ray Engleking",
+      "length": 7
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Daniel Keating",
+      "count": 3
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Bill Solecki",
+      "count": 2
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Ben Bingert",
+        "team": "Bobby Boots",
+        "amount": 0,
+        "place": "3rd"
+      },
+      {
+        "owner": "Pete Solecki",
+        "team": "DJ Khalad",
+        "amount": 0,
+        "place": "2nd"
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Titty Sprinkles",
+        "amount": 0,
+        "place": "1st"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Ben Bingert",
+          "player": "Aaron Jones",
+          "roundKept": 1,
+          "pointsScored": 326.4,
+          "roundAvgPoints": 310.72,
+          "pointsVsAvg": 15.68,
+          "pointsVsAvgPct": 0.0505,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Davante Adams",
+          "roundKept": 1,
+          "pointsScored": 436.6,
+          "roundAvgPoints": 310.72,
+          "pointsVsAvg": 125.88,
+          "pointsVsAvgPct": 0.4051,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Stefon Diggs",
+          "roundKept": 1,
+          "pointsScored": 396.5,
+          "roundAvgPoints": 310.72,
+          "pointsVsAvg": 85.78,
+          "pointsVsAvgPct": 0.2761,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Aaron Rodgers",
+          "roundKept": 1,
+          "pointsScored": 450.64,
+          "roundAvgPoints": 310.72,
+          "pointsVsAvg": 139.92,
+          "pointsVsAvgPct": 0.4503,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Tom Brady",
+          "roundKept": 1,
+          "pointsScored": 519.46,
+          "roundAvgPoints": 310.72,
+          "pointsVsAvg": 208.74,
+          "pointsVsAvgPct": 0.6718,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ben Bingert",
+          "player": "Jonathan Taylor",
+          "roundKept": 2,
+          "pointsScored": 592.5,
+          "roundAvgPoints": 313.64,
+          "pointsVsAvg": 278.86,
+          "pointsVsAvgPct": 0.8891,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Alvin Kamara",
+          "roundKept": 2,
+          "pointsScored": 316.0,
+          "roundAvgPoints": 313.64,
+          "pointsVsAvg": 2.36,
+          "pointsVsAvgPct": 0.0075,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 10,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Tyreek Hill",
+          "roundKept": 2,
+          "pointsScored": 469.4,
+          "roundAvgPoints": 313.64,
+          "pointsVsAvg": 155.76,
+          "pointsVsAvgPct": 0.4966,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Derrick Henry",
+          "roundKept": 2,
+          "pointsScored": 386.6,
+          "roundAvgPoints": 313.64,
+          "pointsVsAvg": 72.96,
+          "pointsVsAvgPct": 0.2326,
+          "verdict": "STEAL",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 9,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Christian McCaffrey",
+          "roundKept": 2,
+          "pointsScored": 255.0,
+          "roundAvgPoints": 313.64,
+          "pointsVsAvg": -58.64,
+          "pointsVsAvgPct": -0.187,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "4": 300.92,
+        "5": 360.85,
+        "9": 261.61,
+        "6": 258.75,
+        "15": 215.95,
+        "10": 175.83,
+        "1": 310.72,
+        "2": 313.64,
+        "3": 324.17,
+        "7": 320.9,
+        "14": 217.12,
+        "13": 279.22,
+        "8": 269.32,
+        "12": 247.58,
+        "11": 278.8
+      }
+    }
+  },
+  "2022": {
+    "year": 2022,
+    "highestScore": {
+      "score": 296.22,
+      "team": "Why Was I On The 415 Shuttle",
+      "owner": "Daniel Keating",
+      "opponent": "S e m i C h u b b",
+      "opponentScore": 197.08,
+      "week": 16,
+      "matchupPeriodId": 16
+    },
+    "lowestScore": {
+      "score": 66.88,
+      "team": "Sal's Infirmary",
+      "owner": "Sal DeRose",
+      "opponent": "S e m i C h u b b",
+      "opponentScore": 103.32,
+      "week": 6,
+      "matchupPeriodId": 6
+    },
+    "closestWin": {
+      "margin": 0.09999999999999432,
+      "winner": "Sal's Infirmary",
+      "winnerOwner": "Sal DeRose",
+      "winnerScore": 135.9,
+      "loser": "Pop Rockin' Beats",
+      "loserScore": 135.8,
+      "week": 7,
+      "matchupPeriodId": 7
+    },
+    "biggestBlowout": {
+      "margin": 99.14000000000001,
+      "winner": "Why Was I On The 415 Shuttle",
+      "winnerOwner": "Daniel Keating",
+      "winnerScore": 296.22,
+      "loser": "S e m i C h u b b",
+      "loserScore": 197.08,
+      "week": 16,
+      "matchupPeriodId": 16
+    },
+    "longestWinStreak": {
+      "owner": "Bill Solecki",
+      "length": 7
+    },
+    "longestLossStreak": {
+      "owner": "Daniel Keating",
+      "length": 7
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Mike Kovacs",
+      "count": 4
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Carl Cummins",
+      "count": 2
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Bill Solecki",
+        "team": "#1 Best Weekly Meme Team",
+        "amount": 0,
+        "place": "2nd"
+      },
+      {
+        "owner": "Mike Kovacs",
+        "team": "My Ba ss Hurts",
+        "amount": 0,
+        "place": "1st"
+      },
+      {
+        "owner": "Pete Solecki",
+        "team": "This Sauce Is Boss",
+        "amount": 0,
+        "place": "3rd"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Ben Bingert",
+          "player": "Jonathan Taylor",
+          "roundKept": 1,
+          "pointsScored": 274.9,
+          "roundAvgPoints": 409.62,
+          "pointsVsAvg": -134.72,
+          "pointsVsAvgPct": -0.3289,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Derrick Henry",
+          "roundKept": 1,
+          "pointsScored": 441.32,
+          "roundAvgPoints": 409.62,
+          "pointsVsAvg": 31.7,
+          "pointsVsAvgPct": 0.0774,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Christian McCaffrey",
+          "roundKept": 1,
+          "pointsScored": 449.92,
+          "roundAvgPoints": 409.62,
+          "pointsVsAvg": 40.3,
+          "pointsVsAvgPct": 0.0984,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Randell Crawford",
+          "player": "Mike Evans",
+          "roundKept": 2,
+          "pointsScored": 288.3,
+          "roundAvgPoints": 390.44,
+          "pointsVsAvg": -102.14,
+          "pointsVsAvgPct": -0.2616,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "A.J. Brown",
+          "roundKept": 2,
+          "pointsScored": 380.1,
+          "roundAvgPoints": 390.44,
+          "pointsVsAvg": -10.34,
+          "pointsVsAvgPct": -0.0265,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Josh Allen",
+          "roundKept": 4,
+          "pointsScored": 571.76,
+          "roundAvgPoints": 246.2,
+          "pointsVsAvg": 325.56,
+          "pointsVsAvgPct": 1.3223,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Randell Crawford",
+          "player": "Josh Jacobs",
+          "roundKept": 4,
+          "pointsScored": 505.8,
+          "roundAvgPoints": 246.2,
+          "pointsVsAvg": 259.6,
+          "pointsVsAvgPct": 1.0544,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Cooper Kupp",
+          "roundKept": 4,
+          "pointsScored": 402.8,
+          "roundAvgPoints": 246.2,
+          "pointsVsAvg": 156.6,
+          "pointsVsAvgPct": 0.6361,
+          "verdict": "STEAL",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 11,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "DJ Moore",
+          "roundKept": 4,
+          "pointsScored": 268.8,
+          "roundAvgPoints": 246.2,
+          "pointsVsAvg": 22.6,
+          "pointsVsAvgPct": 0.0918,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Mark Andrews",
+          "roundKept": 5,
+          "pointsScored": 299.0,
+          "roundAvgPoints": 238.63,
+          "pointsVsAvg": 60.37,
+          "pointsVsAvgPct": 0.253,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Justin Herbert",
+          "roundKept": 6,
+          "pointsScored": 406.02,
+          "roundAvgPoints": 354.3,
+          "pointsVsAvg": 51.72,
+          "pointsVsAvgPct": 0.146,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Tee Higgins",
+          "roundKept": 6,
+          "pointsScored": 339.7,
+          "roundAvgPoints": 354.3,
+          "pointsVsAvg": -14.6,
+          "pointsVsAvgPct": -0.0412,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Leonard Fournette",
+          "roundKept": 8,
+          "pointsScored": 323.5,
+          "roundAvgPoints": 221.35,
+          "pointsVsAvg": 102.15,
+          "pointsVsAvgPct": 0.4615,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Ja'Marr Chase",
+          "roundKept": 8,
+          "pointsScored": 300.1,
+          "roundAvgPoints": 221.35,
+          "pointsVsAvg": 78.75,
+          "pointsVsAvgPct": 0.3558,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Deebo Samuel",
+          "roundKept": 10,
+          "pointsScored": 286.9,
+          "roundAvgPoints": 234.51,
+          "pointsVsAvg": 52.39,
+          "pointsVsAvgPct": 0.2234,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ben Bingert",
+          "player": "Jaylen Waddle",
+          "roundKept": 10,
+          "pointsScored": 377.9,
+          "roundAvgPoints": 234.51,
+          "pointsVsAvg": 143.39,
+          "pointsVsAvgPct": 0.6114,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "1": 409.62,
+        "2": 390.44,
+        "3": 226.31,
+        "7": 276.4,
+        "10": 234.51,
+        "11": 253.18,
+        "12": 241.38,
+        "8": 221.35,
+        "14": 235.01,
+        "13": 196.88,
+        "6": 354.3,
+        "5": 238.63,
+        "9": 326.57,
+        "4": 246.2,
+        "15": 185.55
+      }
+    }
+  },
+  "2023": {
+    "year": 2023,
+    "highestScore": {
+      "score": 296.7,
+      "team": "Titty Sprinkles",
+      "owner": "Carl Cummins",
+      "opponent": "Why Anyone On The 415 Shuttle?",
+      "opponentScore": 275.0,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScore": {
+      "score": 59.78,
+      "team": "Titty Sprinkles",
+      "owner": "Carl Cummins",
+      "opponent": "Why Anyone On The 415 Shuttle?",
+      "opponentScore": 112.84,
+      "week": 1,
+      "matchupPeriodId": 1
+    },
+    "closestWin": {
+      "margin": 0.3400000000000034,
+      "winner": "Why Was I on the 415 Shuttle?",
+      "winnerOwner": "Daniel Keating",
+      "winnerScore": 125.62,
+      "loser": "Tommy F'n Cutlets",
+      "loserScore": 125.28,
+      "week": 10,
+      "matchupPeriodId": 10
+    },
+    "biggestBlowout": {
+      "margin": 78.18,
+      "winner": "Dan sits when he pees",
+      "winnerOwner": "Ben Bingert",
+      "winnerScore": 190.86,
+      "loser": "Brady Sits When he Pees",
+      "loserScore": 112.68,
+      "week": 5,
+      "matchupPeriodId": 5
+    },
+    "longestWinStreak": {
+      "owner": "Sal DeRose",
+      "length": 6
+    },
+    "longestLossStreak": {
+      "owner": "Ray Engleking",
+      "length": 9
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Mike Kovacs",
+      "count": 5
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Ray Engleking",
+      "count": 4
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Sal DeRose",
+        "team": "Tommy F'n Cutlets",
+        "amount": 35,
+        "place": "1st"
+      },
+      {
+        "owner": "Ben Bingert",
+        "team": "Dan sits when he pees",
+        "amount": 5,
+        "place": "3rd"
+      },
+      {
+        "owner": "Daniel Keating",
+        "team": "Why Was I on the 415 Shuttle?",
+        "amount": 10,
+        "place": "2nd"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Ben Bingert",
+          "player": "Travis Kelce",
+          "roundKept": 1,
+          "pointsScored": 354.5,
+          "roundAvgPoints": 378.64,
+          "pointsVsAvg": -24.14,
+          "pointsVsAvgPct": -0.0638,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "CeeDee Lamb",
+          "roundKept": 2,
+          "pointsScored": 496.6,
+          "roundAvgPoints": 384.45,
+          "pointsVsAvg": 112.15,
+          "pointsVsAvgPct": 0.2917,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Randell Crawford",
+          "player": "Josh Jacobs",
+          "roundKept": 3,
+          "pointsScored": 348.2,
+          "roundAvgPoints": 237.71,
+          "pointsVsAvg": 110.49,
+          "pointsVsAvgPct": 0.4648,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Cooper Kupp",
+          "roundKept": 3,
+          "pointsScored": 164.5,
+          "roundAvgPoints": 237.71,
+          "pointsVsAvg": -73.21,
+          "pointsVsAvgPct": -0.308,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Jaylen Waddle",
+          "roundKept": 4,
+          "pointsScored": 290.4,
+          "roundAvgPoints": 343.99,
+          "pointsVsAvg": -53.59,
+          "pointsVsAvgPct": -0.1558,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Patrick Mahomes",
+          "roundKept": 4,
+          "pointsScored": 431.36,
+          "roundAvgPoints": 343.99,
+          "pointsVsAvg": 87.37,
+          "pointsVsAvgPct": 0.254,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Aaron Jones",
+          "roundKept": 5,
+          "pointsScored": 152.8,
+          "roundAvgPoints": 251.31,
+          "pointsVsAvg": -98.51,
+          "pointsVsAvgPct": -0.392,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 12,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Jalen Hurts",
+          "roundKept": 5,
+          "pointsScored": 541.68,
+          "roundAvgPoints": 251.31,
+          "pointsVsAvg": 290.37,
+          "pointsVsAvgPct": 1.1554,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Miles Sanders",
+          "roundKept": 6,
+          "pointsScored": 44.1,
+          "roundAvgPoints": 267.54,
+          "pointsVsAvg": -223.44,
+          "pointsVsAvgPct": -0.8352,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 5,
+          "note": "Started wks 1-5, benched after, dropped before wk 12"
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Tony Pollard",
+          "roundKept": 7,
+          "pointsScored": 323.7,
+          "roundAvgPoints": 262.32,
+          "pointsVsAvg": 61.38,
+          "pointsVsAvgPct": 0.234,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Ja'Marr Chase",
+          "roundKept": 7,
+          "pointsScored": 435.22,
+          "roundAvgPoints": 262.32,
+          "pointsVsAvg": 172.9,
+          "pointsVsAvgPct": 0.6591,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Joe Burrow",
+          "roundKept": 8,
+          "pointsScored": 294.32,
+          "roundAvgPoints": 295.24,
+          "pointsVsAvg": -0.92,
+          "pointsVsAvgPct": -0.0031,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 12,
+          "note": null
+        },
+        {
+          "owner": "Ben Bingert",
+          "player": "Rachaad White",
+          "roundKept": 8,
+          "pointsScored": 346.2,
+          "roundAvgPoints": 295.24,
+          "pointsVsAvg": 50.96,
+          "pointsVsAvgPct": 0.1726,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "DeVonta Smith",
+          "roundKept": 8,
+          "pointsScored": 342.2,
+          "roundAvgPoints": 295.24,
+          "pointsVsAvg": 46.96,
+          "pointsVsAvgPct": 0.1591,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "DeAndre Hopkins",
+          "roundKept": 10,
+          "pointsScored": 297.7,
+          "roundAvgPoints": 224.15,
+          "pointsVsAvg": 73.55,
+          "pointsVsAvgPct": 0.3281,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Kenneth Walker III",
+          "roundKept": 12,
+          "pointsScored": 275.2,
+          "roundAvgPoints": 270.04,
+          "pointsVsAvg": 5.16,
+          "pointsVsAvgPct": 0.0191,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 12,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "1": 378.64,
+        "2": 384.45,
+        "3": 237.71,
+        "5": 251.31,
+        "13": 169.28,
+        "4": 343.99,
+        "6": 267.54,
+        "9": 277.8,
+        "10": 224.15,
+        "14": 224.42,
+        "7": 262.32,
+        "12": 270.04,
+        "11": 331.19,
+        "15": 311.02,
+        "8": 295.24
+      }
+    }
+  },
+  "2024": {
+    "year": 2024,
+    "highestScore": {
+      "score": 443.22,
+      "team": "Takin the Browns to Super Bowl",
+      "owner": "Mike Kovacs",
+      "opponent": "Why Was I on the 415 Shuttle?",
+      "opponentScore": 350.72,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "lowestScore": {
+      "score": 78.34,
+      "team": "We Tried Our Best",
+      "owner": "Pete Solecki",
+      "opponent": "Franoc knthall",
+      "opponentScore": 144.1,
+      "week": 7,
+      "matchupPeriodId": 7
+    },
+    "closestWin": {
+      "margin": 0.7400000000000091,
+      "winner": "Takin the Browns to Super Bowl",
+      "winnerOwner": "Mike Kovacs",
+      "winnerScore": 144.34,
+      "loser": "We Tried Our Best",
+      "loserScore": 143.6,
+      "week": 3,
+      "matchupPeriodId": 3
+    },
+    "biggestBlowout": {
+      "margin": 106.78000000000002,
+      "winner": "Pop Rockin' Beats",
+      "winnerOwner": "Randell Crawford",
+      "winnerScore": 219.08,
+      "loser": "Why Was I on the 415 Shuttle?",
+      "loserScore": 112.3,
+      "week": 12,
+      "matchupPeriodId": 12
+    },
+    "longestWinStreak": {
+      "owner": "Daniel Keating",
+      "length": 11
+    },
+    "longestLossStreak": {
+      "owner": "Pete Solecki",
+      "length": 9
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Mike Kovacs",
+      "count": 4
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Pete Solecki",
+      "count": 5
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Mike Kovacs",
+        "team": "Takin the Browns to Super Bowl",
+        "amount": 35,
+        "place": "1st"
+      },
+      {
+        "owner": "Daniel Keating",
+        "team": "Why Was I on the 415 Shuttle?",
+        "amount": 5,
+        "place": "3rd"
+      },
+      {
+        "owner": "Randell Crawford",
+        "team": "Pop Rockin' Beats",
+        "amount": 10,
+        "place": "2nd"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Randell Crawford",
+          "player": "Davante Adams",
+          "roundKept": 1,
+          "pointsScored": 227.0,
+          "roundAvgPoints": 343.54,
+          "pointsVsAvg": -116.54,
+          "pointsVsAvgPct": -0.3392,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Jahmyr Gibbs",
+          "roundKept": 1,
+          "pointsScored": 424.6,
+          "roundAvgPoints": 343.54,
+          "pointsVsAvg": 81.06,
+          "pointsVsAvgPct": 0.236,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Randell Crawford",
+          "player": "Josh Jacobs",
+          "roundKept": 2,
+          "pointsScored": 385.7,
+          "roundAvgPoints": 300.74,
+          "pointsVsAvg": 84.96,
+          "pointsVsAvgPct": 0.2825,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Kyren Williams",
+          "roundKept": 3,
+          "pointsScored": 379.9,
+          "roundAvgPoints": 319.81,
+          "pointsVsAvg": 60.09,
+          "pointsVsAvgPct": 0.1879,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Breece Hall",
+          "roundKept": 3,
+          "pointsScored": 372.6,
+          "roundAvgPoints": 319.81,
+          "pointsVsAvg": 52.79,
+          "pointsVsAvgPct": 0.1651,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Sam LaPorta",
+          "roundKept": 4,
+          "pointsScored": 184.6,
+          "roundAvgPoints": 370.14,
+          "pointsVsAvg": -185.54,
+          "pointsVsAvgPct": -0.5013,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Jalen Hurts",
+          "roundKept": 4,
+          "pointsScored": 701.4,
+          "roundAvgPoints": 370.14,
+          "pointsVsAvg": 331.26,
+          "pointsVsAvgPct": 0.895,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Joe Mixon",
+          "roundKept": 5,
+          "pointsScored": 402.3,
+          "roundAvgPoints": 411.23,
+          "pointsVsAvg": -8.93,
+          "pointsVsAvgPct": -0.0217,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Jonathan Taylor",
+          "roundKept": 5,
+          "pointsScored": 267.1,
+          "roundAvgPoints": 411.23,
+          "pointsVsAvg": -144.13,
+          "pointsVsAvgPct": -0.3505,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Alvin Kamara",
+          "roundKept": 5,
+          "pointsScored": 454.9,
+          "roundAvgPoints": 411.23,
+          "pointsVsAvg": 43.67,
+          "pointsVsAvgPct": 0.1062,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Sal Derose",
+          "player": "Isiah Pacheco",
+          "roundKept": 5,
+          "pointsScored": 69.7,
+          "roundAvgPoints": 411.23,
+          "pointsVsAvg": -341.53,
+          "pointsVsAvgPct": -0.8305,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Ja'Marr Chase",
+          "roundKept": 6,
+          "pointsScored": 524.0,
+          "roundAvgPoints": 285.85,
+          "pointsVsAvg": 238.15,
+          "pointsVsAvgPct": 0.8331,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Mike Evans",
+          "roundKept": 7,
+          "pointsScored": 240.4,
+          "roundAvgPoints": 259.41,
+          "pointsVsAvg": -19.01,
+          "pointsVsAvgPct": -0.0733,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Zay Flowers",
+          "roundKept": 9,
+          "pointsScored": 339.3,
+          "roundAvgPoints": 241.05,
+          "pointsVsAvg": 98.25,
+          "pointsVsAvgPct": 0.4076,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Kenneth Walker III",
+          "roundKept": 11,
+          "pointsScored": 328.0,
+          "roundAvgPoints": 332.79,
+          "pointsVsAvg": -4.79,
+          "pointsVsAvgPct": -0.0144,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Raheem Mostert",
+          "roundKept": 11,
+          "pointsScored": 3.7,
+          "roundAvgPoints": 332.79,
+          "pointsVsAvg": -329.09,
+          "pointsVsAvgPct": -0.9889,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 9,
+          "note": "Wk 1 only, IR wks 2-3, benched wks 4-8, started wk 9, dropped before wk 12"
+        }
+      ],
+      "roundBenchmarks": {
+        "2": 300.74,
+        "3": 319.81,
+        "4": 370.14,
+        "6": 285.85,
+        "11": 332.79,
+        "13": 227.16,
+        "12": 193.46,
+        "1": 343.54,
+        "5": 411.23,
+        "8": 384.64,
+        "14": 266.52,
+        "17": 188.3,
+        "16": 296.6,
+        "15": 203.65,
+        "7": 259.41,
+        "10": 361.71,
+        "9": 241.05
+      }
+    }
+  },
+  "2025": {
+    "year": 2025,
+    "highestScore": {
+      "score": 390.52,
+      "team": "Chasing the Repeat",
+      "owner": "Mike Kovacs",
+      "opponent": "Why Was I on the 415 Shuttle?",
+      "opponentScore": 300.5,
+      "week": 16,
+      "matchupPeriodId": 16
+    },
+    "lowestScore": {
+      "score": 30.3,
+      "team": "Tommy F'n Cutlets",
+      "owner": "Sal DeRose",
+      "opponent": "Titty Sprinkles",
+      "opponentScore": 149.2,
+      "week": 9,
+      "matchupPeriodId": 9
+    },
+    "closestWin": {
+      "margin": 1.2800000000000011,
+      "winner": "Chili's Eat Fresh",
+      "winnerOwner": "Joe Jaramillo",
+      "winnerScore": 123.34,
+      "loser": "Titty Sprinkles",
+      "loserScore": 122.06,
+      "week": 7,
+      "matchupPeriodId": 7
+    },
+    "biggestBlowout": {
+      "margin": 150.20000000000002,
+      "winner": "Josh Allen's Blueberries",
+      "winnerOwner": "Ben Bingert",
+      "winnerScore": 352.36,
+      "loser": "The Other Team",
+      "loserScore": 202.16,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "longestWinStreak": {
+      "owner": "Pete Solecki",
+      "length": 7
+    },
+    "longestLossStreak": {
+      "owner": "Sal DeRose",
+      "length": 9
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Ben Bingert",
+      "count": 3
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Sal DeRose",
+      "count": 7
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [
+      {
+        "owner": "Mike Kovacs",
+        "team": "Chasing the Repeat",
+        "amount": 5,
+        "place": "3rd"
+      },
+      {
+        "owner": "Pete Solecki",
+        "team": "We Tried Our Best",
+        "amount": 35,
+        "place": "1st"
+      },
+      {
+        "owner": "Randell Crawford",
+        "team": "Pop Rockin' Beats",
+        "amount": 10,
+        "place": "2nd"
+      }
+    ],
+    "keeperAnalysis": {
+      "keepers": [
+        {
+          "owner": "Pete Solecki",
+          "player": "Malik Nabers",
+          "roundKept": 2,
+          "pointsScored": 57.1,
+          "roundAvgPoints": 365.9,
+          "pointsVsAvg": -308.8,
+          "pointsVsAvgPct": -0.8439,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 4,
+          "note": "Started wks 1-4, benched wk 5, dropped before wk 6"
+        },
+        {
+          "owner": "Ben Bingert",
+          "player": "Josh Allen",
+          "roundKept": 3,
+          "pointsScored": 527.64,
+          "roundAvgPoints": 254.93,
+          "pointsVsAvg": 272.71,
+          "pointsVsAvgPct": 1.0697,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Lamar Jackson",
+          "roundKept": 4,
+          "pointsScored": 301.54,
+          "roundAvgPoints": 280.03,
+          "pointsVsAvg": 21.51,
+          "pointsVsAvgPct": 0.0768,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Ja'Marr Chase",
+          "roundKept": 5,
+          "pointsScored": 405.4,
+          "roundAvgPoints": 208.6,
+          "pointsVsAvg": 196.8,
+          "pointsVsAvgPct": 0.9434,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Courtland Sutton",
+          "roundKept": 6,
+          "pointsScored": 289.0,
+          "roundAvgPoints": 266.09,
+          "pointsVsAvg": 22.91,
+          "pointsVsAvgPct": 0.0861,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Xavier Worthy",
+          "roundKept": 8,
+          "pointsScored": 72.8,
+          "roundAvgPoints": 344.0,
+          "pointsVsAvg": -271.2,
+          "pointsVsAvgPct": -0.7884,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 12,
+          "note": "Started wks 1, 4-9, 12; benched wks 2-3, 10-11, 13; dropped before playoffs"
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Brock Bowers",
+          "roundKept": 8,
+          "pointsScored": 254.7,
+          "roundAvgPoints": 344.0,
+          "pointsVsAvg": -89.3,
+          "pointsVsAvgPct": -0.2596,
+          "verdict": "BUST",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Jayden Daniels",
+          "roundKept": 9,
+          "pointsScored": 96.34,
+          "roundAvgPoints": 262.54,
+          "pointsVsAvg": -166.2,
+          "pointsVsAvgPct": -0.633,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 7,
+          "note": "Started wks 1-2, 5-7; benched wks 3-4, 8-11; dropped before wk 12"
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Ladd McConkey",
+          "roundKept": 10,
+          "pointsScored": 298.7,
+          "roundAvgPoints": 203.12,
+          "pointsVsAvg": 95.58,
+          "pointsVsAvgPct": 0.4706,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Kenneth Walker III",
+          "roundKept": 10,
+          "pointsScored": 259.2,
+          "roundAvgPoints": 203.12,
+          "pointsVsAvg": 56.08,
+          "pointsVsAvgPct": 0.2761,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "player": "Brian Thomas Jr.",
+          "roundKept": 10,
+          "pointsScored": 176.0,
+          "roundAvgPoints": 203.12,
+          "pointsVsAvg": -27.12,
+          "pointsVsAvgPct": -0.1335,
+          "verdict": "AVERAGE",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Chase Brown",
+          "roundKept": 10,
+          "pointsScored": 315.9,
+          "roundAvgPoints": 203.12,
+          "pointsVsAvg": 112.78,
+          "pointsVsAvgPct": 0.5552,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Chuba Hubbard",
+          "roundKept": 12,
+          "pointsScored": 56.1,
+          "roundAvgPoints": 243.36,
+          "pointsVsAvg": -187.26,
+          "pointsVsAvgPct": -0.7695,
+          "verdict": "BUST",
+          "droppedMidSeason": true,
+          "lastActiveWeek": 4,
+          "note": "Started wks 1-4, benched wks 5-9, dropped before wk 10"
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Caleb Williams",
+          "roundKept": 13,
+          "pointsScored": 437.9,
+          "roundAvgPoints": 191.15,
+          "pointsVsAvg": 246.75,
+          "pointsVsAvgPct": 1.2909,
+          "verdict": "STEAL",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "1": 424.71,
+        "2": 365.9,
+        "3": 254.93,
+        "4": 280.03,
+        "5": 208.6,
+        "6": 266.09,
+        "8": 344.0,
+        "15": 202.35,
+        "7": 281.62,
+        "9": 262.54,
+        "11": 257.65,
+        "13": 191.15,
+        "10": 203.12,
+        "12": 243.36,
+        "14": 134.43,
+        "16": 197.13
+      }
+    }
+  }
+}
