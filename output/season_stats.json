@@ -759,7 +759,11 @@
       "owner": "Randell Crawford",
       "count": 4
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Daniel Keating",
+      "teamName": "Why Was I On The 415 Shuttle",
+      "benchPoints": 537.38
+    },
     "playoffPayouts": [
       {
         "owner": "Ben Bingert",
@@ -910,7 +914,11 @@
       "owner": "Daniel Keating",
       "count": 5
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Ben Bingert",
+      "teamName": "Barry Boxers",
+      "benchPoints": 652.5000000000002
+    },
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
@@ -1074,7 +1082,11 @@
       "owner": "Bill Solecki",
       "count": 2
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Joe Jaramillo",
+      "teamName": "Belt Sanders",
+      "benchPoints": 724.3199999999998
+    },
     "playoffPayouts": [
       {
         "owner": "Ben Bingert",
@@ -1303,7 +1315,11 @@
       "owner": "Carl Cummins",
       "count": 2
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Daniel Keating",
+      "teamName": "Why Was I On The 415 Shuttle",
+      "benchPoints": 803.68
+    },
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
@@ -1610,7 +1626,11 @@
       "owner": "Ray Engleking",
       "count": 4
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Joe Jaramillo",
+      "teamName": "Brady Sits When he Pees",
+      "benchPoints": 767.82
+    },
     "playoffPayouts": [
       {
         "owner": "Sal DeRose",
@@ -1638,8 +1658,8 @@
           "player": "Travis Kelce",
           "roundKept": 1,
           "pointsScored": 354.5,
-          "roundAvgPoints": 378.64,
-          "pointsVsAvg": -24.14,
+          "roundAvgPoints": 378.65,
+          "pointsVsAvg": -24.15,
           "pointsVsAvgPct": -0.0638,
           "verdict": "AVERAGE",
           "droppedMidSeason": false,
@@ -1843,7 +1863,7 @@
         }
       ],
       "roundBenchmarks": {
-        "1": 378.64,
+        "1": 378.65,
         "2": 384.45,
         "3": 237.71,
         "5": 251.31,
@@ -1917,7 +1937,11 @@
       "owner": "Pete Solecki",
       "count": 5
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Ben Bingert",
+      "teamName": "Franoc knthall",
+      "benchPoints": 887.6800000000001
+    },
     "playoffPayouts": [
       {
         "owner": "Mike Kovacs",
@@ -2226,7 +2250,11 @@
       "owner": "Sal DeRose",
       "count": 7
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Bill Solecki",
+      "teamName": "RIP AC Shrader",
+      "benchPoints": 692.6400000000001
+    },
     "playoffPayouts": [
       {
         "owner": "Mike Kovacs",

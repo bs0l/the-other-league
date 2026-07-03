@@ -54,7 +54,7 @@
     "year": 2020,
     "changes": [
       "IR slots: 1 \u2192 2",
-      "Trade deadline: Nov 29, 2019 \u2192 Dec 04, 2020",
+      "Trade deadline: Nov 29, 2019 \u2192 Dec 4, 2020",
       "Scoring added (5 rules) \u2014 Each Reception (PPR) (+1 pts), Each PAT Missed (-0.5 pts), Each Fumble Forced (+1.5 pts), FG Made (50-59 yards) (+5 pts), FG Made (60+ yards) (+5 pts)",
       "Scoring removed \u2014 FG Made (50+ yards) (was +5 pts)",
       "Scoring changed \u2014 Each Fumble Recovered: +2 \u2192 +1.5 pts"
@@ -64,20 +64,20 @@
     "year": 2021,
     "changes": [
       "Regular season: 12 \u2192 13 weeks",
-      "Trade deadline: Dec 04, 2020 \u2192 Dec 10, 2021"
+      "Trade deadline: Dec 4, 2020 \u2192 Dec 10, 2021"
     ]
   },
   {
     "year": 2022,
     "changes": [
       "Draft pick trading: enabled",
-      "Trade deadline: Dec 10, 2021 \u2192 Dec 09, 2022"
+      "Trade deadline: Dec 10, 2021 \u2192 Dec 9, 2022"
     ]
   },
   {
     "year": 2023,
     "changes": [
-      "Trade deadline: Dec 09, 2022 \u2192 Dec 08, 2023"
+      "Trade deadline: Dec 9, 2022 \u2192 Dec 8, 2023"
     ]
   },
   {
@@ -86,7 +86,7 @@
       "FLEX slots: 1 \u2192 2",
       "Punter slot added (0 \u2192 1)",
       "Draft pick trading: disabled",
-      "Trade deadline: Dec 08, 2023 \u2192 Dec 06, 2024",
+      "Trade deadline: Dec 8, 2023 \u2192 Dec 6, 2024",
       "Scoring added (6 rules) \u2014 Each Pass Completed (+0.5 pts), Net Punts (+1.5 pts), Punts Inside the 10 (+1 pts), Punts Inside the 20 (+1 pts), Blocked Punts (-2 pts), Punt Fair Catches (+1 pts)"
     ]
   },
@@ -95,7 +95,7 @@
     "changes": [
       "IR slots: 2 \u2192 0",
       "Punter slot removed (1 \u2192 0)",
-      "Trade deadline: Dec 06, 2024 \u2192 Dec 03, 2025",
+      "Trade deadline: Dec 6, 2024 \u2192 Dec 3, 2025",
       "Scoring removed (6 rules) \u2014 Each Pass Completed (was +0.5 pts), Net Punts (was +1.5 pts), Punts Inside the 10 (was +1 pts), Punts Inside the 20 (was +1 pts), Blocked Punts (was -2 pts), Punt Fair Catches (was +1 pts)"
     ]
   }
