@@ -554,8 +554,19 @@
 
         async function loadData() {
             try {
-                const teamStats = await fetch('output/team_stats.json').then(r => r.json());
+                const [teamStats, transactionAnalysis] = await Promise.all([
+                    fetch('output/team_stats.json').then(r => r.json()),
+                    fetch('output/transaction_analysis.json').then(r => r.json())
+                ]);
                 teamsData = Object.values(teamStats);
+
+                // Attach each owner's all-time sloppy-seconds count (2019+ only -
+                // see transaction_analysis.json metadata for why earlier years are excluded)
+                const sloppyTally = transactionAnalysis.sloppySeconds.allTimeTeamTally;
+                teamsData.forEach(team => {
+                    team.sloppySecondsAllTime = sloppyTally[team.owner] || 0;
+                });
+
                 renderTeams(currentSort);
             } catch (error) {
                 console.error('Error loading data:', error);
@@ -834,6 +845,10 @@
                         <div class="stat-row">
                             <span class="stat-label">Total Trades (2019+)</span>
                             <span class="stat-value">${team.totalTrades || 0}</span>
+                        </div>
+                        <div class="stat-row" style="align-items: flex-start;">
+                            <span class="stat-label">Sloppy Seconds<br><span style="font-size:0.72rem; opacity:0.7;">(Most pickups of a player dropped by another team that season, 2019+)</span></span>
+                            <span class="stat-value">${team.sloppySecondsAllTime || 0}</span>
                         </div>
                     ` : ''}
 

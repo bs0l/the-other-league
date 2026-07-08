@@ -1658,8 +1658,8 @@
           "player": "Travis Kelce",
           "roundKept": 1,
           "pointsScored": 354.5,
-          "roundAvgPoints": 378.65,
-          "pointsVsAvg": -24.15,
+          "roundAvgPoints": 378.64,
+          "pointsVsAvg": -24.14,
           "pointsVsAvgPct": -0.0638,
           "verdict": "AVERAGE",
           "droppedMidSeason": false,
@@ -1863,7 +1863,7 @@
         }
       ],
       "roundBenchmarks": {
-        "1": 378.65,
+        "1": 378.64,
         "2": 384.45,
         "3": 237.71,
         "5": 251.31,

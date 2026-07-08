@@ -396,10 +396,11 @@
 
         async function loadData() {
             try {
-                // Load superlatives and metadata
-                const [superlatives, metadata] = await Promise.all([
+                // Load superlatives, metadata, and transaction analysis
+                const [superlatives, metadata, transactionAnalysis] = await Promise.all([
                     fetch('output/superlatives.json').then(r => r.json()),
-                    fetch('output/metadata.json').then(r => r.json())
+                    fetch('output/metadata.json').then(r => r.json()),
+                    fetch('output/transaction_analysis.json').then(r => r.json())
                 ]);
 
                 // Update metadata display
@@ -410,8 +411,18 @@
                     Updated ${new Date(metadata.lastUpdated).toLocaleDateString()}
                 `;
 
+                // Determine all-time sloppy seconds leader (owner who has most often
+                // picked up a player another team dropped that same season, 2019+)
+                const sloppyTally = transactionAnalysis.sloppySeconds.allTimeTeamTally;
+                let sloppyLeader = null;
+                for (const [owner, count] of Object.entries(sloppyTally)) {
+                    if (!sloppyLeader || count > sloppyLeader.count) {
+                        sloppyLeader = { owner, count };
+                    }
+                }
+
                 // Render all-time stats
-                renderStats(superlatives.allTime);
+                renderStats(superlatives.allTime, sloppyLeader);
 
             } catch (error) {
                 console.error('Error loading data:', error);
@@ -439,7 +450,7 @@
 			return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&scoringPeriodId=${week}&seasonId=${year}&teamId=${teamId}&view=scoringperiod`;
 		}
 
-        function renderStats(stats) {
+        function renderStats(stats, sloppyLeader) {
             const container = document.getElementById('stats-container');
             
             container.innerHTML = `
@@ -560,6 +571,14 @@
 						<div class="stat-title">Most Weekly Low Scores</div>
 						<div class="stat-value">${stats.mostWeeklyLowScores.count}</div>
 						<div class="stat-holder">${stats.mostWeeklyLowScores.owner}</div>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-icon">♻️</div>
+						<div class="stat-title">Most Sloppy Seconds</div>
+						<div class="stat-value">${sloppyLeader ? sloppyLeader.count : 'N/A'}</div>
+						<div class="stat-holder">${sloppyLeader ? sloppyLeader.owner : 'N/A'}</div>
+						<div class="stat-details">Most all-time pickups of a player another team dropped that same season (2019+)</div>
 					</div>
 
 

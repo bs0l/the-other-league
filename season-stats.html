@@ -717,6 +717,11 @@
         return `https://fantasy.espn.com/football/league/standings?leagueId=${LEAGUE_ID}&seasonId=${year}`;
     }
 
+    function firstName(fullName) {
+        if (!fullName) return fullName;
+        return fullName.split(' ')[0];
+    }
+
     // ── Season focus-mode state ──────────────────────────────────────────────
     let allSeasonYears = [];   // sorted newest-first
     let activeYear = null;
@@ -754,7 +759,7 @@
     }
 
     // ── Render season panels ─────────────────────────────────────────────────
-    function renderSeasons(seasonStats) {
+    function renderSeasons(seasonStats, transactionAnalysis) {
         const seasons = Object.values(seasonStats).sort((a, b) => b.year - a.year);
         allSeasonYears = seasons.map(s => s.year);
 
@@ -779,6 +784,21 @@
                 notes.push('Multiple teams tied for most weekly low scores');
             if (!season.bestBenchWarmers)
                 notes.push('Bench scoring data is not available for this season');
+
+            // Transaction-based stats (most dropped / sloppy seconds).
+            // leagueWideMostDropped exists 2018+; sloppySeconds.byYear exists 2019+
+            // only (2018 has drop data but no team attribution - see collector notes).
+            const dropData = transactionAnalysis?.leagueWideMostDropped?.[season.year];
+            const sloppyYearData = transactionAnalysis?.sloppySeconds?.byYear?.[season.year];
+            const sloppyTopPlayer = sloppyYearData?.players?.[0];
+
+            if (!dropData) {
+                notes.push('Transaction data is not available for this season');
+            } else if (!sloppyYearData) {
+                notes.push('Sloppy seconds data is not available for this season (team attribution unavailable)');
+            } else if (!sloppyTopPlayer) {
+                notes.push('No player was rostered by multiple teams this season');
+            }
 
             // No consolation dollar mechanic in this league.
 
@@ -877,6 +897,25 @@
                         <div class="stat-details">
                             ${season.bestBenchWarmers.teamName}
                             <br><em style="font-size:0.75rem;">Or: Worst Manager? 😉</em>
+                        </div>
+                    </div>` : ''}
+
+                    ${sloppyTopPlayer ? `
+                    <div class="stat-box">
+                        <div class="stat-title">Sloppy Seconds</div>
+                        <div class="stat-content">${sloppyTopPlayer.player}</div>
+                        <div class="stat-details">${sloppyTopPlayer.teamCount} teams<br>
+                            <span style="font-size:0.72rem;">${sloppyTopPlayer.teams.map(firstName).join(' → ')}</span>
+                        </div>
+                    </div>` : ''}
+
+                    ${dropData && dropData.length ? `
+                    <div class="stat-box" style="grid-column: span 2;">
+                        <div class="stat-title">Most Dropped Players</div>
+                        <div class="stat-details" style="margin-top:6px;">
+                            ${dropData.map((d, i) =>
+                                `<div>${i + 1}. <strong>${d.player}</strong> — dropped ${d.count}x</div>`
+                            ).join('')}
                         </div>
                     </div>` : ''}
 
@@ -1156,9 +1195,10 @@
     // ── Data loading ─────────────────────────────────────────────────────────
     async function loadData() {
         try {
-            const [seasonStats, matchups] = await Promise.all([
+            const [seasonStats, matchups, transactionAnalysis] = await Promise.all([
                 fetch('output/season_stats.json').then(r => r.json()),
-                fetch('output/matchups.json').then(r => r.json())
+                fetch('output/matchups.json').then(r => r.json()),
+                fetch('output/transaction_analysis.json').then(r => r.json())
             ]);
 
             const ownersByYear = {};
@@ -1169,7 +1209,7 @@
                 if (m.away?.owner) ownersByYear[yr].add(m.away.owner);
             });
 
-            renderSeasons(seasonStats);
+            renderSeasons(seasonStats, transactionAnalysis);
             renderPayouts(seasonStats, ownersByYear);
             renderKeepers(seasonStats);
         } catch (error) {

@@ -395,9 +395,10 @@
 
         async function loadData() {
             try {
-                const [superlatives, metadata] = await Promise.all([
+                const [superlatives, metadata, transactionAnalysis] = await Promise.all([
                     fetch('output/superlatives.json').then(r => r.json()),
-                    fetch('output/metadata.json').then(r => r.json())
+                    fetch('output/metadata.json').then(r => r.json()),
+                    fetch('output/transaction_analysis.json').then(r => r.json())
                 ]);
 
                 document.getElementById('metadata-info').innerHTML = `
@@ -406,7 +407,18 @@
                     ${metadata.totalTeams} Teams
                 `;
 
-                renderStats(superlatives.regularSeason);
+                // Regular-season-only sloppy seconds leader (uses the
+                // regularSeasonOnly branch, NOT the whole-season allTimeTeamTally,
+                // since this page's stats are all regular-season-scoped)
+                const sloppyTally = transactionAnalysis.regularSeasonOnly.sloppySeconds.allTimeTeamTally;
+                let sloppyLeader = null;
+                for (const [owner, count] of Object.entries(sloppyTally)) {
+                    if (!sloppyLeader || count > sloppyLeader.count) {
+                        sloppyLeader = { owner, count };
+                    }
+                }
+
+                renderStats(superlatives.regularSeason, sloppyLeader);
 
             } catch (error) {
                 console.error('Error loading data:', error);
@@ -434,7 +446,7 @@
 			return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&scoringPeriodId=${week}&seasonId=${year}&teamId=${teamId}&view=scoringperiod`;
 		}
 
-        function renderStats(stats) {
+        function renderStats(stats, sloppyLeader) {
             const container = document.getElementById('stats-container');
             
             container.innerHTML = `
@@ -565,6 +577,15 @@
 						<div class="stat-title">Most Weekly Low Scores</div>
 						<div class="stat-value">${stats.mostWeeklyLowScores.count}</div>
 						<div class="stat-holder">${stats.mostWeeklyLowScores.owner}</div>
+						<div class="badge">Regular Season Only</div>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-icon">♻️</div>
+						<div class="stat-title">Most Sloppy Seconds</div>
+						<div class="stat-value">${sloppyLeader ? sloppyLeader.count : 'N/A'}</div>
+						<div class="stat-holder">${sloppyLeader ? sloppyLeader.owner : 'N/A'}</div>
+						<div class="stat-details">Most pickups of a player another team dropped that same season (2019+)</div>
 						<div class="badge">Regular Season Only</div>
 					</div>
                 </div>
