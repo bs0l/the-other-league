@@ -9,22 +9,23 @@
     "logoUrl": "https://i.imgur.com/psfHbe3.png?1",
     "foundedYear": 2014,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 12,
     "teamId": 9,
     "teamName": "Why Was I on the 415 Shuttle?",
     "abbrev": "TB12",
     "allTeamNames": [
-      "Why Was I on the 415 Shuttle?",
-      "Why Was I On The 415 Shuttle",
+      "Denver Bronkers",
       "Bradys and Edelman",
-      "Denver Bronkers"
+      "Why Was I On The 415 Shuttle",
+      "Why Was I on the 415 Shuttle?"
     ],
     "playoffYears": [
       2019,
       2023,
       2024,
       2025,
+      2026,
       2014
     ],
     "seasonsPlayed": 12,
@@ -47,7 +48,7 @@
       "ties": 0,
       "winPercentage": 0.473
     },
-    "playoffAppearances": 5,
+    "playoffAppearances": 6,
     "championships": 0,
     "championshipAppearances": 2,
     "championshipYears": [],
@@ -216,12 +217,8 @@
         "regularSeasonLosses": 6
       }
     },
-    "bestOpponent": "Sal DeRose",
-    "bestOpponentRecord": "19-8",
-    "bestOpponentWinPct": 0.7037037037037037,
-    "worstOpponent": "Carl Cummins",
-    "worstOpponentRecord": "9-18",
-    "worstOpponentWinPct": 0.3333333333333333,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.8461538461538461,
     "bestSeasonYear": 2024,
     "bestSeasonWins": 11,
@@ -256,21 +253,21 @@
     "lastYear": 2025,
     "foundedYear": 2014,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 12,
     "teamId": 2,
     "teamName": "Chasing the Repeat",
     "abbrev": "RIP",
     "allTeamNames": [
-      "Lucky Kamario",
-      "Fresh Prince of Helaire",
       "Guess Whos Back Shindig's Back",
-      "To See or Not Kelce",
       "Frankly, Ameer, IDontGiveaDamn",
-      "My Ba ss Hurts",
+      "Lucky Kamario",
+      "To See or Not Kelce",
+      "Fresh Prince of Helaire",
       "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
+      "Takin the Browns to Super Bowl",
       "Chasing the Repeat",
-      "Takin the Browns to Super Bowl"
+      "My Ba ss Hurts"
     ],
     "playoffYears": [
       2016,
@@ -279,6 +276,7 @@
       2023,
       2024,
       2025,
+      2026,
       2014
     ],
     "seasonsPlayed": 12,
@@ -301,7 +299,7 @@
       "ties": 0,
       "winPercentage": 0.543
     },
-    "playoffAppearances": 7,
+    "playoffAppearances": 8,
     "championships": 3,
     "championshipAppearances": 4,
     "championshipYears": [
@@ -474,12 +472,8 @@
         "regularSeasonLosses": 5
       }
     },
-    "bestOpponent": "Ray Engleking",
-    "bestOpponentRecord": "13-6",
-    "bestOpponentWinPct": 0.6842105263157895,
-    "worstOpponent": "Randell Crawford",
-    "worstOpponentRecord": "8-12",
-    "worstOpponentWinPct": 0.4,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.7692307692307693,
     "bestSeasonYear": 2023,
     "bestSeasonWins": 10,
@@ -494,13 +488,14 @@
     "mostLossesSeasonYear": 2019,
     "logoUrl": "https://g.espncdn.com/s/ffllm/logos/SmackTalk-LeoEspinosa/u_mad_bro-09.svg",
     "mostLoyalPlayer": "Ja'Marr Chase",
-    "mostLoyalPlayerSeasons": 5,
+    "mostLoyalPlayerSeasons": 6,
     "mostLoyalPlayerYears": [
       2021,
       2022,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ]
   },
   "Sal DeRose": {
@@ -512,21 +507,21 @@
     "lastYear": 2025,
     "foundedYear": 2014,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 12,
     "teamId": 3,
     "teamName": "Tommy F'n Cutlets",
     "abbrev": "TC",
     "allTeamNames": [
-      "Bill Solecki: Amazing",
       "Sal's Infirmary",
-      "Adams, Cooper and Prescott",
-      "Qaaron Rodgers",
-      "DANIEL JONES IS LITERALLY TRASH",
-      "Drew Stanton Celebrations",
-      "SAM DARNOLD IS LITERALLY JESUS",
       "Tommy F'n Cutlets",
-      "\u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af \u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af"
+      "\u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af \u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af",
+      "Drew Stanton Celebrations",
+      "Adams, Cooper and Prescott",
+      "DANIEL JONES IS LITERALLY TRASH",
+      "SAM DARNOLD IS LITERALLY JESUS",
+      "Qaaron Rodgers",
+      "Bill Solecki: Amazing"
     ],
     "playoffYears": [
       2018,
@@ -724,12 +719,8 @@
         "regularSeasonLosses": 10
       }
     },
-    "bestOpponent": "Ray Engleking",
-    "bestOpponentRecord": "12-6",
-    "bestOpponentWinPct": 0.6666666666666666,
-    "worstOpponent": "Joe Jaramillo",
-    "worstOpponentRecord": "3-13",
-    "worstOpponentWinPct": 0.1875,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.75,
     "bestSeasonYear": 2018,
     "bestSeasonWins": 9,
@@ -829,12 +820,8 @@
         "regularSeasonLosses": 6
       }
     },
-    "bestOpponent": "Daniel Keating",
-    "bestOpponentRecord": "1-2",
-    "bestOpponentWinPct": 0.3333333333333333,
-    "worstOpponent": "Daniel Keating",
-    "worstOpponentRecord": "1-2",
-    "worstOpponentWinPct": 0.3333333333333333,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.5384615384615384,
     "bestSeasonYear": 2014,
     "bestSeasonWins": 7,
@@ -863,30 +850,31 @@
     "lastYear": 2025,
     "foundedYear": 2014,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 12,
     "teamId": 5,
     "teamName": "Josh Allen's Blueberries",
     "abbrev": "Josh",
     "allTeamNames": [
-      "Willy 3rd Place",
+      "Franky Fedoras",
       "Barry Boxers",
       "Dan Missed The Party",
-      "Harry Hats",
-      "Joey Jorts",
       "Dan sits when he pees",
-      "Free Candy and Wins",
-      "Franoc knthall",
-      "Josh Allen's Blueberries",
       "Bobby Boots",
-      "Franky Fedoras",
-      "Kenny Kilts"
+      "Willy 3rd Place",
+      "Joey Jorts",
+      "Josh Allen's Blueberries",
+      "Free Candy and Wins",
+      "Kenny Kilts",
+      "Harry Hats",
+      "Franoc knthall"
     ],
     "playoffYears": [
       2016,
       2019,
       2021,
       2023,
+      2026,
       2014,
       2015
     ],
@@ -910,7 +898,7 @@
       "ties": 0,
       "winPercentage": 0.553
     },
-    "playoffAppearances": 6,
+    "playoffAppearances": 7,
     "championships": 1,
     "championshipAppearances": 3,
     "championshipYears": [
@@ -1081,12 +1069,8 @@
         "regularSeasonLosses": 6
       }
     },
-    "bestOpponent": "Ray Engleking",
-    "bestOpponentRecord": "12-5",
-    "bestOpponentWinPct": 0.7058823529411765,
-    "worstOpponent": "Carl Cummins",
-    "worstOpponentRecord": "8-13",
-    "worstOpponentWinPct": 0.38095238095238093,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.7692307692307693,
     "bestSeasonYear": 2021,
     "bestSeasonWins": 10,
@@ -1117,18 +1101,19 @@
     "lastYear": 2025,
     "foundedYear": 2014,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 12,
     "teamId": 6,
     "teamName": "We Tried Our Best",
     "abbrev": "WTOB",
     "allTeamNames": [
       "We Tried Our Best",
-      "This Sauce Is Boss",
-      "DJ Khalad"
+      "DJ Khalad",
+      "This Sauce Is Boss"
     ],
     "playoffYears": [
       2025,
+      2026,
       2021,
       2022
     ],
@@ -1152,7 +1137,7 @@
       "ties": 0,
       "winPercentage": 0.468
     },
-    "playoffAppearances": 3,
+    "playoffAppearances": 4,
     "championships": 1,
     "championshipAppearances": 2,
     "championshipYears": [
@@ -1323,12 +1308,8 @@
         "regularSeasonLosses": 5
       }
     },
-    "bestOpponent": "Ray Engleking",
-    "bestOpponentRecord": "15-7",
-    "bestOpponentWinPct": 0.6818181818181818,
-    "worstOpponent": "Bill Solecki",
-    "worstOpponentRecord": "4-12",
-    "worstOpponentWinPct": 0.25,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.6153846153846154,
     "bestSeasonYear": 2021,
     "bestSeasonWins": 8,
@@ -1360,7 +1341,7 @@
     "lastYear": 2025,
     "foundedYear": 2014,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 12,
     "teamId": 7,
     "teamName": "Titty Sprinkles",
@@ -1372,6 +1353,7 @@
       2017,
       2019,
       2021,
+      2026,
       2015
     ],
     "seasonsPlayed": 12,
@@ -1394,7 +1376,7 @@
       "ties": 0,
       "winPercentage": 0.511
     },
-    "playoffAppearances": 4,
+    "playoffAppearances": 5,
     "championships": 4,
     "championshipAppearances": 4,
     "championshipYears": [
@@ -1568,12 +1550,8 @@
         "regularSeasonLosses": 9
       }
     },
-    "bestOpponent": "Daniel Keating",
-    "bestOpponentRecord": "18-9",
-    "bestOpponentWinPct": 0.6666666666666666,
-    "worstOpponent": "Bill Solecki",
-    "worstOpponentRecord": "7-13",
-    "worstOpponentWinPct": 0.35,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.75,
     "bestSeasonYear": 2019,
     "bestSeasonWins": 9,
@@ -1671,12 +1649,8 @@
         "regularSeasonLosses": 8
       }
     },
-    "bestOpponent": "Pete Solecki",
-    "bestOpponentRecord": "2-1",
-    "bestOpponentWinPct": 0.6666666666666666,
-    "worstOpponent": "Sal DeRose",
-    "worstOpponentRecord": "1-2",
-    "worstOpponentWinPct": 0.3333333333333333,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.38461538461538464,
     "bestSeasonYear": 2014,
     "bestSeasonWins": 5,
@@ -1706,28 +1680,29 @@
     "logoUrl": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/c5384a70-a21c-11f0-90f7-112fa0f42e74",
     "foundedYear": 2015,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 11,
     "teamId": 1,
     "teamName": "RIP AC Shrader",
     "abbrev": "BELL",
     "allTeamNames": [
-      "Business Expert Nathan Fielder",
       "John Cena",
-      "Turbo Team Termites",
-      "RIP AC Shrader",
-      "Get CTE or Die Tryin",
-      "#1 Best Weekly Meme Team",
+      "Why Anyone On The 415 Shuttle?",
+      "Business Expert Nathan Fielder",
       "Bucket, Mop; Macaroni, Pot",
+      "Turbo Team Termites",
+      "#1 Best Weekly Meme Team",
+      "Get CTE or Die Tryin",
       "Boyz n da Hood",
-      "Why Anyone On The 415 Shuttle?"
+      "RIP AC Shrader"
     ],
     "playoffYears": [
       2016,
       2017,
       2018,
       2020,
-      2022
+      2022,
+      2026
     ],
     "seasonsPlayed": 11,
     "totalGames": 173,
@@ -1749,7 +1724,7 @@
       "ties": 0,
       "winPercentage": 0.538
     },
-    "playoffAppearances": 5,
+    "playoffAppearances": 6,
     "championships": 0,
     "championshipAppearances": 3,
     "championshipYears": [],
@@ -1906,12 +1881,8 @@
         "regularSeasonLosses": 7
       }
     },
-    "bestOpponent": "Pete Solecki",
-    "bestOpponentRecord": "12-4",
-    "bestOpponentWinPct": 0.75,
-    "worstOpponent": "Joe Jaramillo",
-    "worstOpponentRecord": "9-14",
-    "worstOpponentWinPct": 0.391304347826087,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.8333333333333334,
     "bestSeasonYear": 2017,
     "bestSeasonWins": 10,
@@ -1943,20 +1914,21 @@
     "lastYear": 2025,
     "foundedYear": 2015,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 11,
     "teamId": 10,
     "teamName": "Pop Rockin' Beats",
     "abbrev": "BUCK",
     "allTeamNames": [
       "Pop Rockin' Beats",
-      "Alabama of Europe",
-      "Down with the ( Covid) Sickness"
+      "Down with the ( Covid) Sickness",
+      "Alabama of Europe"
     ],
     "playoffYears": [
       2016,
-      2025,
       2024,
+      2025,
+      2026,
       2015
     ],
     "seasonsPlayed": 11,
@@ -1979,7 +1951,7 @@
       "ties": 0,
       "winPercentage": 0.52
     },
-    "playoffAppearances": 4,
+    "playoffAppearances": 5,
     "championships": 0,
     "championshipAppearances": 3,
     "championshipYears": [],
@@ -2136,12 +2108,8 @@
         "regularSeasonLosses": 4
       }
     },
-    "bestOpponent": "Pete Solecki",
-    "bestOpponentRecord": "15-9",
-    "bestOpponentWinPct": 0.625,
-    "worstOpponent": "Joe Jaramillo",
-    "worstOpponentRecord": "8-12",
-    "worstOpponentWinPct": 0.4,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.8461538461538461,
     "bestSeasonYear": 2024,
     "bestSeasonWins": 11,
@@ -2174,26 +2142,27 @@
     "lastYear": 2025,
     "foundedYear": 2015,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 11,
     "teamId": 4,
     "teamName": "Chili's Eat Fresh",
     "abbrev": "RKO",
     "allTeamNames": [
       "RKO Out of Nowhere",
-      "SAL is Literally Jesus",
+      "For When the Bell Tolls",
       "S e m i C h u b b",
+      "SAL is Literally Jesus",
+      "Belt Sanders",
       "Tua Time",
       "Chili's Eat Fresh",
-      "Brady Sits When he Pees",
-      "For When the Bell Tolls",
-      "Belt Sanders"
+      "Brady Sits When he Pees"
     ],
     "playoffYears": [
       2018,
       2019,
       2020,
       2021,
+      2026,
       2015
     ],
     "seasonsPlayed": 11,
@@ -2216,7 +2185,7 @@
       "ties": 0,
       "winPercentage": 0.514
     },
-    "playoffAppearances": 5,
+    "playoffAppearances": 6,
     "championships": 1,
     "championshipAppearances": 1,
     "championshipYears": [
@@ -2375,12 +2344,8 @@
         "regularSeasonLosses": 7
       }
     },
-    "bestOpponent": "Sal DeRose",
-    "bestOpponentRecord": "13-3",
-    "bestOpponentWinPct": 0.8125,
-    "worstOpponent": "Daniel Keating",
-    "worstOpponentRecord": "6-13",
-    "worstOpponentWinPct": 0.3157894736842105,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.75,
     "bestSeasonYear": 2019,
     "bestSeasonWins": 9,
@@ -2411,15 +2376,15 @@
     "lastYear": 2025,
     "foundedYear": 2015,
     "lastActiveYear": 2025,
-    "isActive": true,
+    "isActive": false,
     "totalSeasons": 11,
     "teamId": 8,
     "teamName": "The Other Team",
     "abbrev": "OTHR",
     "allTeamNames": [
+      "Balls to the Rawls",
       "So Fresh So Kareem",
-      "The Other Team",
-      "Balls to the Rawls"
+      "The Other Team"
     ],
     "playoffYears": [
       2017,
@@ -2607,12 +2572,8 @@
         "regularSeasonLosses": 6
       }
     },
-    "bestOpponent": "Joe Jaramillo",
-    "bestOpponentRecord": "15-8",
-    "bestOpponentWinPct": 0.6521739130434783,
-    "worstOpponent": "Ben Bingert",
-    "worstOpponentRecord": "5-12",
-    "worstOpponentWinPct": 0.29411764705882354,
+    "bestOpponent": null,
+    "worstOpponent": null,
     "bestSeasonWinPct": 0.8333333333333334,
     "bestSeasonYear": 2018,
     "bestSeasonWins": 10,

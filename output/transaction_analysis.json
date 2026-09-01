@@ -111,7 +111,8 @@
         "player": "Rams D/ST",
         "count": 3
       }
-    ]
+    ],
+    "2026": []
   },
   "perTeamMostDropped": {
     "2018": null,
@@ -1108,7 +1109,8 @@
           "count": 1
         }
       ]
-    }
+    },
+    "2026": {}
   },
   "sloppySeconds": {
     "byYear": {
@@ -4168,6 +4170,11 @@
           "Ray Engleking": 1
         },
         "sameWeekAddsFlagged": 1
+      },
+      "2026": {
+        "players": [],
+        "teamTally": {},
+        "sameWeekAddsFlagged": 0
       }
     },
     "allTimeTeamTally": {
@@ -4297,7 +4304,8 @@
           "player": "Rashid Shaheed",
           "count": 3
         }
-      ]
+      ],
+      "2026": []
     },
     "perTeamMostDropped": {
       "2018": null,
@@ -5294,7 +5302,8 @@
             "count": 1
           }
         ]
-      }
+      },
+      "2026": {}
     },
     "sloppySeconds": {
       "byYear": {
@@ -7737,6 +7746,11 @@
             "Ray Engleking": 1
           },
           "sameWeekAddsFlagged": 1
+        },
+        "2026": {
+          "players": [],
+          "teamTally": {},
+          "sameWeekAddsFlagged": 0
         }
       },
       "allTimeTeamTally": {
@@ -7755,8 +7769,8 @@
     }
   },
   "metadata": {
-    "transactionDataYears": "2018-2025",
-    "teamAttributionYears": "2019-2025",
+    "transactionDataYears": "2018-2026",
+    "teamAttributionYears": "2019-2026",
     "notes": "2014-2017: no transaction data available via ESPN API (confirmed empirically for this league). 2018: league-wide most-dropped only - per-team and sloppy-seconds stats are null this season because WAIVER-type transactions have no team attribution (confirmed 100% of that season's waiver moves, 0% broken in every other year 2019-2025). \"Same-week adds\" are pickups that cannot be ordered against a same-week drop from another team (scoring_period only resolves to the week) - these are excluded from team-level tallies rather than arbitrarily attributed. Top-level keys cover the full season including playoff weeks; \"regularSeasonOnly\" mirrors the same structure filtered to scoring_period <= that season's reg_season_count."
   }
 }
