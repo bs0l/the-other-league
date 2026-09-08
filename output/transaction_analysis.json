@@ -112,7 +112,12 @@
         "count": 3
       }
     ],
-    "2026": []
+    "2026": [
+      {
+        "player": "Matt Gay",
+        "count": 17
+      }
+    ]
   },
   "perTeamMostDropped": {
     "2018": null,
@@ -1110,7 +1115,14 @@
         }
       ]
     },
-    "2026": {}
+    "2026": {
+      "Bethany Bingert": [
+        {
+          "player": "Matt Gay",
+          "count": 17
+        }
+      ]
+    }
   },
   "sloppySeconds": {
     "byYear": {
@@ -4305,7 +4317,12 @@
           "count": 3
         }
       ],
-      "2026": []
+      "2026": [
+        {
+          "player": "Matt Gay",
+          "count": 17
+        }
+      ]
     },
     "perTeamMostDropped": {
       "2018": null,
@@ -5303,7 +5320,14 @@
           }
         ]
       },
-      "2026": {}
+      "2026": {
+        "Bethany Bingert": [
+          {
+            "player": "Matt Gay",
+            "count": 17
+          }
+        ]
+      }
     },
     "sloppySeconds": {
       "byYear": {

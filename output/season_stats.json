@@ -2479,5 +2479,68 @@
         "16": 197.13
       }
     }
+  },
+  "2026": {
+    "year": 2026,
+    "highestScore": {
+      "score": 5.0,
+      "team": "Kraft Mc n' Chase",
+      "owner": "Bill Solecki",
+      "opponent": "Chasing the Repeat",
+      "opponentScore": 0.0,
+      "week": 1,
+      "matchupPeriodId": 1
+    },
+    "lowestScore": {
+      "score": 5.0,
+      "team": "Kraft Mc n' Chase",
+      "owner": "Bill Solecki",
+      "opponent": "Chasing the Repeat",
+      "opponentScore": 0.0,
+      "week": 1,
+      "matchupPeriodId": 1
+    },
+    "closestWin": {
+      "margin": 5.0,
+      "winner": "Kraft Mc n' Chase",
+      "winnerOwner": "Bill Solecki",
+      "winnerScore": 5.0,
+      "loser": "Chasing the Repeat",
+      "loserScore": 0.0,
+      "week": 1,
+      "matchupPeriodId": 1
+    },
+    "biggestBlowout": {
+      "margin": 5.0,
+      "winner": "Kraft Mc n' Chase",
+      "winnerOwner": "Bill Solecki",
+      "winnerScore": 5.0,
+      "loser": "Chasing the Repeat",
+      "loserScore": 0.0,
+      "week": 1,
+      "matchupPeriodId": 1
+    },
+    "longestWinStreak": {
+      "owner": "Bill Solecki",
+      "length": 17
+    },
+    "longestLossStreak": {
+      "owner": "Mike Kovacs",
+      "length": 17
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Bill Solecki",
+      "count": 13
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Pete Solecki",
+      "count": 13
+    },
+    "bestBenchWarmers": null,
+    "playoffPayouts": [],
+    "keeperAnalysis": {
+      "keepers": [],
+      "roundBenchmarks": {}
+    }
   }
 }
