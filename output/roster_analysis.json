@@ -6,7 +6,7 @@
       "teamName": "Kraft Mc n' Chase",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 0.0,
+      "draftedPointsScored": 24.1,
       "waiverPickups": 0,
       "waiverPointsScored": 0,
       "draftRetentionRate": 100.0,
@@ -16,7 +16,7 @@
           "round": 1,
           "pick": 4,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 24.1
         },
         {
           "name": "Justin Jefferson",
@@ -134,10 +134,10 @@
     },
     "Mike Kovacs": {
       "owner": "Mike Kovacs",
-      "teamName": "Chasing the Repeat",
+      "teamName": "Waddle and Come Chase Maye",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 0.0,
+      "draftedPointsScored": 8.68,
       "waiverPickups": 0,
       "waiverPointsScored": 0,
       "draftRetentionRate": 100.0,
@@ -147,7 +147,7 @@
           "round": 1,
           "pick": 8,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 8.68
         },
         {
           "name": "De'Von Achane",
@@ -268,9 +268,9 @@
       "teamName": "FC Baseball",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 0.0,
+      "draftedPointsScored": 7.8,
       "waiverPickups": 1,
-      "waiverPointsScored": 0.0,
+      "waiverPointsScored": 1.4,
       "draftRetentionRate": 94.11764705882352,
       "draftedPlayers": [
         {
@@ -313,7 +313,7 @@
           "round": 6,
           "pick": 10,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 7.8
         },
         {
           "name": "Jared Goff",
@@ -399,9 +399,9 @@
       "teamName": "Fran Tarkenton",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 0.0,
-      "waiverPickups": 0,
-      "waiverPointsScored": 0,
+      "draftedPointsScored": 0.52,
+      "waiverPickups": 1,
+      "waiverPointsScored": 0.0,
       "draftRetentionRate": 100.0,
       "draftedPlayers": [
         {
@@ -479,7 +479,7 @@
           "round": 11,
           "pick": 3,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 0.52
         },
         {
           "name": "Alec Pierce",
@@ -530,7 +530,7 @@
       "teamName": "LOOK AT THIS GRAPH",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 0.0,
+      "draftedPointsScored": 12.5,
       "waiverPickups": 0,
       "waiverPointsScored": 0,
       "draftRetentionRate": 100.0,
@@ -582,7 +582,7 @@
           "round": 7,
           "pick": 6,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 12.5
         },
         {
           "name": "Harold Fannin Jr.",
@@ -661,7 +661,7 @@
       "teamName": "We Tried Our Best",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 0.0,
+      "draftedPointsScored": 4.0,
       "waiverPickups": 0,
       "waiverPointsScored": 0,
       "draftRetentionRate": 100.0,
@@ -776,7 +776,7 @@
           "round": 16,
           "pick": 1,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 4.0
         },
         {
           "name": "Keaton Mitchell",
@@ -791,11 +791,11 @@
       "owner": "Carl Cummins",
       "teamName": "Titty Sprinkles",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 17,
+      "draftedKeptToPlayoffs": 16,
       "draftedPointsScored": 0.0,
-      "waiverPickups": 0,
-      "waiverPointsScored": 0,
-      "draftRetentionRate": 100.0,
+      "waiverPickups": 1,
+      "waiverPointsScored": 0.0,
+      "draftRetentionRate": 94.11764705882352,
       "draftedPlayers": [
         {
           "name": "Bijan Robinson",
@@ -899,8 +899,8 @@
           "name": "Mike Washington Jr.",
           "round": 15,
           "pick": 2,
-          "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Bryce Young",
@@ -923,7 +923,7 @@
       "teamName": "Lights, Camera, Jackson",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 0.0,
+      "draftedPointsScored": 7.0,
       "waiverPickups": 0,
       "waiverPointsScored": 0,
       "draftRetentionRate": 100.0,
@@ -1024,7 +1024,7 @@
           "round": 14,
           "pick": 6,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 7.0
         },
         {
           "name": "Malik Willis",
@@ -1055,8 +1055,8 @@
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 17,
       "draftedPointsScored": 0.0,
-      "waiverPickups": 0,
-      "waiverPointsScored": 0,
+      "waiverPickups": 1,
+      "waiverPointsScored": 0.0,
       "draftRetentionRate": 100.0,
       "draftedPlayers": [
         {
@@ -1185,7 +1185,7 @@
       "teamName": "Pop Rockin' Beats",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 0.0,
+      "draftedPointsScored": 9.2,
       "waiverPickups": 0,
       "waiverPointsScored": 0,
       "draftRetentionRate": 100.0,
@@ -1209,7 +1209,7 @@
           "round": 3,
           "pick": 9,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 5.6
         },
         {
           "name": "Kyren Williams",
@@ -1293,7 +1293,7 @@
           "round": 15,
           "pick": 9,
           "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "totalPoints": 3.6
         },
         {
           "name": "Makai Lemon",

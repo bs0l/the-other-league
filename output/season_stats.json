@@ -2483,60 +2483,64 @@
   "2026": {
     "year": 2026,
     "highestScore": {
-      "score": 5.0,
+      "score": 31.2,
       "team": "Kraft Mc n' Chase",
       "owner": "Bill Solecki",
-      "opponent": "Chasing the Repeat",
-      "opponentScore": 0.0,
+      "opponent": "Waddle and Come Chase Maye",
+      "opponentScore": 8.68,
       "week": 1,
       "matchupPeriodId": 1
     },
     "lowestScore": {
-      "score": 5.0,
-      "team": "Kraft Mc n' Chase",
-      "owner": "Bill Solecki",
-      "opponent": "Chasing the Repeat",
-      "opponentScore": 0.0,
+      "score": 4.0,
+      "team": "We Tried Our Best",
+      "owner": "Pete Solecki",
+      "opponent": "Lights, Camera, Jackson",
+      "opponentScore": 12.0,
       "week": 1,
       "matchupPeriodId": 1
     },
     "closestWin": {
-      "margin": 5.0,
-      "winner": "Kraft Mc n' Chase",
-      "winnerOwner": "Bill Solecki",
-      "winnerScore": 5.0,
-      "loser": "Chasing the Repeat",
-      "loserScore": 0.0,
+      "margin": 7.200000000000001,
+      "winner": "FC Baseball",
+      "winnerOwner": "Bethany Bingert",
+      "winnerScore": 12.8,
+      "loser": "Pop Rockin' Beats",
+      "loserScore": 5.6,
       "week": 1,
       "matchupPeriodId": 1
     },
     "biggestBlowout": {
-      "margin": 5.0,
+      "margin": 22.52,
       "winner": "Kraft Mc n' Chase",
       "winnerOwner": "Bill Solecki",
-      "winnerScore": 5.0,
-      "loser": "Chasing the Repeat",
-      "loserScore": 0.0,
+      "winnerScore": 31.2,
+      "loser": "Waddle and Come Chase Maye",
+      "loserScore": 8.68,
       "week": 1,
       "matchupPeriodId": 1
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 17
+      "length": 1
     },
     "longestLossStreak": {
       "owner": "Mike Kovacs",
-      "length": 17
+      "length": 1
     },
     "mostWeeklyHighScores": {
       "owner": "Bill Solecki",
-      "count": 13
+      "count": 1
     },
     "mostWeeklyLowScores": {
-      "owner": "Pete Solecki",
-      "count": 13
+      "owner": "Joe Jaramillo",
+      "count": 1
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Randell Crawford",
+      "teamName": "Pop Rockin' Beats",
+      "benchPoints": 3.6
+    },
     "playoffPayouts": [],
     "keeperAnalysis": {
       "keepers": [],

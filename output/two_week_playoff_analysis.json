@@ -1,5 +1,5 @@
 {
-  "totalTwoWeekMatchups": 17,
+  "totalTwoWeekMatchups": 14,
   "comebacks": 0,
   "comebackRate": 0.0,
   "matchups": [
@@ -338,78 +338,6 @@
       "comeback": false,
       "week1Margin": 38.96000000000001,
       "finalMargin": 77.92000000000002
-    },
-    {
-      "year": 2026,
-      "week1": 14,
-      "week2": 15,
-      "teamA": {
-        "name": "Titty Sprinkles",
-        "owner": "Carl Cummins",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "teamB": {
-        "name": "Why Was I on the 415 Shuttle?",
-        "owner": "Daniel Keating",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 0.0,
-      "finalMargin": 0.0
-    },
-    {
-      "year": 2026,
-      "week1": 15,
-      "week2": 16,
-      "teamA": {
-        "name": "Titty Sprinkles",
-        "owner": "Carl Cummins",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "teamB": {
-        "name": "Why Was I on the 415 Shuttle?",
-        "owner": "Daniel Keating",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 0.0,
-      "finalMargin": 0.0
-    },
-    {
-      "year": 2026,
-      "week1": 16,
-      "week2": 17,
-      "teamA": {
-        "name": "Titty Sprinkles",
-        "owner": "Carl Cummins",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "teamB": {
-        "name": "Why Was I on the 415 Shuttle?",
-        "owner": "Daniel Keating",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 0.0,
-      "finalMargin": 0.0
     }
   ],
   "comebackMatchups": []
