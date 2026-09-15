@@ -118,6 +118,10 @@
         "count": 1
       },
       {
+        "player": "Jalen Coker",
+        "count": 1
+      },
+      {
         "player": "Mike Washington Jr.",
         "count": 1
       }
@@ -1123,6 +1127,12 @@
       "Bethany Bingert": [
         {
           "player": "Matt Gay",
+          "count": 1
+        }
+      ],
+      "Daniel Keating": [
+        {
+          "player": "Jalen Coker",
           "count": 1
         }
       ],
@@ -4333,6 +4343,10 @@
           "count": 1
         },
         {
+          "player": "Jalen Coker",
+          "count": 1
+        },
+        {
           "player": "Mike Washington Jr.",
           "count": 1
         }
@@ -5338,6 +5352,12 @@
         "Bethany Bingert": [
           {
             "player": "Matt Gay",
+            "count": 1
+          }
+        ],
+        "Daniel Keating": [
+          {
+            "player": "Jalen Coker",
             "count": 1
           }
         ],

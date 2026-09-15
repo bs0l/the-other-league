@@ -21286,16 +21286,16 @@
       "teamName": "Titty Sprinkles",
       "teamAbbrev": "CUM",
       "owner": "Carl Cummins",
-      "score": 0.0
+      "score": 157.44
     },
     "away": {
       "teamId": 9,
       "teamName": "Why Was I on the 415 Shuttle?",
       "teamAbbrev": "TB12",
       "owner": "Daniel Keating",
-      "score": 0.0
+      "score": 157.56
     },
-    "winner": "TIE"
+    "winner": "AWAY"
   },
   {
     "id": "2026_1_2_1",
@@ -21309,14 +21309,14 @@
       "teamName": "Waddle and Come Chase Maye",
       "teamAbbrev": "RIP",
       "owner": "Mike Kovacs",
-      "score": 8.68
+      "score": 136.22
     },
     "away": {
       "teamId": 1,
       "teamName": "Kraft Mc n' Chase",
       "teamAbbrev": "KRFT",
       "owner": "Bill Solecki",
-      "score": 31.2
+      "score": 150.86
     },
     "winner": "AWAY"
   },
@@ -21332,16 +21332,16 @@
       "teamName": "LOOK AT THIS GRAPH",
       "teamAbbrev": "GRPH",
       "owner": "Ben Bingert",
-      "score": 12.5
+      "score": 149.92
     },
     "away": {
       "teamId": 4,
       "teamName": "Fran Tarkenton",
       "teamAbbrev": "RKO",
       "owner": "Joe Jaramillo",
-      "score": 0.0
+      "score": 162.02
     },
-    "winner": "HOME"
+    "winner": "AWAY"
   },
   {
     "id": "2026_1_3_10",
@@ -21355,14 +21355,14 @@
       "teamName": "FC Baseball",
       "teamAbbrev": "FCB",
       "owner": "Bethany Bingert",
-      "score": 12.8
+      "score": 167.56
     },
     "away": {
       "teamId": 10,
       "teamName": "Pop Rockin' Beats",
       "teamAbbrev": "BUCK",
       "owner": "Randell Crawford",
-      "score": 5.6
+      "score": 87.78
     },
     "winner": "HOME"
   },
@@ -21378,15 +21378,130 @@
       "teamName": "Lights, Camera, Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
-      "score": 12.0
+      "score": 195.4
     },
     "away": {
       "teamId": 6,
       "teamName": "We Tried Our Best",
       "teamAbbrev": "WTOB",
       "owner": "Pete Solecki",
-      "score": 4.0
+      "score": 151.16
     },
     "winner": "HOME"
+  },
+  {
+    "id": "2026_2_9_1",
+    "year": 2026,
+    "week": 2,
+    "matchupPeriodId": 2,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 9,
+      "teamName": "Why Was I on the 415 Shuttle?",
+      "teamAbbrev": "TB12",
+      "owner": "Daniel Keating",
+      "score": 0.0
+    },
+    "away": {
+      "teamId": 1,
+      "teamName": "Kraft Mc n' Chase",
+      "teamAbbrev": "KRFT",
+      "owner": "Bill Solecki",
+      "score": 0.0
+    },
+    "winner": "TIE"
+  },
+  {
+    "id": "2026_2_4_7",
+    "year": 2026,
+    "week": 2,
+    "matchupPeriodId": 2,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 4,
+      "teamName": "Fran Tarkenton",
+      "teamAbbrev": "RKO",
+      "owner": "Joe Jaramillo",
+      "score": 0.0
+    },
+    "away": {
+      "teamId": 7,
+      "teamName": "Titty Sprinkles",
+      "teamAbbrev": "CUM",
+      "owner": "Carl Cummins",
+      "score": 0.0
+    },
+    "winner": "TIE"
+  },
+  {
+    "id": "2026_2_10_2",
+    "year": 2026,
+    "week": 2,
+    "matchupPeriodId": 2,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 10,
+      "teamName": "Pop Rockin' Beats",
+      "teamAbbrev": "BUCK",
+      "owner": "Randell Crawford",
+      "score": 0.0
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Waddle and Come Chase Maye",
+      "teamAbbrev": "RIP",
+      "owner": "Mike Kovacs",
+      "score": 0.0
+    },
+    "winner": "TIE"
+  },
+  {
+    "id": "2026_2_6_5",
+    "year": 2026,
+    "week": 2,
+    "matchupPeriodId": 2,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 6,
+      "teamName": "We Tried Our Best",
+      "teamAbbrev": "WTOB",
+      "owner": "Pete Solecki",
+      "score": 0.0
+    },
+    "away": {
+      "teamId": 5,
+      "teamName": "LOOK AT THIS GRAPH",
+      "teamAbbrev": "GRPH",
+      "owner": "Ben Bingert",
+      "score": 0.0
+    },
+    "winner": "TIE"
+  },
+  {
+    "id": "2026_2_8_3",
+    "year": 2026,
+    "week": 2,
+    "matchupPeriodId": 2,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 8,
+      "teamName": "Lights, Camera, Jackson",
+      "teamAbbrev": "LCJ",
+      "owner": "Nikkole Cummins",
+      "score": 0.0
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "FC Baseball",
+      "teamAbbrev": "FCB",
+      "owner": "Bethany Bingert",
+      "score": 0.0
+    },
+    "winner": "TIE"
   }
 ]

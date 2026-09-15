@@ -12,15 +12,15 @@
       "matchupPeriodId": 14
     },
     "lowestScore": {
-      "score": 4.0,
-      "team": "We Tried Our Best",
-      "teamId": 6,
-      "owner": "Pete Solecki",
-      "opponent": "Lights, Camera, Jackson",
-      "opponentScore": 12.0,
-      "year": 2026,
-      "week": 1,
-      "matchupPeriodId": 1
+      "score": 30.3,
+      "team": "Tommy F'n Cutlets",
+      "teamId": 3,
+      "owner": "Sal DeRose",
+      "opponent": "Titty Sprinkles",
+      "opponentScore": 149.2,
+      "year": 2025,
+      "week": 9,
+      "matchupPeriodId": 9
     },
     "top10HighestScores": [
       {
@@ -136,72 +136,6 @@
     ],
     "top10LowestScores": [
       {
-        "score": 4.0,
-        "team": "We Tried Our Best",
-        "teamId": 6,
-        "owner": "Pete Solecki",
-        "opponent": "Lights, Camera, Jackson",
-        "opponentScore": 12.0,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 5.6,
-        "team": "Pop Rockin' Beats",
-        "teamId": 10,
-        "owner": "Randell Crawford",
-        "opponent": "FC Baseball",
-        "opponentScore": 12.8,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 8.68,
-        "team": "Waddle and Come Chase Maye",
-        "teamId": 2,
-        "owner": "Mike Kovacs",
-        "opponent": "Kraft Mc n' Chase",
-        "opponentScore": 31.2,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 12.0,
-        "team": "Lights, Camera, Jackson",
-        "teamId": 8,
-        "owner": "Nikkole Cummins",
-        "opponent": "We Tried Our Best",
-        "opponentScore": 4.0,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 12.5,
-        "team": "LOOK AT THIS GRAPH",
-        "teamId": 5,
-        "owner": "Ben Bingert",
-        "opponent": "Fran Tarkenton",
-        "opponentScore": 0.0,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 12.8,
-        "team": "FC Baseball",
-        "teamId": 3,
-        "owner": "Bethany Bingert",
-        "opponent": "Pop Rockin' Beats",
-        "opponentScore": 5.6,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
         "score": 30.3,
         "team": "Tommy F'n Cutlets",
         "teamId": 3,
@@ -211,17 +145,6 @@
         "year": 2025,
         "week": 9,
         "matchupPeriodId": 9
-      },
-      {
-        "score": 31.2,
-        "team": "Kraft Mc n' Chase",
-        "teamId": 1,
-        "owner": "Bill Solecki",
-        "opponent": "Waddle and Come Chase Maye",
-        "opponentScore": 8.68,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
       },
       {
         "score": 40.18,
@@ -244,6 +167,83 @@
         "year": 2019,
         "week": 6,
         "matchupPeriodId": 6
+      },
+      {
+        "score": 41.8,
+        "team": "Alabama of Europe",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "RKO Out of Nowhere",
+        "opponentScore": 102.36,
+        "year": 2015,
+        "week": 2,
+        "matchupPeriodId": 2
+      },
+      {
+        "score": 43.68,
+        "team": "Bradys and Edelman",
+        "teamId": 9,
+        "owner": "Daniel Keating",
+        "opponent": "Balls to the Rawls",
+        "opponentScore": 88.02,
+        "year": 2015,
+        "week": 11,
+        "matchupPeriodId": 11
+      },
+      {
+        "score": 45.32,
+        "team": "Balls to the Rawls",
+        "teamId": 8,
+        "owner": "Ray Engleking",
+        "opponent": "DJ Khalad",
+        "opponentScore": 77.48,
+        "year": 2015,
+        "week": 4,
+        "matchupPeriodId": 4
+      },
+      {
+        "score": 46.72,
+        "team": "DJ Khalad",
+        "teamId": 6,
+        "owner": "Pete Solecki",
+        "opponent": "Get CTE or Die Tryin",
+        "opponentScore": 79.84,
+        "year": 2017,
+        "week": 10,
+        "matchupPeriodId": 10
+      },
+      {
+        "score": 48.12,
+        "team": "Free Candy and Wins",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "SAM DARNOLD IS LITERALLY JESUS",
+        "opponentScore": 104.1,
+        "year": 2018,
+        "week": 6,
+        "matchupPeriodId": 6
+      },
+      {
+        "score": 48.36,
+        "team": "Adams, Cooper and Prescott",
+        "teamId": 3,
+        "owner": "Sal DeRose",
+        "opponent": "Get CTE or Die Tryin",
+        "opponentScore": 105.66,
+        "year": 2017,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 48.54,
+        "team": "DJ Khalad",
+        "teamId": 6,
+        "owner": "Pete Solecki",
+        "opponent": "Bradys and Edelman",
+        "opponentScore": 74.02,
+        "year": 2016,
+        "week": 9,
+        "matchupPeriodId": 9
       }
     ],
     "closestWin": {
@@ -281,16 +281,16 @@
       "matchupPeriodId": 14
     },
     "lowestScoringGame": {
-      "total": 16.0,
-      "team1": "Lights, Camera, Jackson",
-      "owner1": "Nikkole Cummins",
-      "score1": 12.0,
-      "team2": "We Tried Our Best",
-      "owner2": "Pete Solecki",
-      "score2": 4.0,
-      "year": 2026,
-      "week": 1,
-      "matchupPeriodId": 1
+      "total": 103.56,
+      "team1": "RKO Out of Nowhere",
+      "owner1": "Joe Jaramillo",
+      "score1": 54.4,
+      "team2": "Alabama of Europe",
+      "owner2": "Randell Crawford",
+      "score2": 49.16,
+      "year": 2015,
+      "week": 11,
+      "matchupPeriodId": 11
     },
     "longestWinStreak": {
       "owner": "Daniel Keating",
@@ -334,15 +334,15 @@
       "matchupPeriodId": 12
     },
     "lowestScore": {
-      "score": 4.0,
-      "team": "We Tried Our Best",
-      "teamId": 6,
-      "owner": "Pete Solecki",
-      "opponent": "Lights, Camera, Jackson",
-      "opponentScore": 12.0,
-      "year": 2026,
-      "week": 1,
-      "matchupPeriodId": 1
+      "score": 30.3,
+      "team": "Tommy F'n Cutlets",
+      "teamId": 3,
+      "owner": "Sal DeRose",
+      "opponent": "Titty Sprinkles",
+      "opponentScore": 149.2,
+      "year": 2025,
+      "week": 9,
+      "matchupPeriodId": 9
     },
     "top10HighestScores": [
       {
@@ -388,6 +388,17 @@
         "year": 2024,
         "week": 10,
         "matchupPeriodId": 10
+      },
+      {
+        "score": 195.4,
+        "team": "Lights, Camera, Jackson",
+        "teamId": 8,
+        "owner": "Nikkole Cummins",
+        "opponent": "We Tried Our Best",
+        "opponentScore": 151.16,
+        "year": 2026,
+        "week": 1,
+        "matchupPeriodId": 1
       },
       {
         "score": 193.1,
@@ -443,86 +454,9 @@
         "year": 2024,
         "week": 13,
         "matchupPeriodId": 13
-      },
-      {
-        "score": 188.6,
-        "team": "Franoc knthall",
-        "teamId": 5,
-        "owner": "Ben Bingert",
-        "opponent": "Why Was I on the 415 Shuttle?",
-        "opponentScore": 218.9,
-        "year": 2024,
-        "week": 9,
-        "matchupPeriodId": 9
       }
     ],
     "top10LowestScores": [
-      {
-        "score": 4.0,
-        "team": "We Tried Our Best",
-        "teamId": 6,
-        "owner": "Pete Solecki",
-        "opponent": "Lights, Camera, Jackson",
-        "opponentScore": 12.0,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 5.6,
-        "team": "Pop Rockin' Beats",
-        "teamId": 10,
-        "owner": "Randell Crawford",
-        "opponent": "FC Baseball",
-        "opponentScore": 12.8,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 8.68,
-        "team": "Waddle and Come Chase Maye",
-        "teamId": 2,
-        "owner": "Mike Kovacs",
-        "opponent": "Kraft Mc n' Chase",
-        "opponentScore": 31.2,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 12.0,
-        "team": "Lights, Camera, Jackson",
-        "teamId": 8,
-        "owner": "Nikkole Cummins",
-        "opponent": "We Tried Our Best",
-        "opponentScore": 4.0,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 12.5,
-        "team": "LOOK AT THIS GRAPH",
-        "teamId": 5,
-        "owner": "Ben Bingert",
-        "opponent": "Fran Tarkenton",
-        "opponentScore": 0.0,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
-      {
-        "score": 12.8,
-        "team": "FC Baseball",
-        "teamId": 3,
-        "owner": "Bethany Bingert",
-        "opponent": "Pop Rockin' Beats",
-        "opponentScore": 5.6,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
-      },
       {
         "score": 30.3,
         "team": "Tommy F'n Cutlets",
@@ -533,17 +467,6 @@
         "year": 2025,
         "week": 9,
         "matchupPeriodId": 9
-      },
-      {
-        "score": 31.2,
-        "team": "Kraft Mc n' Chase",
-        "teamId": 1,
-        "owner": "Bill Solecki",
-        "opponent": "Waddle and Come Chase Maye",
-        "opponentScore": 8.68,
-        "year": 2026,
-        "week": 1,
-        "matchupPeriodId": 1
       },
       {
         "score": 40.18,
@@ -566,6 +489,83 @@
         "year": 2019,
         "week": 6,
         "matchupPeriodId": 6
+      },
+      {
+        "score": 41.8,
+        "team": "Alabama of Europe",
+        "teamId": 10,
+        "owner": "Randell Crawford",
+        "opponent": "RKO Out of Nowhere",
+        "opponentScore": 102.36,
+        "year": 2015,
+        "week": 2,
+        "matchupPeriodId": 2
+      },
+      {
+        "score": 43.68,
+        "team": "Bradys and Edelman",
+        "teamId": 9,
+        "owner": "Daniel Keating",
+        "opponent": "Balls to the Rawls",
+        "opponentScore": 88.02,
+        "year": 2015,
+        "week": 11,
+        "matchupPeriodId": 11
+      },
+      {
+        "score": 45.32,
+        "team": "Balls to the Rawls",
+        "teamId": 8,
+        "owner": "Ray Engleking",
+        "opponent": "DJ Khalad",
+        "opponentScore": 77.48,
+        "year": 2015,
+        "week": 4,
+        "matchupPeriodId": 4
+      },
+      {
+        "score": 46.72,
+        "team": "DJ Khalad",
+        "teamId": 6,
+        "owner": "Pete Solecki",
+        "opponent": "Get CTE or Die Tryin",
+        "opponentScore": 79.84,
+        "year": 2017,
+        "week": 10,
+        "matchupPeriodId": 10
+      },
+      {
+        "score": 48.12,
+        "team": "Free Candy and Wins",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "SAM DARNOLD IS LITERALLY JESUS",
+        "opponentScore": 104.1,
+        "year": 2018,
+        "week": 6,
+        "matchupPeriodId": 6
+      },
+      {
+        "score": 48.36,
+        "team": "Adams, Cooper and Prescott",
+        "teamId": 3,
+        "owner": "Sal DeRose",
+        "opponent": "Get CTE or Die Tryin",
+        "opponentScore": 105.66,
+        "year": 2017,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 48.54,
+        "team": "DJ Khalad",
+        "teamId": 6,
+        "owner": "Pete Solecki",
+        "opponent": "Bradys and Edelman",
+        "opponentScore": 74.02,
+        "year": 2016,
+        "week": 9,
+        "matchupPeriodId": 9
       }
     ],
     "closestWin": {
@@ -603,16 +603,16 @@
       "matchupPeriodId": 9
     },
     "lowestScoringGame": {
-      "total": 16.0,
-      "team1": "Lights, Camera, Jackson",
-      "owner1": "Nikkole Cummins",
-      "score1": 12.0,
-      "team2": "We Tried Our Best",
-      "owner2": "Pete Solecki",
-      "score2": 4.0,
-      "year": 2026,
-      "week": 1,
-      "matchupPeriodId": 1
+      "total": 103.56,
+      "team1": "RKO Out of Nowhere",
+      "owner1": "Joe Jaramillo",
+      "score1": 54.4,
+      "team2": "Alabama of Europe",
+      "owner2": "Randell Crawford",
+      "score2": 49.16,
+      "year": 2015,
+      "week": 11,
+      "matchupPeriodId": 11
     },
     "longestWinStreak": {
       "owner": "Daniel Keating",
@@ -676,34 +676,34 @@
     ],
     "fewestPointsAgainstSeasons": [
       {
-        "owner": "Daniel Keating",
-        "teamName": "Why Was I on the 415 Shuttle?",
+        "owner": "Bethany Bingert",
+        "teamName": "FC Baseball",
         "year": 2026,
-        "pointsAgainst": 0.0
+        "pointsAgainst": 87.78
       },
       {
-        "owner": "Ben Bingert",
-        "teamName": "LOOK AT THIS GRAPH",
+        "owner": "Bill Solecki",
+        "teamName": "Kraft Mc n' Chase",
         "year": 2026,
-        "pointsAgainst": 0.0
+        "pointsAgainst": 136.22
       },
       {
-        "owner": "Carl Cummins",
-        "teamName": "Titty Sprinkles",
+        "owner": "Joe Jaramillo",
+        "teamName": "Fran Tarkenton",
         "year": 2026,
-        "pointsAgainst": 0.0
+        "pointsAgainst": 149.92
+      },
+      {
+        "owner": "Mike Kovacs",
+        "teamName": "Waddle and Come Chase Maye",
+        "year": 2026,
+        "pointsAgainst": 150.86
       },
       {
         "owner": "Nikkole Cummins",
         "teamName": "Lights, Camera, Jackson",
         "year": 2026,
-        "pointsAgainst": 4.0
-      },
-      {
-        "owner": "Bethany Bingert",
-        "teamName": "FC Baseball",
-        "year": 2026,
-        "pointsAgainst": 5.6
+        "pointsAgainst": 151.16
       }
     ]
   }

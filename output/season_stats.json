@@ -2483,63 +2483,63 @@
   "2026": {
     "year": 2026,
     "highestScore": {
-      "score": 31.2,
-      "team": "Kraft Mc n' Chase",
-      "owner": "Bill Solecki",
-      "opponent": "Waddle and Come Chase Maye",
-      "opponentScore": 8.68,
+      "score": 195.4,
+      "team": "Lights, Camera, Jackson",
+      "owner": "Nikkole Cummins",
+      "opponent": "We Tried Our Best",
+      "opponentScore": 151.16,
       "week": 1,
       "matchupPeriodId": 1
     },
     "lowestScore": {
-      "score": 4.0,
-      "team": "We Tried Our Best",
-      "owner": "Pete Solecki",
-      "opponent": "Lights, Camera, Jackson",
-      "opponentScore": 12.0,
+      "score": 87.78,
+      "team": "Pop Rockin' Beats",
+      "owner": "Randell Crawford",
+      "opponent": "FC Baseball",
+      "opponentScore": 167.56,
       "week": 1,
       "matchupPeriodId": 1
     },
     "closestWin": {
-      "margin": 7.200000000000001,
-      "winner": "FC Baseball",
-      "winnerOwner": "Bethany Bingert",
-      "winnerScore": 12.8,
-      "loser": "Pop Rockin' Beats",
-      "loserScore": 5.6,
+      "margin": 0.12000000000000455,
+      "winner": "Why Was I on the 415 Shuttle?",
+      "winnerOwner": "Daniel Keating",
+      "winnerScore": 157.56,
+      "loser": "Titty Sprinkles",
+      "loserScore": 157.44,
       "week": 1,
       "matchupPeriodId": 1
     },
     "biggestBlowout": {
-      "margin": 22.52,
-      "winner": "Kraft Mc n' Chase",
-      "winnerOwner": "Bill Solecki",
-      "winnerScore": 31.2,
-      "loser": "Waddle and Come Chase Maye",
-      "loserScore": 8.68,
+      "margin": 79.78,
+      "winner": "FC Baseball",
+      "winnerOwner": "Bethany Bingert",
+      "winnerScore": 167.56,
+      "loser": "Pop Rockin' Beats",
+      "loserScore": 87.78,
       "week": 1,
       "matchupPeriodId": 1
     },
     "longestWinStreak": {
-      "owner": "Bill Solecki",
+      "owner": "Daniel Keating",
       "length": 1
     },
     "longestLossStreak": {
-      "owner": "Mike Kovacs",
+      "owner": "Carl Cummins",
       "length": 1
     },
     "mostWeeklyHighScores": {
-      "owner": "Bill Solecki",
+      "owner": "Nikkole Cummins",
       "count": 1
     },
     "mostWeeklyLowScores": {
-      "owner": "Joe Jaramillo",
+      "owner": "Randell Crawford",
       "count": 1
     },
     "bestBenchWarmers": {
-      "owner": "Randell Crawford",
-      "teamName": "Pop Rockin' Beats",
-      "benchPoints": 3.6
+      "owner": "Nikkole Cummins",
+      "teamName": "Lights, Camera, Jackson",
+      "benchPoints": 79.8
     },
     "playoffPayouts": [],
     "keeperAnalysis": {
