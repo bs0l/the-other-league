@@ -676,34 +676,34 @@
     ],
     "fewestPointsAgainstSeasons": [
       {
+        "owner": "Bill Solecki",
+        "teamName": "Kraft Mc-njigba Chase",
+        "year": 2026,
+        "pointsAgainst": 215.54
+      },
+      {
         "owner": "Bethany Bingert",
         "teamName": "FC Baseball",
         "year": 2026,
-        "pointsAgainst": 87.78
-      },
-      {
-        "owner": "Bill Solecki",
-        "teamName": "Kraft Mc n' Chase",
-        "year": 2026,
-        "pointsAgainst": 136.22
+        "pointsAgainst": 222.36
       },
       {
         "owner": "Joe Jaramillo",
         "teamName": "Fran Tarkenton",
         "year": 2026,
-        "pointsAgainst": 149.92
+        "pointsAgainst": 279.7
       },
       {
         "owner": "Mike Kovacs",
         "teamName": "Waddle and Come Chase Maye",
         "year": 2026,
-        "pointsAgainst": 150.86
+        "pointsAgainst": 281.18
       },
       {
         "owner": "Nikkole Cummins",
         "teamName": "Lights, Camera, Jackson",
         "year": 2026,
-        "pointsAgainst": 151.16
+        "pointsAgainst": 286.41999999999996
       }
     ]
   }

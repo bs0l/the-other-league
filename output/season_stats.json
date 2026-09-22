@@ -2492,13 +2492,13 @@
       "matchupPeriodId": 1
     },
     "lowestScore": {
-      "score": 87.78,
-      "team": "Pop Rockin' Beats",
-      "owner": "Randell Crawford",
-      "opponent": "FC Baseball",
-      "opponentScore": 167.56,
-      "week": 1,
-      "matchupPeriodId": 1
+      "score": 79.32,
+      "team": "Why Was I on the 415 Shuttle?",
+      "owner": "Daniel Keating",
+      "opponent": "Kraft Mc-njigba Chase",
+      "opponentScore": 131.06,
+      "week": 2,
+      "matchupPeriodId": 2
     },
     "closestWin": {
       "margin": 0.12000000000000455,
@@ -2521,16 +2521,16 @@
       "matchupPeriodId": 1
     },
     "longestWinStreak": {
-      "owner": "Daniel Keating",
-      "length": 1
+      "owner": "Bill Solecki",
+      "length": 2
     },
     "longestLossStreak": {
       "owner": "Carl Cummins",
-      "length": 1
+      "length": 2
     },
     "mostWeeklyHighScores": {
-      "owner": "Nikkole Cummins",
-      "count": 1
+      "owner": "Joe Jaramillo",
+      "count": 2
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
@@ -2539,7 +2539,7 @@
     "bestBenchWarmers": {
       "owner": "Nikkole Cummins",
       "teamName": "Lights, Camera, Jackson",
-      "benchPoints": 79.8
+      "benchPoints": 157.38
     },
     "playoffPayouts": [],
     "keeperAnalysis": {

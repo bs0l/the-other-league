@@ -2930,24 +2930,24 @@
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 5,
-      "losses": 10,
-      "ties": 1,
-      "winPercentage": 0.3333333333333333,
+      "losses": 11,
+      "ties": 0,
+      "winPercentage": 0.3125,
       "totalGames": 16,
-      "pointsFor": 1776.88,
-      "pointsAgainst": 1948.7199999999998,
-      "avgPointsFor": 111.055,
-      "avgPointsAgainst": 121.79499999999999,
+      "pointsFor": 1856.2,
+      "pointsAgainst": 2079.7799999999997,
+      "avgPointsFor": 116.0125,
+      "avgPointsAgainst": 129.98624999999998,
       "highestScore": 198.28,
-      "lowestScore": 0.0,
+      "lowestScore": 61.6,
       "biggestWin": 40.0,
       "closestWin": 2.220000000000013,
       "longestWinStreak": 2,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "LOSS",
+        "length": 2
       },
       "matchups": [
         {
@@ -3307,16 +3307,16 @@
             "teamName": "Why Was I on the 415 Shuttle?",
             "teamAbbrev": "TB12",
             "owner": "Daniel Keating",
-            "score": 0.0
+            "score": 79.32
           },
           "away": {
             "teamId": 1,
-            "teamName": "Kraft Mc n' Chase",
+            "teamName": "Kraft Mc-njigba Chase",
             "teamAbbrev": "KRFT",
             "owner": "Bill Solecki",
-            "score": 0.0
+            "score": 131.06
           },
-          "winner": "TIE"
+          "winner": "AWAY"
         }
       ]
     },
@@ -3740,21 +3740,21 @@
       "opponentName": "Fran Tarkenton",
       "wins": 13,
       "losses": 6,
-      "ties": 0,
+      "ties": 1,
       "winPercentage": 0.6842105263157895,
-      "totalGames": 19,
+      "totalGames": 20,
       "pointsFor": 2692.7799999999997,
       "pointsAgainst": 2293.3799999999997,
-      "avgPointsFor": 141.72526315789472,
-      "avgPointsAgainst": 120.70421052631578,
+      "avgPointsFor": 134.63899999999998,
+      "avgPointsAgainst": 114.66899999999998,
       "highestScore": 296.22,
-      "lowestScore": 73.16,
+      "lowestScore": 0.0,
       "biggestWin": 99.14000000000001,
       "closestWin": 1.3799999999999955,
       "longestWinStreak": 5,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 1
+        "type": null,
+        "length": 0
       },
       "matchups": [
         {
@@ -4193,6 +4193,29 @@
             "score": 135.62
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_4_9",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 4,
+            "teamName": "Fran Tarkenton",
+            "teamAbbrev": "RKO",
+            "owner": "Joe Jaramillo",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 9,
+            "teamName": "Why Was I on the 415 Shuttle?",
+            "teamAbbrev": "TB12",
+            "owner": "Daniel Keating",
+            "score": 0.0
+          },
+          "winner": "TIE"
         }
       ]
     },
@@ -7428,7 +7451,7 @@
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 14,
       "losses": 10,
       "ties": 0,
@@ -7993,7 +8016,7 @@
           },
           "away": {
             "teamId": 1,
-            "teamName": "Kraft Mc n' Chase",
+            "teamName": "Kraft Mc-njigba Chase",
             "teamAbbrev": "KRFT",
             "owner": "Bill Solecki",
             "score": 150.86
@@ -8005,23 +8028,23 @@
     "Randell Crawford": {
       "opponent": "Randell Crawford",
       "opponentName": "Pop Rockin' Beats",
-      "wins": 8,
+      "wins": 9,
       "losses": 12,
-      "ties": 1,
-      "winPercentage": 0.4,
+      "ties": 0,
+      "winPercentage": 0.42857142857142855,
       "totalGames": 21,
-      "pointsFor": 2952.0600000000004,
-      "pointsAgainst": 2862.68,
-      "avgPointsFor": 140.57428571428574,
-      "avgPointsAgainst": 136.31809523809522,
+      "pointsFor": 3121.4600000000005,
+      "pointsAgainst": 2993.0,
+      "avgPointsFor": 148.6409523809524,
+      "avgPointsAgainst": 142.52380952380952,
       "highestScore": 386.32,
-      "lowestScore": 0.0,
+      "lowestScore": 64.12,
       "biggestWin": 65.65999999999997,
       "closestWin": 5.140000000000001,
       "longestWinStreak": 4,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "WIN",
+        "length": 1
       },
       "matchups": [
         {
@@ -8496,16 +8519,16 @@
             "teamName": "Pop Rockin' Beats",
             "teamAbbrev": "BUCK",
             "owner": "Randell Crawford",
-            "score": 0.0
+            "score": 130.32
           },
           "away": {
             "teamId": 2,
             "teamName": "Waddle and Come Chase Maye",
             "teamAbbrev": "RIP",
             "owner": "Mike Kovacs",
-            "score": 0.0
+            "score": 169.4
           },
-          "winner": "TIE"
+          "winner": "AWAY"
         }
       ]
     },
@@ -9267,6 +9290,53 @@
             "score": 151.1
           },
           "winner": "AWAY"
+        }
+      ]
+    },
+    "Nikkole Cummins": {
+      "opponent": "Nikkole Cummins",
+      "opponentName": "Lights, Camera, Jackson",
+      "wins": 0,
+      "losses": 0,
+      "ties": 1,
+      "winPercentage": 0,
+      "totalGames": 1,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "avgPointsFor": 0.0,
+      "avgPointsAgainst": 0.0,
+      "highestScore": 0.0,
+      "lowestScore": 0.0,
+      "biggestWin": 0,
+      "closestWin": 0,
+      "longestWinStreak": 0,
+      "currentStreak": {
+        "type": null,
+        "length": 0
+      },
+      "matchups": [
+        {
+          "id": "2026_3_2_8",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 2,
+            "teamName": "Waddle and Come Chase Maye",
+            "teamAbbrev": "RIP",
+            "owner": "Mike Kovacs",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 8,
+            "teamName": "Lights, Camera, Jackson",
+            "teamAbbrev": "LCJ",
+            "owner": "Nikkole Cummins",
+            "score": 0.0
+          },
+          "winner": "TIE"
         }
       ]
     }
@@ -12087,7 +12157,7 @@
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 7,
       "losses": 13,
       "ties": 0,
@@ -15995,22 +16065,22 @@
       "opponent": "Pete Solecki",
       "opponentName": "We Tried Our Best",
       "wins": 11,
-      "losses": 11,
-      "ties": 1,
-      "winPercentage": 0.5,
+      "losses": 12,
+      "ties": 0,
+      "winPercentage": 0.4782608695652174,
       "totalGames": 23,
-      "pointsFor": 2736.74,
-      "pointsAgainst": 2691.1,
-      "avgPointsFor": 118.9886956521739,
-      "avgPointsAgainst": 117.00434782608696,
+      "pointsFor": 2867.4599999999996,
+      "pointsAgainst": 2864.2,
+      "avgPointsFor": 124.67217391304347,
+      "avgPointsAgainst": 124.5304347826087,
       "highestScore": 208.02,
-      "lowestScore": 0.0,
+      "lowestScore": 55.2,
       "biggestWin": 65.75999999999999,
       "closestWin": 1.0200000000000102,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "LOSS",
+        "length": 3
       },
       "matchups": [
         {
@@ -16531,16 +16601,16 @@
             "teamName": "We Tried Our Best",
             "teamAbbrev": "WTOB",
             "owner": "Pete Solecki",
-            "score": 0.0
+            "score": 173.1
           },
           "away": {
             "teamId": 5,
             "teamName": "LOOK AT THIS GRAPH",
             "teamAbbrev": "GRPH",
             "owner": "Ben Bingert",
-            "score": 0.0
+            "score": 130.72
           },
-          "winner": "TIE"
+          "winner": "HOME"
         }
       ]
     },
@@ -17123,7 +17193,7 @@
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 9,
       "losses": 10,
       "ties": 0,
@@ -19010,6 +19080,53 @@
           "winner": "HOME"
         }
       ]
+    },
+    "Bethany Bingert": {
+      "opponent": "Bethany Bingert",
+      "opponentName": "FC Baseball",
+      "wins": 0,
+      "losses": 0,
+      "ties": 1,
+      "winPercentage": 0,
+      "totalGames": 1,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "avgPointsFor": 0.0,
+      "avgPointsAgainst": 0.0,
+      "highestScore": 0.0,
+      "lowestScore": 0.0,
+      "biggestWin": 0,
+      "closestWin": 0,
+      "longestWinStreak": 0,
+      "currentStreak": {
+        "type": null,
+        "length": 0
+      },
+      "matchups": [
+        {
+          "id": "2026_3_5_3",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 5,
+            "teamName": "LOOK AT THIS GRAPH",
+            "teamAbbrev": "GRPH",
+            "owner": "Ben Bingert",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "FC Baseball",
+            "teamAbbrev": "FCB",
+            "owner": "Bethany Bingert",
+            "score": 0.0
+          },
+          "winner": "TIE"
+        }
+      ]
     }
   },
   "Pete Solecki": {
@@ -20584,23 +20701,23 @@
     "Ben Bingert": {
       "opponent": "Ben Bingert",
       "opponentName": "LOOK AT THIS GRAPH",
-      "wins": 11,
+      "wins": 12,
       "losses": 11,
-      "ties": 1,
-      "winPercentage": 0.5,
+      "ties": 0,
+      "winPercentage": 0.5217391304347826,
       "totalGames": 23,
-      "pointsFor": 2691.1,
-      "pointsAgainst": 2736.74,
-      "avgPointsFor": 117.00434782608696,
-      "avgPointsAgainst": 118.9886956521739,
+      "pointsFor": 2864.2,
+      "pointsAgainst": 2867.4599999999996,
+      "avgPointsFor": 124.5304347826087,
+      "avgPointsAgainst": 124.67217391304347,
       "highestScore": 255.82,
-      "lowestScore": 0.0,
+      "lowestScore": 49.1,
       "biggestWin": 55.66,
       "closestWin": 3.259999999999991,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "WIN",
+        "length": 3
       },
       "matchups": [
         {
@@ -21121,16 +21238,16 @@
             "teamName": "We Tried Our Best",
             "teamAbbrev": "WTOB",
             "owner": "Pete Solecki",
-            "score": 0.0
+            "score": 173.1
           },
           "away": {
             "teamId": 5,
             "teamName": "LOOK AT THIS GRAPH",
             "teamAbbrev": "GRPH",
             "owner": "Ben Bingert",
-            "score": 0.0
+            "score": 130.72
           },
-          "winner": "TIE"
+          "winner": "HOME"
         }
       ]
     },
@@ -21139,21 +21256,21 @@
       "opponentName": "Titty Sprinkles",
       "wins": 12,
       "losses": 11,
-      "ties": 0,
+      "ties": 1,
       "winPercentage": 0.5217391304347826,
-      "totalGames": 23,
+      "totalGames": 24,
       "pointsFor": 3721.9399999999996,
       "pointsAgainst": 3654.2200000000003,
-      "avgPointsFor": 161.82347826086954,
-      "avgPointsAgainst": 158.8791304347826,
+      "avgPointsFor": 155.08083333333332,
+      "avgPointsAgainst": 152.2591666666667,
       "highestScore": 274.58,
-      "lowestScore": 82.14,
+      "lowestScore": 0.0,
       "biggestWin": 57.239999999999995,
       "closestWin": 10.700000000000003,
       "longestWinStreak": 4,
       "currentStreak": {
-        "type": "WIN",
-        "length": 1
+        "type": null,
+        "length": 0
       },
       "matchups": [
         {
@@ -21684,6 +21801,29 @@
             "score": 98.66
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_7_6",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 7,
+            "teamName": "Titty Sprinkles",
+            "teamAbbrev": "CUM",
+            "owner": "Carl Cummins",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "We Tried Our Best",
+            "teamAbbrev": "WTOB",
+            "owner": "Pete Solecki",
+            "score": 0.0
+          },
+          "winner": "TIE"
         }
       ]
     },
@@ -21782,7 +21922,7 @@
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 4,
       "losses": 12,
       "ties": 0,
@@ -25799,21 +25939,21 @@
       "opponentName": "We Tried Our Best",
       "wins": 11,
       "losses": 12,
-      "ties": 0,
+      "ties": 1,
       "winPercentage": 0.4782608695652174,
-      "totalGames": 23,
+      "totalGames": 24,
       "pointsFor": 3654.2200000000003,
       "pointsAgainst": 3721.9399999999996,
-      "avgPointsFor": 158.8791304347826,
-      "avgPointsAgainst": 161.82347826086954,
+      "avgPointsFor": 152.2591666666667,
+      "avgPointsAgainst": 155.08083333333332,
       "highestScore": 291.8,
-      "lowestScore": 57.0,
+      "lowestScore": 0.0,
       "biggestWin": 58.339999999999975,
       "closestWin": 15.439999999999998,
       "longestWinStreak": 6,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 1
+        "type": null,
+        "length": 0
       },
       "matchups": [
         {
@@ -26344,6 +26484,29 @@
             "score": 98.66
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_7_6",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 7,
+            "teamName": "Titty Sprinkles",
+            "teamAbbrev": "CUM",
+            "owner": "Carl Cummins",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "We Tried Our Best",
+            "teamAbbrev": "WTOB",
+            "owner": "Pete Solecki",
+            "score": 0.0
+          },
+          "winner": "TIE"
         }
       ]
     },
@@ -26419,7 +26582,7 @@
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 7,
       "losses": 13,
       "ties": 0,
@@ -27366,22 +27529,22 @@
       "opponent": "Joe Jaramillo",
       "opponentName": "Fran Tarkenton",
       "wins": 10,
-      "losses": 12,
-      "ties": 1,
-      "winPercentage": 0.45454545454545453,
+      "losses": 13,
+      "ties": 0,
+      "winPercentage": 0.43478260869565216,
       "totalGames": 23,
-      "pointsFor": 3019.64,
-      "pointsAgainst": 3086.7999999999997,
-      "avgPointsFor": 131.2886956521739,
-      "avgPointsAgainst": 134.2086956521739,
+      "pointsFor": 3149.42,
+      "pointsAgainst": 3267.1,
+      "avgPointsFor": 136.93130434782609,
+      "avgPointsAgainst": 142.04782608695652,
       "highestScore": 248.5,
-      "lowestScore": 0.0,
+      "lowestScore": 72.34,
       "biggestWin": 79.68,
       "closestWin": 0.7199999999999989,
       "longestWinStreak": 4,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "LOSS",
+        "length": 4
       },
       "matchups": [
         {
@@ -27902,16 +28065,16 @@
             "teamName": "Fran Tarkenton",
             "teamAbbrev": "RKO",
             "owner": "Joe Jaramillo",
-            "score": 0.0
+            "score": 180.3
           },
           "away": {
             "teamId": 7,
             "teamName": "Titty Sprinkles",
             "teamAbbrev": "CUM",
             "owner": "Carl Cummins",
-            "score": 0.0
+            "score": 129.78
           },
-          "winner": "TIE"
+          "winner": "HOME"
         }
       ]
     },
@@ -28827,23 +28990,23 @@
     "Daniel Keating": {
       "opponent": "Daniel Keating",
       "opponentName": "Why Was I on the 415 Shuttle?",
-      "wins": 10,
+      "wins": 11,
       "losses": 5,
-      "ties": 1,
-      "winPercentage": 0.6666666666666666,
+      "ties": 0,
+      "winPercentage": 0.6875,
       "totalGames": 16,
-      "pointsFor": 1948.7199999999998,
-      "pointsAgainst": 1776.88,
-      "avgPointsFor": 121.79499999999999,
-      "avgPointsAgainst": 111.055,
+      "pointsFor": 2079.7799999999997,
+      "pointsAgainst": 1856.2,
+      "avgPointsFor": 129.98624999999998,
+      "avgPointsAgainst": 116.0125,
       "highestScore": 257.12,
-      "lowestScore": 0.0,
+      "lowestScore": 65.74,
       "biggestWin": 58.84,
       "closestWin": 4.1399999999999935,
       "longestWinStreak": 5,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "WIN",
+        "length": 2
       },
       "matchups": [
         {
@@ -29203,16 +29366,16 @@
             "teamName": "Why Was I on the 415 Shuttle?",
             "teamAbbrev": "TB12",
             "owner": "Daniel Keating",
-            "score": 0.0
+            "score": 79.32
           },
           "away": {
             "teamId": 1,
-            "teamName": "Kraft Mc n' Chase",
+            "teamName": "Kraft Mc-njigba Chase",
             "teamAbbrev": "KRFT",
             "owner": "Bill Solecki",
-            "score": 0.0
+            "score": 131.06
           },
-          "winner": "TIE"
+          "winner": "AWAY"
         }
       ]
     },
@@ -29783,7 +29946,7 @@
           },
           "away": {
             "teamId": 1,
-            "teamName": "Kraft Mc n' Chase",
+            "teamName": "Kraft Mc-njigba Chase",
             "teamAbbrev": "KRFT",
             "owner": "Bill Solecki",
             "score": 150.86
@@ -31618,21 +31781,21 @@
       "opponentName": "Pop Rockin' Beats",
       "wins": 8,
       "losses": 9,
-      "ties": 0,
+      "ties": 1,
       "winPercentage": 0.47058823529411764,
-      "totalGames": 17,
+      "totalGames": 18,
       "pointsFor": 1958.0600000000002,
       "pointsAgainst": 1976.16,
-      "avgPointsFor": 115.18,
-      "avgPointsAgainst": 116.24470588235295,
+      "avgPointsFor": 108.78111111111112,
+      "avgPointsAgainst": 109.78666666666668,
       "highestScore": 192.95999999999998,
-      "lowestScore": 66.04,
+      "lowestScore": 0.0,
       "biggestWin": 62.32000000000001,
       "closestWin": 2.6000000000000085,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 1
+        "type": null,
+        "length": 0
       },
       "matchups": [
         {
@@ -32025,6 +32188,29 @@
             "score": 141.32
           },
           "winner": "HOME"
+        },
+        {
+          "id": "2026_3_1_10",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 1,
+            "teamName": "Kraft Mc-njigba Chase",
+            "teamAbbrev": "KRFT",
+            "owner": "Bill Solecki",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 10,
+            "teamName": "Pop Rockin' Beats",
+            "teamAbbrev": "BUCK",
+            "owner": "Randell Crawford",
+            "score": 0.0
+          },
+          "winner": "TIE"
         }
       ]
     },
@@ -33486,22 +33672,22 @@
       "opponent": "Mike Kovacs",
       "opponentName": "Waddle and Come Chase Maye",
       "wins": 12,
-      "losses": 8,
-      "ties": 1,
-      "winPercentage": 0.6,
+      "losses": 9,
+      "ties": 0,
+      "winPercentage": 0.5714285714285714,
       "totalGames": 21,
-      "pointsFor": 2862.68,
-      "pointsAgainst": 2952.0600000000004,
-      "avgPointsFor": 136.31809523809522,
-      "avgPointsAgainst": 140.57428571428574,
+      "pointsFor": 2993.0,
+      "pointsAgainst": 3121.4600000000005,
+      "avgPointsFor": 142.52380952380952,
+      "avgPointsAgainst": 148.6409523809524,
       "highestScore": 320.66,
-      "lowestScore": 0.0,
+      "lowestScore": 58.14,
       "biggestWin": 22.97999999999999,
       "closestWin": 2.0,
       "longestWinStreak": 5,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -33976,16 +34162,16 @@
             "teamName": "Pop Rockin' Beats",
             "teamAbbrev": "BUCK",
             "owner": "Randell Crawford",
-            "score": 0.0
+            "score": 130.32
           },
           "away": {
             "teamId": 2,
             "teamName": "Waddle and Come Chase Maye",
             "teamAbbrev": "RIP",
             "owner": "Mike Kovacs",
-            "score": 0.0
+            "score": 169.4
           },
-          "winner": "TIE"
+          "winner": "AWAY"
         }
       ]
     },
@@ -35904,24 +36090,24 @@
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 9,
       "losses": 8,
-      "ties": 0,
+      "ties": 1,
       "winPercentage": 0.5294117647058824,
-      "totalGames": 17,
+      "totalGames": 18,
       "pointsFor": 1976.16,
       "pointsAgainst": 1958.0600000000002,
-      "avgPointsFor": 116.24470588235295,
-      "avgPointsAgainst": 115.18,
+      "avgPointsFor": 109.78666666666668,
+      "avgPointsAgainst": 108.78111111111112,
       "highestScore": 218.8,
-      "lowestScore": 66.24,
+      "lowestScore": 0.0,
       "biggestWin": 73.22,
       "closestWin": 0.6400000000000148,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": "WIN",
-        "length": 1
+        "type": null,
+        "length": 0
       },
       "matchups": [
         {
@@ -36314,6 +36500,29 @@
             "score": 141.32
           },
           "winner": "HOME"
+        },
+        {
+          "id": "2026_3_1_10",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 1,
+            "teamName": "Kraft Mc-njigba Chase",
+            "teamAbbrev": "KRFT",
+            "owner": "Bill Solecki",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 10,
+            "teamName": "Pop Rockin' Beats",
+            "teamAbbrev": "BUCK",
+            "owner": "Randell Crawford",
+            "score": 0.0
+          },
+          "winner": "TIE"
         }
       ]
     },
@@ -37339,21 +37548,21 @@
       "opponentName": "Why Was I on the 415 Shuttle?",
       "wins": 6,
       "losses": 13,
-      "ties": 0,
+      "ties": 1,
       "winPercentage": 0.3157894736842105,
-      "totalGames": 19,
+      "totalGames": 20,
       "pointsFor": 2293.3799999999997,
       "pointsAgainst": 2692.7799999999997,
-      "avgPointsFor": 120.70421052631578,
-      "avgPointsAgainst": 141.72526315789472,
+      "avgPointsFor": 114.66899999999998,
+      "avgPointsAgainst": 134.63899999999998,
       "highestScore": 197.08,
-      "lowestScore": 70.16,
+      "lowestScore": 0.0,
       "biggestWin": 25.560000000000002,
       "closestWin": 5.400000000000006,
       "longestWinStreak": 2,
       "currentStreak": {
-        "type": "WIN",
-        "length": 1
+        "type": null,
+        "length": 0
       },
       "matchups": [
         {
@@ -37792,6 +38001,29 @@
             "score": 135.62
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_4_9",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 4,
+            "teamName": "Fran Tarkenton",
+            "teamAbbrev": "RKO",
+            "owner": "Joe Jaramillo",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 9,
+            "teamName": "Why Was I on the 415 Shuttle?",
+            "teamAbbrev": "TB12",
+            "owner": "Daniel Keating",
+            "score": 0.0
+          },
+          "winner": "TIE"
         }
       ]
     },
@@ -39435,23 +39667,23 @@
     "Carl Cummins": {
       "opponent": "Carl Cummins",
       "opponentName": "Titty Sprinkles",
-      "wins": 12,
+      "wins": 13,
       "losses": 10,
-      "ties": 1,
-      "winPercentage": 0.5454545454545454,
+      "ties": 0,
+      "winPercentage": 0.5652173913043478,
       "totalGames": 23,
-      "pointsFor": 3086.7999999999997,
-      "pointsAgainst": 3019.64,
-      "avgPointsFor": 134.2086956521739,
-      "avgPointsAgainst": 131.2886956521739,
+      "pointsFor": 3267.1,
+      "pointsAgainst": 3149.42,
+      "avgPointsFor": 142.04782608695652,
+      "avgPointsAgainst": 136.93130434782609,
       "highestScore": 277.18,
-      "lowestScore": 0.0,
+      "lowestScore": 53.06,
       "biggestWin": 79.58,
       "closestWin": 1.2800000000000011,
-      "longestWinStreak": 3,
+      "longestWinStreak": 4,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "WIN",
+        "length": 4
       },
       "matchups": [
         {
@@ -39972,22 +40204,22 @@
             "teamName": "Fran Tarkenton",
             "teamAbbrev": "RKO",
             "owner": "Joe Jaramillo",
-            "score": 0.0
+            "score": 180.3
           },
           "away": {
             "teamId": 7,
             "teamName": "Titty Sprinkles",
             "teamAbbrev": "CUM",
             "owner": "Carl Cummins",
-            "score": 0.0
+            "score": 129.78
           },
-          "winner": "TIE"
+          "winner": "HOME"
         }
       ]
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 14,
       "losses": 9,
       "ties": 0,
@@ -44253,7 +44485,7 @@
     },
     "Bill Solecki": {
       "opponent": "Bill Solecki",
-      "opponentName": "Kraft Mc n' Chase",
+      "opponentName": "Kraft Mc-njigba Chase",
       "wins": 11,
       "losses": 9,
       "ties": 0,
@@ -45774,6 +46006,53 @@
     }
   },
   "Bethany Bingert": {
+    "Ben Bingert": {
+      "opponent": "Ben Bingert",
+      "opponentName": "LOOK AT THIS GRAPH",
+      "wins": 0,
+      "losses": 0,
+      "ties": 1,
+      "winPercentage": 0,
+      "totalGames": 1,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "avgPointsFor": 0.0,
+      "avgPointsAgainst": 0.0,
+      "highestScore": 0.0,
+      "lowestScore": 0.0,
+      "biggestWin": 0,
+      "closestWin": 0,
+      "longestWinStreak": 0,
+      "currentStreak": {
+        "type": null,
+        "length": 0
+      },
+      "matchups": [
+        {
+          "id": "2026_3_5_3",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 5,
+            "teamName": "LOOK AT THIS GRAPH",
+            "teamAbbrev": "GRPH",
+            "owner": "Ben Bingert",
+            "score": 0.0
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "FC Baseball",
+            "teamAbbrev": "FCB",
+            "owner": "Bethany Bingert",
+            "score": 0.0
+          },
+          "winner": "TIE"
+        }
+      ]
+    },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
       "opponentName": "Pop Rockin' Beats",
@@ -45824,6 +46103,55 @@
     "Nikkole Cummins": {
       "opponent": "Nikkole Cummins",
       "opponentName": "Lights, Camera, Jackson",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "winPercentage": 1.0,
+      "totalGames": 1,
+      "pointsFor": 135.26,
+      "pointsAgainst": 134.58,
+      "avgPointsFor": 135.26,
+      "avgPointsAgainst": 134.58,
+      "highestScore": 135.26,
+      "lowestScore": 135.26,
+      "biggestWin": 0.6799999999999784,
+      "closestWin": 0.6799999999999784,
+      "longestWinStreak": 1,
+      "currentStreak": {
+        "type": "WIN",
+        "length": 1
+      },
+      "matchups": [
+        {
+          "id": "2026_2_8_3",
+          "year": 2026,
+          "week": 2,
+          "matchupPeriodId": 2,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 8,
+            "teamName": "Lights, Camera, Jackson",
+            "teamAbbrev": "LCJ",
+            "owner": "Nikkole Cummins",
+            "score": 134.58
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "FC Baseball",
+            "teamAbbrev": "FCB",
+            "owner": "Bethany Bingert",
+            "score": 135.26
+          },
+          "winner": "AWAY"
+        }
+      ]
+    }
+  },
+  "Nikkole Cummins": {
+    "Mike Kovacs": {
+      "opponent": "Mike Kovacs",
+      "opponentName": "Waddle and Come Chase Maye",
       "wins": 0,
       "losses": 0,
       "ties": 1,
@@ -45844,32 +46172,30 @@
       },
       "matchups": [
         {
-          "id": "2026_2_8_3",
+          "id": "2026_3_2_8",
           "year": 2026,
-          "week": 2,
-          "matchupPeriodId": 2,
+          "week": 3,
+          "matchupPeriodId": 3,
           "isPlayoff": false,
           "playoffType": "NONE",
           "home": {
+            "teamId": 2,
+            "teamName": "Waddle and Come Chase Maye",
+            "teamAbbrev": "RIP",
+            "owner": "Mike Kovacs",
+            "score": 0.0
+          },
+          "away": {
             "teamId": 8,
             "teamName": "Lights, Camera, Jackson",
             "teamAbbrev": "LCJ",
             "owner": "Nikkole Cummins",
             "score": 0.0
           },
-          "away": {
-            "teamId": 3,
-            "teamName": "FC Baseball",
-            "teamAbbrev": "FCB",
-            "owner": "Bethany Bingert",
-            "score": 0.0
-          },
           "winner": "TIE"
         }
       ]
-    }
-  },
-  "Nikkole Cummins": {
+    },
     "Pete Solecki": {
       "opponent": "Pete Solecki",
       "opponentName": "We Tried Our Best",
@@ -45921,22 +46247,22 @@
       "opponent": "Bethany Bingert",
       "opponentName": "FC Baseball",
       "wins": 0,
-      "losses": 0,
-      "ties": 1,
-      "winPercentage": 0,
+      "losses": 1,
+      "ties": 0,
+      "winPercentage": 0.0,
       "totalGames": 1,
-      "pointsFor": 0.0,
-      "pointsAgainst": 0.0,
-      "avgPointsFor": 0.0,
-      "avgPointsAgainst": 0.0,
-      "highestScore": 0.0,
-      "lowestScore": 0.0,
+      "pointsFor": 134.58,
+      "pointsAgainst": 135.26,
+      "avgPointsFor": 134.58,
+      "avgPointsAgainst": 135.26,
+      "highestScore": 134.58,
+      "lowestScore": 134.58,
       "biggestWin": 0,
       "closestWin": 0,
       "longestWinStreak": 0,
       "currentStreak": {
-        "type": null,
-        "length": 0
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -45951,16 +46277,16 @@
             "teamName": "Lights, Camera, Jackson",
             "teamAbbrev": "LCJ",
             "owner": "Nikkole Cummins",
-            "score": 0.0
+            "score": 134.58
           },
           "away": {
             "teamId": 3,
             "teamName": "FC Baseball",
             "teamAbbrev": "FCB",
             "owner": "Bethany Bingert",
-            "score": 0.0
+            "score": 135.26
           },
-          "winner": "TIE"
+          "winner": "AWAY"
         }
       ]
     }

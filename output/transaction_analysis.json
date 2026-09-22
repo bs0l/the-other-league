@@ -1128,17 +1128,53 @@
         {
           "player": "Matt Gay",
           "count": 1
+        },
+        {
+          "player": "Kyler Murray",
+          "count": 1
         }
       ],
       "Daniel Keating": [
         {
           "player": "Jalen Coker",
           "count": 1
+        },
+        {
+          "player": "Jaguars D/ST",
+          "count": 1
         }
       ],
       "Carl Cummins": [
         {
           "player": "Mike Washington Jr.",
+          "count": 1
+        },
+        {
+          "player": "Chris Rodriguez Jr.",
+          "count": 1
+        }
+      ],
+      "Mike Kovacs": [
+        {
+          "player": "Cam Ward",
+          "count": 1
+        }
+      ],
+      "Joe Jaramillo": [
+        {
+          "player": "Sam Darnold",
+          "count": 1
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "Brian Robinson Jr.",
+          "count": 1
+        }
+      ],
+      "Bill Solecki": [
+        {
+          "player": "Texans D/ST",
           "count": 1
         }
       ]
@@ -4204,13 +4240,24 @@
         "sameWeekAddsFlagged": 1
       },
       "2026": {
-        "players": [],
-        "teamTally": {},
+        "players": [
+          {
+            "player": "Jalen Coker",
+            "teamCount": 2,
+            "teams": [
+              "Daniel Keating",
+              "Carl Cummins"
+            ]
+          }
+        ],
+        "teamTally": {
+          "Carl Cummins": 1
+        },
         "sameWeekAddsFlagged": 0
       }
     },
     "allTimeTeamTally": {
-      "Carl Cummins": 53,
+      "Carl Cummins": 54,
       "Daniel Keating": 72,
       "Ray Engleking": 34,
       "Bill Solecki": 73,
@@ -5353,17 +5400,53 @@
           {
             "player": "Matt Gay",
             "count": 1
+          },
+          {
+            "player": "Kyler Murray",
+            "count": 1
           }
         ],
         "Daniel Keating": [
           {
             "player": "Jalen Coker",
             "count": 1
+          },
+          {
+            "player": "Jaguars D/ST",
+            "count": 1
           }
         ],
         "Carl Cummins": [
           {
             "player": "Mike Washington Jr.",
+            "count": 1
+          },
+          {
+            "player": "Chris Rodriguez Jr.",
+            "count": 1
+          }
+        ],
+        "Mike Kovacs": [
+          {
+            "player": "Cam Ward",
+            "count": 1
+          }
+        ],
+        "Joe Jaramillo": [
+          {
+            "player": "Sam Darnold",
+            "count": 1
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "Brian Robinson Jr.",
+            "count": 1
+          }
+        ],
+        "Bill Solecki": [
+          {
+            "player": "Texans D/ST",
             "count": 1
           }
         ]
@@ -7812,13 +7895,24 @@
           "sameWeekAddsFlagged": 1
         },
         "2026": {
-          "players": [],
-          "teamTally": {},
+          "players": [
+            {
+              "player": "Jalen Coker",
+              "teamCount": 2,
+              "teams": [
+                "Daniel Keating",
+                "Carl Cummins"
+              ]
+            }
+          ],
+          "teamTally": {
+            "Carl Cummins": 1
+          },
           "sameWeekAddsFlagged": 0
         }
       },
       "allTimeTeamTally": {
-        "Carl Cummins": 46,
+        "Carl Cummins": 47,
         "Daniel Keating": 50,
         "Ray Engleking": 27,
         "Bill Solecki": 51,
