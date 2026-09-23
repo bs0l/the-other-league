@@ -2,7 +2,7 @@ __pycache__/
 *.pyc
 *.pyo
 .env
-*.py
+tot_keepers.py
 *.csv
 *.xlsx
 *.txt
