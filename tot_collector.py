@@ -1,6 +1,8 @@
-#v2.1
+#v2.2
 #23sep26
-#add tot_keepers.py
+#port MMT parity fixes: tied-owner superlatives (win/loss streaks, weekly
+#high/low scorers, all-time + season-level) and 0-0 placeholder-score guard
+#in the box_scores matchup loop
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -330,6 +332,20 @@ class ESPNDataCollectorV2:
                             else:
                                 is_playoff = week > 14
                             
+                            home_score = matchup.home_score
+                            away_score = matchup.away_score
+
+                            # Skip matchups that haven't actually been played
+                            # yet. league.current_week can advance (e.g. on
+                            # ESPN's weekly reset) before any games in that
+                            # week have been played, so _completed_weeks()
+                            # alone doesn't guarantee real data - a week
+                            # with both scores still at 0 is a placeholder,
+                            # not a real result. A genuine 0-0 final is not
+                            # realistically possible in fantasy scoring.
+                            if home_score == 0 and away_score == 0:
+                                continue
+
                             clean_matchup = {
                                 'id': f"{year}_{week}_{matchup.home_team.team_id}_{matchup.away_team.team_id}",
                                 'year': year,
@@ -342,16 +358,16 @@ class ESPNDataCollectorV2:
                                     'teamName': self._clean_team_name(matchup.home_team.team_name),
                                     'teamAbbrev': matchup.home_team.team_abbrev,
                                     'owner': home_owner,
-                                    'score': matchup.home_score
+                                    'score': home_score
                                 },
                                 'away': {
                                     'teamId': matchup.away_team.team_id,
                                     'teamName': self._clean_team_name(matchup.away_team.team_name),
                                     'teamAbbrev': matchup.away_team.team_abbrev,
                                     'owner': away_owner,
-                                    'score': matchup.away_score
+                                    'score': away_score
                                 },
-                                'winner': 'HOME' if matchup.home_score > matchup.away_score else 'AWAY' if matchup.away_score > matchup.home_score else 'TIE'
+                                'winner': 'HOME' if home_score > away_score else 'AWAY' if away_score > home_score else 'TIE'
                             }
                             
                             all_matchups.append(clean_matchup)
@@ -1122,59 +1138,23 @@ class ESPNDataCollectorV2:
                 'teamName': m['away']['teamName']
             })
         
-        longest_win_streak = {'owner': None, 'length': 0, 'teamName': None, 'startYear': None, 'startWeek': None, 'endYear': None, 'endWeek': None, 'isOngoing': False}
-        longest_loss_streak = {'owner': None, 'length': 0, 'teamName': None, 'startYear': None, 'startWeek': None, 'endYear': None, 'endWeek': None, 'isOngoing': False}
-        
-        for owner, games in owner_games.items():
-            games.sort(key=lambda x: (x['year'], x['week']))
-            
-            current_win_streak = 0
-            current_win_start_year = None
-            current_win_start_week = None
-            current_loss_streak = 0
-            current_loss_start_year = None
-            current_loss_start_week = None
-            
-            for i, game in enumerate(games):
-                if game['won']:
-                    if current_win_streak == 0:
-                        current_win_start_year = game['year']
-                        current_win_start_week = game['week']
-                    current_win_streak += 1
-                    current_loss_streak = 0
-                    
-                    if current_win_streak > longest_win_streak['length']:
-                        is_last_game = (i == len(games) - 1)
-                        longest_win_streak = {
-                            'owner': owner,
-                            'length': current_win_streak,
-                            'teamName': game['teamName'],
-                            'startYear': current_win_start_year,
-                            'startWeek': current_win_start_week,
-                            'endYear': game['year'],
-                            'endWeek': game['week'],
-                            'isOngoing': is_last_game
-                        }
-                elif game['lost']:
-                    if current_loss_streak == 0:
-                        current_loss_start_year = game['year']
-                        current_loss_start_week = game['week']
-                    current_loss_streak += 1
-                    current_win_streak = 0
-                    
-                    if current_loss_streak > longest_loss_streak['length']:
-                        is_last_game = (i == len(games) - 1)
-                        longest_loss_streak = {
-                            'owner': owner,
-                            'length': current_loss_streak,
-                            'teamName': game['teamName'],
-                            'startYear': current_loss_start_year,
-                            'startWeek': current_loss_start_week,
-                            'endYear': game['year'],
-                            'endWeek': game['week'],
-                            'isOngoing': is_last_game
-                        }
-        
+        best_win, best_loss = self._compute_owner_streaks(owner_games)
+        win_ties, win_length = self._streak_ties_at_max(best_win)
+        loss_ties, loss_length = self._streak_ties_at_max(best_loss)
+
+        empty_streak = {'owner': None, 'length': 0, 'teamName': None, 'startYear': None, 'startWeek': None, 'endYear': None, 'endWeek': None, 'isOngoing': False}
+
+        longest_win_streak = {
+            **(win_ties[0] if win_ties else empty_streak),
+            'owners': win_ties,
+            'tied': len(win_ties) > 1
+        }
+        longest_loss_streak = {
+            **(loss_ties[0] if loss_ties else empty_streak),
+            'owners': loss_ties,
+            'tied': len(loss_ties) > 1
+        }
+
         return {
             'longestWinStreak': longest_win_streak,
             'longestLossStreak': longest_loss_streak
@@ -1218,17 +1198,21 @@ class ESPNDataCollectorV2:
             lowest = sorted_scores[-1]
             low_scorer_count[lowest['owner']] += 1
         
-        most_high = max(high_scorer_count.items(), key=lambda x: x[1]) if high_scorer_count else (None, 0)
-        most_low = max(low_scorer_count.items(), key=lambda x: x[1]) if low_scorer_count else (None, 0)
-        
+        high_owners, high_count = self._counter_ties_at_max(high_scorer_count)
+        low_owners, low_count = self._counter_ties_at_max(low_scorer_count)
+
         return {
             'mostWeeklyHighScores': {
-                'owner': most_high[0],
-                'count': most_high[1]
+                'owner': high_owners[0] if high_owners else None,
+                'owners': high_owners,
+                'count': high_count,
+                'tied': len(high_owners) > 1
             },
             'mostWeeklyLowScores': {
-                'owner': most_low[0],
-                'count': most_low[1]
+                'owner': low_owners[0] if low_owners else None,
+                'owners': low_owners,
+                'count': low_count,
+                'tied': len(low_owners) > 1
             }
         }
 
@@ -1363,33 +1347,49 @@ class ESPNDataCollectorV2:
                 owner_games[m['home']['owner']].append({
                     'week': m['week'],
                     'won': m['winner'] == 'HOME',
-                    'lost': m['winner'] == 'AWAY'
+                    'lost': m['winner'] == 'AWAY',
+                    'teamName': m['home']['teamName']
                 })
                 owner_games[m['away']['owner']].append({
                     'week': m['week'],
                     'won': m['winner'] == 'AWAY',
-                    'lost': m['winner'] == 'HOME'
+                    'lost': m['winner'] == 'HOME',
+                    'teamName': m['away']['teamName']
                 })
-            
-            longest_win = {'owner': None, 'length': 0}
-            longest_loss = {'owner': None, 'length': 0}
-            
-            for owner, games in owner_games.items():
-                games.sort(key=lambda x: x['week'])
-                current_win = 0
-                current_loss = 0
-                
-                for game in games:
-                    if game['won']:
-                        current_win += 1
-                        current_loss = 0
-                        if current_win > longest_win['length']:
-                            longest_win = {'owner': owner, 'length': current_win}
-                    elif game['lost']:
-                        current_loss += 1
-                        current_win = 0
-                        if current_loss > longest_loss['length']:
-                            longest_loss = {'owner': owner, 'length': current_loss}
+
+            season_best_win, season_best_loss = self._compute_owner_streaks(owner_games)
+            season_win_ties, season_win_length = self._streak_ties_at_max(season_best_win)
+            season_loss_ties, season_loss_length = self._streak_ties_at_max(season_best_loss)
+
+            season_win_owners = [d['owner'] for d in season_win_ties]
+            season_loss_owners = [d['owner'] for d in season_loss_ties]
+
+            # Per-owner week ranges for linking - safe to build a simple
+            # week-number list here (unlike the all-time version) since a
+            # season-level streak never crosses a year boundary.
+            season_win_streaks = [
+                {'owner': d['owner'], 'weeks': list(range(d['startWeek'], d['endWeek'] + 1))}
+                for d in season_win_ties
+            ]
+            season_loss_streaks = [
+                {'owner': d['owner'], 'weeks': list(range(d['startWeek'], d['endWeek'] + 1))}
+                for d in season_loss_ties
+            ]
+
+            longest_win = {
+                'owner': season_win_owners[0] if season_win_owners else None,
+                'length': season_win_length,
+                'owners': season_win_owners,
+                'tied': len(season_win_owners) > 1,
+                'streaks': season_win_streaks
+            }
+            longest_loss = {
+                'owner': season_loss_owners[0] if season_loss_owners else None,
+                'length': season_loss_length,
+                'owners': season_loss_owners,
+                'tied': len(season_loss_owners) > 1,
+                'streaks': season_loss_streaks
+            }
             
             # Weekly high/low scorers
             weekly_scores = defaultdict(list)
@@ -1429,8 +1429,8 @@ class ESPNDataCollectorV2:
                 low_scorer_count[lowest['owner']] += 1
 
             # NOW calculate the most values AFTER the loop
-            most_high = max(high_scorer_count.items(), key=lambda x: x[1]) if high_scorer_count else (None, 0)
-            most_low = max(low_scorer_count.items(), key=lambda x: x[1]) if low_scorer_count else (None, 0)
+            season_high_owners, season_high_count = self._counter_ties_at_max(high_scorer_count)
+            season_low_owners, season_low_count = self._counter_ties_at_max(low_scorer_count)
 
             # Playoff payouts - this league had no buy-in before 2023.
             # $5 buy-in added in 2023: 1st = $35, 2nd = $10, 3rd = $5.
@@ -1491,8 +1491,18 @@ class ESPNDataCollectorV2:
                 'biggestBlowout': max(matchup_margins, key=lambda x: x['margin']) if matchup_margins else None,
                 'longestWinStreak': longest_win,
                 'longestLossStreak': longest_loss,
-                'mostWeeklyHighScores': {'owner': most_high[0], 'count': most_high[1]},
-                'mostWeeklyLowScores': {'owner': most_low[0], 'count': most_low[1]},
+                'mostWeeklyHighScores': {
+                    'owner': season_high_owners[0] if season_high_owners else None,
+                    'owners': season_high_owners,
+                    'count': season_high_count,
+                    'tied': len(season_high_owners) > 1
+                },
+                'mostWeeklyLowScores': {
+                    'owner': season_low_owners[0] if season_low_owners else None,
+                    'owners': season_low_owners,
+                    'count': season_low_count,
+                    'tied': len(season_low_owners) > 1
+                },
                 'bestBenchWarmers': bench_points.get(year),
                 'playoffPayouts': playoff_payouts,
                 'keeperAnalysis': {
@@ -1869,6 +1879,92 @@ class ESPNDataCollectorV2:
         if not current_week or current_week <= 0:
             return requested_weeks
         return min(requested_weeks, current_week)
+
+    def _compute_owner_streaks(self, owner_games):
+        """For each owner, walk their games in chronological order and find
+        their OWN best win streak and best loss streak (length plus detail:
+        team, start/end year+week, whether it's still active as of their
+        most recent game). Games only need 'won'/'lost' booleans and 'week';
+        'year' and 'teamName' are optional and included in the detail when
+        present. Returns (best_win_by_owner, best_loss_by_owner) dicts."""
+        best_win = {}
+        best_loss = {}
+
+        for owner, games in owner_games.items():
+            games = sorted(games, key=lambda g: (g.get('year', 0), g['week']))
+
+            current_win = 0
+            current_win_start = None
+            current_loss = 0
+            current_loss_start = None
+
+            for i, game in enumerate(games):
+                is_last = (i == len(games) - 1)
+
+                if game['won']:
+                    if current_win == 0:
+                        current_win_start = game
+                    current_win += 1
+                    current_loss = 0
+
+                    if owner not in best_win or current_win > best_win[owner]['length']:
+                        best_win[owner] = {
+                            'owner': owner,
+                            'length': current_win,
+                            'teamName': game.get('teamName'),
+                            'startYear': current_win_start.get('year'),
+                            'startWeek': current_win_start['week'],
+                            'endYear': game.get('year'),
+                            'endWeek': game['week'],
+                            'isOngoing': is_last
+                        }
+                elif game['lost']:
+                    if current_loss == 0:
+                        current_loss_start = game
+                    current_loss += 1
+                    current_win = 0
+
+                    if owner not in best_loss or current_loss > best_loss[owner]['length']:
+                        best_loss[owner] = {
+                            'owner': owner,
+                            'length': current_loss,
+                            'teamName': game.get('teamName'),
+                            'startYear': current_loss_start.get('year'),
+                            'startWeek': current_loss_start['week'],
+                            'endYear': game.get('year'),
+                            'endWeek': game['week'],
+                            'isOngoing': is_last
+                        }
+                else:
+                    current_win = 0
+                    current_loss = 0
+
+        return best_win, best_loss
+
+    def _counter_ties_at_max(self, counter):
+        """Given an owner -> count dict, return (owners, max_count) where
+        owners is every owner tied for the max count, sorted alphabetically
+        for stable output. Returns ([], 0) if counter is empty. Prevents
+        superlatives like 'most weekly high scores' from silently dropping
+        every owner but one when there's a tie at the top."""
+        if not counter:
+            return [], 0
+        max_count = max(counter.values())
+        owners = sorted(o for o, c in counter.items() if c == max_count)
+        return owners, max_count
+
+    def _streak_ties_at_max(self, best_by_owner):
+        """Given an owner -> streak-detail dict (each with a 'length' key),
+        return (tied_details, max_length): every owner's detail dict tied
+        for the max length, sorted by owner name. Returns ([], 0) if empty."""
+        if not best_by_owner:
+            return [], 0
+        max_length = max(d['length'] for d in best_by_owner.values())
+        tied = sorted(
+            (d for d in best_by_owner.values() if d['length'] == max_length),
+            key=lambda d: d['owner']
+        )
+        return tied, max_length
 
     def _direct_api(self, year, view, extra_params=""):
         """
@@ -3255,4 +3351,4 @@ def main():
     collector.run(skip_bench=args.skip_bench)
 
 if __name__ == "__main__":
-    main()
+    main()
