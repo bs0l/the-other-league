@@ -5,11 +5,11 @@
       "owner": "Bill Solecki",
       "teamName": "Kraft Mc-njigba Chase",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 416.44000000000005,
-      "waiverPickups": 1,
-      "waiverPointsScored": 11.0,
-      "draftRetentionRate": 94.11764705882352,
+      "draftedKeptToPlayoffs": 15,
+      "draftedPointsScored": 410.34000000000003,
+      "waiverPickups": 2,
+      "waiverPointsScored": 32.0,
+      "draftRetentionRate": 88.23529411764706,
       "draftedPlayers": [
         {
           "name": "Jaxon Smith-Njigba",
@@ -99,8 +99,8 @@
           "name": "Quentin Johnston",
           "round": 13,
           "pick": 4,
-          "keptToPlayoffs": true,
-          "totalPoints": 6.1
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Ka'imi Fairbairn",
@@ -529,11 +529,11 @@
       "owner": "Ben Bingert",
       "teamName": "LOOK AT THIS GRAPH",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 386.12,
-      "waiverPickups": 1,
-      "waiverPointsScored": 18.0,
-      "draftRetentionRate": 94.11764705882352,
+      "draftedKeptToPlayoffs": 15,
+      "draftedPointsScored": 370.12,
+      "waiverPickups": 2,
+      "waiverPointsScored": 37.5,
+      "draftRetentionRate": 88.23529411764706,
       "draftedPlayers": [
         {
           "name": "Jalen Hurts",
@@ -637,8 +637,8 @@
           "name": "KC Concepcion",
           "round": 15,
           "pick": 6,
-          "keptToPlayoffs": true,
-          "totalPoints": 16.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Tyler Loop",
@@ -791,11 +791,11 @@
       "owner": "Carl Cummins",
       "teamName": "Titty Sprinkles",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 356.44,
-      "waiverPickups": 2,
-      "waiverPointsScored": 81.9,
-      "draftRetentionRate": 94.11764705882352,
+      "draftedKeptToPlayoffs": 15,
+      "draftedPointsScored": 352.34,
+      "waiverPickups": 3,
+      "waiverPointsScored": 109.5,
+      "draftRetentionRate": 88.23529411764706,
       "draftedPlayers": [
         {
           "name": "Bijan Robinson",
@@ -885,8 +885,8 @@
           "name": "Jordan Addison",
           "round": 13,
           "pick": 2,
-          "keptToPlayoffs": true,
-          "totalPoints": 4.1
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Broncos D/ST",
@@ -1053,11 +1053,11 @@
       "owner": "Daniel Keating",
       "teamName": "Why Was I on the 415 Shuttle?",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 325.38,
-      "waiverPickups": 2,
-      "waiverPointsScored": 16.0,
-      "draftRetentionRate": 94.11764705882352,
+      "draftedKeptToPlayoffs": 13,
+      "draftedPointsScored": 287.08,
+      "waiverPickups": 4,
+      "waiverPointsScored": 83.42,
+      "draftRetentionRate": 76.47058823529412,
       "draftedPlayers": [
         {
           "name": "Christian McCaffrey",
@@ -1126,8 +1126,8 @@
           "name": "Michael Wilson",
           "round": 10,
           "pick": 4,
-          "keptToPlayoffs": true,
-          "totalPoints": 14.4
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Kyle Monangai",
@@ -1161,8 +1161,8 @@
           "name": "Harrison Mevis",
           "round": 15,
           "pick": 7,
-          "keptToPlayoffs": true,
-          "totalPoints": 4.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Jaguars D/ST",
@@ -1175,8 +1175,8 @@
           "name": "Josh Downs",
           "round": 17,
           "pick": 7,
-          "keptToPlayoffs": true,
-          "totalPoints": 19.9
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         }
       ]
     },
@@ -1184,11 +1184,11 @@
       "owner": "Randell Crawford",
       "teamName": "Pop Rockin' Beats",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 276.18,
-      "waiverPickups": 1,
-      "waiverPointsScored": 24.5,
-      "draftRetentionRate": 100.0,
+      "draftedKeptToPlayoffs": 16,
+      "draftedPointsScored": 251.29999999999998,
+      "waiverPickups": 2,
+      "waiverPointsScored": 24.12,
+      "draftRetentionRate": 94.11764705882352,
       "draftedPlayers": [
         {
           "name": "Bo Nix",
@@ -1264,8 +1264,8 @@
           "name": "Geno Smith",
           "round": 11,
           "pick": 9,
-          "keptToPlayoffs": true,
-          "totalPoints": 24.88
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Steelers D/ST",

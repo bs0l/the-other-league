@@ -1142,6 +1142,10 @@
         {
           "player": "Jaguars D/ST",
           "count": 1
+        },
+        {
+          "player": "Michael Wilson",
+          "count": 1
         }
       ],
       "Carl Cummins": [
@@ -1151,6 +1155,10 @@
         },
         {
           "player": "Chris Rodriguez Jr.",
+          "count": 1
+        },
+        {
+          "player": "Jordan Addison",
           "count": 1
         }
       ],
@@ -1170,11 +1178,29 @@
         {
           "player": "Brian Robinson Jr.",
           "count": 1
+        },
+        {
+          "player": "KC Concepcion",
+          "count": 1
         }
       ],
       "Bill Solecki": [
         {
           "player": "Texans D/ST",
+          "count": 1
+        },
+        {
+          "player": "Buccaneers D/ST",
+          "count": 1
+        },
+        {
+          "player": "Quentin Johnston",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Geno Smith",
           "count": 1
         }
       ]
@@ -5414,6 +5440,10 @@
           {
             "player": "Jaguars D/ST",
             "count": 1
+          },
+          {
+            "player": "Michael Wilson",
+            "count": 1
           }
         ],
         "Carl Cummins": [
@@ -5423,6 +5453,10 @@
           },
           {
             "player": "Chris Rodriguez Jr.",
+            "count": 1
+          },
+          {
+            "player": "Jordan Addison",
             "count": 1
           }
         ],
@@ -5442,11 +5476,29 @@
           {
             "player": "Brian Robinson Jr.",
             "count": 1
+          },
+          {
+            "player": "KC Concepcion",
+            "count": 1
           }
         ],
         "Bill Solecki": [
           {
             "player": "Texans D/ST",
+            "count": 1
+          },
+          {
+            "player": "Buccaneers D/ST",
+            "count": 1
+          },
+          {
+            "player": "Quentin Johnston",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Geno Smith",
             "count": 1
           }
         ]
