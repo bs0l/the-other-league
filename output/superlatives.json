@@ -300,7 +300,20 @@
       "startWeek": 1,
       "endYear": 2024,
       "endWeek": 11,
-      "isOngoing": false
+      "isOngoing": false,
+      "owners": [
+        {
+          "owner": "Daniel Keating",
+          "length": 11,
+          "teamName": "Why Was I on the 415 Shuttle?",
+          "startYear": 2024,
+          "startWeek": 1,
+          "endYear": 2024,
+          "endWeek": 11,
+          "isOngoing": false
+        }
+      ],
+      "tied": false
     },
     "longestLossStreak": {
       "owner": "Ben Bingert",
@@ -310,15 +323,36 @@
       "startWeek": 13,
       "endYear": 2018,
       "endWeek": 12,
-      "isOngoing": false
+      "isOngoing": false,
+      "owners": [
+        {
+          "owner": "Ben Bingert",
+          "length": 14,
+          "teamName": "Free Candy and Wins",
+          "startYear": 2017,
+          "startWeek": 13,
+          "endYear": 2018,
+          "endWeek": 12,
+          "isOngoing": false
+        }
+      ],
+      "tied": false
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 34
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "count": 34,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Pete Solecki",
-      "count": 28
+      "owners": [
+        "Pete Solecki"
+      ],
+      "count": 28,
+      "tied": false
     }
   },
   "regularSeason": {
@@ -622,7 +656,20 @@
       "startWeek": 13,
       "endYear": 2024,
       "endWeek": 11,
-      "isOngoing": false
+      "isOngoing": false,
+      "owners": [
+        {
+          "owner": "Daniel Keating",
+          "length": 12,
+          "teamName": "Why Was I on the 415 Shuttle?",
+          "startYear": 2023,
+          "startWeek": 13,
+          "endYear": 2024,
+          "endWeek": 11,
+          "isOngoing": false
+        }
+      ],
+      "tied": false
     },
     "longestLossStreak": {
       "owner": "Ben Bingert",
@@ -632,15 +679,36 @@
       "startWeek": 1,
       "endYear": 2018,
       "endWeek": 12,
-      "isOngoing": false
+      "isOngoing": false,
+      "owners": [
+        {
+          "owner": "Ben Bingert",
+          "length": 12,
+          "teamName": "Free Candy and Wins",
+          "startYear": 2018,
+          "startWeek": 1,
+          "endYear": 2018,
+          "endWeek": 12,
+          "isOngoing": false
+        }
+      ],
+      "tied": false
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 23
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "count": 23,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Pete Solecki",
-      "count": 21
+      "owners": [
+        "Pete Solecki"
+      ],
+      "count": 21,
+      "tied": false
     },
     "mostPointsAgainstSeasons": [
       {

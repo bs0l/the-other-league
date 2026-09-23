@@ -41,19 +41,61 @@
     },
     "longestWinStreak": {
       "owner": "Ben Bingert",
-      "length": 5
+      "length": 5,
+      "owners": [
+        "Ben Bingert"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Ben Bingert",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Pete Solecki",
-      "length": 5
+      "length": 5,
+      "owners": [
+        "Pete Solecki"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Pete Solecki",
+          "weeks": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Ben Bingert",
-      "count": 3
+      "owners": [
+        "Ben Bingert",
+        "Pete Solecki",
+        "Sal DeRose"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostWeeklyLowScores": {
       "owner": "Phil Torres",
-      "count": 3
+      "owners": [
+        "Phil Torres"
+      ],
+      "count": 3,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "playoffPayouts": [
@@ -123,19 +165,61 @@
     },
     "longestWinStreak": {
       "owner": "Carl Cummins",
-      "length": 5
+      "length": 5,
+      "owners": [
+        "Carl Cummins"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Ray Engleking",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Ray Engleking"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Sal DeRose",
-      "count": 4
+      "owners": [
+        "Sal DeRose"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Ray Engleking",
-      "count": 3
+      "owners": [
+        "Ray Engleking"
+      ],
+      "count": 3,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "playoffPayouts": [
@@ -204,20 +288,90 @@
       "matchupPeriodId": 6
     },
     "longestWinStreak": {
-      "owner": "Bill Solecki",
-      "length": 4
+      "owner": "Ben Bingert",
+      "length": 4,
+      "owners": [
+        "Ben Bingert",
+        "Bill Solecki",
+        "Daniel Keating",
+        "Randell Crawford"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Ben Bingert",
+          "weeks": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "owner": "Daniel Keating",
+          "weeks": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "owner": "Randell Crawford",
+          "weeks": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Pete Solecki",
-      "length": 6
+      "length": 6,
+      "owners": [
+        "Pete Solecki"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Pete Solecki",
+          "weeks": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 3
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "count": 3,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Pete Solecki",
-      "count": 3
+      "owners": [
+        "Pete Solecki"
+      ],
+      "count": 3,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "playoffPayouts": [
@@ -286,20 +440,76 @@
       "matchupPeriodId": 14
     },
     "longestWinStreak": {
-      "owner": "Pete Solecki",
-      "length": 6
+      "owner": "Carl Cummins",
+      "length": 6,
+      "owners": [
+        "Carl Cummins",
+        "Pete Solecki"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "owner": "Pete Solecki",
+          "weeks": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Sal DeRose",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Sal DeRose"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Sal DeRose",
+          "weeks": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
-      "owner": "Ray Engleking",
-      "count": 4
+      "owner": "Bill Solecki",
+      "owners": [
+        "Bill Solecki",
+        "Ray Engleking"
+      ],
+      "count": 4,
+      "tied": true
     },
     "mostWeeklyLowScores": {
       "owner": "Sal DeRose",
-      "count": 3
+      "owners": [
+        "Sal DeRose"
+      ],
+      "count": 3,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "playoffPayouts": [
@@ -594,19 +804,68 @@
     },
     "longestWinStreak": {
       "owner": "Ray Engleking",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Ray Engleking"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Ben Bingert",
-      "length": 12
+      "length": 12,
+      "owners": [
+        "Ben Bingert"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Ben Bingert",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Ray Engleking",
-      "count": 4
+      "owners": [
+        "Ray Engleking"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Ben Bingert",
-      "count": 6
+      "owners": [
+        "Ben Bingert"
+      ],
+      "count": 6,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "playoffPayouts": [
@@ -745,21 +1004,71 @@
     },
     "longestWinStreak": {
       "owner": "Carl Cummins",
-      "length": 8
+      "length": 8,
+      "owners": [
+        "Carl Cummins"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Mike Kovacs",
-      "length": 8
+      "length": 8,
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Mike Kovacs",
+          "weeks": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Joe Jaramillo",
-      "count": 6
+      "owners": [
+        "Joe Jaramillo"
+      ],
+      "count": 6,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
-      "count": 4
+      "owners": [
+        "Randell Crawford"
+      ],
+      "count": 4,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Daniel Keating",
+      "teamName": "Why Was I On The 415 Shuttle",
+      "benchPoints": 537.38
+    },
     "playoffPayouts": [
       {
         "owner": "Ben Bingert",
@@ -895,22 +1204,96 @@
       "matchupPeriodId": 3
     },
     "longestWinStreak": {
-      "owner": "Ray Engleking",
-      "length": 6
+      "owner": "Joe Jaramillo",
+      "length": 6,
+      "owners": [
+        "Joe Jaramillo",
+        "Ray Engleking"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Joe Jaramillo",
+          "weeks": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
-      "owner": "Daniel Keating",
-      "length": 8
+      "owner": "Carl Cummins",
+      "length": 8,
+      "owners": [
+        "Carl Cummins",
+        "Daniel Keating"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "owner": "Daniel Keating",
+          "weeks": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Bill Solecki",
-      "count": 5
+      "owners": [
+        "Bill Solecki"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Daniel Keating",
-      "count": 5
+      "owners": [
+        "Daniel Keating"
+      ],
+      "count": 5,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Ben Bingert",
+      "teamName": "Barry Boxers",
+      "benchPoints": 652.5000000000002
+    },
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
@@ -1060,21 +1443,73 @@
     },
     "longestWinStreak": {
       "owner": "Joe Jaramillo",
-      "length": 6
+      "length": 6,
+      "owners": [
+        "Joe Jaramillo"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Joe Jaramillo",
+          "weeks": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Ray Engleking",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Ray Engleking"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
-      "owner": "Daniel Keating",
-      "count": 3
+      "owner": "Bill Solecki",
+      "owners": [
+        "Bill Solecki",
+        "Daniel Keating"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostWeeklyLowScores": {
       "owner": "Bill Solecki",
-      "count": 2
+      "owners": [
+        "Bill Solecki",
+        "Carl Cummins",
+        "Daniel Keating",
+        "Pete Solecki",
+        "Ray Engleking"
+      ],
+      "count": 2,
+      "tied": true
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Joe Jaramillo",
+      "teamName": "Belt Sanders",
+      "benchPoints": 724.3199999999998
+    },
     "playoffPayouts": [
       {
         "owner": "Ben Bingert",
@@ -1289,21 +1724,72 @@
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Bill Solecki"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Daniel Keating",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Daniel Keating"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Daniel Keating",
+          "weeks": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 4
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostWeeklyLowScores": {
-      "owner": "Carl Cummins",
-      "count": 2
+      "owner": "Bill Solecki",
+      "owners": [
+        "Bill Solecki",
+        "Carl Cummins",
+        "Daniel Keating",
+        "Pete Solecki"
+      ],
+      "count": 2,
+      "tied": true
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Daniel Keating",
+      "teamName": "Why Was I On The 415 Shuttle",
+      "benchPoints": 803.68
+    },
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
@@ -1596,21 +2082,70 @@
     },
     "longestWinStreak": {
       "owner": "Sal DeRose",
-      "length": 6
+      "length": 6,
+      "owners": [
+        "Sal DeRose"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Sal DeRose",
+          "weeks": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Ray Engleking",
-      "length": 9
+      "length": 9,
+      "owners": [
+        "Ray Engleking"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 5
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Ray Engleking",
-      "count": 4
+      "owners": [
+        "Ray Engleking"
+      ],
+      "count": 4,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Joe Jaramillo",
+      "teamName": "Brady Sits When he Pees",
+      "benchPoints": 767.82
+    },
     "playoffPayouts": [
       {
         "owner": "Sal DeRose",
@@ -1903,21 +2438,90 @@
     },
     "longestWinStreak": {
       "owner": "Daniel Keating",
-      "length": 11
+      "length": 11,
+      "owners": [
+        "Daniel Keating"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Daniel Keating",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Pete Solecki",
-      "length": 9
+      "length": 9,
+      "owners": [
+        "Pete Solecki",
+        "Sal DeRose"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Pete Solecki",
+          "weeks": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "owner": "Sal DeRose",
+          "weeks": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 4
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Pete Solecki",
-      "count": 5
+      "owners": [
+        "Pete Solecki"
+      ],
+      "count": 5,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Ben Bingert",
+      "teamName": "Franoc knthall",
+      "benchPoints": 887.6800000000001
+    },
     "playoffPayouts": [
       {
         "owner": "Mike Kovacs",
@@ -2212,21 +2816,71 @@
     },
     "longestWinStreak": {
       "owner": "Pete Solecki",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Pete Solecki"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Pete Solecki",
+          "weeks": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Sal DeRose",
-      "length": 9
+      "length": 9,
+      "owners": [
+        "Sal DeRose"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Sal DeRose",
+          "weeks": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Ben Bingert",
-      "count": 3
+      "owners": [
+        "Ben Bingert"
+      ],
+      "count": 3,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Sal DeRose",
-      "count": 7
+      "owners": [
+        "Sal DeRose"
+      ],
+      "count": 7,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Bill Solecki",
+      "teamName": "RIP AC Shrader",
+      "benchPoints": 692.6400000000001
+    },
     "playoffPayouts": [
       {
         "owner": "Mike Kovacs",
@@ -2493,22 +3147,94 @@
       "matchupPeriodId": 1
     },
     "longestWinStreak": {
-      "owner": "Bill Solecki",
-      "length": 2
+      "owner": "Bethany Bingert",
+      "length": 2,
+      "owners": [
+        "Bethany Bingert",
+        "Bill Solecki",
+        "Joe Jaramillo"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Bethany Bingert",
+          "weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "weeks": [
+            1,
+            2
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
-      "owner": "Carl Cummins",
-      "length": 2
+      "owner": "Ben Bingert",
+      "length": 2,
+      "owners": [
+        "Ben Bingert",
+        "Carl Cummins",
+        "Randell Crawford"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Ben Bingert",
+          "weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "owner": "Randell Crawford",
+          "weeks": [
+            1,
+            2
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Joe Jaramillo",
-      "count": 2
+      "owners": [
+        "Joe Jaramillo",
+        "Nikkole Cummins"
+      ],
+      "count": 1,
+      "tied": true
     },
     "mostWeeklyLowScores": {
-      "owner": "Randell Crawford",
-      "count": 1
+      "owner": "Daniel Keating",
+      "owners": [
+        "Daniel Keating",
+        "Randell Crawford"
+      ],
+      "count": 1,
+      "tied": true
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Nikkole Cummins",
+      "teamName": "Lights, Camera, Jackson",
+      "benchPoints": 157.38
+    },
     "playoffPayouts": [],
     "keeperAnalysis": {
       "keepers": [],
