@@ -1,4 +1,6 @@
-#v2.0
+#v2.1
+#23sep26
+#add tot_keepers.py
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -30,40 +32,21 @@ OUTPUT_DIR = "output"
 # preferred when present.
 LEAGUE_PLAYOFF_TEAM_COUNT = 4
 
-# Manual point overrides for keepers ESPN has scrubbed from historical API data.
-# These players were on a fantasy roster but no longer appear in any API roster
-# snapshot (mRoster or mBoxscore) because ESPN reflects current NFL status,
-# not historical rosters. Points represent only weeks the player was
-# actually started (not benched/IR).
-# Format: { (year, owner_name, player_name): (total_points_while_started, dropped_bool, last_active_week) }
-KEEPER_POINT_OVERRIDES = {
-    # Sanders kept Rd 6; started wks 1-5, benched wk 6+, dropped before wk 12
-    (2023, 'Ray Engleking',  'Miles Sanders'):   (44.1,  True, 5),
-    # Mostert kept Rd 11; started wk 1, IR wks 2-3, benched wks 4-8,
-    # started wk 9, dropped before wk 12
-    (2024, 'Carl Cummins',   'Raheem Mostert'):  (3.7,   True, 9),
-    # Nabers kept Rd 2; started wks 1-4, benched wk 5, dropped before wk 6
-    (2025, 'Pete Solecki',   'Malik Nabers'):    (57.1,  True, 4),
-    # Worthy kept Rd 8; started wk 1, benched wks 2-3, started wks 4-9,
-    # benched wks 10-11, started wk 12, benched wk 13, dropped before playoffs
-    (2025, 'Daniel Keating', 'Xavier Worthy'):   (72.8,  True, 12),
-    # Daniels kept Rd 9; started wks 1-2, benched wks 3-4, started wks 5-7,
-    # benched wks 8-11, dropped before wk 12
-    (2025, 'Joe Jaramillo',  'Jayden Daniels'):  (96.34, True, 7),
-    # Hubbard kept Rd 12; started wks 1-4, benched wks 5-9, dropped before wk 10
-    (2025, 'Bill Solecki',   'Chuba Hubbard'):   (56.1,  True, 4),
-}
-
-# Short notes displayed on the season stats page for keepers with no API data.
-# Format: { (year, owner_name, player_name): note_string }
-KEEPER_NOTES = {
-    (2023, 'Ray Engleking',  'Miles Sanders'):   'Started wks 1-5, benched after, dropped before wk 12',
-    (2024, 'Carl Cummins',   'Raheem Mostert'):  'Wk 1 only, IR wks 2-3, benched wks 4-8, started wk 9, dropped before wk 12',
-    (2025, 'Pete Solecki',   'Malik Nabers'):    'Started wks 1-4, benched wk 5, dropped before wk 6',
-    (2025, 'Daniel Keating', 'Xavier Worthy'):   'Started wks 1, 4-9, 12; benched wks 2-3, 10-11, 13; dropped before playoffs',
-    (2025, 'Joe Jaramillo',  'Jayden Daniels'):  'Started wks 1-2, 5-7; benched wks 3-4, 8-11; dropped before wk 12',
-    (2025, 'Bill Solecki',   'Chuba Hubbard'):   'Started wks 1-4, benched wks 5-9, dropped before wk 10',
-}
+# Manual point overrides for keepers ESPN has scrubbed from historical API data,
+# plus season-stats-page notes for those same keepers. Contains real owner/player
+# names, so this lives in a separate gitignored file (not committed to GitHub)
+# rather than inline here. See tot_keepers.py for the format and how to add new
+# entries -- that file must be SCP'd to the Pi manually after editing, the same
+# way this collector script used to be before it started being deployed via git.
+try:
+    from tot_keepers import KEEPER_POINT_OVERRIDES, KEEPER_NOTES
+except ImportError as e:
+    raise ImportError(
+        "tot_keepers.py not found. This file holds KEEPER_POINT_OVERRIDES and "
+        "KEEPER_NOTES and is intentionally gitignored (it contains real owner names), "
+        "so it must exist alongside tot_collector.py on whatever machine is running it "
+        "but is never pulled in by git. Copy it over (e.g. via scp) before running."
+    ) from e
 
 # Authentication (required for private leagues and historical data)
 SWID = os.environ["TOT_SWID"]
