@@ -709,8 +709,30 @@
         2019: 0, 2020: 0, 2021: 0, 2022: 0, 2023: 5, 2024: 5, 2025: 5
     };
 
+    // For any season not yet added to BUY_INS above, fall back to the most
+    // recent known amount instead of silently showing $0 - avoids
+    // misreporting a real buy-in as "no buy-in" until the table is updated.
+    function getBuyIn(year) {
+        if (year in BUY_INS) return BUY_INS[year];
+        const mostRecentYear = Math.max(...Object.keys(BUY_INS).map(Number));
+        return BUY_INS[mostRecentYear];
+    }
+
     function createMatchupLink(year, week) {
         return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${week}&seasonId=${year}`;
+    }
+
+    function createBoxScoreLink(record) {
+        const { year, week, matchupPeriodId } = record;
+
+        // For years before 2019, ESPN doesn't support individual matchup
+        // links - fall back to the scoreboard overview, same as the index page.
+        if (year < 2019) {
+            return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&seasonId=${year}`;
+        }
+
+        const teamId = record.teamId || record.winnerTeamId;
+        return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&scoringPeriodId=${week}&seasonId=${year}&teamId=${teamId}&view=scoringperiod`;
     }
 
     function createStandingsLink(year) {
@@ -778,10 +800,6 @@
         const container = document.getElementById('seasons-container');
         container.innerHTML = seasons.map(season => {
             const notes = [];
-            if (!season.mostWeeklyHighScores?.owner)
-                notes.push('Multiple teams tied for most weekly high scores');
-            if (!season.mostWeeklyLowScores?.owner)
-                notes.push('Multiple teams tied for most weekly low scores');
             if (!season.bestBenchWarmers)
                 notes.push('Bench scoring data is not available for this season');
 
@@ -814,7 +832,7 @@
                         <div class="stat-title">Highest Score</div>
                         <div class="stat-content">${season.highestScore.score.toFixed(2)}</div>
                         <div class="stat-details">${season.highestScore.team}<br>
-                            <a href="${createMatchupLink(season.year, season.highestScore.week)}" target="_blank">Wk ${season.highestScore.week}</a>
+                            <a href="${createBoxScoreLink(season.highestScore)}" target="_blank">Wk ${season.highestScore.week}</a>
                         </div>
                     </div>` : ''}
 
@@ -823,7 +841,7 @@
                         <div class="stat-title">Lowest Score</div>
                         <div class="stat-content">${season.lowestScore.score.toFixed(2)}</div>
                         <div class="stat-details">${season.lowestScore.team}<br>
-                            <a href="${createMatchupLink(season.year, season.lowestScore.week)}" target="_blank">Wk ${season.lowestScore.week}</a>
+                            <a href="${createBoxScoreLink(season.lowestScore)}" target="_blank">Wk ${season.lowestScore.week}</a>
                         </div>
                     </div>` : ''}
 
@@ -832,7 +850,7 @@
                         <div class="stat-title">Closest Win</div>
                         <div class="stat-content">${season.closestWin.margin.toFixed(2)}</div>
                         <div class="stat-details">${season.closestWin.winner} vs ${season.closestWin.loser}<br>
-                            <a href="${createMatchupLink(season.year, season.closestWin.week)}" target="_blank">Wk ${season.closestWin.week}</a>
+                            <a href="${createBoxScoreLink(season.closestWin)}" target="_blank">Wk ${season.closestWin.week}</a>
                         </div>
                     </div>` : ''}
 
@@ -841,48 +859,58 @@
                         <div class="stat-title">Biggest Blowout</div>
                         <div class="stat-content">${season.biggestBlowout.margin.toFixed(2)}</div>
                         <div class="stat-details">${season.biggestBlowout.winner} vs ${season.biggestBlowout.loser}<br>
-                            <a href="${createMatchupLink(season.year, season.biggestBlowout.week)}" target="_blank">Wk ${season.biggestBlowout.week}</a>
+                            <a href="${createBoxScoreLink(season.biggestBlowout)}" target="_blank">Wk ${season.biggestBlowout.week}</a>
                         </div>
                     </div>` : ''}
 
-                    ${season.longestWinStreak?.owner ? `
+                    ${season.longestWinStreak?.length ? `
                     <div class="stat-box">
                         <div class="stat-title">Longest Win Streak</div>
                         <div class="stat-content">${season.longestWinStreak.length} games</div>
-                        <div class="stat-details">${season.longestWinStreak.owner}<br>
-                            ${(season.longestWinStreak.weeks || []).map(w =>
-                                `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
-                            ).join(', ')}
+                        <div class="stat-details">
+                            ${(season.longestWinStreak.streaks || []).map(s => `
+                                <div style="margin-bottom:4px;">
+                                    <span style="font-weight:700;">${s.owner}</span><br>
+                                    ${(s.weeks || []).map(w =>
+                                        `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                                    ).join(', ')}
+                                </div>
+                            `).join('')}
                         </div>
                     </div>` : ''}
 
-                    ${season.longestLossStreak?.owner ? `
+                    ${season.longestLossStreak?.length ? `
                     <div class="stat-box">
                         <div class="stat-title">Longest Loss Streak</div>
                         <div class="stat-content">${season.longestLossStreak.length} games</div>
-                        <div class="stat-details">${season.longestLossStreak.owner}<br>
-                            ${(season.longestLossStreak.weeks || []).map(w =>
-                                `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
-                            ).join(', ')}
+                        <div class="stat-details">
+                            ${(season.longestLossStreak.streaks || []).map(s => `
+                                <div style="margin-bottom:4px;">
+                                    <span style="font-weight:700;">${s.owner}</span><br>
+                                    ${(s.weeks || []).map(w =>
+                                        `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                                    ).join(', ')}
+                                </div>
+                            `).join('')}
                         </div>
                     </div>` : ''}
 
-                    ${season.mostWeeklyHighScores?.owner ? `
+                    ${season.mostWeeklyHighScores?.count ? `
                     <div class="stat-box">
                         <div class="stat-title">Most Weekly High Scores</div>
                         <div class="stat-content">${season.mostWeeklyHighScores.count}</div>
-                        <div class="stat-details">${season.mostWeeklyHighScores.owner}<br>
+                        <div class="stat-details">${(season.mostWeeklyHighScores.owners || [season.mostWeeklyHighScores.owner]).join(', ')}<br>
                             ${(season.mostWeeklyHighScores.weeks || []).map(w =>
                                 `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
                             ).join(', ')}
                         </div>
                     </div>` : ''}
 
-                    ${season.mostWeeklyLowScores?.owner ? `
+                    ${season.mostWeeklyLowScores?.count ? `
                     <div class="stat-box">
                         <div class="stat-title">Most Weekly Low Scores</div>
                         <div class="stat-content">${season.mostWeeklyLowScores.count}</div>
-                        <div class="stat-details">${season.mostWeeklyLowScores.owner}<br>
+                        <div class="stat-details">${(season.mostWeeklyLowScores.owners || [season.mostWeeklyLowScores.owner]).join(', ')}<br>
                             ${(season.mostWeeklyLowScores.weeks || []).map(w =>
                                 `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
                             ).join(', ')}
@@ -994,7 +1022,7 @@
         Object.entries(ownersByYear).forEach(([yr, owners]) => {
             // Only count buy-ins from 2023 onward — no money before that
             if (parseInt(yr) < 2023) return;
-            const buyIn = BUY_INS[parseInt(yr)] || 0;
+            const buyIn = getBuyIn(parseInt(yr));
             owners.forEach(owner => {
                 if (!ownerBuyinTotals[owner]) ownerBuyinTotals[owner] = 0;
                 ownerBuyinTotals[owner] += buyIn;

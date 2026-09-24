@@ -1,8 +1,7 @@
 #v2.2
-#23sep26
-#port MMT parity fixes: tied-owner superlatives (win/loss streaks, weekly
-#high/low scorers, all-time + season-level) and 0-0 placeholder-score guard
-#in the box_scores matchup loop
+#24sep26
+#in line with mmt collector for todays date.
+#adds teamId/year/winnerTeamId on the season-level score records
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -1302,18 +1301,22 @@ class ESPNDataCollectorV2:
                 all_scores.append({
                     'score': m['home']['score'],
                     'team': m['home']['teamName'],
+                    'teamId': m['home']['teamId'],
                     'owner': m['home']['owner'],
                     'opponent': m['away']['teamName'],
                     'opponentScore': m['away']['score'],
+                    'year': year,
                     'week': m['week'],
                     'matchupPeriodId': m['matchupPeriodId']
                 })
                 all_scores.append({
                     'score': m['away']['score'],
                     'team': m['away']['teamName'],
+                    'teamId': m['away']['teamId'],
                     'owner': m['away']['owner'],
                     'opponent': m['home']['teamName'],
                     'opponentScore': m['home']['score'],
+                    'year': year,
                     'week': m['week'],
                     'matchupPeriodId': m['matchupPeriodId']
                 })
@@ -1334,9 +1337,11 @@ class ESPNDataCollectorV2:
                     'margin': margin,
                     'winner': winner_data['teamName'],
                     'winnerOwner': winner_data['owner'],
+                    'winnerTeamId': winner_data['teamId'],
                     'winnerScore': winner_data['score'],
                     'loser': loser_data['teamName'],
                     'loserScore': loser_data['score'],
+                    'year': year,
                     'week': m['week'],
                     'matchupPeriodId': m['matchupPeriodId']
                 })
