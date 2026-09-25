@@ -136,11 +136,11 @@
       "owner": "Mike Kovacs",
       "teamName": "Waddle and Come Chase Maye",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 372.02000000000004,
-      "waiverPickups": 2,
-      "waiverPointsScored": 44.3,
-      "draftRetentionRate": 94.11764705882352,
+      "draftedKeptToPlayoffs": 15,
+      "draftedPointsScored": 360.52000000000004,
+      "waiverPickups": 3,
+      "waiverPointsScored": 46.839999999999996,
+      "draftRetentionRate": 88.23529411764706,
       "draftedPlayers": [
         {
           "name": "Drake Maye",
@@ -251,8 +251,8 @@
           "name": "Lions D/ST",
           "round": 16,
           "pick": 3,
-          "keptToPlayoffs": true,
-          "totalPoints": 11.5
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Romeo Doubs",
@@ -922,11 +922,11 @@
       "owner": "Nikkole Cummins",
       "teamName": "Lights, Camera, Jackson",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 17,
-      "draftedPointsScored": 480.15999999999997,
-      "waiverPickups": 1,
-      "waiverPointsScored": 2.2,
-      "draftRetentionRate": 100.0,
+      "draftedKeptToPlayoffs": 16,
+      "draftedPointsScored": 465.15999999999997,
+      "waiverPickups": 2,
+      "waiverPointsScored": 54.7,
+      "draftRetentionRate": 94.11764705882352,
       "draftedPlayers": [
         {
           "name": "Puka Nacua",
@@ -1037,8 +1037,8 @@
           "name": "Eddy Pineiro",
           "round": 16,
           "pick": 6,
-          "keptToPlayoffs": true,
-          "totalPoints": 15.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Dalton Kincaid",
@@ -1056,7 +1056,7 @@
       "draftedKeptToPlayoffs": 13,
       "draftedPointsScored": 287.08,
       "waiverPickups": 5,
-      "waiverPointsScored": 117.14,
+      "waiverPointsScored": 108.3,
       "draftRetentionRate": 76.47058823529412,
       "draftedPlayers": [
         {

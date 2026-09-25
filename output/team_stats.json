@@ -15,10 +15,10 @@
     "teamName": "Why Was I on the 415 Shuttle?",
     "abbrev": "TB12",
     "allTeamNames": [
-      "Why Was I on the 415 Shuttle?",
-      "Bradys and Edelman",
       "Why Was I On The 415 Shuttle",
-      "Denver Bronkers"
+      "Why Was I on the 415 Shuttle?",
+      "Denver Bronkers",
+      "Bradys and Edelman"
     ],
     "playoffYears": [
       2019,
@@ -275,16 +275,16 @@
     "teamName": "Waddle and Come Chase Maye",
     "abbrev": "RIP",
     "allTeamNames": [
-      "Waddle and Come Chase Maye",
-      "Guess Whos Back Shindig's Back",
-      "Fresh Prince of Helaire",
       "My Ba ss Hurts",
-      "Chasing the Repeat",
+      "Fresh Prince of Helaire",
+      "To See or Not Kelce",
+      "Waddle and Come Chase Maye",
+      "Lucky Kamario",
       "Frankly, Ameer, IDontGiveaDamn",
       "Takin the Browns to Super Bowl",
-      "To See or Not Kelce",
+      "Guess Whos Back Shindig's Back",
       "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
-      "Lucky Kamario"
+      "Chasing the Repeat"
     ],
     "playoffYears": [
       2016,
@@ -546,15 +546,15 @@
     "teamName": "Tommy F'n Cutlets",
     "abbrev": "TC",
     "allTeamNames": [
-      "Drew Stanton Celebrations",
-      "Adams, Cooper and Prescott",
-      "Qaaron Rodgers",
-      "SAM DARNOLD IS LITERALLY JESUS",
-      "Sal's Infirmary",
       "Tommy F'n Cutlets",
-      "DANIEL JONES IS LITERALLY TRASH",
+      "Qaaron Rodgers",
+      "Sal's Infirmary",
+      "Adams, Cooper and Prescott",
+      "\u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af \u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af",
       "Bill Solecki: Amazing",
-      "\u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af \u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af"
+      "DANIEL JONES IS LITERALLY TRASH",
+      "SAM DARNOLD IS LITERALLY JESUS",
+      "Drew Stanton Celebrations"
     ],
     "playoffYears": [
       2018,
@@ -897,19 +897,19 @@
     "teamName": "LOOK AT THIS GRAPH",
     "abbrev": "GRPH",
     "allTeamNames": [
-      "Barry Boxers",
-      "LOOK AT THIS GRAPH",
+      "Josh Allen's Blueberries",
+      "Franoc knthall",
       "Harry Hats",
       "Franky Fedoras",
+      "Dan sits when he pees",
       "Joey Jorts",
-      "Willy 3rd Place",
-      "Josh Allen's Blueberries",
       "Kenny Kilts",
       "Dan Missed The Party",
-      "Dan sits when he pees",
       "Free Candy and Wins",
-      "Franoc knthall",
-      "Bobby Boots"
+      "Bobby Boots",
+      "Barry Boxers",
+      "LOOK AT THIS GRAPH",
+      "Willy 3rd Place"
     ],
     "playoffYears": [
       2016,
@@ -1165,9 +1165,9 @@
     "teamName": "We Tried Our Best",
     "abbrev": "WTOB",
     "allTeamNames": [
-      "This Sauce Is Boss",
       "DJ Khalad",
-      "We Tried Our Best"
+      "We Tried Our Best",
+      "This Sauce Is Boss"
     ],
     "playoffYears": [
       2025,
@@ -1781,16 +1781,16 @@
     "teamName": "Kraft Mc-njigba Chase",
     "abbrev": "KRFT",
     "allTeamNames": [
+      "John Cena",
       "#1 Best Weekly Meme Team",
-      "Boyz n da Hood",
-      "Bucket, Mop; Macaroni, Pot",
       "Business Expert Nathan Fielder",
+      "Boyz n da Hood",
       "Get CTE or Die Tryin",
-      "Kraft Mc-njigba Chase",
-      "Why Anyone On The 415 Shuttle?",
       "RIP AC Shrader",
       "Turbo Team Termites",
-      "John Cena"
+      "Why Anyone On The 415 Shuttle?",
+      "Kraft Mc-njigba Chase",
+      "Bucket, Mop; Macaroni, Pot"
     ],
     "playoffYears": [
       2016,
@@ -2032,8 +2032,8 @@
     "teamName": "Pop Rockin' Beats",
     "abbrev": "BUCK",
     "allTeamNames": [
-      "Alabama of Europe",
       "Pop Rockin' Beats",
+      "Alabama of Europe",
       "Down with the ( Covid) Sickness"
     ],
     "playoffYears": [
@@ -2276,15 +2276,15 @@
     "teamName": "Fran Tarkenton",
     "abbrev": "RKO",
     "allTeamNames": [
+      "SAL is Literally Jesus",
+      "RKO Out of Nowhere",
+      "For When the Bell Tolls",
+      "Brady Sits When he Pees",
       "Chili's Eat Fresh",
       "Fran Tarkenton",
       "Tua Time",
-      "S e m i C h u b b",
-      "For When the Bell Tolls",
       "Belt Sanders",
-      "RKO Out of Nowhere",
-      "Brady Sits When he Pees",
-      "SAL is Literally Jesus"
+      "S e m i C h u b b"
     ],
     "playoffYears": [
       2018,
@@ -2528,8 +2528,8 @@
     "abbrev": "OTHR",
     "allTeamNames": [
       "So Fresh So Kareem",
-      "Balls to the Rawls",
-      "The Other Team"
+      "The Other Team",
+      "Balls to the Rawls"
     ],
     "playoffYears": [
       2017,
@@ -2884,7 +2884,7 @@
     "championships": 0,
     "championshipAppearances": 0,
     "championshipYears": [],
-    "mostMovesSeason": 1,
+    "mostMovesSeason": 3,
     "mostMovesSeasonYear": 2026,
     "totalPointsFor": 329.98,
     "totalPointsAgainst": 286.41999999999996,
