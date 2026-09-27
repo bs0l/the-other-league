@@ -1148,6 +1148,8 @@
 
             const rows = keepers.map(k => {
                 const noData = k.verdict === 'NO_DATA';
+                const isTBD  = k.verdict === 'TBD';
+                const dim    = noData || isTBD;
 
                 // Verdict badge
                 let badgeHTML;
@@ -1157,13 +1159,17 @@
                     badgeHTML = `<span class="verdict-badge verdict-bust">BUST</span>`;
                 } else if (k.verdict === 'AVERAGE') {
                     badgeHTML = `<span class="verdict-badge verdict-average">AVERAGE</span>`;
+                } else if (isTBD) {
+                    badgeHTML = `<span class="verdict-nodata">TBD</span>`;
                 } else {
                     badgeHTML = `<span class="verdict-nodata">—</span>`;
                 }
 
                 // Points vs avg — colored + signed
-                let vsAvgHTML = '<span class="num-dim">—</span>';
-                if (!noData && k.pointsVsAvgPct != null) {
+                let vsAvgHTML = isTBD
+                    ? '<span class="num-dim">TBD</span>'
+                    : '<span class="num-dim">—</span>';
+                if (!dim && k.pointsVsAvgPct != null) {
                     const pct = (k.pointsVsAvgPct * 100).toFixed(1);
                     const cls = k.pointsVsAvgPct > 0 ? 'num-steal' : 'num-bust';
                     const sign = k.pointsVsAvgPct > 0 ? '+' : '';
@@ -1178,18 +1184,19 @@
                     ? `<span class="keeper-note">${k.note}</span>`
                     : '';
 
-                const dimClass = noData ? ' class="num-dim"' : '';
+                const dimClass = dim ? ' class="num-dim"' : '';
+                const pendingText = isTBD ? 'TBD' : '—';
 
                 return `<tr>
                     <td>
-                        <div class="keeper-player${noData ? ' num-dim' : ''}">${k.player}</div>
+                        <div class="keeper-player${dim ? ' num-dim' : ''}">${k.player}</div>
                         <div class="keeper-owner">${k.owner}</div>
                         ${droppedHTML}
                         ${noteHTML}
                     </td>
                     <td class="col-num"${dimClass}>Rd ${k.roundKept}</td>
-                    <td class="col-num col-avg"${dimClass}>${noData ? '—' : k.pointsScored != null ? k.pointsScored.toFixed(1) : '—'}</td>
-                    <td class="col-num col-avg"${dimClass}>${noData ? '—' : k.roundAvgPoints != null ? k.roundAvgPoints.toFixed(1) : '—'}</td>
+                    <td class="col-num col-avg"${dimClass}>${dim ? pendingText : k.pointsScored != null ? k.pointsScored.toFixed(1) : '—'}</td>
+                    <td class="col-num col-avg"${dimClass}>${dim ? pendingText : k.roundAvgPoints != null ? k.roundAvgPoints.toFixed(1) : '—'}</td>
                     <td class="col-num col-vsavg">${vsAvgHTML}</td>
                     <td>${badgeHTML}</td>
                 </tr>`;
