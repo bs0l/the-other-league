@@ -3335,14 +3335,189 @@
       "tied": true
     },
     "bestBenchWarmers": {
-      "owner": "Nikkole Cummins",
-      "teamName": "Lights, Camera, Jackson",
-      "benchPoints": 157.38
+      "owner": "Bill Solecki",
+      "teamName": "Kraft Mc-njigba Chase",
+      "benchPoints": 239.04
     },
     "playoffPayouts": [],
     "keeperAnalysis": {
-      "keepers": [],
-      "roundBenchmarks": {}
+      "keepers": [
+        {
+          "owner": "Nikkole Cummins",
+          "player": "Lamar Jackson",
+          "roundKept": 3,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Ja'Marr Chase",
+          "roundKept": 4,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Randell Crawford",
+          "player": "DeVonta Smith",
+          "roundKept": 5,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Nikkole Cummins",
+          "player": "Chris Olave",
+          "roundKept": 6,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Brock Bowers",
+          "roundKept": 6,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Joe Burrow",
+          "roundKept": 7,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Cam Skattebo",
+          "roundKept": 8,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Chase Brown",
+          "roundKept": 9,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Pete Solecki",
+          "player": "Tyler Warren",
+          "roundKept": 9,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Matthew Stafford",
+          "roundKept": 10,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Brock Purdy",
+          "roundKept": 12,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Daniel Keating",
+          "player": "Caleb Williams",
+          "roundKept": 12,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "1": 106.18,
+        "2": 84.13,
+        "3": 60.92,
+        "4": 61.4,
+        "5": 64.25,
+        "6": 62.98,
+        "7": 50.85,
+        "8": 62.33,
+        "11": 42.31,
+        "12": 38.5,
+        "13": 30.11,
+        "14": 35.26,
+        "15": 26.08,
+        "16": 44.94,
+        "17": 32.49,
+        "9": 52.64,
+        "10": 46.75
+      }
     }
   }
 }

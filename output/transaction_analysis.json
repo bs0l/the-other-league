@@ -1194,21 +1194,27 @@
           "count": 1
         },
         {
-          "player": "Buccaneers D/ST",
+          "player": "Chris Godwin Jr.",
           "count": 1
         },
         {
-          "player": "Quentin Johnston",
+          "player": "Buccaneers D/ST",
           "count": 1
         }
       ],
       "Nikkole Cummins": [
         {
-          "player": "Konata Mumpfield",
+          "player": "Eddy Pineiro",
           "count": 1
         },
         {
-          "player": "Eddy Pineiro",
+          "player": "Konata Mumpfield",
+          "count": 1
+        }
+      ],
+      "Pete Solecki": [
+        {
+          "player": "Keaton Mitchell",
           "count": 1
         }
       ],
@@ -4288,12 +4294,20 @@
               "Daniel Keating",
               "Carl Cummins"
             ]
+          },
+          {
+            "player": "Deshaun Watson",
+            "teamCount": 2,
+            "teams": [
+              "Daniel Keating",
+              "Pete Solecki"
+            ]
           }
         ],
         "teamTally": {
           "Carl Cummins": 1
         },
-        "sameWeekAddsFlagged": 0
+        "sameWeekAddsFlagged": 1
       }
     },
     "allTimeTeamTally": {
@@ -4308,7 +4322,7 @@
       "Randell Crawford": 17,
       "Ben Bingert": 26
     },
-    "allTimeSameWeekAddsFlagged": 7
+    "allTimeSameWeekAddsFlagged": 8
   },
   "regularSeasonOnly": {
     "leagueWideMostDropped": {
@@ -5506,21 +5520,27 @@
             "count": 1
           },
           {
-            "player": "Buccaneers D/ST",
+            "player": "Chris Godwin Jr.",
             "count": 1
           },
           {
-            "player": "Quentin Johnston",
+            "player": "Buccaneers D/ST",
             "count": 1
           }
         ],
         "Nikkole Cummins": [
           {
-            "player": "Konata Mumpfield",
+            "player": "Eddy Pineiro",
             "count": 1
           },
           {
-            "player": "Eddy Pineiro",
+            "player": "Konata Mumpfield",
+            "count": 1
+          }
+        ],
+        "Pete Solecki": [
+          {
+            "player": "Keaton Mitchell",
             "count": 1
           }
         ],
@@ -7983,12 +8003,20 @@
                 "Daniel Keating",
                 "Carl Cummins"
               ]
+            },
+            {
+              "player": "Deshaun Watson",
+              "teamCount": 2,
+              "teams": [
+                "Daniel Keating",
+                "Pete Solecki"
+              ]
             }
           ],
           "teamTally": {
             "Carl Cummins": 1
           },
-          "sameWeekAddsFlagged": 0
+          "sameWeekAddsFlagged": 1
         }
       },
       "allTimeTeamTally": {
@@ -8003,7 +8031,7 @@
         "Randell Crawford": 15,
         "Ben Bingert": 24
       },
-      "allTimeSameWeekAddsFlagged": 6
+      "allTimeSameWeekAddsFlagged": 7
     }
   },
   "metadata": {
