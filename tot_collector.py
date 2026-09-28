@@ -1,6 +1,6 @@
-#v2.6
+#v2.61
 #28sep26
-#settings history now diffs ALL lineup slot counts (incl. QB) and per-position max-roster limits, not just IR/bench/FLEX/punter
+#fixes position-limit labels in settings history (positionLimits uses player position IDs, so QB max showed as "TQB")
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -2752,6 +2752,11 @@ class ESPNDataCollectorV2:
         }
         # Slot IDs that already have their own dedicated diff wording below
         SLOTS_WITH_CUSTOM_DIFF = {'20', '21', '23', '18'}
+        # positionLimits keys use player default-position IDs (espn_api
+        # constant.py POSITION_MAP for players), which differ from slot IDs.
+        POSITION_LIMIT_NAMES = {
+            '1': 'QB', '2': 'RB', '3': 'WR', '4': 'TE', '5': 'K', '16': 'D/ST',
+        }
 
         # Scoring stat IDs → display names
         # Source: SETTINGS_SCORING_FORMAT_MAP in espn_api/football/constant.py
@@ -3069,9 +3074,10 @@ class ESPNDataCollectorV2:
                         changes.append(f"{label}: {p} → {c}")
 
                 # Max rostered players per position (rosterSettings.positionLimits).
-                # Assumes the same ID scheme as lineup slots (0 = QB, 2 = RB,
-                # ...); unrecognized IDs are labelled by raw ID rather than
-                # guessed at.
+                # Keys here are ESPN *player* default-position IDs, NOT lineup
+                # slot IDs (confirmed live: key '1' is QB, which the slot map
+                # mislabelled "TQB"). Unrecognized IDs are labelled by raw ID
+                # rather than guessed at.
                 for pos_id in sorted(
                     set(curr['positionLimits']) | set(prev['positionLimits']),
                     key=int
@@ -3079,8 +3085,7 @@ class ESPNDataCollectorV2:
                     c = curr['positionLimits'].get(pos_id)
                     p = prev['positionLimits'].get(pos_id)
                     if c is not None and p is not None and c != p:
-                        base = slot_names.get(pos_id)
-                        name = base.replace(' slots', '') if base else f"position ID {pos_id}"
+                        name = POSITION_LIMIT_NAMES.get(pos_id, f"position ID {pos_id}")
                         changes.append(f"Max rostered {name}: {p} → {c}")
 
                 # Divisions
