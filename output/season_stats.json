@@ -3252,73 +3252,44 @@
     },
     "longestWinStreak": {
       "owner": "Bethany Bingert",
-      "length": 2,
+      "length": 3,
       "owners": [
-        "Bethany Bingert",
-        "Bill Solecki",
-        "Joe Jaramillo"
+        "Bethany Bingert"
       ],
-      "tied": true,
+      "tied": false,
       "streaks": [
         {
           "owner": "Bethany Bingert",
           "weeks": [
             1,
-            2
-          ]
-        },
-        {
-          "owner": "Bill Solecki",
-          "weeks": [
-            1,
-            2
-          ]
-        },
-        {
-          "owner": "Joe Jaramillo",
-          "weeks": [
-            1,
-            2
+            2,
+            3
           ]
         }
       ]
     },
     "longestLossStreak": {
       "owner": "Ben Bingert",
-      "length": 2,
+      "length": 3,
       "owners": [
-        "Ben Bingert",
-        "Carl Cummins",
-        "Randell Crawford"
+        "Ben Bingert"
       ],
-      "tied": true,
+      "tied": false,
       "streaks": [
         {
           "owner": "Ben Bingert",
           "weeks": [
             1,
-            2
-          ]
-        },
-        {
-          "owner": "Carl Cummins",
-          "weeks": [
-            1,
-            2
-          ]
-        },
-        {
-          "owner": "Randell Crawford",
-          "weeks": [
-            1,
-            2
+            2,
+            3
           ]
         }
       ]
     },
     "mostWeeklyHighScores": {
-      "owner": "Joe Jaramillo",
+      "owner": "Bethany Bingert",
       "owners": [
+        "Bethany Bingert",
         "Joe Jaramillo",
         "Nikkole Cummins"
       ],
@@ -3329,6 +3300,7 @@
       "owner": "Daniel Keating",
       "owners": [
         "Daniel Keating",
+        "Joe Jaramillo",
         "Randell Crawford"
       ],
       "count": 1,
@@ -3500,23 +3472,23 @@
         }
       ],
       "roundBenchmarks": {
-        "1": 106.18,
-        "2": 84.13,
-        "3": 60.92,
-        "4": 61.4,
-        "5": 64.25,
-        "6": 62.98,
-        "7": 50.85,
-        "8": 62.33,
-        "11": 42.31,
-        "12": 38.5,
-        "13": 30.11,
-        "14": 35.26,
-        "15": 26.08,
-        "16": 44.94,
-        "17": 32.49,
-        "9": 52.64,
-        "10": 46.75
+        "1": 127.8,
+        "2": 94.6,
+        "3": 73.71,
+        "4": 76.01,
+        "5": 79.47,
+        "6": 76.09,
+        "7": 63.64,
+        "8": 76.22,
+        "11": 52.43,
+        "12": 45.18,
+        "13": 34.43,
+        "14": 43.0,
+        "15": 29.66,
+        "16": 53.68,
+        "17": 36.09,
+        "9": 63.26,
+        "10": 56.32
       }
     }
   }
