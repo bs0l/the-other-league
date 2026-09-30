@@ -6,3 +6,4 @@ tot_keepers.py
 *.csv
 *.xlsx
 *.txt
+*.DS_Store
