@@ -1,6 +1,6 @@
-#v2.61
-#28sep26
-#fixes position-limit labels in settings history (positionLimits uses player position IDs, so QB max showed as "TQB")
+#v2.62
+#30sep26
+#settings history: unmapped positionLimits IDs (e.g. IDP-adjacent 7/15) now resolved from real roster eligibleSlots data instead of shown as raw IDs or guessed at
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -2704,6 +2704,62 @@ class ESPNDataCollectorV2:
         return keepers_by_year, benchmarks_by_year
 
 
+    def _resolve_position_limit_name(self, pos_id, year, cache, slot_names):
+        """Resolve a rosterSettings.positionLimits ID to a readable name.
+
+        positionLimits uses ESPN's player defaultPositionId scheme, which is
+        NOT the same numbering as lineup slotCategoryId (confirmed live: id
+        '1' is QB here, but slot id 1 is 'TQB'). Only a handful of
+        defaultPositionId values are publicly documented anywhere (QB=1,
+        RB=2, WR=3, TE=4, K=5, D/ST=16 - see cwendt94/espn-api issue #460,
+        where even the library maintainers call this "decoded by hand" and
+        ask IDP-league users to open an issue for anything else). Rather
+        than guess at undocumented IDs (confirmed to otherwise show up as
+        e.g. "position ID 7" or "position ID 15" for IDP-adjacent slots
+        neither MMT nor TOT actually uses), this resolves them from real
+        roster data: each player's eligibleSlots list uses the fully
+        documented slot-ID scheme, so the first non-generic (single
+        position) slot a player is eligible for tells us what their
+        defaultPositionId actually means.
+
+        Fetches at most one mRoster snapshot per season, and only when an
+        unmapped ID is actually encountered in a diff - most runs never
+        trigger this at all, since the six hardcoded names above already
+        cover ordinary QB/RB/WR/TE/K/D/ST limit changes. Results are cached
+        in `cache` (passed in by the caller) for the rest of this
+        settings-history run, since defaultPositionId is a stable NFL-wide
+        ID, not something that varies year to year.
+        """
+        if pos_id in cache:
+            return cache[pos_id]
+
+        # Slots that are multi-position or non-positional and so make poor
+        # labels even though they're "non-generic" by ID: bench, IR, FLEX,
+        # OP, RB/WR, WR/TE, RB/WR/TE.
+        GENERIC_SLOTS = {'20', '21', '23', '7', '3', '5'}
+
+        roster_data = self._direct_api(year, "mRoster")
+        if roster_data:
+            for team in roster_data.get("teams", []):
+                for entry in team.get("roster", {}).get("entries", []):
+                    player = entry.get("playerPoolEntry", {}).get("player", {})
+                    p_id = player.get("defaultPositionId")
+                    if p_id is None:
+                        continue
+                    p_id = str(p_id)
+                    if p_id in cache:
+                        continue
+                    eligible = [str(s) for s in player.get("eligibleSlots", [])]
+                    primary = next(
+                        (s for s in eligible
+                         if s in slot_names and s not in GENERIC_SLOTS),
+                        None
+                    )
+                    if primary:
+                        cache[p_id] = slot_names[primary].replace(' slots', '')
+
+        return cache.get(pos_id, f"position ID {pos_id}")
+
     def calculate_settings_history(self):
         """Fetch and diff league settings year-over-year via direct API calls.
 
@@ -2979,6 +3035,7 @@ class ESPNDataCollectorV2:
         # Diff year-over-year to build changelog
         history = []
         prev    = None
+        position_id_name_cache = {}
 
         for year in sorted(all_settings.keys()):
             curr    = all_settings[year]
@@ -3076,8 +3133,10 @@ class ESPNDataCollectorV2:
                 # Max rostered players per position (rosterSettings.positionLimits).
                 # Keys here are ESPN *player* default-position IDs, NOT lineup
                 # slot IDs (confirmed live: key '1' is QB, which the slot map
-                # mislabelled "TQB"). Unrecognized IDs are labelled by raw ID
-                # rather than guessed at.
+                # mislabelled "TQB"). The six most common positions are named
+                # directly; anything else is resolved from real roster data
+                # on demand (see _resolve_position_limit_name) rather than
+                # left as a raw, meaningless ID.
                 for pos_id in sorted(
                     set(curr['positionLimits']) | set(prev['positionLimits']),
                     key=int
@@ -3085,7 +3144,10 @@ class ESPNDataCollectorV2:
                     c = curr['positionLimits'].get(pos_id)
                     p = prev['positionLimits'].get(pos_id)
                     if c is not None and p is not None and c != p:
-                        name = POSITION_LIMIT_NAMES.get(pos_id, f"position ID {pos_id}")
+                        name = POSITION_LIMIT_NAMES.get(pos_id) or \
+                            self._resolve_position_limit_name(
+                                pos_id, year, position_id_name_cache, slot_names
+                            )
                         changes.append(f"Max rostered {name}: {p} → {c}")
 
                 # Divisions
