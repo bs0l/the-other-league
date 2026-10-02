@@ -1,6 +1,6 @@
-#v2.62
-#30sep26
-#settings history: unmapped positionLimits IDs (e.g. IDP-adjacent 7/15) now resolved from real roster eligibleSlots data instead of shown as raw IDs or guessed at
+#v2.63
+#01oct26
+#positionLimits: hardcode IDs 7 (Punter) and 15 (Defensive Player), confirmed via ESPN roster-settings UI; suppress 0<->-1 sentinel flips ("N/A" display change ESPN made in 2023) so they stop showing as false limit changes
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -2812,6 +2812,13 @@ class ESPNDataCollectorV2:
         # constant.py POSITION_MAP for players), which differ from slot IDs.
         POSITION_LIMIT_NAMES = {
             '1': 'QB', '2': 'RB', '3': 'WR', '4': 'TE', '5': 'K', '16': 'D/ST',
+            # '7' and '15' aren't part of the handful of publicly-documented
+            # defaultPositionId values above - confirmed instead against
+            # ESPN's own roster-settings UI (Punter and Defensive Player
+            # rows), and against the espn_api library's slot-ID POSITION_MAP,
+            # which this positionLimits scheme falls back to matching for any
+            # position without a custom remapped ID.
+            '7': 'Punter', '15': 'Defensive Player',
         }
 
         # Scoring stat IDs → display names
@@ -3137,18 +3144,32 @@ class ESPNDataCollectorV2:
                 # directly; anything else is resolved from real roster data
                 # on demand (see _resolve_position_limit_name) rather than
                 # left as a raw, meaningless ID.
+                # ESPN switched its "position not configured" sentinel from 0
+                # to -1 ("N/A" in the roster-settings UI) partway through
+                # 2023. A change where BOTH the old and new value are one of
+                # these two sentinels is just that display-convention flip,
+                # not a real limit anyone set - confirmed against MMT 2023's
+                # spurious "Max rostered Defensive Player: 0 → -1" line,
+                # which can't be a real change since neither league has ever
+                # used Defensive Players. Suppressed only when both sides are
+                # sentinel values, so a real change into or out of an actual
+                # configured limit (e.g. -1 → 2) is still reported normally.
+                POSITION_LIMIT_SENTINELS = {0, -1}
                 for pos_id in sorted(
                     set(curr['positionLimits']) | set(prev['positionLimits']),
                     key=int
                 ):
                     c = curr['positionLimits'].get(pos_id)
                     p = prev['positionLimits'].get(pos_id)
-                    if c is not None and p is not None and c != p:
-                        name = POSITION_LIMIT_NAMES.get(pos_id) or \
-                            self._resolve_position_limit_name(
-                                pos_id, year, position_id_name_cache, slot_names
-                            )
-                        changes.append(f"Max rostered {name}: {p} → {c}")
+                    if c is None or p is None or c == p:
+                        continue
+                    if c in POSITION_LIMIT_SENTINELS and p in POSITION_LIMIT_SENTINELS:
+                        continue
+                    name = POSITION_LIMIT_NAMES.get(pos_id) or \
+                        self._resolve_position_limit_name(
+                            pos_id, year, position_id_name_cache, slot_names
+                        )
+                    changes.append(f"Max rostered {name}: {p} → {c}")
 
                 # Divisions
                 if curr['divisionCount'] != prev['divisionCount']:
