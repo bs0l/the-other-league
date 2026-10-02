@@ -114,15 +114,15 @@
     ],
     "2026": [
       {
+        "player": "Eddy Pineiro",
+        "count": 2
+      },
+      {
         "player": "Matt Gay",
         "count": 1
       },
       {
         "player": "Jalen Coker",
-        "count": 1
-      },
-      {
-        "player": "Mike Washington Jr.",
         "count": 1
       }
     ]
@@ -1176,6 +1176,10 @@
         {
           "player": "Sam Darnold",
           "count": 1
+        },
+        {
+          "player": "Michael Mayer",
+          "count": 1
         }
       ],
       "Ben Bingert": [
@@ -1209,6 +1213,10 @@
         },
         {
           "player": "Konata Mumpfield",
+          "count": 1
+        },
+        {
+          "player": "Dontayvion Wicks",
           "count": 1
         }
       ],
@@ -4440,15 +4448,15 @@
       ],
       "2026": [
         {
+          "player": "Eddy Pineiro",
+          "count": 2
+        },
+        {
           "player": "Matt Gay",
           "count": 1
         },
         {
           "player": "Jalen Coker",
-          "count": 1
-        },
-        {
-          "player": "Mike Washington Jr.",
           "count": 1
         }
       ]
@@ -5502,6 +5510,10 @@
           {
             "player": "Sam Darnold",
             "count": 1
+          },
+          {
+            "player": "Michael Mayer",
+            "count": 1
           }
         ],
         "Ben Bingert": [
@@ -5535,6 +5547,10 @@
           },
           {
             "player": "Konata Mumpfield",
+            "count": 1
+          },
+          {
+            "player": "Dontayvion Wicks",
             "count": 1
           }
         ],

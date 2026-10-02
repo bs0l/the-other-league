@@ -5,11 +5,11 @@
       "owner": "Bill Solecki",
       "teamName": "Kraft Mc-njigba Chase",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 587.5600000000001,
-      "waiverPickups": 3,
-      "waiverPointsScored": 86.9,
-      "draftRetentionRate": 82.35294117647058,
+      "draftedKeptToPlayoffs": 13,
+      "draftedPointsScored": 567.5600000000001,
+      "waiverPickups": 4,
+      "waiverPointsScored": 128.9,
+      "draftRetentionRate": 76.47058823529412,
       "draftedPlayers": [
         {
           "name": "Jaxon Smith-Njigba",
@@ -106,8 +106,8 @@
           "name": "Ka'imi Fairbairn",
           "round": 14,
           "pick": 7,
-          "keptToPlayoffs": true,
-          "totalPoints": 20.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Woody Marks",
@@ -401,7 +401,7 @@
       "draftedKeptToPlayoffs": 16,
       "draftedPointsScored": 517.72,
       "waiverPickups": 2,
-      "waiverPointsScored": 65.9,
+      "waiverPointsScored": 57.06,
       "draftRetentionRate": 94.11764705882352,
       "draftedPlayers": [
         {
@@ -530,7 +530,7 @@
       "teamName": "LOOK AT THIS GRAPH",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 15,
-      "draftedPointsScored": 594.6,
+      "draftedPointsScored": 596.9,
       "waiverPickups": 2,
       "waiverPointsScored": 41.6,
       "draftRetentionRate": 88.23529411764706,
@@ -589,7 +589,7 @@
           "round": 8,
           "pick": 5,
           "keptToPlayoffs": true,
-          "totalPoints": 38.6
+          "totalPoints": 40.9
         },
         {
           "name": "Tony Pollard",
@@ -661,9 +661,9 @@
       "teamName": "We Tried Our Best",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 535.5,
+      "draftedPointsScored": 546.0,
       "waiverPickups": 1,
-      "waiverPointsScored": 53.98,
+      "waiverPointsScored": 60.62,
       "draftRetentionRate": 94.11764705882352,
       "draftedPlayers": [
         {
@@ -741,7 +741,7 @@
           "round": 11,
           "pick": 10,
           "keptToPlayoffs": true,
-          "totalPoints": 12.4
+          "totalPoints": 15.9
         },
         {
           "name": "Aaron Jones Sr.",
@@ -769,7 +769,7 @@
           "round": 15,
           "pick": 10,
           "keptToPlayoffs": true,
-          "totalPoints": 13.0
+          "totalPoints": 20.0
         },
         {
           "name": "Jason Myers",
@@ -791,11 +791,11 @@
       "owner": "Carl Cummins",
       "teamName": "Titty Sprinkles",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 15,
-      "draftedPointsScored": 563.44,
-      "waiverPickups": 3,
-      "waiverPointsScored": 127.6,
-      "draftRetentionRate": 88.23529411764706,
+      "draftedKeptToPlayoffs": 14,
+      "draftedPointsScored": 543.94,
+      "waiverPickups": 4,
+      "waiverPointsScored": 142.79999999999998,
+      "draftRetentionRate": 82.35294117647058,
       "draftedPlayers": [
         {
           "name": "Bijan Robinson",
@@ -864,15 +864,15 @@
           "name": "Jacory Croskey-Merritt",
           "round": 10,
           "pick": 9,
-          "keptToPlayoffs": true,
-          "totalPoints": 23.7
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "DK Metcalf",
           "round": 11,
           "pick": 2,
           "keptToPlayoffs": true,
-          "totalPoints": 26.8
+          "totalPoints": 31.0
         },
         {
           "name": "Blake Corum",
@@ -922,11 +922,11 @@
       "owner": "Nikkole Cummins",
       "teamName": "Lights, Camera, Jackson",
       "totalDrafted": 17,
-      "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 646.68,
-      "waiverPickups": 2,
-      "waiverPointsScored": 71.9,
-      "draftRetentionRate": 94.11764705882352,
+      "draftedKeptToPlayoffs": 15,
+      "draftedPointsScored": 617.6,
+      "waiverPickups": 3,
+      "waiverPointsScored": 114.56,
+      "draftRetentionRate": 88.23529411764706,
       "draftedPlayers": [
         {
           "name": "Puka Nacua",
@@ -982,7 +982,7 @@
           "round": 8,
           "pick": 6,
           "keptToPlayoffs": true,
-          "totalPoints": 40.6
+          "totalPoints": 50.7
         },
         {
           "name": "Mike Evans",
@@ -1030,8 +1030,8 @@
           "name": "Malik Willis",
           "round": 15,
           "pick": 5,
-          "keptToPlayoffs": true,
-          "totalPoints": 39.18
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Eddy Pineiro",
@@ -1054,9 +1054,9 @@
       "teamName": "Why Was I on the 415 Shuttle?",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 13,
-      "draftedPointsScored": 374.58,
+      "draftedPointsScored": 398.48,
       "waiverPickups": 5,
-      "waiverPointsScored": 186.10000000000002,
+      "waiverPointsScored": 194.5,
       "draftRetentionRate": 76.47058823529412,
       "draftedPlayers": [
         {
@@ -1070,8 +1070,8 @@
           "name": "Jaxson Dart",
           "round": 2,
           "pick": 4,
-          "keptToPlayoffs": true,
-          "totalPoints": 27.4
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Malik Nabers",
@@ -1099,7 +1099,7 @@
           "round": 6,
           "pick": 4,
           "keptToPlayoffs": true,
-          "totalPoints": 26.7
+          "totalPoints": 37.7
         },
         {
           "name": "TreVeyon Henderson",
@@ -1126,8 +1126,8 @@
           "name": "Michael Wilson",
           "round": 10,
           "pick": 4,
-          "keptToPlayoffs": false,
-          "totalPoints": 0
+          "keptToPlayoffs": true,
+          "totalPoints": 40.3
         },
         {
           "name": "Kyle Monangai",
@@ -1185,7 +1185,7 @@
       "teamName": "Pop Rockin' Beats",
       "totalDrafted": 17,
       "draftedKeptToPlayoffs": 16,
-      "draftedPointsScored": 395.84000000000003,
+      "draftedPointsScored": 396.84000000000003,
       "waiverPickups": 2,
       "waiverPointsScored": 49.94,
       "draftRetentionRate": 94.11764705882352,
@@ -1272,7 +1272,7 @@
           "round": 12,
           "pick": 2,
           "keptToPlayoffs": true,
-          "totalPoints": 36.0
+          "totalPoints": 37.0
         },
         {
           "name": "Tyjae Spears",
