@@ -3205,15 +3205,15 @@
   "2026": {
     "year": 2026,
     "highestScore": {
-      "score": 195.4,
-      "team": "Lights, Camera, Jackson",
-      "teamId": 8,
-      "owner": "Nikkole Cummins",
-      "opponent": "We Tried Our Best",
-      "opponentScore": 151.16,
+      "score": 204.98,
+      "team": "Titty Sprinkles",
+      "teamId": 7,
+      "owner": "Carl Cummins",
+      "opponent": "FC Baseball",
+      "opponentScore": 109.42,
       "year": 2026,
-      "week": 1,
-      "matchupPeriodId": 1
+      "week": 4,
+      "matchupPeriodId": 4
     },
     "lowestScore": {
       "score": 79.32,
@@ -3239,16 +3239,16 @@
       "matchupPeriodId": 1
     },
     "biggestBlowout": {
-      "margin": 79.78,
-      "winner": "FC Baseball",
-      "winnerOwner": "Bethany Bingert",
-      "winnerTeamId": 3,
-      "winnerScore": 167.56,
-      "loser": "Pop Rockin' Beats",
-      "loserScore": 87.78,
+      "margin": 95.55999999999999,
+      "winner": "Titty Sprinkles",
+      "winnerOwner": "Carl Cummins",
+      "winnerTeamId": 7,
+      "winnerScore": 204.98,
+      "loser": "FC Baseball",
+      "loserScore": 109.42,
       "year": 2026,
-      "week": 1,
-      "matchupPeriodId": 1
+      "week": 4,
+      "matchupPeriodId": 4
     },
     "longestWinStreak": {
       "owner": "Bethany Bingert",
@@ -3290,6 +3290,7 @@
       "owner": "Bethany Bingert",
       "owners": [
         "Bethany Bingert",
+        "Carl Cummins",
         "Joe Jaramillo",
         "Nikkole Cummins"
       ],
@@ -3297,8 +3298,9 @@
       "tied": true
     },
     "mostWeeklyLowScores": {
-      "owner": "Daniel Keating",
+      "owner": "Bethany Bingert",
       "owners": [
+        "Bethany Bingert",
         "Daniel Keating",
         "Joe Jaramillo",
         "Randell Crawford"
@@ -3309,7 +3311,7 @@
     "bestBenchWarmers": {
       "owner": "Bill Solecki",
       "teamName": "Kraft Mc-njigba Chase",
-      "benchPoints": 239.04
+      "benchPoints": 308.14
     },
     "playoffPayouts": [],
     "keeperAnalysis": {
@@ -3472,23 +3474,23 @@
         }
       ],
       "roundBenchmarks": {
-        "1": 127.8,
-        "2": 94.6,
-        "3": 73.71,
-        "4": 76.01,
-        "5": 79.47,
-        "6": 77.76,
-        "7": 63.64,
-        "8": 77.6,
-        "11": 53.29,
-        "12": 45.3,
-        "13": 34.43,
-        "14": 43.0,
-        "15": 29.28,
-        "16": 52.98,
-        "17": 36.09,
-        "9": 63.26,
-        "10": 58.61
+        "1": 165.59,
+        "2": 122.02,
+        "3": 97.96,
+        "4": 100.82,
+        "5": 108.69,
+        "6": 100.32,
+        "7": 84.48,
+        "8": 100.13,
+        "11": 75.34,
+        "12": 58.54,
+        "13": 46.12,
+        "14": 59.46,
+        "15": 36.76,
+        "16": 70.77,
+        "17": 48.33,
+        "9": 83.94,
+        "10": 75.35
       }
     }
   }

@@ -1170,6 +1170,10 @@
         {
           "player": "Lions D/ST",
           "count": 1
+        },
+        {
+          "player": "Jameis Winston",
+          "count": 1
         }
       ],
       "Joe Jaramillo": [
@@ -5503,6 +5507,10 @@
           },
           {
             "player": "Lions D/ST",
+            "count": 1
+          },
+          {
+            "player": "Jameis Winston",
             "count": 1
           }
         ],

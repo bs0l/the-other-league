@@ -424,6 +424,17 @@
         "matchupPeriodId": 10
       },
       {
+        "score": 204.98,
+        "team": "Titty Sprinkles",
+        "teamId": 7,
+        "owner": "Carl Cummins",
+        "opponent": "FC Baseball",
+        "opponentScore": 109.42,
+        "year": 2026,
+        "week": 4,
+        "matchupPeriodId": 4
+      },
+      {
         "score": 195.4,
         "team": "Lights, Camera, Jackson",
         "teamId": 8,
@@ -477,17 +488,6 @@
         "year": 2023,
         "week": 5,
         "matchupPeriodId": 5
-      },
-      {
-        "score": 189.14,
-        "team": "Tommy F'n Cutlets",
-        "teamId": 3,
-        "owner": "Sal DeRose",
-        "opponent": "Chili's Eat Fresh",
-        "opponentScore": 161.34,
-        "year": 2024,
-        "week": 13,
-        "matchupPeriodId": 13
       }
     ],
     "top10LowestScores": [
@@ -747,31 +747,31 @@
         "owner": "Bill Solecki",
         "teamName": "Kraft Mc-njigba Chase",
         "year": 2026,
-        "pointsAgainst": 363.79999999999995
+        "pointsAgainst": 525.2199999999999
       },
       {
         "owner": "Daniel Keating",
         "teamName": "Why Was I on the 415 Shuttle?",
         "year": 2026,
-        "pointsAgainst": 392.4
-      },
-      {
-        "owner": "Bethany Bingert",
-        "teamName": "FC Baseball",
-        "year": 2026,
-        "pointsAgainst": 394.46000000000004
-      },
-      {
-        "owner": "Mike Kovacs",
-        "teamName": "Waddle and Come Chase Maye",
-        "year": 2026,
-        "pointsAgainst": 420.9
+        "pointsAgainst": 550.4399999999999
       },
       {
         "owner": "Joe Jaramillo",
         "teamName": "Fran Tarkenton",
         "year": 2026,
-        "pointsAgainst": 433.5
+        "pointsAgainst": 570.12
+      },
+      {
+        "owner": "Nikkole Cummins",
+        "teamName": "Lights, Camera, Jackson",
+        "year": 2026,
+        "pointsAgainst": 570.4
+      },
+      {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "year": 2026,
+        "pointsAgainst": 580.58
       }
     ]
   }
