@@ -118,12 +118,12 @@
         "count": 2
       },
       {
-        "player": "Matt Gay",
-        "count": 1
+        "player": "Geno Smith",
+        "count": 2
       },
       {
-        "player": "Jalen Coker",
-        "count": 1
+        "player": "Ka'imi Fairbairn",
+        "count": 2
       }
     ]
   },
@@ -1132,6 +1132,10 @@
         {
           "player": "Kyler Murray",
           "count": 1
+        },
+        {
+          "player": "Travis Hunter",
+          "count": 1
         }
       ],
       "Daniel Keating": [
@@ -1227,6 +1231,10 @@
       "Pete Solecki": [
         {
           "player": "Keaton Mitchell",
+          "count": 1
+        },
+        {
+          "player": "Jonathon Brooks",
           "count": 1
         }
       ],
@@ -4314,10 +4322,19 @@
               "Daniel Keating",
               "Pete Solecki"
             ]
+          },
+          {
+            "player": "Jameis Winston",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
           }
         ],
         "teamTally": {
-          "Carl Cummins": 1
+          "Carl Cummins": 1,
+          "Bill Solecki": 1
         },
         "sameWeekAddsFlagged": 1
       }
@@ -4326,7 +4343,7 @@
       "Carl Cummins": 54,
       "Daniel Keating": 72,
       "Ray Engleking": 34,
-      "Bill Solecki": 73,
+      "Bill Solecki": 74,
       "Mike Kovacs": 54,
       "Pete Solecki": 32,
       "Sal DeRose": 30,
@@ -4456,12 +4473,12 @@
           "count": 2
         },
         {
-          "player": "Matt Gay",
-          "count": 1
+          "player": "Geno Smith",
+          "count": 2
         },
         {
-          "player": "Jalen Coker",
-          "count": 1
+          "player": "Ka'imi Fairbairn",
+          "count": 2
         }
       ]
     },
@@ -5470,6 +5487,10 @@
           {
             "player": "Kyler Murray",
             "count": 1
+          },
+          {
+            "player": "Travis Hunter",
+            "count": 1
           }
         ],
         "Daniel Keating": [
@@ -5565,6 +5586,10 @@
         "Pete Solecki": [
           {
             "player": "Keaton Mitchell",
+            "count": 1
+          },
+          {
+            "player": "Jonathon Brooks",
             "count": 1
           }
         ],
@@ -8035,10 +8060,19 @@
                 "Daniel Keating",
                 "Pete Solecki"
               ]
+            },
+            {
+              "player": "Jameis Winston",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki"
+              ]
             }
           ],
           "teamTally": {
-            "Carl Cummins": 1
+            "Carl Cummins": 1,
+            "Bill Solecki": 1
           },
           "sameWeekAddsFlagged": 1
         }
@@ -8047,7 +8081,7 @@
         "Carl Cummins": 47,
         "Daniel Keating": 50,
         "Ray Engleking": 27,
-        "Bill Solecki": 51,
+        "Bill Solecki": 52,
         "Mike Kovacs": 34,
         "Pete Solecki": 26,
         "Sal DeRose": 22,

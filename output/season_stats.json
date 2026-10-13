@@ -3254,9 +3254,10 @@
       "owner": "Bethany Bingert",
       "length": 3,
       "owners": [
-        "Bethany Bingert"
+        "Bethany Bingert",
+        "Carl Cummins"
       ],
-      "tied": false,
+      "tied": true,
       "streaks": [
         {
           "owner": "Bethany Bingert",
@@ -3265,6 +3266,14 @@
             2,
             3
           ]
+        },
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            3,
+            4,
+            5
+          ]
         }
       ]
     },
@@ -3272,9 +3281,10 @@
       "owner": "Ben Bingert",
       "length": 3,
       "owners": [
-        "Ben Bingert"
+        "Ben Bingert",
+        "Joe Jaramillo"
       ],
-      "tied": false,
+      "tied": true,
       "streaks": [
         {
           "owner": "Ben Bingert",
@@ -3283,23 +3293,29 @@
             2,
             3
           ]
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "weeks": [
+            3,
+            4,
+            5
+          ]
         }
       ]
     },
     "mostWeeklyHighScores": {
-      "owner": "Bethany Bingert",
+      "owner": "Carl Cummins",
       "owners": [
-        "Bethany Bingert",
-        "Carl Cummins",
-        "Joe Jaramillo",
-        "Nikkole Cummins"
+        "Carl Cummins"
       ],
-      "count": 1,
-      "tied": true
+      "count": 2,
+      "tied": false
     },
     "mostWeeklyLowScores": {
-      "owner": "Bethany Bingert",
+      "owner": "Ben Bingert",
       "owners": [
+        "Ben Bingert",
         "Bethany Bingert",
         "Daniel Keating",
         "Joe Jaramillo",
@@ -3311,7 +3327,7 @@
     "bestBenchWarmers": {
       "owner": "Bill Solecki",
       "teamName": "Kraft Mc-njigba Chase",
-      "benchPoints": 308.14
+      "benchPoints": 355.36
     },
     "playoffPayouts": [],
     "keeperAnalysis": {
@@ -3474,23 +3490,23 @@
         }
       ],
       "roundBenchmarks": {
-        "1": 165.59,
-        "2": 122.02,
-        "3": 97.96,
-        "4": 100.82,
-        "5": 108.69,
-        "6": 100.32,
-        "7": 84.48,
-        "8": 100.13,
-        "11": 75.34,
-        "12": 58.54,
-        "13": 46.12,
-        "14": 59.46,
-        "15": 36.76,
-        "16": 70.77,
-        "17": 48.33,
-        "9": 83.94,
-        "10": 75.35
+        "1": 212.61,
+        "2": 143.8,
+        "3": 119.72,
+        "4": 125.71,
+        "5": 133.32,
+        "6": 116.82,
+        "7": 108.2,
+        "8": 132.29,
+        "11": 87.93,
+        "12": 73.24,
+        "13": 50.21,
+        "14": 70.8,
+        "15": 41.75,
+        "16": 89.75,
+        "17": 56.54,
+        "9": 106.9,
+        "10": 92.18
       }
     }
   }
