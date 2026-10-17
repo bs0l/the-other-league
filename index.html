@@ -170,6 +170,23 @@
             text-decoration: underline;
         }
 
+        /* ── Two-week matchup companion line (beneath a single-week record) ── */
+        .stat-companion {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 1px dashed rgba(255, 215, 0, 0.35);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        .stat-companion strong { color: var(--gold); }
+        .stat-companion .companion-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            color: var(--electric-blue);
+            letter-spacing: 0.5px;
+        }
+
         .loading {
             text-align: center;
             padding: 100px 20px;
@@ -374,6 +391,7 @@
             <a href="head-to-head.html">Head-to-Head</a>
             <a href="season-stats.html">Season Stats</a>
             <a href="league-history.html">League History</a>
+            <a href="two-week-playoffs.html">Two-Week Playoffs</a>
         </nav>
 
         <div class="page-nav">
@@ -382,7 +400,7 @@
             <a href="#section-top-low">⬇️ Top 10 Low Scores</a>
         </div>
         <p style="text-align:center; color:var(--text-secondary); font-size:0.82rem; margin-bottom:24px; opacity:0.8;">
-            <i>All stats on this page include playoff games.</i>
+            <i>All stats on this page include playoff games. Scores are single-week: two-week playoff matchups count week by week, with two-week matchup records noted where they apply.</i>
         </p>
 
         <div id="section-stats" class="section-anchor"></div>
@@ -417,8 +435,13 @@
                 let sloppyLeader = null;
                 for (const [owner, count] of Object.entries(sloppyTally)) {
                     if (!sloppyLeader || count > sloppyLeader.count) {
-                        sloppyLeader = { owner, count };
+                        sloppyLeader = { owners: [owner], count };
+                    } else if (count === sloppyLeader.count) {
+                        sloppyLeader.owners.push(owner);
                     }
+                }
+                if (sloppyLeader) {
+                    sloppyLeader.owner = sloppyLeader.owners.join(' / ') + (sloppyLeader.owners.length > 1 ? ' (tied)' : '');
                 }
 
                 // Render all-time stats
@@ -436,6 +459,23 @@
             }
         }
 
+
+		// "Week 13" or, for a two-week playoff matchup, "Weeks 13–14"
+		function weekLabel(rec) {
+		    const w = rec.weeks;
+		    return (w && w.length > 1) ? `Weeks ${w[0]}–${w[w.length - 1]}` : `Week ${rec.week}`;
+		}
+
+		// Companion line shown beneath a single-week record when a two-week
+		// matchup beats it (omitted otherwise)
+		function companionLine(title, valueText, detailHTML, rec) {
+			if (!rec) return '';
+			return `<div class="stat-companion"><strong>${title}</strong><br>
+				<span class="companion-value">${valueText}</span><br>
+				${detailHTML}
+				<a href="${createMatchupLink(rec)}" target="_blank">(${rec.year} ${weekLabel(rec)})</a></div>`;
+		}
+
 		function createMatchupLink(record) {
 			const { year, week, matchupPeriodId } = record;
 			
@@ -449,6 +489,22 @@
 			const teamId = record.teamId || record.winnerTeamId;
 			return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&scoringPeriodId=${week}&seasonId=${year}&teamId=${teamId}&view=scoringperiod`;
 		}
+
+        // Tie-aware display helpers: when several owners share a record, show all of them
+        function ownersText(stat) {
+            return (stat.tied && stat.owners && stat.owners.length > 1)
+                ? stat.owners.join(' / ') + ' (tied)'
+                : stat.owner;
+        }
+        function streakHolder(s) {
+            return (s.tied && s.owners && s.owners.length > 1)
+                ? s.owners.map(o => o.owner).join(' / ') + ' (tied)'
+                : s.owner;
+        }
+        function streakDetails(s) {
+            const list = (s.tied && s.owners && s.owners.length > 1) ? s.owners : [s];
+            return list.map(o => `${list.length > 1 ? `<strong>${o.owner}</strong>: ` : ''}${o.startYear} Week ${o.startWeek} - ${o.isOngoing ? 'Present' : `${o.endYear} Week ${o.endWeek}`}`).join('<br>');
+        }
 
         function renderStats(stats, sloppyLeader) {
             const container = document.getElementById('stats-container');
@@ -487,8 +543,8 @@
 						<div class="stat-details">
 							${stats.closestWin.winnerScore.toFixed(2)} - ${stats.closestWin.loserScore.toFixed(2)}
 							<a href="${createMatchupLink(stats.closestWin)}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">
-								(${stats.closestWin.year} Week ${stats.closestWin.week})
-							</a>
+								(${stats.closestWin.year} ${weekLabel(stats.closestWin)})
+							</a>${stats.closestWin.isTwoWeek ? '<br><em style="font-size:0.8rem;">Two-week matchup</em>' : ''}
 						</div>
 					</div>
 
@@ -502,8 +558,10 @@
 						<div class="stat-details">
 							${stats.biggestBlowout.winnerScore.toFixed(2)} - ${stats.biggestBlowout.loserScore.toFixed(2)}
 							<a href="${createMatchupLink(stats.biggestBlowout)}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">
-								(${stats.biggestBlowout.year} Week ${stats.biggestBlowout.week})
+								(${stats.biggestBlowout.year} ${weekLabel(stats.biggestBlowout)})
 							</a>
+							${stats.biggestBlowoutTwoWeek ? companionLine('Two-week matchup record', stats.biggestBlowoutTwoWeek.margin.toFixed(2),
+								`${stats.biggestBlowoutTwoWeek.winner} vs ${stats.biggestBlowoutTwoWeek.loser}<br>${stats.biggestBlowoutTwoWeek.winnerScore.toFixed(2)} - ${stats.biggestBlowoutTwoWeek.loserScore.toFixed(2)}`, stats.biggestBlowoutTwoWeek) : ''}
 						</div>
 					</div>
 
@@ -517,8 +575,10 @@
 						<div class="stat-details">
 							${stats.highestScoringGame.score1.toFixed(2)} - ${stats.highestScoringGame.score2.toFixed(2)}
 							<a href="${createMatchupLink(stats.highestScoringGame)}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">
-								(${stats.highestScoringGame.year} Week ${stats.highestScoringGame.week})
+								(${stats.highestScoringGame.year} ${weekLabel(stats.highestScoringGame)})
 							</a>
+							${stats.highestScoringGameTwoWeek ? companionLine('Two-week matchup record', stats.highestScoringGameTwoWeek.total.toFixed(2),
+								`${stats.highestScoringGameTwoWeek.team1} vs ${stats.highestScoringGameTwoWeek.team2}<br>${stats.highestScoringGameTwoWeek.score1.toFixed(2)} - ${stats.highestScoringGameTwoWeek.score2.toFixed(2)}`, stats.highestScoringGameTwoWeek) : ''}
 						</div>
 					</div>
 
@@ -532,8 +592,10 @@
 						<div class="stat-details">
 							${stats.lowestScoringGame.score1.toFixed(2)} - ${stats.lowestScoringGame.score2.toFixed(2)}
 							<a href="${createMatchupLink(stats.lowestScoringGame)}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">
-								(${stats.lowestScoringGame.year} Week ${stats.lowestScoringGame.week})
+								(${stats.lowestScoringGame.year} ${weekLabel(stats.lowestScoringGame)})
 							</a>
+							${stats.lowestScoringGameTwoWeek ? companionLine('Two-week matchup record', stats.lowestScoringGameTwoWeek.total.toFixed(2),
+								`${stats.lowestScoringGameTwoWeek.team1} vs ${stats.lowestScoringGameTwoWeek.team2}<br>${stats.lowestScoringGameTwoWeek.score1.toFixed(2)} - ${stats.lowestScoringGameTwoWeek.score2.toFixed(2)}`, stats.lowestScoringGameTwoWeek) : ''}
 						</div>
 					</div>
 
@@ -541,10 +603,9 @@
 						<div class="stat-icon">🔥</div>
 						<div class="stat-title">Longest Win Streak</div>
 						<div class="stat-value">${stats.longestWinStreak.length}</div>
-						<div class="stat-holder">${stats.longestWinStreak.owner}</div>
+						<div class="stat-holder">${streakHolder(stats.longestWinStreak)}</div>
 						<div class="stat-details">
-							${stats.longestWinStreak.startYear} Week ${stats.longestWinStreak.startWeek} - 
-							${stats.longestWinStreak.isOngoing ? 'Present' : `${stats.longestWinStreak.endYear} Week ${stats.longestWinStreak.endWeek}`}
+							${streakDetails(stats.longestWinStreak)}
 						</div>
 					</div>
 
@@ -552,10 +613,9 @@
 						<div class="stat-icon">💔</div>
 						<div class="stat-title">Longest Loss Streak</div>
 						<div class="stat-value">${stats.longestLossStreak.length}</div>
-						<div class="stat-holder">${stats.longestLossStreak.owner}</div>
+						<div class="stat-holder">${streakHolder(stats.longestLossStreak)}</div>
 						<div class="stat-details">
-							${stats.longestLossStreak.startYear} Week ${stats.longestLossStreak.startWeek} - 
-							${stats.longestLossStreak.isOngoing ? 'Present' : `${stats.longestLossStreak.endYear} Week ${stats.longestLossStreak.endWeek}`}
+							${streakDetails(stats.longestLossStreak)}
 						</div>
 					</div>
 
@@ -563,14 +623,14 @@
 						<div class="stat-icon">⭐</div>
 						<div class="stat-title">Most Weekly High Scores</div>
 						<div class="stat-value">${stats.mostWeeklyHighScores.count}</div>
-						<div class="stat-holder">${stats.mostWeeklyHighScores.owner}</div>
+						<div class="stat-holder">${ownersText(stats.mostWeeklyHighScores)}</div>
 					</div>
 
 					<div class="stat-card">
 						<div class="stat-icon">📉</div>
 						<div class="stat-title">Most Weekly Low Scores</div>
 						<div class="stat-value">${stats.mostWeeklyLowScores.count}</div>
-						<div class="stat-holder">${stats.mostWeeklyLowScores.owner}</div>
+						<div class="stat-holder">${ownersText(stats.mostWeeklyLowScores)}</div>
 					</div>
 
 					<div class="stat-card">

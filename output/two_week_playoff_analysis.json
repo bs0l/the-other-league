@@ -1,344 +1,4202 @@
 {
-  "totalTwoWeekMatchups": 14,
-  "comebacks": 0,
-  "comebackRate": 0.0,
-  "matchups": [
+  "summary": {
+    "all": {
+      "matchups": 118,
+      "week1Ties": 0,
+      "decidedAfterWeek1": 118,
+      "comebacks": 28,
+      "held": 90,
+      "tiedOverall": 0,
+      "comebackRate": 0.23728813559322035,
+      "avgWeek1Lead": 29.15423728813559,
+      "avgLeadOvercome": 15.342857142857143,
+      "avgLeadHeld": 33.45111111111111,
+      "largestComeback": {
+        "year": 2022,
+        "weeks": [
+          16,
+          17
+        ],
+        "lead": 78.84,
+        "bracket": "LOSERS_CONSOLATION_LADDER",
+        "leader": "Carl Cummins",
+        "winner": "Randell Crawford"
+      }
+    },
+    "winnersBracket": {
+      "matchups": 36,
+      "week1Ties": 0,
+      "decidedAfterWeek1": 36,
+      "comebacks": 12,
+      "held": 24,
+      "tiedOverall": 0,
+      "comebackRate": 0.3333333333333333,
+      "avgWeek1Lead": 30.028333333333332,
+      "avgLeadOvercome": 14.008333333333333,
+      "avgLeadHeld": 38.038333333333334,
+      "largestComeback": {
+        "year": 2022,
+        "weeks": [
+          14,
+          15
+        ],
+        "lead": 35.68,
+        "bracket": "WINNERS_BRACKET",
+        "leader": "Ray Engleking",
+        "winner": "Bill Solecki"
+      }
+    },
+    "otherBrackets": {
+      "matchups": 82,
+      "week1Ties": 0,
+      "decidedAfterWeek1": 82,
+      "comebacks": 16,
+      "held": 66,
+      "tiedOverall": 0,
+      "comebackRate": 0.1951219512195122,
+      "avgWeek1Lead": 28.770487804878048,
+      "avgLeadOvercome": 16.34375,
+      "avgLeadHeld": 31.7830303030303,
+      "largestComeback": {
+        "year": 2022,
+        "weeks": [
+          16,
+          17
+        ],
+        "lead": 78.84,
+        "bracket": "LOSERS_CONSOLATION_LADDER",
+        "leader": "Carl Cummins",
+        "winner": "Randell Crawford"
+      }
+    }
+  },
+  "byYear": [
     {
-      "year": 2019,
-      "week1": 13,
-      "week2": 14,
-      "teamA": {
-        "name": "SAL is Literally Jesus",
-        "owner": "Joe Jaramillo",
-        "week1Score": 157.0,
-        "week2Score": 157.0,
-        "totalScore": 314.0
-      },
-      "teamB": {
-        "name": "Why Was I On The 415 Shuttle",
-        "owner": "Daniel Keating",
-        "week1Score": 165.8,
-        "week2Score": 165.8,
-        "totalScore": 331.6
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 8.800000000000011,
-      "finalMargin": 17.600000000000023
+      "year": 2014,
+      "matchups": 8,
+      "week1Ties": 0,
+      "comebacks": 1,
+      "held": 7,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2015,
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 2,
+      "held": 8,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2016,
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 2,
+      "held": 8,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2017,
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 2,
+      "held": 8,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2018,
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 3,
+      "held": 7,
+      "tiedOverall": 0
     },
     {
       "year": 2019,
-      "week1": 15,
-      "week2": 16,
-      "teamA": {
-        "name": "Titty Sprinkles",
-        "owner": "Carl Cummins",
-        "week1Score": 209.54,
-        "week2Score": 209.54,
-        "totalScore": 419.08
-      },
-      "teamB": {
-        "name": "Why Was I On The 415 Shuttle",
-        "owner": "Daniel Keating",
-        "week1Score": 140.86,
-        "week2Score": 140.86,
-        "totalScore": 281.72
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 68.67999999999998,
-      "finalMargin": 137.35999999999996
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 4,
+      "held": 6,
+      "tiedOverall": 0
     },
     {
       "year": 2020,
-      "week1": 13,
-      "week2": 14,
-      "teamA": {
-        "name": "Bucket, Mop; Macaroni, Pot",
-        "owner": "Bill Solecki",
-        "week1Score": 270.32,
-        "week2Score": 270.32,
-        "totalScore": 540.64
-      },
-      "teamB": {
-        "name": "DANIEL JONES IS LITERALLY TRASH",
-        "owner": "Sal DeRose",
-        "week1Score": 258.52,
-        "week2Score": 258.52,
-        "totalScore": 517.04
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 11.800000000000011,
-      "finalMargin": 23.600000000000023
-    },
-    {
-      "year": 2020,
-      "week1": 15,
-      "week2": 16,
-      "teamA": {
-        "name": "Bucket, Mop; Macaroni, Pot",
-        "owner": "Bill Solecki",
-        "week1Score": 296.44,
-        "week2Score": 296.44,
-        "totalScore": 592.88
-      },
-      "teamB": {
-        "name": "Tua Time",
-        "owner": "Joe Jaramillo",
-        "week1Score": 299.68,
-        "week2Score": 299.68,
-        "totalScore": 599.36
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 3.240000000000009,
-      "finalMargin": 6.480000000000018
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 3,
+      "held": 7,
+      "tiedOverall": 0
     },
     {
       "year": 2021,
-      "week1": 14,
-      "week2": 15,
-      "teamA": {
-        "name": "Bobby Boots",
-        "owner": "Ben Bingert",
-        "week1Score": 208.02,
-        "week2Score": 208.02,
-        "totalScore": 416.04
-      },
-      "teamB": {
-        "name": "DJ Khalad",
-        "owner": "Pete Solecki",
-        "week1Score": 255.82,
-        "week2Score": 255.82,
-        "totalScore": 511.64
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 47.79999999999998,
-      "finalMargin": 95.59999999999997
-    },
-    {
-      "year": 2021,
-      "week1": 16,
-      "week2": 17,
-      "teamA": {
-        "name": "Titty Sprinkles",
-        "owner": "Carl Cummins",
-        "week1Score": 273.02,
-        "week2Score": 273.02,
-        "totalScore": 546.04
-      },
-      "teamB": {
-        "name": "DJ Khalad",
-        "owner": "Pete Solecki",
-        "week1Score": 214.68,
-        "week2Score": 214.68,
-        "totalScore": 429.36
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 58.339999999999975,
-      "finalMargin": 116.67999999999995
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 0,
+      "held": 10,
+      "tiedOverall": 0
     },
     {
       "year": 2022,
-      "week1": 14,
-      "week2": 15,
-      "teamA": {
-        "name": "My Ba ss Hurts",
-        "owner": "Mike Kovacs",
-        "week1Score": 275.78,
-        "week2Score": 275.78,
-        "totalScore": 551.56
-      },
-      "teamB": {
-        "name": "This Sauce Is Boss",
-        "owner": "Pete Solecki",
-        "week1Score": 205.9,
-        "week2Score": 205.9,
-        "totalScore": 411.8
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 69.87999999999997,
-      "finalMargin": 139.75999999999993
-    },
-    {
-      "year": 2022,
-      "week1": 16,
-      "week2": 17,
-      "teamA": {
-        "name": "My Ba ss Hurts",
-        "owner": "Mike Kovacs",
-        "week1Score": 230.46,
-        "week2Score": 230.46,
-        "totalScore": 460.92
-      },
-      "teamB": {
-        "name": "#1 Best Weekly Meme Team",
-        "owner": "Bill Solecki",
-        "week1Score": 174.28,
-        "week2Score": 174.28,
-        "totalScore": 348.56
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 56.18000000000001,
-      "finalMargin": 112.36000000000001
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 4,
+      "held": 6,
+      "tiedOverall": 0
     },
     {
       "year": 2023,
-      "week1": 14,
-      "week2": 15,
-      "teamA": {
-        "name": "My Ba ss Hurts",
-        "owner": "Mike Kovacs",
-        "week1Score": 220.8,
-        "week2Score": 220.8,
-        "totalScore": 441.6
-      },
-      "teamB": {
-        "name": "Why Was I on the 415 Shuttle?",
-        "owner": "Daniel Keating",
-        "week1Score": 238.94,
-        "week2Score": 238.94,
-        "totalScore": 477.88
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 18.139999999999986,
-      "finalMargin": 36.27999999999997
-    },
-    {
-      "year": 2023,
-      "week1": 16,
-      "week2": 17,
-      "teamA": {
-        "name": "Tommy F'n Cutlets",
-        "owner": "Sal DeRose",
-        "week1Score": 274.24,
-        "week2Score": 274.24,
-        "totalScore": 548.48
-      },
-      "teamB": {
-        "name": "Why Was I on the 415 Shuttle?",
-        "owner": "Daniel Keating",
-        "week1Score": 255.4,
-        "week2Score": 255.4,
-        "totalScore": 510.8
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 18.840000000000003,
-      "finalMargin": 37.68000000000001
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 4,
+      "held": 6,
+      "tiedOverall": 0
     },
     {
       "year": 2024,
-      "week1": 14,
-      "week2": 15,
-      "teamA": {
-        "name": "Pop Rockin' Beats",
-        "owner": "Randell Crawford",
-        "week1Score": 350.3,
-        "week2Score": 350.3,
-        "totalScore": 700.6
-      },
-      "teamB": {
-        "name": "The Other Team",
-        "owner": "Ray Engleking",
-        "week1Score": 296.06,
-        "week2Score": 296.06,
-        "totalScore": 592.12
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 54.24000000000001,
-      "finalMargin": 108.48000000000002
-    },
-    {
-      "year": 2024,
-      "week1": 16,
-      "week2": 17,
-      "teamA": {
-        "name": "Pop Rockin' Beats",
-        "owner": "Randell Crawford",
-        "week1Score": 320.66,
-        "week2Score": 320.66,
-        "totalScore": 641.32
-      },
-      "teamB": {
-        "name": "Takin the Browns to Super Bowl",
-        "owner": "Mike Kovacs",
-        "week1Score": 386.32,
-        "week2Score": 386.32,
-        "totalScore": 772.64
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 65.65999999999997,
-      "finalMargin": 131.31999999999994
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 0,
+      "held": 10,
+      "tiedOverall": 0
     },
     {
       "year": 2025,
-      "week1": 14,
-      "week2": 15,
-      "teamA": {
-        "name": "Pop Rockin' Beats",
-        "owner": "Randell Crawford",
-        "week1Score": 288.9,
-        "week2Score": 288.9,
-        "totalScore": 577.8
-      },
-      "teamB": {
-        "name": "Why Was I on the 415 Shuttle?",
-        "owner": "Daniel Keating",
-        "week1Score": 276.46,
-        "week2Score": 276.46,
-        "totalScore": 552.92
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 12.439999999999998,
-      "finalMargin": 24.879999999999995
-    },
-    {
-      "year": 2025,
-      "week1": 16,
-      "week2": 17,
-      "teamA": {
-        "name": "Pop Rockin' Beats",
-        "owner": "Randell Crawford",
-        "week1Score": 223.98,
-        "week2Score": 223.98,
-        "totalScore": 447.96
-      },
-      "teamB": {
-        "name": "We Tried Our Best",
-        "owner": "Pete Solecki",
-        "week1Score": 262.94,
-        "week2Score": 262.94,
-        "totalScore": 525.88
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 38.96000000000001,
-      "finalMargin": 77.92000000000002
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 3,
+      "held": 7,
+      "tiedOverall": 0
     }
   ],
-  "comebackMatchups": []
+  "matchups": [
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Daniel Keating",
+        "teamName": "Denver Bronkers",
+        "teamId": 1,
+        "week1": 69.0,
+        "week2": 89.0,
+        "total": 158.0
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "Guess Whos Back Shindig's Back",
+        "teamId": 2,
+        "week1": 120.0,
+        "week2": 98.0,
+        "total": 218.0
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 51.0,
+      "week2Swing": -9.0,
+      "finalMargin": 60.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Bill Solecki: Amazing",
+        "teamId": 3,
+        "week1": 141.0,
+        "week2": 131.0,
+        "total": 272.0
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 69.0,
+        "week2": 104.0,
+        "total": 173.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 72.0,
+      "week2Swing": -27.0,
+      "finalMargin": 99.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Phil Torres",
+        "teamName": "Underwoods Underlings",
+        "teamId": 4,
+        "week1": 108.0,
+        "week2": 79.0,
+        "total": 187.0
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Joey Jorts",
+        "teamId": 5,
+        "week1": 182.0,
+        "week2": 133.0,
+        "total": 315.0
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 74.0,
+      "week2Swing": -54.0,
+      "finalMargin": 128.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 104.0,
+        "week2": 104.0,
+        "total": 208.0
+      },
+      "away": {
+        "owner": "Brian Dorward",
+        "teamName": "Indian Kickers",
+        "teamId": 8,
+        "week1": 152.0,
+        "week2": 67.0,
+        "total": 219.0
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 48.0,
+      "week2Swing": 37.0,
+      "finalMargin": 11.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Daniel Keating",
+        "teamName": "Denver Bronkers",
+        "teamId": 1,
+        "week1": 90.0,
+        "week2": 108.0,
+        "total": 198.0
+      },
+      "away": {
+        "owner": "Phil Torres",
+        "teamName": "Underwoods Underlings",
+        "teamId": 4,
+        "week1": 72.0,
+        "week2": 85.0,
+        "total": 157.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 18.0,
+      "week2Swing": -23.0,
+      "finalMargin": 41.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Guess Whos Back Shindig's Back",
+        "teamId": 2,
+        "week1": 106.0,
+        "week2": 127.0,
+        "total": 233.0
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Joey Jorts",
+        "teamId": 5,
+        "week1": 115.0,
+        "week2": 97.0,
+        "total": 212.0
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 9.0,
+      "week2Swing": 30.0,
+      "finalMargin": 21.0,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Bill Solecki: Amazing",
+        "teamId": 3,
+        "week1": 103.0,
+        "week2": 134.0,
+        "total": 237.0
+      },
+      "away": {
+        "owner": "Brian Dorward",
+        "teamName": "Indian Kickers",
+        "teamId": 8,
+        "week1": 81.0,
+        "week2": 91.0,
+        "total": 172.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 22.0,
+      "week2Swing": -43.0,
+      "finalMargin": 65.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 127.0,
+        "week2": 59.0,
+        "total": 186.0
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 92.0,
+        "week2": 80.0,
+        "total": 172.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 35.0,
+      "week2Swing": 21.0,
+      "finalMargin": 14.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "John Cena",
+        "teamId": 1,
+        "week1": 65.44,
+        "week2": 67.8,
+        "total": 133.24
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "Drew Stanton Celebrations",
+        "teamId": 3,
+        "week1": 133.92,
+        "week2": 96.22,
+        "total": 230.14
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 68.48,
+      "week2Swing": -28.42,
+      "finalMargin": 96.9,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
+        "teamId": 2,
+        "week1": 169.96,
+        "week2": 83.18,
+        "total": 253.14000000000001
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Balls to the Rawls",
+        "teamId": 8,
+        "week1": 134.14,
+        "week2": 87.42,
+        "total": 221.56
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 35.82,
+      "week2Swing": 4.24,
+      "finalMargin": 31.58,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "RKO Out of Nowhere",
+        "teamId": 4,
+        "week1": 82.76,
+        "week2": 62.88,
+        "total": 145.64000000000001
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Harry Hats",
+        "teamId": 5,
+        "week1": 75.64,
+        "week2": 105.8,
+        "total": 181.44
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 7.12,
+      "week2Swing": 42.92,
+      "finalMargin": 35.8,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 88.48,
+        "week2": 87.68,
+        "total": 176.16000000000003
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Bradys and Edelman",
+        "teamId": 9,
+        "week1": 109.98,
+        "week2": 103.94,
+        "total": 213.92000000000002
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 21.5,
+      "week2Swing": -16.26,
+      "finalMargin": 37.76,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 137.08,
+        "week2": 113.6,
+        "total": 250.68
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 84.72,
+        "week2": 87.5,
+        "total": 172.22
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 52.36,
+      "week2Swing": -26.1,
+      "finalMargin": 78.46,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "John Cena",
+        "teamId": 1,
+        "week1": 125.7,
+        "week2": 98.56,
+        "total": 224.26
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
+        "teamId": 2,
+        "week1": 106.96,
+        "week2": 89.66,
+        "total": 196.62
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 18.74,
+      "week2Swing": -8.9,
+      "finalMargin": 27.64,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Drew Stanton Celebrations",
+        "teamId": 3,
+        "week1": 54.94,
+        "week2": 90.06,
+        "total": 145.0
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Bradys and Edelman",
+        "teamId": 9,
+        "week1": 80.84,
+        "week2": 147.18,
+        "total": 228.02
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 25.9,
+      "week2Swing": -57.12,
+      "finalMargin": 83.02,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "RKO Out of Nowhere",
+        "teamId": 4,
+        "week1": 87.7,
+        "week2": 80.5,
+        "total": 168.2
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 84.66,
+        "week2": 93.14,
+        "total": 177.8
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 3.04,
+      "week2Swing": 12.64,
+      "finalMargin": 9.6,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Harry Hats",
+        "teamId": 5,
+        "week1": 90.38,
+        "week2": 108.2,
+        "total": 198.57999999999998
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 147.02,
+        "week2": 135.38,
+        "total": 282.4
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 56.64,
+      "week2Swing": -27.18,
+      "finalMargin": 83.82,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 102.78,
+        "week2": 78.84,
+        "total": 181.62
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Balls to the Rawls",
+        "teamId": 8,
+        "week1": 41.06,
+        "week2": 106.2,
+        "total": 147.26
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 61.72,
+      "week2Swing": 27.36,
+      "finalMargin": 34.36,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Boyz n da Hood",
+        "teamId": 1,
+        "week1": 112.88,
+        "week2": 80.08,
+        "total": 192.95999999999998
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 80.96,
+        "week2": 137.84,
+        "total": 218.8
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 31.92,
+      "week2Swing": 57.76,
+      "finalMargin": 25.84,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
+        "teamId": 2,
+        "week1": 62.8,
+        "week2": 71.86,
+        "total": 134.66
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Kenny Kilts",
+        "teamId": 5,
+        "week1": 123.0,
+        "week2": 62.94,
+        "total": 185.94
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 60.2,
+      "week2Swing": 8.92,
+      "finalMargin": 51.28,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "\u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af \u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af",
+        "teamId": 3,
+        "week1": 67.16,
+        "week2": 66.1,
+        "total": 133.26
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 69.4,
+        "week2": 87.96,
+        "total": 157.36
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 2.24,
+      "week2Swing": -21.86,
+      "finalMargin": 24.1,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "RKO Out of Nowhere",
+        "teamId": 4,
+        "week1": 94.06,
+        "week2": 61.2,
+        "total": 155.26
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 71.16,
+        "week2": 64.12,
+        "total": 135.28
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 22.9,
+      "week2Swing": 2.92,
+      "finalMargin": 19.98,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 119.84,
+        "week2": 92.06,
+        "total": 211.9
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Bradys and Edelman",
+        "teamId": 9,
+        "week1": 74.96,
+        "week2": 94.64,
+        "total": 169.6
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 44.88,
+      "week2Swing": 2.58,
+      "finalMargin": 42.3,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Boyz n da Hood",
+        "teamId": 1,
+        "week1": 137.08,
+        "week2": 100.34,
+        "total": 237.42000000000002
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
+        "teamId": 2,
+        "week1": 108.12,
+        "week2": 96.6,
+        "total": 204.72
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 28.96,
+      "week2Swing": -3.74,
+      "finalMargin": 32.7,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "\u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af \u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af",
+        "teamId": 3,
+        "week1": 78.68,
+        "week2": 67.46,
+        "total": 146.14
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Bradys and Edelman",
+        "teamId": 9,
+        "week1": 106.46,
+        "week2": 64.22,
+        "total": 170.68
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 27.78,
+      "week2Swing": 3.24,
+      "finalMargin": 24.54,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "RKO Out of Nowhere",
+        "teamId": 4,
+        "week1": 84.08,
+        "week2": 124.32,
+        "total": 208.39999999999998
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 105.0,
+        "week2": 101.4,
+        "total": 206.4
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 20.92,
+      "week2Swing": 22.92,
+      "finalMargin": 2.0,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Kenny Kilts",
+        "teamId": 5,
+        "week1": 116.18,
+        "week2": 103.86,
+        "total": 220.04000000000002
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 110.58,
+        "week2": 72.98,
+        "total": 183.56
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 5.6,
+      "week2Swing": -30.88,
+      "finalMargin": 36.48,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 62.66,
+        "week2": 70.12,
+        "total": 132.78
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 81.06,
+        "week2": 61.66,
+        "total": 142.72
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 18.4,
+      "week2Swing": 8.46,
+      "finalMargin": 9.94,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Get CTE or Die Tryin",
+        "teamId": 1,
+        "week1": 91.06,
+        "week2": 127.66,
+        "total": 218.72
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 144.0,
+        "week2": 92.46,
+        "total": 236.45999999999998
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 52.94,
+      "week2Swing": 35.2,
+      "finalMargin": 17.74,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Frankly, Ameer, IDontGiveaDamn",
+        "teamId": 2,
+        "week1": 93.62,
+        "week2": 100.14,
+        "total": 193.76
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "So Fresh So Kareem",
+        "teamId": 8,
+        "week1": 86.04,
+        "week2": 92.44,
+        "total": 178.48000000000002
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 7.58,
+      "week2Swing": -7.7,
+      "finalMargin": 15.28,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Adams, Cooper and Prescott",
+        "teamId": 3,
+        "week1": 66.98,
+        "week2": 112.68,
+        "total": 179.66000000000003
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "RKO Out of Nowhere",
+        "teamId": 4,
+        "week1": 79.32,
+        "week2": 118.76,
+        "total": 198.07999999999998
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 12.34,
+      "week2Swing": -6.08,
+      "finalMargin": 18.42,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Franky Fedoras",
+        "teamId": 5,
+        "week1": 112.7,
+        "week2": 84.94,
+        "total": 197.64
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 117.34,
+        "week2": 89.42,
+        "total": 206.76
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 4.64,
+      "week2Swing": -4.48,
+      "finalMargin": 9.12,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Daniel Keating",
+        "teamName": "Bradys and Edelman",
+        "teamId": 9,
+        "week1": 108.92,
+        "week2": 69.82,
+        "total": 178.74
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 118.04,
+        "week2": 65.04,
+        "total": 183.08
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 9.12,
+      "week2Swing": 4.78,
+      "finalMargin": 4.34,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Get CTE or Die Tryin",
+        "teamId": 1,
+        "week1": 131.5,
+        "week2": 152.38,
+        "total": 283.88
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "So Fresh So Kareem",
+        "teamId": 8,
+        "week1": 94.92,
+        "week2": 123.38,
+        "total": 218.3
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 36.58,
+      "week2Swing": -29.0,
+      "finalMargin": 65.58,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Frankly, Ameer, IDontGiveaDamn",
+        "teamId": 2,
+        "week1": 75.02,
+        "week2": 70.48,
+        "total": 145.5
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 68.76,
+        "week2": 109.84,
+        "total": 178.60000000000002
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 6.26,
+      "week2Swing": 39.36,
+      "finalMargin": 33.1,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Adams, Cooper and Prescott",
+        "teamId": 3,
+        "week1": 36.44,
+        "week2": 48.78,
+        "total": 85.22
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Bradys and Edelman",
+        "teamId": 9,
+        "week1": 98.56,
+        "week2": 104.92,
+        "total": 203.48000000000002
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 62.12,
+      "week2Swing": -56.14,
+      "finalMargin": 118.26,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "RKO Out of Nowhere",
+        "teamId": 4,
+        "week1": 88.4,
+        "week2": 106.18,
+        "total": 194.58
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Franky Fedoras",
+        "teamId": 5,
+        "week1": 54.54,
+        "week2": 65.24,
+        "total": 119.78
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 33.86,
+      "week2Swing": -40.94,
+      "finalMargin": 74.8,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 79.36,
+        "week2": 59.74,
+        "total": 139.1
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 72.94,
+        "week2": 73.96,
+        "total": 146.89999999999998
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 6.42,
+      "week2Swing": 14.22,
+      "finalMargin": 7.8,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Get CTE or Die Tryin",
+        "teamId": 1,
+        "week1": 121.72,
+        "week2": 88.42,
+        "total": 210.14
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "SAM DARNOLD IS LITERALLY JESUS",
+        "teamId": 3,
+        "week1": 67.58,
+        "week2": 117.64,
+        "total": 185.22
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 54.14,
+      "week2Swing": 29.22,
+      "finalMargin": 24.92,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Lucky Kamario",
+        "teamId": 2,
+        "week1": 123.12,
+        "week2": 74.26,
+        "total": 197.38
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 51.62,
+        "week2": 81.64,
+        "total": 133.26
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 71.5,
+      "week2Swing": 7.38,
+      "finalMargin": 64.12,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "For When the Bell Tolls",
+        "teamId": 4,
+        "week1": 104.4,
+        "week2": 76.42,
+        "total": 180.82
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 108.5,
+        "week2": 86.78,
+        "total": 195.28
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 4.1,
+      "week2Swing": -10.36,
+      "finalMargin": 14.46,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Free Candy and Wins",
+        "teamId": 5,
+        "week1": 72.76,
+        "week2": 75.6,
+        "total": 148.36
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 76.54,
+        "week2": 70.98,
+        "total": 147.52
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 3.78,
+      "week2Swing": 4.62,
+      "finalMargin": 0.84,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 104.5,
+        "week2": 101.2,
+        "total": 205.7
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 96.94,
+        "week2": 97.92,
+        "total": 194.86
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 7.56,
+      "week2Swing": -3.28,
+      "finalMargin": 10.84,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Get CTE or Die Tryin",
+        "teamId": 1,
+        "week1": 129.24,
+        "week2": 48.58,
+        "total": 177.82
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 108.92,
+        "week2": 120.72,
+        "total": 229.64
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 20.32,
+      "week2Swing": 72.14,
+      "finalMargin": 51.82,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Lucky Kamario",
+        "teamId": 2,
+        "week1": 101.88,
+        "week2": 90.58,
+        "total": 192.46
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 103.94,
+        "week2": 72.86,
+        "total": 176.8
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 2.06,
+      "week2Swing": 17.72,
+      "finalMargin": 15.66,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "SAM DARNOLD IS LITERALLY JESUS",
+        "teamId": 3,
+        "week1": 90.34,
+        "week2": 87.62,
+        "total": 177.96
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "For When the Bell Tolls",
+        "teamId": 4,
+        "week1": 119.94,
+        "week2": 88.18,
+        "total": 208.12
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 29.6,
+      "week2Swing": -0.56,
+      "finalMargin": 30.16,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Free Candy and Wins",
+        "teamId": 5,
+        "week1": 74.06,
+        "week2": 71.2,
+        "total": 145.26
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 84.14,
+        "week2": 63.66,
+        "total": 147.8
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 10.08,
+      "week2Swing": 7.54,
+      "finalMargin": 2.54,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 82.68,
+        "week2": 57.66,
+        "total": 140.34
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 101.5,
+        "week2": 94.2,
+        "total": 195.7
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 18.82,
+      "week2Swing": -36.54,
+      "finalMargin": 55.36,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Get CTE or Die Tryin",
+        "teamId": 1,
+        "week1": 68.16,
+        "week2": 99.28,
+        "total": 167.44
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "Lucky Kamario",
+        "teamId": 2,
+        "week1": 90.7,
+        "week2": 75.0,
+        "total": 165.7
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 22.54,
+      "week2Swing": 24.28,
+      "finalMargin": 1.74,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "DANIEL JONES IS LITERALLY TRASH",
+        "teamId": 3,
+        "week1": 60.76,
+        "week2": 124.36,
+        "total": 185.12
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 132.36,
+        "week2": 64.92,
+        "total": 197.28
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 71.6,
+      "week2Swing": 59.44,
+      "finalMargin": 12.16,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "SAL is Literally Jesus",
+        "teamId": 4,
+        "week1": 66.4,
+        "week2": 90.6,
+        "total": 157.0
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 89.64,
+        "week2": 76.16,
+        "total": 165.8
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 23.24,
+      "week2Swing": 14.44,
+      "finalMargin": 8.8,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 71.22,
+        "week2": 105.54,
+        "total": 176.76
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 90.86,
+        "week2": 81.6,
+        "total": 172.46
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 19.64,
+      "week2Swing": 23.94,
+      "finalMargin": 4.3,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 75.42,
+        "week2": 121.3,
+        "total": 196.72
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Willy 3rd Place",
+        "teamId": 5,
+        "week1": 92.64,
+        "week2": 94.74,
+        "total": 187.38
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 17.22,
+      "week2Swing": 26.56,
+      "finalMargin": 9.34,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "DANIEL JONES IS LITERALLY TRASH",
+        "teamId": 3,
+        "week1": 107.88,
+        "week2": 117.06,
+        "total": 224.94
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "Lucky Kamario",
+        "teamId": 2,
+        "week1": 119.54,
+        "week2": 118.36,
+        "total": 237.9
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 11.66,
+      "week2Swing": -1.3,
+      "finalMargin": 12.96,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "SAL is Literally Jesus",
+        "teamId": 4,
+        "week1": 74.54,
+        "week2": 76.16,
+        "total": 150.7
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Willy 3rd Place",
+        "teamId": 5,
+        "week1": 121.38,
+        "week2": 66.4,
+        "total": 187.78
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 46.84,
+      "week2Swing": 9.76,
+      "finalMargin": 37.08,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 90.92,
+        "week2": 82.9,
+        "total": 173.82
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "teamId": 10,
+        "week1": 108.96,
+        "week2": 132.82,
+        "total": 241.78
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 18.04,
+      "week2Swing": -49.92,
+      "finalMargin": 67.96,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 109.36,
+        "week2": 100.18,
+        "total": 209.54
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 70.92,
+        "week2": 69.94,
+        "total": 140.86
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 38.44,
+      "week2Swing": -30.24,
+      "finalMargin": 68.68,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 107.68,
+        "week2": 96.32,
+        "total": 204.0
+      },
+      "away": {
+        "owner": "Bill Solecki",
+        "teamName": "Get CTE or Die Tryin",
+        "teamId": 1,
+        "week1": 121.3,
+        "week2": 81.56,
+        "total": 202.86
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 13.62,
+      "week2Swing": 14.76,
+      "finalMargin": 1.14,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "Down with the ( Covid) Sickness",
+        "teamId": 10,
+        "week1": 129.74,
+        "week2": 127.44,
+        "total": 257.18
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 89.06,
+        "week2": 104.42,
+        "total": 193.48
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 40.68,
+      "week2Swing": -23.02,
+      "finalMargin": 63.7,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Bucket, Mop; Macaroni, Pot",
+        "teamId": 1,
+        "week1": 139.68,
+        "week2": 130.64,
+        "total": 270.32
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "DANIEL JONES IS LITERALLY TRASH",
+        "teamId": 3,
+        "week1": 93.72,
+        "week2": 164.8,
+        "total": 258.52
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 45.96,
+      "week2Swing": 34.16,
+      "finalMargin": 11.8,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Barry Boxers",
+        "teamId": 5,
+        "week1": 136.06,
+        "week2": 121.12,
+        "total": 257.18
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "Fresh Prince of Helaire",
+        "teamId": 2,
+        "week1": 125.7,
+        "week2": 115.92,
+        "total": 241.62
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 10.36,
+      "week2Swing": -5.2,
+      "finalMargin": 15.56,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 130.34,
+        "week2": 119.96,
+        "total": 250.3
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 115.88,
+        "week2": 152.02,
+        "total": 267.9
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 14.46,
+      "week2Swing": 32.06,
+      "finalMargin": 17.6,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 126.12,
+        "week2": 117.82,
+        "total": 243.94
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Tua Time",
+        "teamId": 4,
+        "week1": 145.26,
+        "week2": 137.58,
+        "total": 282.84
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 19.14,
+      "week2Swing": -19.76,
+      "finalMargin": 38.9,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Bucket, Mop; Macaroni, Pot",
+        "teamId": 1,
+        "week1": 106.06,
+        "week2": 190.38,
+        "total": 296.44
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Tua Time",
+        "teamId": 4,
+        "week1": 137.02,
+        "week2": 162.66,
+        "total": 299.68
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 30.96,
+      "week2Swing": 27.72,
+      "finalMargin": 3.24,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Fresh Prince of Helaire",
+        "teamId": 2,
+        "week1": 118.26,
+        "week2": 110.9,
+        "total": 229.16
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 124.82,
+        "week2": 89.92,
+        "total": 214.74
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 6.56,
+      "week2Swing": 20.98,
+      "finalMargin": 14.42,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Barry Boxers",
+        "teamId": 5,
+        "week1": 111.34,
+        "week2": 85.1,
+        "total": 196.44
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Down with the ( Covid) Sickness",
+        "teamId": 10,
+        "week1": 44.62,
+        "week2": 115.64,
+        "total": 160.26
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 66.72,
+      "week2Swing": 30.54,
+      "finalMargin": 36.18,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 167.46,
+        "week2": 101.12,
+        "total": 268.58
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 87.42,
+        "week2": 149.76,
+        "total": 237.18
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 80.04,
+      "week2Swing": 48.64,
+      "finalMargin": 31.4,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2020,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 139.36,
+        "week2": 85.42,
+        "total": 224.78
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "DANIEL JONES IS LITERALLY TRASH",
+        "teamId": 3,
+        "week1": 112.42,
+        "week2": 117.94,
+        "total": 230.36
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 26.94,
+      "week2Swing": 32.52,
+      "finalMargin": 5.58,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "To See or Not Kelce",
+        "teamId": 2,
+        "week1": 105.6,
+        "week2": 104.46,
+        "total": 210.06
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Down with the ( Covid) Sickness",
+        "teamId": 10,
+        "week1": 79.68,
+        "week2": 117.54,
+        "total": 197.22
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 25.92,
+      "week2Swing": 13.08,
+      "finalMargin": 12.84,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Qaaron Rodgers",
+        "teamId": 3,
+        "week1": 141.18,
+        "week2": 70.66,
+        "total": 211.84
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 180.3,
+        "week2": 118.54,
+        "total": 298.84
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 39.12,
+      "week2Swing": -47.88,
+      "finalMargin": 87.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Belt Sanders",
+        "teamId": 4,
+        "week1": 92.3,
+        "week2": 121.54,
+        "total": 213.84
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 141.82,
+        "week2": 106.68,
+        "total": 248.5
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 49.52,
+      "week2Swing": 14.86,
+      "finalMargin": 34.66,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Bobby Boots",
+        "teamId": 5,
+        "week1": 100.24,
+        "week2": 107.78,
+        "total": 208.02
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 115.42,
+        "week2": 140.4,
+        "total": 255.82
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 15.18,
+      "week2Swing": -32.62,
+      "finalMargin": 47.8,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 127.02,
+        "week2": 71.26,
+        "total": 198.28
+      },
+      "away": {
+        "owner": "Bill Solecki",
+        "teamName": "Business Expert Nathan Fielder",
+        "teamId": 1,
+        "week1": 161.92,
+        "week2": 95.2,
+        "total": 257.12
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 34.9,
+      "week2Swing": -23.94,
+      "finalMargin": 58.84,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "Down with the ( Covid) Sickness",
+        "teamId": 10,
+        "week1": 88.06,
+        "week2": 113.66,
+        "total": 201.72
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "Qaaron Rodgers",
+        "teamId": 3,
+        "week1": 122.48,
+        "week2": 104.86,
+        "total": 227.34
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 34.42,
+      "week2Swing": 8.8,
+      "finalMargin": 25.62,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Business Expert Nathan Fielder",
+        "teamId": 1,
+        "week1": 143.36,
+        "week2": 147.5,
+        "total": 290.86
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "To See or Not Kelce",
+        "teamId": 2,
+        "week1": 159.7,
+        "week2": 198.24,
+        "total": 357.94
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 16.34,
+      "week2Swing": -50.74,
+      "finalMargin": 67.08,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Bobby Boots",
+        "teamId": 5,
+        "week1": 137.1,
+        "week2": 120.64,
+        "total": 257.74
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Belt Sanders",
+        "teamId": 4,
+        "week1": 132.44,
+        "week2": 103.18,
+        "total": 235.62
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 4.66,
+      "week2Swing": -17.46,
+      "finalMargin": 22.12,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 118.4,
+        "week2": 154.62,
+        "total": 273.02
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "DJ Khalad",
+        "teamId": 6,
+        "week1": 95.12,
+        "week2": 119.56,
+        "total": 214.68
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 23.28,
+      "week2Swing": -35.06,
+      "finalMargin": 58.34,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2021,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 84.98,
+        "week2": 83.5,
+        "total": 168.48
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 128.34,
+        "week2": 106.54,
+        "total": 234.88
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 43.36,
+      "week2Swing": -23.04,
+      "finalMargin": 66.4,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "#1 Best Weekly Meme Team",
+        "teamId": 1,
+        "week1": 91.38,
+        "week2": 161.96,
+        "total": 253.34
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 127.06,
+        "week2": 121.18,
+        "total": 248.24
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 35.68,
+      "week2Swing": 40.78,
+      "finalMargin": 5.1,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "My Ba ss Hurts",
+        "teamId": 2,
+        "week1": 143.98,
+        "week2": 131.8,
+        "total": 275.78
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "This Sauce Is Boss",
+        "teamId": 6,
+        "week1": 85.26,
+        "week2": 120.64,
+        "total": 205.9
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 58.72,
+      "week2Swing": -11.16,
+      "finalMargin": 69.88,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Sal's Infirmary",
+        "teamId": 3,
+        "week1": 82.06,
+        "week2": 128.12,
+        "total": 210.18
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Pop Rockin' Beats",
+        "teamId": 10,
+        "week1": 98.86,
+        "week2": 85.3,
+        "total": 184.16
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 16.8,
+      "week2Swing": 42.82,
+      "finalMargin": 26.02,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "S e m i C h u b b",
+        "teamId": 4,
+        "week1": 101.38,
+        "week2": 95.52,
+        "total": 196.9
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Dan Missed The Party",
+        "teamId": 5,
+        "week1": 112.4,
+        "week2": 100.7,
+        "total": 213.1
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 11.02,
+      "week2Swing": -5.18,
+      "finalMargin": 16.2,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 110.56,
+        "week2": 150.3,
+        "total": 260.86
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 122.52,
+        "week2": 114.58,
+        "total": 237.1
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 11.96,
+      "week2Swing": 35.72,
+      "finalMargin": 23.76,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "Pop Rockin' Beats",
+        "teamId": 10,
+        "week1": 78.66,
+        "week2": 201.88,
+        "total": 280.54
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 157.5,
+        "week2": 100.6,
+        "total": 258.1
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 78.84,
+      "week2Swing": 101.28,
+      "finalMargin": 22.44,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "My Ba ss Hurts",
+        "teamId": 2,
+        "week1": 148.1,
+        "week2": 82.36,
+        "total": 230.46
+      },
+      "away": {
+        "owner": "Bill Solecki",
+        "teamName": "#1 Best Weekly Meme Team",
+        "teamId": 1,
+        "week1": 116.88,
+        "week2": 57.4,
+        "total": 174.28
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 31.22,
+      "week2Swing": -24.96,
+      "finalMargin": 56.18,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Sal's Infirmary",
+        "teamId": 3,
+        "week1": 121.9,
+        "week2": 84.0,
+        "total": 205.9
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Dan Missed The Party",
+        "teamId": 5,
+        "week1": 154.56,
+        "week2": 66.2,
+        "total": 220.76
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 32.66,
+      "week2Swing": 17.8,
+      "finalMargin": 14.86,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "S e m i C h u b b",
+        "teamId": 4,
+        "week1": 90.1,
+        "week2": 106.98,
+        "total": 197.08
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "teamId": 9,
+        "week1": 102.34,
+        "week2": 193.88,
+        "total": 296.22
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 12.24,
+      "week2Swing": -86.9,
+      "finalMargin": 99.14,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2022,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 107.76,
+        "week2": 101.9,
+        "total": 209.66
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "This Sauce Is Boss",
+        "teamId": 6,
+        "week1": 135.4,
+        "week2": 94.3,
+        "total": 229.7
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 27.64,
+      "week2Swing": 7.6,
+      "finalMargin": 20.04,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "Pop Rockin' Beats",
+        "teamId": 10,
+        "week1": 89.2,
+        "week2": 116.24,
+        "total": 205.44
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 71.24,
+        "week2": 105.12,
+        "total": 176.36
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 17.96,
+      "week2Swing": -11.12,
+      "finalMargin": 29.08,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Why Anyone On The 415 Shuttle?",
+        "teamId": 1,
+        "week1": 138.12,
+        "week2": 136.88,
+        "total": 275.0
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 160.78,
+        "week2": 135.92,
+        "total": 296.7
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 22.66,
+      "week2Swing": 0.96,
+      "finalMargin": 21.7,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "My Ba ss Hurts",
+        "teamId": 2,
+        "week1": 125.08,
+        "week2": 95.72,
+        "total": 220.8
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "week1": 125.04,
+        "week2": 113.9,
+        "total": 238.94
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 0.04,
+      "week2Swing": 18.18,
+      "finalMargin": 18.14,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "week1": 115.72,
+        "week2": 160.46,
+        "total": 276.18
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Dan sits when he pees",
+        "teamId": 5,
+        "week1": 124.84,
+        "week2": 82.96,
+        "total": 207.8
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 9.12,
+      "week2Swing": 77.5,
+      "finalMargin": 68.38,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "This Sauce Is Boss",
+        "teamId": 6,
+        "week1": 154.64,
+        "week2": 123.84,
+        "total": 278.48
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Brady Sits When he Pees",
+        "teamId": 4,
+        "week1": 127.14,
+        "week2": 106.12,
+        "total": 233.26
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 27.5,
+      "week2Swing": -17.72,
+      "finalMargin": 45.22,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Why Anyone On The 415 Shuttle?",
+        "teamId": 1,
+        "week1": 80.7,
+        "week2": 114.6,
+        "total": 195.3
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 126.62,
+        "week2": 85.32,
+        "total": 211.94
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 45.92,
+      "week2Swing": 29.28,
+      "finalMargin": 16.64,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "My Ba ss Hurts",
+        "teamId": 2,
+        "week1": 110.54,
+        "week2": 98.38,
+        "total": 208.92
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Dan sits when he pees",
+        "teamId": 5,
+        "week1": 125.22,
+        "week2": 148.1,
+        "total": 273.32
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 14.68,
+      "week2Swing": -49.72,
+      "finalMargin": 64.4,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Sal DeRose",
+        "teamName": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "week1": 127.88,
+        "week2": 146.36,
+        "total": 274.24
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "week1": 143.5,
+        "week2": 111.9,
+        "total": 255.4
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 15.62,
+      "week2Swing": 34.46,
+      "finalMargin": 18.84,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Brady Sits When he Pees",
+        "teamId": 4,
+        "week1": 147.38,
+        "week2": 118.74,
+        "total": 266.12
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Pop Rockin' Beats",
+        "teamId": 10,
+        "week1": 136.7,
+        "week2": 102.06,
+        "total": 238.76
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 10.68,
+      "week2Swing": -16.68,
+      "finalMargin": 27.36,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2023,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "This Sauce Is Boss",
+        "teamId": 6,
+        "week1": 111.68,
+        "week2": 107.44,
+        "total": 219.12
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 103.74,
+        "week2": 134.28,
+        "total": 238.02
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 7.94,
+      "week2Swing": 26.84,
+      "finalMargin": 18.9,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "Pop Rockin' Beats",
+        "teamId": 10,
+        "week1": 178.46,
+        "week2": 171.84,
+        "total": 350.3
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 152.86,
+        "week2": 143.2,
+        "total": 296.06
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 25.6,
+      "week2Swing": -28.64,
+      "finalMargin": 54.24,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Turbo Team Termites",
+        "teamId": 1,
+        "week1": 142.1,
+        "week2": 168.46,
+        "total": 310.56
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Franoc knthall",
+        "teamId": 5,
+        "week1": 155.78,
+        "week2": 171.18,
+        "total": 326.96
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 13.68,
+      "week2Swing": -2.72,
+      "finalMargin": 16.4,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Pete Solecki",
+        "teamName": "We Tried Our Best",
+        "teamId": 6,
+        "week1": 113.3,
+        "week2": 150.3,
+        "total": 263.6
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "week1": 138.32,
+        "week2": 204.36,
+        "total": 342.68
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 25.02,
+      "week2Swing": -54.06,
+      "finalMargin": 79.08,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 111.62,
+        "week2": 105.2,
+        "total": 216.82
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Chili's Eat Fresh",
+        "teamId": 4,
+        "week1": 151.44,
+        "week2": 125.74,
+        "total": 277.18
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 39.82,
+      "week2Swing": -20.54,
+      "finalMargin": 60.36,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "week1": 181.38,
+        "week2": 169.34,
+        "total": 350.72
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "Takin the Browns to Super Bowl",
+        "teamId": 2,
+        "week1": 199.72,
+        "week2": 243.5,
+        "total": 443.22
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 18.34,
+      "week2Swing": -74.16,
+      "finalMargin": 92.5,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "Pop Rockin' Beats",
+        "teamId": 10,
+        "week1": 138.68,
+        "week2": 181.98,
+        "total": 320.66
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "Takin the Browns to Super Bowl",
+        "teamId": 2,
+        "week1": 214.64,
+        "week2": 171.68,
+        "total": 386.32
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 75.96,
+      "week2Swing": 10.3,
+      "finalMargin": 65.66,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Turbo Team Termites",
+        "teamId": 1,
+        "week1": 181.8,
+        "week2": 174.8,
+        "total": 356.6
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "week1": 150.04,
+        "week2": 143.42,
+        "total": 293.46
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 31.76,
+      "week2Swing": -31.38,
+      "finalMargin": 63.14,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Franoc knthall",
+        "teamId": 5,
+        "week1": 161.26,
+        "week2": 147.38,
+        "total": 308.64
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Chili's Eat Fresh",
+        "teamId": 4,
+        "week1": 187.42,
+        "week2": 180.08,
+        "total": 367.5
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 26.16,
+      "week2Swing": -32.7,
+      "finalMargin": 58.86,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 151.16,
+        "week2": 140.64,
+        "total": 291.8
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "We Tried Our Best",
+        "teamId": 6,
+        "week1": 132.62,
+        "week2": 141.96,
+        "total": 274.58
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 18.54,
+      "week2Swing": 1.32,
+      "finalMargin": 17.22,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2024,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "week1": 174.64,
+        "week2": 197.28,
+        "total": 371.92
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 162.38,
+        "week2": 138.42,
+        "total": 300.8
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 12.26,
+      "week2Swing": -58.86,
+      "finalMargin": 71.12,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "Pop Rockin' Beats",
+        "teamId": 10,
+        "week1": 123.8,
+        "week2": 165.1,
+        "total": 288.9
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "week1": 130.02,
+        "week2": 146.44,
+        "total": 276.46
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 6.22,
+      "week2Swing": 18.66,
+      "finalMargin": 12.44,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "RIP AC Shrader",
+        "teamId": 1,
+        "week1": 187.04,
+        "week2": 135.32,
+        "total": 322.36
+      },
+      "away": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Chili's Eat Fresh",
+        "teamId": 4,
+        "week1": 100.66,
+        "week2": 148.84,
+        "total": 249.5
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 86.38,
+      "week2Swing": 13.52,
+      "finalMargin": 72.86,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Chasing the Repeat",
+        "teamId": 2,
+        "week1": 111.64,
+        "week2": 138.3,
+        "total": 249.94
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "We Tried Our Best",
+        "teamId": 6,
+        "week1": 102.06,
+        "week2": 169.82,
+        "total": 271.88
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 9.58,
+      "week2Swing": 31.52,
+      "finalMargin": 21.94,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Josh Allen's Blueberries",
+        "teamId": 5,
+        "week1": 176.94,
+        "week2": 175.42,
+        "total": 352.36
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 90.66,
+        "week2": 111.5,
+        "total": 202.16
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 86.28,
+      "week2Swing": -63.92,
+      "finalMargin": 150.2,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 118.54,
+        "week2": 122.56,
+        "total": 241.1
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "week1": 92.7,
+        "week2": 124.9,
+        "total": 217.6
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 25.84,
+      "week2Swing": 2.34,
+      "finalMargin": 23.5,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "Pop Rockin' Beats",
+        "teamId": 10,
+        "week1": 117.96,
+        "week2": 106.02,
+        "total": 223.98
+      },
+      "away": {
+        "owner": "Pete Solecki",
+        "teamName": "We Tried Our Best",
+        "teamId": 6,
+        "week1": 156.76,
+        "week2": 106.18,
+        "total": 262.94
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 38.8,
+      "week2Swing": -0.16,
+      "finalMargin": 38.96,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Chasing the Repeat",
+        "teamId": 2,
+        "week1": 212.5,
+        "week2": 178.02,
+        "total": 390.52
+      },
+      "away": {
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I on the 415 Shuttle?",
+        "teamId": 9,
+        "week1": 160.5,
+        "week2": 140.0,
+        "total": 300.5
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 52.0,
+      "week2Swing": -38.02,
+      "finalMargin": 90.02,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Joe Jaramillo",
+        "teamName": "Chili's Eat Fresh",
+        "teamId": 4,
+        "week1": 99.4,
+        "week2": 90.58,
+        "total": 189.98
+      },
+      "away": {
+        "owner": "Sal DeRose",
+        "teamName": "Tommy F'n Cutlets",
+        "teamId": 3,
+        "week1": 80.4,
+        "week2": 61.8,
+        "total": 142.2
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 19.0,
+      "week2Swing": -28.78,
+      "finalMargin": 47.78,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Josh Allen's Blueberries",
+        "teamId": 5,
+        "week1": 99.5,
+        "week2": 113.98,
+        "total": 213.48
+      },
+      "away": {
+        "owner": "Bill Solecki",
+        "teamName": "RIP AC Shrader",
+        "teamId": 1,
+        "week1": 124.28,
+        "week2": 116.56,
+        "total": 240.84
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 24.78,
+      "week2Swing": -2.58,
+      "finalMargin": 27.36,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2025,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Ray Engleking",
+        "teamName": "The Other Team",
+        "teamId": 8,
+        "week1": 147.44,
+        "week2": 87.5,
+        "total": 234.94
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Titty Sprinkles",
+        "teamId": 7,
+        "week1": 141.46,
+        "week2": 122.98,
+        "total": 264.44
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 5.98,
+      "week2Swing": 35.48,
+      "finalMargin": 29.5,
+      "outcome": "COMEBACK"
+    }
+  ],
+  "meta": {
+    "twoWeekYears": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "oneWeekPlayoffYears": []
+  }
 }

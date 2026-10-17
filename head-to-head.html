@@ -337,6 +337,7 @@
             <a href="head-to-head.html" class="active">Head-to-Head</a>
             <a href="season-stats.html">Season Stats</a>
             <a href="league-history.html">League History</a>
+            <a href="two-week-playoffs.html">Two-Week Playoffs</a>
             <!--<a href="rosters.html">Rosters</a>-->
             <!--<a href="roasts.html">Roasts</a>-->
         </nav>
@@ -394,6 +395,22 @@
 			}
 			// For 2019+, link to specific matchup
 			return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&scoringPeriodId=${week}&seasonId=${year}&teamId=${teamId}&view=scoringperiod`;
+		}
+
+		// "Week 13" or, for a two-week playoff matchup, "Weeks 13\u201314"
+		function weekLabel(rec) {
+			const w = rec.weeks;
+			return (w && w.length > 1) ? `Weeks ${w[0]}\u2013${w[w.length - 1]}` : `Week ${rec.week}`;
+		}
+
+		// Find the matchup (and the actual scoring week) in which an owner posted a given single-week score
+		function findWeeklyGame(matchups, owner, target) {
+			for (const m of matchups) {
+				const side = m.home.owner === owner ? m.home : m.away;
+				const idx = side.weeklyScores.indexOf(target);
+				if (idx !== -1) return { ...m, week: m.weeks[idx] };
+			}
+			return null;
 		}
 
 		function populateSelectors() {
@@ -492,15 +509,8 @@
 			const owner2Name = owner2;
 
 			// Find specific games for superlatives
-			const highestScoreGame1 = h2h1.matchups.find(m => {
-				const myScore = m.home.owner === owner1 ? m.home.score : m.away.score;
-				return myScore === h2h1.highestScore;
-			});
-
-			const lowestScoreGame1 = h2h1.matchups.find(m => {
-				const myScore = m.home.owner === owner1 ? m.home.score : m.away.score;
-				return myScore === h2h1.lowestScore;
-			});
+			const highestScoreGame1 = findWeeklyGame(h2h1.matchups, owner1, h2h1.highestScore);
+			const lowestScoreGame1 = findWeeklyGame(h2h1.matchups, owner1, h2h1.lowestScore);
 
 			const biggestWinGame = h2h1.matchups.find(m => {
 				const isHome = m.home.owner === owner1;
@@ -537,7 +547,7 @@
 						<div class="stat-title">${owner1Name} - Points Scored</div>
 						<div class="stat-value">${h2h1.pointsFor.toFixed(2)}</div>
 						<p style="color: var(--text-secondary); margin-top: 5px;">
-							Avg: ${h2h1.avgPointsFor.toFixed(2)} per game
+							Avg: ${h2h1.avgPointsFor.toFixed(2)} per week
 						</p>
 					</div>
 
@@ -545,7 +555,7 @@
 						<div class="stat-title">${owner2Name} - Points Scored</div>
 						<div class="stat-value">${h2h2.pointsFor.toFixed(2)}</div>
 						<p style="color: var(--text-secondary); margin-top: 5px;">
-							Avg: ${h2h2.avgPointsFor.toFixed(2)} per game
+							Avg: ${h2h2.avgPointsFor.toFixed(2)} per week
 						</p>
 					</div>
 
@@ -553,7 +563,7 @@
 						<div class="stat-title">${owner1Name} - Points Against</div>
 						<div class="stat-value">${h2h1.pointsAgainst.toFixed(2)}</div>
 						<p style="color: var(--text-secondary); margin-top: 5px;">
-							Avg: ${h2h1.avgPointsAgainst.toFixed(2)} per game
+							Avg: ${h2h1.avgPointsAgainst.toFixed(2)} per week
 						</p>
 					</div>
 
@@ -561,12 +571,12 @@
 						<div class="stat-title">${owner2Name} - Points Against</div>
 						<div class="stat-value">${h2h2.pointsAgainst.toFixed(2)}</div>
 						<p style="color: var(--text-secondary); margin-top: 5px;">
-							Avg: ${h2h2.avgPointsAgainst.toFixed(2)} per game
+							Avg: ${h2h2.avgPointsAgainst.toFixed(2)} per week
 						</p>
 					</div>
 
 					<div class="stat-card">
-						<div class="stat-title">${owner1Name} - Highest Score</div>
+						<div class="stat-title">${owner1Name} - Highest Score (single week)</div>
 						<div class="stat-value">${h2h1.highestScore.toFixed(2)}</div>
 						${highestScoreGame1 ? `
 							<p style="color: var(--text-secondary); margin-top: 5px;">
@@ -579,7 +589,7 @@
 					</div>
 
 					<div class="stat-card">
-						<div class="stat-title">${owner1Name} - Lowest Score</div>
+						<div class="stat-title">${owner1Name} - Lowest Score (single week)</div>
 						<div class="stat-value">${h2h1.lowestScore.toFixed(2)}</div>
 						${lowestScoreGame1 ? `
 							<p style="color: var(--text-secondary); margin-top: 5px;">
@@ -598,8 +608,8 @@
 							<p style="color: var(--text-secondary); margin-top: 5px;">
 								<a href="${createMatchupLink(biggestWinGame.year, biggestWinGame.week, biggestWinGame.matchupPeriodId, biggestWinGame.home.owner === owner1 ? biggestWinGame.home.teamId : biggestWinGame.away.teamId)}" 
 								   target="_blank" style="color: var(--electric-blue);">
-									${biggestWinGame.year} Week ${biggestWinGame.week}
-								</a>
+									${biggestWinGame.year} ${weekLabel(biggestWinGame)}
+								</a>${biggestWinGame.isTwoWeek ? ' <em>(two-week matchup)</em>' : ''}
 							</p>
 						` : ''}
 					</div>
@@ -611,8 +621,8 @@
 							<p style="color: var(--text-secondary); margin-top: 5px;">
 								<a href="${createMatchupLink(closestWinGame.year, closestWinGame.week, closestWinGame.matchupPeriodId, closestWinGame.home.owner === owner1 ? closestWinGame.home.teamId : closestWinGame.away.teamId)}" 
 								   target="_blank" style="color: var(--electric-blue);">
-									${closestWinGame.year} Week ${closestWinGame.week}
-								</a>
+									${closestWinGame.year} ${weekLabel(closestWinGame)}
+								</a>${closestWinGame.isTwoWeek ? ' <em>(two-week matchup)</em>' : ''}
 							</p>
 						` : ''}
 					</div>
@@ -652,7 +662,7 @@
 									<div class="matchup-date">
 										<a href="${createMatchupLink(m.year, m.week, m.matchupPeriodId, isOwner1Home ? m.home.teamId : m.away.teamId)}" 
 										   target="_blank" style="color: var(--electric-blue); text-decoration: none;">
-											${m.year} Week ${m.week} ${m.isPlayoff ? '(Playoffs)' : ''}
+											${m.year} ${weekLabel(m)} ${m.isPlayoff ? '(Playoffs)' : ''}
 										</a>
 									</div>
 									<div class="matchup-score">
@@ -662,6 +672,9 @@
 								<div style="color: var(--text-secondary); font-size: 0.9rem;">
 									${isOwner1Home ? m.home.teamName : m.away.teamName} vs ${isOwner1Home ? m.away.teamName : m.home.teamName}
 								</div>
+								${m.isTwoWeek ? `<div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 3px;">
+									${m.weeks.map((w, i) => `Wk ${w}: ${(isOwner1Home ? m.home : m.away).weeklyScores[i].toFixed(2)} - ${(isOwner1Home ? m.away : m.home).weeklyScores[i].toFixed(2)}`).join(' &middot; ')} (two-week matchup)
+								</div>` : ''}
 							</div>
 						`;
 					}).join('')}

@@ -372,6 +372,7 @@
             <a href="head-to-head.html">Head-to-Head</a>
             <a href="season-stats.html">Season Stats</a>
             <a href="league-history.html">League History</a>
+            <a href="two-week-playoffs.html">Two-Week Playoffs</a>
             <!--<a href="rosters.html">Rosters</a>-->
             <!--<a href="roasts.html">Roasts</a>-->
         </nav>
@@ -414,8 +415,13 @@
                 let sloppyLeader = null;
                 for (const [owner, count] of Object.entries(sloppyTally)) {
                     if (!sloppyLeader || count > sloppyLeader.count) {
-                        sloppyLeader = { owner, count };
+                        sloppyLeader = { owners: [owner], count };
+                    } else if (count === sloppyLeader.count) {
+                        sloppyLeader.owners.push(owner);
                     }
+                }
+                if (sloppyLeader) {
+                    sloppyLeader.owner = sloppyLeader.owners.join(' / ') + (sloppyLeader.owners.length > 1 ? ' (tied)' : '');
                 }
 
                 renderStats(superlatives.regularSeason, sloppyLeader);
@@ -445,6 +451,22 @@
 			const teamId = record.teamId || record.winnerTeamId;
 			return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&scoringPeriodId=${week}&seasonId=${year}&teamId=${teamId}&view=scoringperiod`;
 		}
+
+        // Tie-aware display helpers: when several owners share a record, show all of them
+        function ownersText(stat) {
+            return (stat.tied && stat.owners && stat.owners.length > 1)
+                ? stat.owners.join(' / ') + ' (tied)'
+                : stat.owner;
+        }
+        function streakHolder(s) {
+            return (s.tied && s.owners && s.owners.length > 1)
+                ? s.owners.map(o => o.owner).join(' / ') + ' (tied)'
+                : s.owner;
+        }
+        function streakDetails(s) {
+            const list = (s.tied && s.owners && s.owners.length > 1) ? s.owners : [s];
+            return list.map(o => `${list.length > 1 ? `<strong>${o.owner}</strong>: ` : ''}${o.startYear} Week ${o.startWeek} - ${o.isOngoing ? 'Present' : `${o.endYear} Week ${o.endWeek}`}`).join('<br>');
+        }
 
         function renderStats(stats, sloppyLeader) {
             const container = document.getElementById('stats-container');
@@ -543,10 +565,9 @@
 						<div class="stat-icon">🔥</div>
 						<div class="stat-title">Longest Win Streak</div>
 						<div class="stat-value">${stats.longestWinStreak.length}</div>
-						<div class="stat-holder">${stats.longestWinStreak.owner}</div>
+						<div class="stat-holder">${streakHolder(stats.longestWinStreak)}</div>
 						<div class="stat-details">
-							${stats.longestWinStreak.startYear} Week ${stats.longestWinStreak.startWeek} - 
-							${stats.longestWinStreak.isOngoing ? 'Present' : `${stats.longestWinStreak.endYear} Week ${stats.longestWinStreak.endWeek}`}
+							${streakDetails(stats.longestWinStreak)}
 							<div class="badge">Regular Season Only</div>
 						</div>
 					</div>
@@ -555,10 +576,9 @@
 						<div class="stat-icon">💔</div>
 						<div class="stat-title">Longest Loss Streak</div>
 						<div class="stat-value">${stats.longestLossStreak.length}</div>
-						<div class="stat-holder">${stats.longestLossStreak.owner}</div>
+						<div class="stat-holder">${streakHolder(stats.longestLossStreak)}</div>
 						<div class="stat-details">
-							${stats.longestLossStreak.startYear} Week ${stats.longestLossStreak.startWeek} - 
-							${stats.longestLossStreak.isOngoing ? 'Present' : `${stats.longestLossStreak.endYear} Week ${stats.longestLossStreak.endWeek}`}
+							${streakDetails(stats.longestLossStreak)}
 							<div class="badge">Regular Season Only</div>
 						</div>
 					</div>
@@ -568,7 +588,7 @@
 						<div class="stat-icon">⭐</div>
 						<div class="stat-title">Most Weekly High Scores</div>
 						<div class="stat-value">${stats.mostWeeklyHighScores.count}</div>
-						<div class="stat-holder">${stats.mostWeeklyHighScores.owner}</div>
+						<div class="stat-holder">${ownersText(stats.mostWeeklyHighScores)}</div>
 						<div class="badge">Regular Season Only</div>
 					</div>
 
@@ -576,7 +596,7 @@
 						<div class="stat-icon">📉</div>
 						<div class="stat-title">Most Weekly Low Scores</div>
 						<div class="stat-value">${stats.mostWeeklyLowScores.count}</div>
-						<div class="stat-holder">${stats.mostWeeklyLowScores.owner}</div>
+						<div class="stat-holder">${ownersText(stats.mostWeeklyLowScores)}</div>
 						<div class="badge">Regular Season Only</div>
 					</div>
 

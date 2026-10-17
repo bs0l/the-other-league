@@ -650,6 +650,7 @@
         <a href="head-to-head.html">Head-to-Head</a>
         <a href="season-stats.html" class="active">Season Stats</a>
         <a href="league-history.html">League History</a>
+        <a href="two-week-playoffs.html">Two-Week Playoffs</a>
         <!--<a href="rosters.html">Rosters</a>-->
         <!--<a href="roasts.html">Roasts</a>-->
     </nav>
@@ -737,6 +738,26 @@
 
     function createStandingsLink(year) {
         return `https://fantasy.espn.com/football/league/standings?leagueId=${LEAGUE_ID}&seasonId=${year}`;
+    }
+
+    // "Wk 13" or, for a two-week playoff matchup, "Wk 13-14"
+    function weekLabelShort(rec) {
+        const w = rec.weeks;
+        return (w && w.length > 1) ? `Wk ${w[0]}\u2013${w[w.length - 1]}` : `Wk ${rec.week}`;
+    }
+
+    // Owners (with ties) and a link to each game for a "most weekly high/low scores" stat.
+    // 2019+ links straight to the matchup box score; 2018 and earlier link to that week's scoreboard.
+    function weeklyGamesHTML(stat, year) {
+        const owners = stat.owners || [stat.owner];
+        const games = stat.games || [];
+        return owners.map(o => {
+            const links = games.filter(g => g.owner === o)
+                .sort((a, b) => a.week - b.week)
+                .map(g => `<a href="${createBoxScoreLink({ year, week: g.week, matchupPeriodId: g.matchupPeriodId, teamId: g.teamId })}" target="_blank">Wk ${g.week}</a>`)
+                .join(', ');
+            return `<div style="margin-bottom:4px;"><span style="font-weight:700;">${o}</span>${links ? `<br>${links}` : ''}</div>`;
+        }).join('');
     }
 
     function firstName(fullName) {
@@ -850,7 +871,7 @@
                         <div class="stat-title">Closest Win</div>
                         <div class="stat-content">${season.closestWin.margin.toFixed(2)}</div>
                         <div class="stat-details">${season.closestWin.winner} vs ${season.closestWin.loser}<br>
-                            <a href="${createBoxScoreLink(season.closestWin)}" target="_blank">Wk ${season.closestWin.week}</a>
+                            <a href="${createBoxScoreLink(season.closestWin)}" target="_blank">${weekLabelShort(season.closestWin)}</a>${season.closestWin.isTwoWeek ? ' <em>(two-week matchup)</em>' : ''}
                         </div>
                     </div>` : ''}
 
@@ -859,7 +880,13 @@
                         <div class="stat-title">Biggest Blowout</div>
                         <div class="stat-content">${season.biggestBlowout.margin.toFixed(2)}</div>
                         <div class="stat-details">${season.biggestBlowout.winner} vs ${season.biggestBlowout.loser}<br>
-                            <a href="${createBoxScoreLink(season.biggestBlowout)}" target="_blank">Wk ${season.biggestBlowout.week}</a>
+                            <a href="${createBoxScoreLink(season.biggestBlowout)}" target="_blank">${weekLabelShort(season.biggestBlowout)}</a>
+                            ${season.biggestBlowoutTwoWeek ? `
+                            <div style="margin-top:6px; padding-top:6px; border-top:1px dashed rgba(255,215,0,0.35);">
+                                Two-week matchup record: <strong style="color:var(--gold);">${season.biggestBlowoutTwoWeek.margin.toFixed(2)}</strong><br>
+                                ${season.biggestBlowoutTwoWeek.winner} vs ${season.biggestBlowoutTwoWeek.loser}<br>
+                                <a href="${createBoxScoreLink(season.biggestBlowoutTwoWeek)}" target="_blank">${weekLabelShort(season.biggestBlowoutTwoWeek)}</a>
+                            </div>` : ''}
                         </div>
                     </div>` : ''}
 
@@ -899,22 +926,14 @@
                     <div class="stat-box">
                         <div class="stat-title">Most Weekly High Scores</div>
                         <div class="stat-content">${season.mostWeeklyHighScores.count}</div>
-                        <div class="stat-details">${(season.mostWeeklyHighScores.owners || [season.mostWeeklyHighScores.owner]).join(', ')}<br>
-                            ${(season.mostWeeklyHighScores.weeks || []).map(w =>
-                                `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
-                            ).join(', ')}
-                        </div>
+                        <div class="stat-details">${weeklyGamesHTML(season.mostWeeklyHighScores, season.year)}</div>
                     </div>` : ''}
 
                     ${season.mostWeeklyLowScores?.count ? `
                     <div class="stat-box">
                         <div class="stat-title">Most Weekly Low Scores</div>
                         <div class="stat-content">${season.mostWeeklyLowScores.count}</div>
-                        <div class="stat-details">${(season.mostWeeklyLowScores.owners || [season.mostWeeklyLowScores.owner]).join(', ')}<br>
-                            ${(season.mostWeeklyLowScores.weeks || []).map(w =>
-                                `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
-                            ).join(', ')}
-                        </div>
+                        <div class="stat-details">${weeklyGamesHTML(season.mostWeeklyLowScores, season.year)}</div>
                     </div>` : ''}
 
 
@@ -1150,6 +1169,7 @@
                 const noData = k.verdict === 'NO_DATA';
                 const isTBD  = k.verdict === 'TBD';
                 const dim    = noData || isTBD;
+                const hasLivePts = isTBD && k.pointsScored != null;   // in-progress season: points so far
 
                 // Verdict badge
                 let badgeHTML;
@@ -1189,22 +1209,25 @@
 
                 return `<tr>
                     <td>
-                        <div class="keeper-player${dim ? ' num-dim' : ''}">${k.player}</div>
+                        <div class="keeper-player${dim && !hasLivePts ? ' num-dim' : ''}">${k.player}</div>
                         <div class="keeper-owner">${k.owner}</div>
                         ${droppedHTML}
                         ${noteHTML}
                     </td>
                     <td class="col-num"${dimClass}>Rd ${k.roundKept}</td>
-                    <td class="col-num col-avg"${dimClass}>${dim ? pendingText : k.pointsScored != null ? k.pointsScored.toFixed(1) : '—'}</td>
+                    <td class="col-num col-avg"${dimClass}>${hasLivePts ? k.pointsScored.toFixed(1) : dim ? pendingText : k.pointsScored != null ? k.pointsScored.toFixed(1) : '—'}</td>
                     <td class="col-num col-avg"${dimClass}>${dim ? pendingText : k.roundAvgPoints != null ? k.roundAvgPoints.toFixed(1) : '—'}</td>
                     <td class="col-num col-vsavg">${vsAvgHTML}</td>
                     <td>${badgeHTML}</td>
                 </tr>`;
             }).join('');
 
+            const throughWk = (keepers.find(k => k.pointsThroughWeek) || {}).pointsThroughWeek;
+
             return `
             <div class="keeper-panel" data-year="${year}">
                 <div class="keeper-year-header">${year} Keepers</div>
+                ${throughWk ? `<div class="keeper-section-note">Points through Week ${throughWk}. Round average and verdicts post once the regular season is complete.</div>` : ''}
                 <div class="keeper-table-wrap">
                     <table class="keeper-table">
                         <thead>

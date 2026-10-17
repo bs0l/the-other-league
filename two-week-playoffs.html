@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Week Playoffs - The Other League</title>
+    <style>
+        :root {
+            --electric-blue: #00d4ff;
+            --gold: #ffd700;
+            --dark-bg: #0a0e27;
+            --card-bg: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --win: #00ff64;
+            --loss: #ff6b6b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 215, 0, 0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle { font-size: 1.2rem; color: var(--text-secondary); }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            padding: 12px 25px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            font-size: 0.98rem;
+            text-align: center;
+        }
+        .intro strong { color: var(--text); }
+
+        .filter-pills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .filter-pill {
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 212, 255, 0.35);
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: rgba(0, 212, 255, 0.06);
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .filter-pill:hover { border-color: var(--electric-blue); color: var(--electric-blue); }
+        .filter-pill.active {
+            background: var(--electric-blue);
+            border-color: var(--electric-blue);
+            color: var(--dark-bg);
+            font-weight: 700;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 22px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 26px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 212, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--electric-blue), var(--gold));
+        }
+        .stat-title {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--electric-blue);
+            margin-bottom: 10px;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+        .stat-value.gold { color: var(--gold); }
+        .stat-details {
+            color: var(--text-secondary);
+            font-size: 0.93rem;
+            line-height: 1.55;
+        }
+        .stat-details a { color: var(--electric-blue); text-decoration: none; font-weight: 600; }
+        .stat-details a:hover { text-decoration: underline; }
+
+        .section {
+            background: var(--card-bg);
+            padding: 28px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 215, 0, 0.25);
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .section-note {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            text-align: center;
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+
+        .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        th {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-secondary);
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            white-space: nowrap;
+        }
+        th.num, td.num { text-align: right; }
+        td { padding: 8px 10px; vertical-align: middle; }
+        tr.matchup-top td { border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        tr.matchup-top td.merged, tr.matchup-bottom td.merged { vertical-align: middle; }
+        tr.matchup-top:hover td, tr.matchup-bottom:hover td { background: rgba(0, 212, 255, 0.04); }
+        .team-owner { font-weight: 700; }
+        .team-name { display: block; font-size: 0.74rem; color: var(--text-secondary); }
+        .led-week1 { color: var(--gold); font-size: 0.72rem; margin-left: 6px; }
+        .winner-total { color: var(--win); font-weight: 700; }
+        .loser-total { color: var(--text-secondary); }
+        .week-cell-lead { color: var(--gold); font-weight: 700; }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            white-space: nowrap;
+        }
+        .badge-comeback { background: rgba(255, 215, 0, 0.16); color: var(--gold); border: 1px solid rgba(255, 215, 0, 0.4); }
+        .badge-held     { background: rgba(0, 212, 255, 0.1); color: var(--electric-blue); border: 1px solid rgba(0, 212, 255, 0.3); }
+        .badge-tie      { background: rgba(255, 255, 255, 0.08); color: var(--text-secondary); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .bracket-tag { font-size: 0.72rem; color: var(--text-secondary); display: block; margin-top: 4px; }
+        .result-detail { font-size: 0.74rem; color: var(--text-secondary); display: block; margin-top: 4px; }
+
+        .loading { text-align: center; padding: 100px 20px; font-size: 1.5rem; color: var(--text-secondary); }
+        .error {
+            background: rgba(255, 50, 50, 0.1);
+            border: 2px solid rgba(255, 50, 50, 0.5);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            color: #ff6b6b;
+        }
+        a { color: var(--electric-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ── Pinned hamburger button ── */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 12px; }
+            h1 { font-size: 2rem; }
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
+            .subtitle { font-size: 1rem; }
+            .intro { font-size: 0.88rem; margin-bottom: 20px; }
+
+            .nav-toggle { display: flex; }
+
+            nav#mainNav {
+                position: fixed;
+                top: 0; right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                margin-bottom: 0;
+            }
+            nav#mainNav.collapsed { transform: translateX(110%); }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
+
+            .filter-pill { padding: 6px 12px; font-size: 0.8rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 24px; }
+            .stat-card { padding: 14px 12px; border-radius: 10px; }
+            .stat-title { font-size: 0.72rem; margin-bottom: 6px; letter-spacing: 0.5px; }
+            .stat-value { font-size: 1.8rem; margin-bottom: 8px; }
+            .stat-details { font-size: 0.8rem; line-height: 1.4; }
+            .section { padding: 16px 10px; }
+            .section h2 { font-size: 1.5rem; }
+            table { font-size: 0.8rem; }
+            th, td { padding: 6px 6px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <div class="container">
+        <header>
+            <h1>Two-Week Playoffs</h1>
+            <div class="subtitle">Was spending two weeks on a playoff matchup ever worth it?</div>
+        </header>
+
+        <nav id="mainNav">
+            <a href="index.html">All-Time Records</a>
+            <a href="regular-season.html">Regular Season</a>
+            <a href="teams.html">Owner Stats</a>
+            <a href="head-to-head.html">Head-to-Head</a>
+            <a href="season-stats.html">Season Stats</a>
+            <a href="league-history.html">League History</a>
+            <a href="two-week-playoffs.html" class="active">Two-Week Playoffs</a>
+        </nav>
+
+        <div id="content">
+            <div class="loading">Loading two-week playoff data...</div>
+        </div>
+    </div>
+
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+               width:42px; height:42px; border-radius:50%;
+               border:2px solid var(--electric-blue);
+               background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+               color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+               box-shadow:0 4px 16px rgba(0,212,255,0.3);">
+        ↑
+    </button>
+
+    <script>
+        const LEAGUE_ID = 1517226;
+        let data = null;
+        let filter = 'all';      // 'all' | 'winners' | 'others'
+
+        const BRACKET_LABELS = {
+            'WINNERS_BRACKET': "Winners' bracket",
+            'WINNERS_CONSOLATION_LADDER': "Winners' consolation",
+            'LOSERS_CONSOLATION_LADDER': 'Consolation bracket'
+        };
+
+        function matchupLink(r) {
+            const week = r.weeks[0];
+            if (r.year < 2019) {
+                return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${r.matchupPeriodId}&seasonId=${r.year}`;
+            }
+            return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${r.matchupPeriodId}&scoringPeriodId=${week}&seasonId=${r.year}&teamId=${r.home.teamId}&view=scoringperiod`;
+        }
+
+        function yearsText(years) {
+            if (!years.length) return '';
+            const contiguous = years.every((y, i) => i === 0 || y === years[i - 1] + 1);
+            return contiguous && years.length > 1
+                ? `${years[0]}\u2013${years[years.length - 1]}`
+                : years.join(', ');
+        }
+
+        function filteredRows() {
+            const rows = data.matchups;
+            if (filter === 'winners') return rows.filter(r => r.isWinnersBracket);
+            if (filter === 'others') return rows.filter(r => !r.isWinnersBracket);
+            return rows;
+        }
+
+        function summarize(rows) {
+            const decided = rows.filter(r => r.week1Leader);
+            const comebacks = decided.filter(r => r.outcome === 'COMEBACK');
+            const held = decided.filter(r => r.outcome === 'HELD');
+            const tiedOverall = decided.filter(r => r.outcome === 'TIED');
+            const avg = list => list.length ? list.reduce((s, r) => s + r.week1Lead, 0) / list.length : null;
+            const largest = comebacks.reduce((best, r) => (!best || r.week1Lead > best.week1Lead) ? r : best, null);
+            return { rows, decided, comebacks, held, tiedOverall, largest,
+                     avgOvercome: avg(comebacks), avgHeld: avg(held) };
+        }
+
+        function pct(n, d) { return d ? `${Math.round(n / d * 100)}%` : '\u2014'; }
+        function fmt(n) { return n === null || n === undefined ? '\u2014' : n.toFixed(2); }
+
+        function render() {
+            const rows = filteredRows();
+            const s = summarize(rows);
+            const meta = data.meta;
+            const titles = { all: 'every two-week matchup', winners: "winners' bracket matchups", others: 'consolation and third-place matchups' };
+            const champs = rows.filter(r => r.isChampionship);
+            const champComebacks = champs.filter(r => r.outcome === 'COMEBACK');
+            const largest = s.largest;
+
+            const cards = `
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-title">Two-Week Matchups</div>
+                        <div class="stat-value">${rows.length}</div>
+                        <div class="stat-details">${titles[filter]}${s.rows.length - s.decided.length ? `<br>${s.rows.length - s.decided.length} tied after week 1 (not counted below)` : ''}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Week 1 Leader Lost</div>
+                        <div class="stat-value gold">${s.comebacks.length} of ${s.decided.length}</div>
+                        <div class="stat-details">${pct(s.comebacks.length, s.decided.length)} of matchups were won by the team that trailed after week 1 &mdash; week 2 decided these.</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Week 1 Leader Held On</div>
+                        <div class="stat-value">${s.held.length} of ${s.decided.length}</div>
+                        <div class="stat-details">${pct(s.held.length, s.decided.length)} of matchups ended the way week 1 did${s.tiedOverall.length ? `<br>${s.tiedOverall.length} finished tied overall` : ''}.</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Largest Comeback</div>
+                        <div class="stat-value">${largest ? largest.week1Lead.toFixed(2) : '\u2014'}</div>
+                        <div class="stat-details">${largest ? `${largest[largest.winner].owner} overcame a week-1 deficit to ${largest[largest.week1Leader].owner}<br>
+                            <a href="${matchupLink(largest)}" target="_blank">${largest.year} Weeks ${largest.weeks[0]}&ndash;${largest.weeks[1]}</a>` : 'No comebacks in this group'}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Typical Week 1 Lead</div>
+                        <div class="stat-value">${fmt(s.avgHeld)}</div>
+                        <div class="stat-details">average lead that held &middot; average lead overcome in a comeback: <strong>${fmt(s.avgOvercome)}</strong></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Championship Round</div>
+                        <div class="stat-value">${champs.length ? `${champComebacks.length} of ${champs.length}` : '\u2014'}</div>
+                        <div class="stat-details">${champs.length ? `title games won by the team that trailed after week 1${champComebacks.length ? `<br>${champComebacks.map(r => `${r.year}: ${r[r.winner].owner}`).join(', ')}` : ''}` : 'Only in the winners\u2019 bracket view'}</div>
+                    </div>
+                </div>`;
+
+            // Year-by-year
+            const yearRows = meta.twoWeekYears.map(y => {
+                const ys = summarize(rows.filter(r => r.year === y));
+                return `<tr>
+                    <td><strong>${y}</strong></td>
+                    <td class="num">${ys.rows.length}</td>
+                    <td class="num">${ys.comebacks.length}</td>
+                    <td class="num">${ys.held.length}</td>
+                    <td class="num">${ys.rows.length - ys.decided.length + ys.tiedOverall.length}</td>
+                </tr>`;
+            }).join('');
+
+            // Matchup table (newest first)
+            const body = [...rows].sort((a, b) => b.year - a.year || a.matchupPeriodId - b.matchupPeriodId).map(r => {
+                const outcomeBadge = r.outcome === 'COMEBACK' ? '<span class="badge badge-comeback">COMEBACK</span>'
+                    : r.outcome === 'HELD' ? '<span class="badge badge-held">LEAD HELD</span>'
+                    : '<span class="badge badge-tie">TIE</span>';
+                let detail = '';
+                if (r.outcome === 'COMEBACK') {
+                    detail = `${r[r.winner].owner} trailed by ${r.week1Lead.toFixed(2)} after week 1, then outscored ${r[r.week1Leader].owner} by ${r.week2Swing.toFixed(2)} in week 2`;
+                } else if (r.outcome === 'HELD') {
+                    detail = `${r[r.winner].owner} led by ${r.week1Lead.toFixed(2)} after week 1${r.week2Swing > 0 ? ` and was outscored by ${r.week2Swing.toFixed(2)} in week 2, but held on` : ''}`;
+                } else if (r.outcome === 'WEEK1_TIE') {
+                    detail = 'Tied after week 1';
+                } else {
+                    detail = 'Finished tied overall';
+                }
+                const roundLabel = r.isChampionship ? 'Championship' : `Round ${r.round}`;
+                const sideRow = (side, isTop) => {
+                    const t = r[side];
+                    const isLeader = r.week1Leader === side;
+                    const isWinner = r.winner === side;
+                    const other = r[side === 'home' ? 'away' : 'home'];
+                    return `<tr class="${isTop ? 'matchup-top' : 'matchup-bottom'}">
+                        ${isTop ? `<td class="merged" rowspan="2"><strong>${r.year}</strong><span class="bracket-tag">${roundLabel}</span></td>
+                        <td class="merged" rowspan="2">${BRACKET_LABELS[r.bracket] || r.bracket}</td>` : ''}
+                        <td><span class="team-owner">${t.owner}</span>${isLeader ? '<span class="led-week1">led wk 1</span>' : ''}<span class="team-name">${t.teamName}</span></td>
+                        <td class="num ${t.week1 > other.week1 ? 'week-cell-lead' : ''}">${t.week1.toFixed(2)}</td>
+                        <td class="num ${t.week2 > other.week2 ? 'week-cell-lead' : ''}">${t.week2.toFixed(2)}</td>
+                        <td class="num ${isWinner ? 'winner-total' : 'loser-total'}">${t.total.toFixed(2)}</td>
+                        ${isTop ? `<td class="merged" rowspan="2">${outcomeBadge}<span class="result-detail">${detail}</span><span class="result-detail"><a href="${matchupLink(r)}" target="_blank">ESPN scoreboard</a></span></td>` : ''}
+                    </tr>`;
+                };
+                return sideRow('home', true) + sideRow('away', false);
+            }).join('');
+
+            document.getElementById('results').innerHTML = `
+                ${cards}
+                <div class="section">
+                    <h2>Year by Year</h2>
+                    <div class="table-wrap"><table>
+                        <thead><tr><th>Season</th><th class="num">Matchups</th><th class="num">Comebacks</th><th class="num">Lead held</th><th class="num">Ties</th></tr></thead>
+                        <tbody>${yearRows}</tbody>
+                    </table></div>
+                </div>
+                <div class="section">
+                    <h2>Every Two-Week Matchup</h2>
+                    <div class="table-wrap"><table>
+                        <thead><tr><th>Season</th><th>Bracket</th><th>Team</th><th class="num">Week 1</th><th class="num">Week 2</th><th class="num">Total</th><th>Result</th></tr></thead>
+                        <tbody>${body}</tbody>
+                    </table></div>
+                    <div class="section-note">Gold scores mark the higher score each week. A comeback is a team that trailed after week 1 and won on the combined two-week total.</div>
+                </div>`;
+        }
+
+        function setFilter(f) {
+            filter = f;
+            document.querySelectorAll('.filter-pill').forEach(p => p.classList.toggle('active', p.dataset.filter === f));
+            render();
+        }
+
+        async function loadData() {
+            try {
+                data = await fetch('output/two_week_playoff_analysis.json').then(r => r.json());
+                const years = data.meta.twoWeekYears;
+                const oneWeek = data.meta.oneWeekPlayoffYears;
+                const total = data.summary.all.matchups;
+                const winners = data.summary.winnersBracket.matchups;
+                document.getElementById('content').innerHTML = `
+                    <p class="intro">
+                        Playoff matchups in <strong>${yearsText(years)}</strong> were decided on the <strong>combined score of two weeks</strong>;
+                        ${oneWeek.length ? 'in the other seasons they were a single week.' : ''}
+                        The question: when a team was <strong>losing after week 1</strong>, did it ever make up the difference in week 2 &mdash;
+                        or was the second week just a formality? Below are all <strong>${total}</strong> two-week matchups
+                        (${winners} in the winners&rsquo; bracket, the rest consolation and third-place games), each compared week by week.
+                        With a sample this small, read the counts as well as the percentages.
+                    </p>
+                    <div class="filter-pills">
+                        <span class="filter-pill active" data-filter="all" onclick="setFilter('all')">All matchups</span>
+                        <span class="filter-pill" data-filter="winners" onclick="setFilter('winners')">Winners&rsquo; bracket</span>
+                        <span class="filter-pill" data-filter="others" onclick="setFilter('others')">Consolation &amp; third place</span>
+                    </div>
+                    <div id="results"></div>`;
+                render();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('content').innerHTML = `
+                    <div class="error">
+                        <h2>Error Loading Data</h2>
+                        <p>Could not load the two-week playoff analysis.</p>
+                        <p>Error: ${error.message}</p>
+                    </div>`;
+            }
+        }
+
+        // ── Hamburger nav + overlay ──
+        (function () {
+            const btn     = document.getElementById('navToggle');
+            const nav     = document.getElementById('mainNav');
+            const overlay = document.getElementById('navOverlay');
+            if (!btn || !nav || !overlay) return;
+
+            function isMobile() { return window.innerWidth <= 768; }
+
+            function closeNav() {
+                nav.classList.add('collapsed');
+                btn.setAttribute('aria-expanded', 'false');
+                overlay.style.display = 'none';
+            }
+
+            function applyState() {
+                if (isMobile()) {
+                    btn.style.display = 'flex';
+                } else {
+                    btn.style.display = 'none';
+                    nav.classList.remove('collapsed');
+                    overlay.style.display = 'none';
+                }
+            }
+
+            btn.addEventListener('click', function () {
+                const nowCollapsed = nav.classList.toggle('collapsed');
+                btn.setAttribute('aria-expanded', String(!nowCollapsed));
+                overlay.style.display = nowCollapsed ? 'none' : 'block';
+            });
+
+            overlay.addEventListener('click', closeNav);
+
+            if (isMobile()) nav.classList.add('collapsed');
+            applyState();
+            window.addEventListener('resize', applyState);
+        })();
+
+        // ── Back to top ──
+        window.addEventListener('scroll', function () {
+            const btt = document.getElementById('backToTop');
+            if (btt) btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+
+        loadData();
+    </script>
+</body>
+</html>

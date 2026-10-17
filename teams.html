@@ -176,6 +176,16 @@
             opacity: 0.5;
         }
 
+        .team-logo-fallback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            color: var(--electric-blue);
+        }
+
         .team-header {
             margin-bottom: 20px;
             padding-bottom: 15px;
@@ -281,6 +291,15 @@
             position: relative;
             height: 200px;
             margin: 20px 0;
+        }
+
+        .chart-note {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-align: center;
+            font-style: italic;
+            margin-top: -8px;
+            margin-bottom: 8px;
         }
 
         .yearly-grid {
@@ -467,6 +486,7 @@
             .team-card { padding: 18px 16px; }
 
             .team-logo { width: 44px; height: 44px; top: 12px; right: 12px; }
+            .team-logo-fallback { font-size: 1.1rem; }
             .team-name { font-size: 1.2rem; padding-right: 52px; }
             .team-abbrev { font-size: 0.82rem; }
 
@@ -504,6 +524,7 @@
             <a href="head-to-head.html">Head-to-Head</a>
             <a href="season-stats.html">Season Stats</a>
             <a href="league-history.html">League History</a>
+            <a href="two-week-playoffs.html">Two-Week Playoffs</a>
             <!--<a href="rosters.html">Rosters</a>-->
             <!--<a href="roasts.html">Roasts</a>-->
         </nav>
@@ -682,6 +703,18 @@
             });
         }
 
+        // Initials badge shown when a team has no logo or its image fails to load
+        function teamInitials(name) {
+            const letters = String(name || '').split(/\s+/).map(w => (w.match(/[A-Za-z0-9]/) || [''])[0]).filter(Boolean);
+            return (letters.slice(0, 2).join('') || '?').toUpperCase();
+        }
+        function logoFallback(img) {
+            const badge = document.createElement('div');
+            badge.className = 'team-logo team-logo-fallback';
+            badge.textContent = img.dataset.initials || '?';
+            img.replaceWith(badge);
+        }
+
         function createTeamCard(team) {
             if (!team.owner) return '<div class="stat-card"><div class="stat-row">Error: Missing owner data</div></div>';
 
@@ -716,10 +749,13 @@
                 }).join('') : '';
 
             const chartId = `chart-${team.owner.replace(/[^a-zA-Z0-9]/g, '_')}`;
+            const inProgressYear = team.yearlyRecords
+                ? Object.entries(team.yearlyRecords).find(([y, r]) => r.seasonComplete === false)
+                : null;
 
             return `
                 <div class="team-card ${inactiveClass}">
-                    ${team.logoUrl ? `<img src="${team.logoUrl}" alt="${team.teamName}" class="team-logo" onerror="this.style.display='none'">` : ''}
+                    ${team.logoUrl ? `<img src="${team.logoUrl}" alt="${team.teamName}" class="team-logo" data-initials="${teamInitials(team.teamName)}" onerror="logoFallback(this)">` : `<div class="team-logo team-logo-fallback">${teamInitials(team.teamName)}</div>`}
                     <div class="team-header">
                         <div class="team-name">${team.teamName}${inactiveBadge}</div>
                         <div class="team-abbrev">
@@ -747,10 +783,11 @@
                         <span class="stat-value">${team.playoffs.wins}-${team.playoffs.losses} (${(team.playoffs.winPercentage * 100).toFixed(1)}%)</span>
                     </div>
 
-                    <div class="section-title">Yearly Performance</div>
+                    <div class="section-title">Yearly Performance (regular-season win %)</div>
                     <div class="chart-container">
                         <canvas id="${chartId}"></canvas>
                     </div>
+                    ${inProgressYear ? `<div class="chart-note">Dashed segment: ${inProgressYear[0]} is in progress (${inProgressYear[1].regularSeasonWins}-${inProgressYear[1].regularSeasonLosses} so far)</div>` : ''}
 
                     <div class="section-title">Championships</div>
                     <div class="stat-row">
@@ -772,7 +809,7 @@
                         <span class="stat-value ${currentSort === 'pointsFor' ? 'highlight' : ''}">${team.totalPointsFor.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">Avg Points For</span>
+                        <span class="stat-label">Avg Points For (per week)</span>
                         <span class="stat-value ${currentSort === 'avgPoints' ? 'highlight' : ''}">${team.avgPointsFor.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
@@ -780,15 +817,15 @@
                         <span class="stat-value ${currentSort === 'pointsAgainst' ? 'highlight' : ''}">${team.totalPointsAgainst.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">Avg Points Against</span>
+                        <span class="stat-label">Avg Points Against (per week)</span>
                         <span class="stat-value">${team.avgPointsAgainst.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">Highest Score</span>
+                        <span class="stat-label">Highest Score (single week)</span>
                         <span class="stat-value">${team.highestScore.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">Lowest Score</span>
+                        <span class="stat-label">Lowest Score (single week)</span>
                         <span class="stat-value">${team.lowestScore.toFixed(2)}</span>
                     </div>
 
@@ -882,8 +919,13 @@
             if (!team.yearlyRecords) return;
 
             const years = Object.keys(team.yearlyRecords).sort();
-            const wins   = years.map(y => team.yearlyRecords[y].regularSeasonWins ?? team.yearlyRecords[y].wins);
-            const losses = years.map(y => team.yearlyRecords[y].regularSeasonLosses ?? team.yearlyRecords[y].losses);
+            const rec = y => team.yearlyRecords[y];
+            const wins   = years.map(y => rec(y).regularSeasonWins ?? rec(y).wins);
+            const losses = years.map(y => rec(y).regularSeasonLosses ?? rec(y).losses);
+            // Win % (not raw wins) so seasons of different lengths compare, and a
+            // season still in progress doesn't look like a collapse
+            const winPct = years.map((y, i) => (wins[i] + losses[i]) > 0 ? wins[i] / (wins[i] + losses[i]) : null);
+            const inProgress = years.map(y => rec(y).seasonComplete === false);
 
             const chartId = `chart-${team.owner.replace(/[^a-zA-Z0-9]/g, '_')}`;
             const ctx = document.getElementById(chartId);
@@ -897,19 +939,18 @@
                 data: {
                     labels: years,
                     datasets: [{
-                        label: 'Wins',
-                        data: wins,
-                        borderColor: '#00ff64',
-                        backgroundColor: 'rgba(0, 255, 100, 0.1)',
+                        label: 'Regular-season win %',
+                        data: winPct,
+                        borderColor: '#00d4ff',
+                        backgroundColor: 'rgba(0, 212, 255, 0.1)',
                         tension: 0.3,
-                        yAxisID: 'y'
-                    }, {
-                        label: 'Losses',
-                        data: losses,
-                        borderColor: '#ff6b6b',
-                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
-                        tension: 0.3,
-                        yAxisID: 'y'
+                        spanGaps: true,
+                        pointRadius: 4,
+                        pointBorderWidth: 2,
+                        pointBorderColor: '#00d4ff',
+                        // A season in progress: hollow marker, dashed segment leading to it
+                        pointBackgroundColor: c => inProgress[c.dataIndex] ? 'transparent' : '#00d4ff',
+                        segment: { borderDash: c => inProgress[c.p1DataIndex] ? [6, 4] : undefined }
                     }]
                 },
                 options: {
@@ -917,22 +958,22 @@
                     maintainAspectRatio: false,
                     interaction: { mode: 'index', intersect: false },
                     plugins: {
-                        legend: { labels: { color: '#ffffff', font: { size: 11 } } }
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: c => {
+                                    const i = c.dataIndex;
+                                    return `${(c.parsed.y * 100).toFixed(1)}% (${wins[i]}-${losses[i]}${inProgress[i] ? ', in progress' : ''})`;
+                                }
+                            }
+                        }
                     },
                     scales: {
                         y: {
-                            type: 'linear',
-                            display: true,
-                            position: 'left',
-                            ticks: { color: '#ffffff' },
+                            min: 0,
+                            max: 1,
+                            ticks: { color: '#ffffff', callback: v => `${Math.round(v * 100)}%` },
                             grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                        },
-                        y1: {
-                            type: 'linear',
-                            display: false,
-                            position: 'right',
-                            ticks: { color: '#ffffff' },
-                            grid: { drawOnChartArea: false }
                         },
                         x: {
                             ticks: { color: '#ffffff' },

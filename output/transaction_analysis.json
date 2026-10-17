@@ -114,15 +114,15 @@
     ],
     "2026": [
       {
-        "player": "Eddy Pineiro",
-        "count": 2
-      },
-      {
-        "player": "Geno Smith",
-        "count": 2
-      },
-      {
         "player": "Ka'imi Fairbairn",
+        "count": 3
+      },
+      {
+        "player": "Jaguars D/ST",
+        "count": 2
+      },
+      {
+        "player": "Eddy Pineiro",
         "count": 2
       }
     ]
@@ -1140,15 +1140,15 @@
       ],
       "Daniel Keating": [
         {
+          "player": "Ka'imi Fairbairn",
+          "count": 2
+        },
+        {
           "player": "Jalen Coker",
           "count": 1
         },
         {
           "player": "Jaguars D/ST",
-          "count": 1
-        },
-        {
-          "player": "Michael Wilson",
           "count": 1
         }
       ],
@@ -1188,6 +1188,10 @@
         {
           "player": "Michael Mayer",
           "count": 1
+        },
+        {
+          "player": "Alec Pierce",
+          "count": 1
         }
       ],
       "Ben Bingert": [
@@ -1197,6 +1201,10 @@
         },
         {
           "player": "KC Concepcion",
+          "count": 1
+        },
+        {
+          "player": "Bears D/ST",
           "count": 1
         }
       ],
@@ -1241,6 +1249,14 @@
       "Randell Crawford": [
         {
           "player": "Geno Smith",
+          "count": 1
+        },
+        {
+          "player": "Courtland Sutton",
+          "count": 1
+        },
+        {
+          "player": "Tyjae Spears",
           "count": 1
         }
       ]
@@ -4330,11 +4346,20 @@
               "Mike Kovacs",
               "Bill Solecki"
             ]
+          },
+          {
+            "player": "Tre Tucker",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ben Bingert"
+            ]
           }
         ],
         "teamTally": {
           "Carl Cummins": 1,
-          "Bill Solecki": 1
+          "Bill Solecki": 1,
+          "Ben Bingert": 1
         },
         "sameWeekAddsFlagged": 1
       }
@@ -4349,7 +4374,7 @@
       "Sal DeRose": 30,
       "Joe Jaramillo": 47,
       "Randell Crawford": 17,
-      "Ben Bingert": 26
+      "Ben Bingert": 27
     },
     "allTimeSameWeekAddsFlagged": 8
   },
@@ -4469,15 +4494,15 @@
       ],
       "2026": [
         {
-          "player": "Eddy Pineiro",
-          "count": 2
-        },
-        {
-          "player": "Geno Smith",
-          "count": 2
-        },
-        {
           "player": "Ka'imi Fairbairn",
+          "count": 3
+        },
+        {
+          "player": "Jaguars D/ST",
+          "count": 2
+        },
+        {
+          "player": "Eddy Pineiro",
           "count": 2
         }
       ]
@@ -5495,15 +5520,15 @@
         ],
         "Daniel Keating": [
           {
+            "player": "Ka'imi Fairbairn",
+            "count": 2
+          },
+          {
             "player": "Jalen Coker",
             "count": 1
           },
           {
             "player": "Jaguars D/ST",
-            "count": 1
-          },
-          {
-            "player": "Michael Wilson",
             "count": 1
           }
         ],
@@ -5543,6 +5568,10 @@
           {
             "player": "Michael Mayer",
             "count": 1
+          },
+          {
+            "player": "Alec Pierce",
+            "count": 1
           }
         ],
         "Ben Bingert": [
@@ -5552,6 +5581,10 @@
           },
           {
             "player": "KC Concepcion",
+            "count": 1
+          },
+          {
+            "player": "Bears D/ST",
             "count": 1
           }
         ],
@@ -5596,6 +5629,14 @@
         "Randell Crawford": [
           {
             "player": "Geno Smith",
+            "count": 1
+          },
+          {
+            "player": "Courtland Sutton",
+            "count": 1
+          },
+          {
+            "player": "Tyjae Spears",
             "count": 1
           }
         ]
@@ -8068,11 +8109,20 @@
                 "Mike Kovacs",
                 "Bill Solecki"
               ]
+            },
+            {
+              "player": "Tre Tucker",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ben Bingert"
+              ]
             }
           ],
           "teamTally": {
             "Carl Cummins": 1,
-            "Bill Solecki": 1
+            "Bill Solecki": 1,
+            "Ben Bingert": 1
           },
           "sameWeekAddsFlagged": 1
         }
@@ -8087,7 +8137,7 @@
         "Sal DeRose": 22,
         "Joe Jaramillo": 38,
         "Randell Crawford": 15,
-        "Ben Bingert": 24
+        "Ben Bingert": 25
       },
       "allTimeSameWeekAddsFlagged": 7
     }
