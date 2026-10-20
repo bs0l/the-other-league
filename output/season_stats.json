@@ -3055,8 +3055,8 @@
           "player": "Travis Kelce",
           "roundKept": 1,
           "pointsScored": 354.5,
-          "roundAvgPoints": 378.64,
-          "pointsVsAvg": -24.14,
+          "roundAvgPoints": 378.65,
+          "pointsVsAvg": -24.15,
           "pointsVsAvgPct": -0.0638,
           "verdict": "AVERAGE",
           "droppedMidSeason": false,
@@ -4173,7 +4173,8 @@
       "length": 3,
       "owners": [
         "Bethany Bingert",
-        "Carl Cummins"
+        "Carl Cummins",
+        "Pete Solecki"
       ],
       "tied": true,
       "streaks": [
@@ -4192,32 +4193,32 @@
             4,
             5
           ]
+        },
+        {
+          "owner": "Pete Solecki",
+          "weeks": [
+            4,
+            5,
+            6
+          ]
         }
       ]
     },
     "longestLossStreak": {
-      "owner": "Ben Bingert",
-      "length": 3,
+      "owner": "Joe Jaramillo",
+      "length": 4,
       "owners": [
-        "Ben Bingert",
         "Joe Jaramillo"
       ],
-      "tied": true,
+      "tied": false,
       "streaks": [
-        {
-          "owner": "Ben Bingert",
-          "weeks": [
-            1,
-            2,
-            3
-          ]
-        },
         {
           "owner": "Joe Jaramillo",
           "weeks": [
             3,
             4,
-            5
+            5,
+            6
           ]
         }
       ]
@@ -4247,31 +4248,13 @@
       ]
     },
     "mostWeeklyLowScores": {
-      "owner": "Ben Bingert",
+      "owner": "Joe Jaramillo",
       "owners": [
-        "Ben Bingert",
-        "Bethany Bingert",
-        "Daniel Keating",
-        "Joe Jaramillo",
-        "Randell Crawford"
+        "Joe Jaramillo"
       ],
-      "count": 1,
-      "tied": true,
+      "count": 2,
+      "tied": false,
       "games": [
-        {
-          "owner": "Randell Crawford",
-          "week": 1,
-          "matchupPeriodId": 1,
-          "teamId": 10,
-          "score": 87.78
-        },
-        {
-          "owner": "Daniel Keating",
-          "week": 2,
-          "matchupPeriodId": 2,
-          "teamId": 9,
-          "score": 79.32
-        },
         {
           "owner": "Joe Jaramillo",
           "week": 3,
@@ -4280,25 +4263,18 @@
           "score": 103.9
         },
         {
-          "owner": "Bethany Bingert",
-          "week": 4,
-          "matchupPeriodId": 4,
-          "teamId": 3,
-          "score": 109.42
-        },
-        {
-          "owner": "Ben Bingert",
-          "week": 5,
-          "matchupPeriodId": 5,
-          "teamId": 5,
-          "score": 115.74
+          "owner": "Joe Jaramillo",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 4,
+          "score": 101.08
         }
       ]
     },
     "bestBenchWarmers": {
-      "owner": "Bill Solecki",
-      "teamName": "Kraft Mc-njigba Chase",
-      "benchPoints": 355.36
+      "owner": "Nikkole Cummins",
+      "teamName": "Lights, Camera, Jackson",
+      "benchPoints": 363.48
     },
     "playoffPayouts": [],
     "keeperAnalysis": {
@@ -4308,7 +4284,7 @@
           "player": "Lamar Jackson",
           "roundKept": 3,
           "pointsScored": 158.16,
-          "pointsThroughWeek": 6,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4322,7 +4298,7 @@
           "player": "Ja'Marr Chase",
           "roundKept": 4,
           "pointsScored": 159.8,
-          "pointsThroughWeek": 6,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4335,8 +4311,8 @@
           "owner": "Randell Crawford",
           "player": "DeVonta Smith",
           "roundKept": 5,
-          "pointsScored": 97.0,
-          "pointsThroughWeek": 6,
+          "pointsScored": 138.0,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4349,8 +4325,8 @@
           "owner": "Nikkole Cummins",
           "player": "Chris Olave",
           "roundKept": 6,
-          "pointsScored": 197.4,
-          "pointsThroughWeek": 6,
+          "pointsScored": 226.0,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4363,8 +4339,8 @@
           "owner": "Carl Cummins",
           "player": "Brock Bowers",
           "roundKept": 6,
-          "pointsScored": 142.4,
-          "pointsThroughWeek": 6,
+          "pointsScored": 164.4,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4378,7 +4354,7 @@
           "player": "Joe Burrow",
           "roundKept": 7,
           "pointsScored": 202.48,
-          "pointsThroughWeek": 6,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4392,7 +4368,7 @@
           "player": "Cam Skattebo",
           "roundKept": 8,
           "pointsScored": 102.6,
-          "pointsThroughWeek": 6,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4406,7 +4382,7 @@
           "player": "Chase Brown",
           "roundKept": 9,
           "pointsScored": 130.0,
-          "pointsThroughWeek": 6,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4420,7 +4396,7 @@
           "player": "Tyler Warren",
           "roundKept": 9,
           "pointsScored": 139.8,
-          "pointsThroughWeek": 6,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4433,8 +4409,8 @@
           "owner": "Bill Solecki",
           "player": "Matthew Stafford",
           "roundKept": 10,
-          "pointsScored": 177.96,
-          "pointsThroughWeek": 6,
+          "pointsScored": 211.72,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4447,8 +4423,8 @@
           "owner": "Mike Kovacs",
           "player": "Brock Purdy",
           "roundKept": 12,
-          "pointsScored": 233.28,
-          "pointsThroughWeek": 6,
+          "pointsScored": 268.0,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4461,8 +4437,8 @@
           "owner": "Daniel Keating",
           "player": "Caleb Williams",
           "roundKept": 12,
-          "pointsScored": 89.96,
-          "pointsThroughWeek": 6,
+          "pointsScored": 122.96,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,

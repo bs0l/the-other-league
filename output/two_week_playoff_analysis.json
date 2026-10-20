@@ -8,8 +8,8 @@
       "held": 90,
       "tiedOverall": 0,
       "comebackRate": 0.23728813559322035,
-      "avgWeek1Lead": 29.15423728813559,
-      "avgLeadOvercome": 15.342857142857143,
+      "avgWeek1Lead": 29.154237288135587,
+      "avgLeadOvercome": 15.342857142857145,
       "avgLeadHeld": 33.45111111111111,
       "largestComeback": {
         "year": 2022,
@@ -31,8 +31,8 @@
       "held": 24,
       "tiedOverall": 0,
       "comebackRate": 0.3333333333333333,
-      "avgWeek1Lead": 30.028333333333332,
-      "avgLeadOvercome": 14.008333333333333,
+      "avgWeek1Lead": 30.028333333333325,
+      "avgLeadOvercome": 14.008333333333335,
       "avgLeadHeld": 38.038333333333334,
       "largestComeback": {
         "year": 2022,
@@ -54,9 +54,9 @@
       "held": 66,
       "tiedOverall": 0,
       "comebackRate": 0.1951219512195122,
-      "avgWeek1Lead": 28.770487804878048,
-      "avgLeadOvercome": 16.34375,
-      "avgLeadHeld": 31.7830303030303,
+      "avgWeek1Lead": 28.770487804878062,
+      "avgLeadOvercome": 16.343750000000004,
+      "avgLeadHeld": 31.783030303030316,
       "largestComeback": {
         "year": 2022,
         "weeks": [

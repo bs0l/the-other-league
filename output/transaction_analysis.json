@@ -1244,6 +1244,10 @@
         {
           "player": "Jonathon Brooks",
           "count": 1
+        },
+        {
+          "player": "Tre' Harris",
+          "count": 1
         }
       ],
       "Randell Crawford": [
@@ -4324,11 +4328,28 @@
       "2026": {
         "players": [
           {
+            "player": "Jameis Winston",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki",
+              "Nikkole Cummins"
+            ]
+          },
+          {
             "player": "Jalen Coker",
             "teamCount": 2,
             "teams": [
               "Daniel Keating",
               "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Michael Mayer",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Pete Solecki"
             ]
           },
           {
@@ -4340,26 +4361,28 @@
             ]
           },
           {
-            "player": "Jameis Winston",
-            "teamCount": 2,
-            "teams": [
-              "Mike Kovacs",
-              "Bill Solecki"
-            ]
-          },
-          {
             "player": "Tre Tucker",
             "teamCount": 2,
             "teams": [
               "Carl Cummins",
               "Ben Bingert"
             ]
+          },
+          {
+            "player": "Geno Smith",
+            "teamCount": 2,
+            "teams": [
+              "Daniel Keating",
+              "Ben Bingert"
+            ]
           }
         ],
         "teamTally": {
           "Carl Cummins": 1,
+          "Pete Solecki": 1,
           "Bill Solecki": 1,
-          "Ben Bingert": 1
+          "Nikkole Cummins": 1,
+          "Ben Bingert": 2
         },
         "sameWeekAddsFlagged": 1
       }
@@ -4370,11 +4393,12 @@
       "Ray Engleking": 34,
       "Bill Solecki": 74,
       "Mike Kovacs": 54,
-      "Pete Solecki": 32,
+      "Pete Solecki": 33,
       "Sal DeRose": 30,
       "Joe Jaramillo": 47,
       "Randell Crawford": 17,
-      "Ben Bingert": 27
+      "Ben Bingert": 28,
+      "Nikkole Cummins": 1
     },
     "allTimeSameWeekAddsFlagged": 8
   },
@@ -5623,6 +5647,10 @@
           },
           {
             "player": "Jonathon Brooks",
+            "count": 1
+          },
+          {
+            "player": "Tre' Harris",
             "count": 1
           }
         ],
@@ -8087,11 +8115,28 @@
         "2026": {
           "players": [
             {
+              "player": "Jameis Winston",
+              "teamCount": 3,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki",
+                "Nikkole Cummins"
+              ]
+            },
+            {
               "player": "Jalen Coker",
               "teamCount": 2,
               "teams": [
                 "Daniel Keating",
                 "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Michael Mayer",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Pete Solecki"
               ]
             },
             {
@@ -8103,26 +8148,28 @@
               ]
             },
             {
-              "player": "Jameis Winston",
-              "teamCount": 2,
-              "teams": [
-                "Mike Kovacs",
-                "Bill Solecki"
-              ]
-            },
-            {
               "player": "Tre Tucker",
               "teamCount": 2,
               "teams": [
                 "Carl Cummins",
                 "Ben Bingert"
               ]
+            },
+            {
+              "player": "Geno Smith",
+              "teamCount": 2,
+              "teams": [
+                "Daniel Keating",
+                "Ben Bingert"
+              ]
             }
           ],
           "teamTally": {
             "Carl Cummins": 1,
+            "Pete Solecki": 1,
             "Bill Solecki": 1,
-            "Ben Bingert": 1
+            "Nikkole Cummins": 1,
+            "Ben Bingert": 2
           },
           "sameWeekAddsFlagged": 1
         }
@@ -8133,11 +8180,12 @@
         "Ray Engleking": 27,
         "Bill Solecki": 52,
         "Mike Kovacs": 34,
-        "Pete Solecki": 26,
+        "Pete Solecki": 27,
         "Sal DeRose": 22,
         "Joe Jaramillo": 38,
         "Randell Crawford": 15,
-        "Ben Bingert": 25
+        "Ben Bingert": 26,
+        "Nikkole Cummins": 1
       },
       "allTimeSameWeekAddsFlagged": 7
     }

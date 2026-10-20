@@ -7,9 +7,9 @@
       "winPercentage": 0.45454545454545453,
       "totalGames": 22,
       "pointsFor": 3208.06,
-      "pointsAgainst": 3440.54,
-      "avgPointsFor": 118.81703703703704,
-      "avgPointsAgainst": 127.4274074074074,
+      "pointsAgainst": 3440.540000000001,
+      "avgPointsFor": 118.81703703703705,
+      "avgPointsAgainst": 127.42740740740739,
       "highestScore": 181.38,
       "lowestScore": 69.0,
       "biggestWin": 58.58,
@@ -1581,10 +1581,10 @@
       "ties": 0,
       "winPercentage": 0.3888888888888889,
       "totalGames": 18,
-      "pointsFor": 1949.2,
-      "pointsAgainst": 2043.54,
-      "avgPointsFor": 102.58947368421053,
-      "avgPointsAgainst": 107.55473684210526,
+      "pointsFor": 1949.2000000000003,
+      "pointsAgainst": 2043.5400000000002,
+      "avgPointsFor": 102.58947368421055,
+      "avgPointsAgainst": 107.55473684210527,
       "highestScore": 218.9,
       "lowestScore": 49.8,
       "biggestWin": 44.34,
@@ -2130,7 +2130,7 @@
       "totalGames": 18,
       "pointsFor": 2162.26,
       "pointsAgainst": 2121.7,
-      "avgPointsFor": 113.80315789473683,
+      "avgPointsFor": 113.80315789473686,
       "avgPointsAgainst": 111.66842105263157,
       "highestScore": 174.98,
       "lowestScore": 67.22,
@@ -3489,7 +3489,7 @@
       "winPercentage": 0.3333333333333333,
       "totalGames": 15,
       "pointsFor": 1657.92,
-      "pointsAgainst": 1822.66,
+      "pointsAgainst": 1822.6599999999999,
       "avgPointsFor": 103.62,
       "avgPointsAgainst": 113.91625,
       "highestScore": 183.2,
@@ -3949,9 +3949,9 @@
       "winPercentage": 0.47058823529411764,
       "totalGames": 17,
       "pointsFor": 2195.96,
-      "pointsAgainst": 2198.28,
+      "pointsAgainst": 2198.2799999999997,
       "avgPointsFor": 115.57684210526315,
-      "avgPointsAgainst": 115.69894736842106,
+      "avgPointsAgainst": 115.69894736842105,
       "highestScore": 180.38,
       "lowestScore": 69.82,
       "biggestWin": 48.099999999999994,
@@ -4469,10 +4469,10 @@
       "ties": 0,
       "winPercentage": 0.6666666666666666,
       "totalGames": 18,
-      "pointsFor": 2384.56,
-      "pointsAgainst": 2043.2,
+      "pointsFor": 2384.5600000000004,
+      "pointsAgainst": 2043.2000000000003,
       "avgPointsFor": 119.228,
-      "avgPointsAgainst": 102.16,
+      "avgPointsAgainst": 102.16000000000001,
       "highestScore": 193.88,
       "lowestScore": 73.16,
       "biggestWin": 99.14000000000001,
@@ -5504,6 +5504,57 @@
           "winner": "HOME"
         }
       ]
+    },
+    "Nikkole Cummins": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "winPercentage": 1.0,
+      "totalGames": 1,
+      "pointsFor": 121.72,
+      "pointsAgainst": 117.68,
+      "avgPointsFor": 121.72,
+      "avgPointsAgainst": 117.68,
+      "highestScore": 121.72,
+      "lowestScore": 121.72,
+      "biggestWin": 4.039999999999992,
+      "closestWin": 4.039999999999992,
+      "longestWinStreak": 1,
+      "currentStreak": {
+        "type": "WIN",
+        "length": 1
+      },
+      "matchups": [
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 9,
+            "teamName": "Why Was I on the 415 Shuttle?",
+            "owner": "Daniel Keating",
+            "score": 121.72,
+            "weeklyScores": [
+              121.72
+            ]
+          },
+          "away": {
+            "teamId": 8,
+            "teamName": "Lights, Camera, Jackson",
+            "owner": "Nikkole Cummins",
+            "score": 117.68,
+            "weeklyScores": [
+              117.68
+            ]
+          },
+          "winner": "HOME"
+        }
+      ]
     }
   },
   "Mike Kovacs": {
@@ -5513,10 +5564,10 @@
       "ties": 0,
       "winPercentage": 0.5454545454545454,
       "totalGames": 22,
-      "pointsFor": 3440.54,
+      "pointsFor": 3440.540000000001,
       "pointsAgainst": 3208.06,
-      "avgPointsFor": 127.4274074074074,
-      "avgPointsAgainst": 118.81703703703704,
+      "avgPointsFor": 127.42740740740739,
+      "avgPointsAgainst": 118.81703703703705,
       "highestScore": 243.5,
       "lowestScore": 49.84,
       "biggestWin": 92.5,
@@ -6188,10 +6239,10 @@
       "ties": 0,
       "winPercentage": 0.5789473684210527,
       "totalGames": 19,
-      "pointsFor": 2421.86,
-      "pointsAgainst": 2192.7,
-      "avgPointsFor": 121.093,
-      "avgPointsAgainst": 109.63499999999999,
+      "pointsFor": 2421.8599999999997,
+      "pointsAgainst": 2192.7000000000003,
+      "avgPointsFor": 121.09299999999999,
+      "avgPointsAgainst": 109.63500000000002,
       "highestScore": 214.06,
       "lowestScore": 68.42,
       "biggestWin": 82.38,
@@ -6844,9 +6895,9 @@
       "ties": 0,
       "winPercentage": 0.5,
       "totalGames": 24,
-      "pointsFor": 3264.98,
-      "pointsAgainst": 3311.0,
-      "avgPointsFor": 116.60642857142857,
+      "pointsFor": 3264.980000000001,
+      "pointsAgainst": 3311.0000000000005,
+      "avgPointsFor": 116.60642857142861,
       "avgPointsAgainst": 118.25,
       "highestScore": 213.48,
       "lowestScore": 62.8,
@@ -8214,9 +8265,9 @@
       "ties": 0,
       "winPercentage": 0.4117647058823529,
       "totalGames": 17,
-      "pointsFor": 2122.54,
+      "pointsFor": 2122.5399999999995,
       "pointsAgainst": 2106.64,
-      "avgPointsFor": 111.71263157894737,
+      "avgPointsFor": 111.71263157894734,
       "avgPointsAgainst": 110.87578947368421,
       "highestScore": 171.72,
       "lowestScore": 70.48,
@@ -9461,9 +9512,9 @@
       "ties": 0,
       "winPercentage": 0.3684210526315789,
       "totalGames": 19,
-      "pointsFor": 2525.08,
+      "pointsFor": 2525.0800000000004,
       "pointsAgainst": 2475.12,
-      "avgPointsFor": 120.24190476190476,
+      "avgPointsFor": 120.24190476190478,
       "avgPointsAgainst": 117.86285714285714,
       "highestScore": 214.64,
       "lowestScore": 64.12,
@@ -10035,22 +10086,22 @@
       ]
     },
     "Joe Jaramillo": {
-      "wins": 5,
+      "wins": 6,
       "losses": 7,
       "ties": 0,
-      "winPercentage": 0.4166666666666667,
-      "totalGames": 12,
-      "pointsFor": 1313.5,
-      "pointsAgainst": 1391.9,
-      "avgPointsFor": 109.45833333333333,
-      "avgPointsAgainst": 115.99166666666667,
+      "winPercentage": 0.46153846153846156,
+      "totalGames": 13,
+      "pointsFor": 1465.8600000000001,
+      "pointsAgainst": 1492.98,
+      "avgPointsFor": 112.75846153846155,
+      "avgPointsAgainst": 114.84461538461538,
       "highestScore": 191.54,
       "lowestScore": 72.3,
-      "biggestWin": 35.7,
+      "biggestWin": 51.280000000000015,
       "closestWin": 2.9599999999999937,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": "LOSS",
+        "type": "WIN",
         "length": 1
       },
       "matchups": [
@@ -10401,6 +10452,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 2,
+            "teamName": "Waddle and Come Chase Maye",
+            "owner": "Mike Kovacs",
+            "score": 152.36,
+            "weeklyScores": [
+              152.36
+            ]
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Fran Tarkenton",
+            "owner": "Joe Jaramillo",
+            "score": 101.08,
+            "weeklyScores": [
+              101.08
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -10411,9 +10491,9 @@
       "winPercentage": 0.6842105263157895,
       "totalGames": 19,
       "pointsFor": 2588.14,
-      "pointsAgainst": 2302.58,
+      "pointsAgainst": 2302.5800000000004,
       "avgPointsFor": 123.2447619047619,
-      "avgPointsAgainst": 109.64666666666666,
+      "avgPointsAgainst": 109.64666666666669,
       "highestScore": 174.36,
       "lowestScore": 83.18,
       "biggestWin": 47.06,
@@ -11830,10 +11910,10 @@
       "ties": 0,
       "winPercentage": 0.42105263157894735,
       "totalGames": 19,
-      "pointsFor": 2192.7,
-      "pointsAgainst": 2421.86,
-      "avgPointsFor": 109.63499999999999,
-      "avgPointsAgainst": 121.093,
+      "pointsFor": 2192.7000000000003,
+      "pointsAgainst": 2421.8599999999997,
+      "avgPointsFor": 109.63500000000002,
+      "avgPointsAgainst": 121.09299999999999,
       "highestScore": 153.3,
       "lowestScore": 63.4,
       "biggestWin": 40.860000000000014,
@@ -12486,9 +12566,9 @@
       "ties": 0,
       "winPercentage": 0.3684210526315789,
       "totalGames": 19,
-      "pointsFor": 2283.18,
+      "pointsFor": 2283.1800000000007,
       "pointsAgainst": 2412.32,
-      "avgPointsFor": 108.72285714285714,
+      "avgPointsFor": 108.72285714285718,
       "avgPointsAgainst": 114.87238095238096,
       "highestScore": 160.46,
       "lowestScore": 64.32,
@@ -13065,10 +13145,10 @@
       "ties": 0,
       "winPercentage": 0.47619047619047616,
       "totalGames": 21,
-      "pointsFor": 2569.46,
+      "pointsFor": 2569.4599999999996,
       "pointsAgainst": 2453.42,
-      "avgPointsFor": 111.71565217391304,
-      "avgPointsAgainst": 106.6704347826087,
+      "avgPointsFor": 111.71565217391303,
+      "avgPointsAgainst": 106.67043478260872,
       "highestScore": 204.36,
       "lowestScore": 51.9,
       "biggestWin": 79.07999999999998,
@@ -13702,9 +13782,9 @@
       "ties": 0,
       "winPercentage": 0.631578947368421,
       "totalGames": 19,
-      "pointsFor": 2427.0,
+      "pointsFor": 2426.9999999999995,
       "pointsAgainst": 2312.98,
-      "avgPointsFor": 115.57142857142857,
+      "avgPointsFor": 115.57142857142856,
       "avgPointsAgainst": 110.14190476190477,
       "highestScore": 161.64,
       "lowestScore": 30.3,
@@ -14393,10 +14473,10 @@
       "ties": 0,
       "winPercentage": 0.3888888888888889,
       "totalGames": 18,
-      "pointsFor": 2556.1,
-      "pointsAgainst": 2609.0,
-      "avgPointsFor": 116.18636363636364,
-      "avgPointsAgainst": 118.5909090909091,
+      "pointsFor": 2556.1000000000004,
+      "pointsAgainst": 2608.9999999999995,
+      "avgPointsFor": 116.18636363636365,
+      "avgPointsAgainst": 118.59090909090911,
       "highestScore": 181.86,
       "lowestScore": 48.36,
       "biggestWin": 96.89999999999998,
@@ -14949,9 +15029,9 @@
       "ties": 0,
       "winPercentage": 0.5,
       "totalGames": 16,
-      "pointsFor": 2033.6000000000001,
+      "pointsFor": 2033.6000000000004,
       "pointsAgainst": 1936.94,
-      "avgPointsFor": 107.03157894736843,
+      "avgPointsFor": 107.03157894736844,
       "avgPointsAgainst": 101.94421052631579,
       "highestScore": 162.84,
       "lowestScore": 56.08,
@@ -15444,9 +15524,9 @@
       "ties": 0,
       "winPercentage": 0.2,
       "totalGames": 15,
-      "pointsFor": 1679.82,
-      "pointsAgainst": 2029.78,
-      "avgPointsFor": 93.32333333333332,
+      "pointsFor": 1679.8200000000002,
+      "pointsAgainst": 2029.7799999999997,
+      "avgPointsFor": 93.32333333333334,
       "avgPointsAgainst": 112.76555555555555,
       "highestScore": 189.14,
       "lowestScore": 61.8,
@@ -15910,7 +15990,7 @@
       "ties": 0,
       "winPercentage": 0.6875,
       "totalGames": 16,
-      "pointsFor": 2149.84,
+      "pointsFor": 2149.8399999999997,
       "pointsAgainst": 2133.54,
       "avgPointsFor": 119.43555555555557,
       "avgPointsAgainst": 118.53,
@@ -17001,10 +17081,10 @@
       "ties": 0,
       "winPercentage": 0.6111111111111112,
       "totalGames": 18,
-      "pointsFor": 2043.54,
-      "pointsAgainst": 1949.2,
-      "avgPointsFor": 107.55473684210526,
-      "avgPointsAgainst": 102.58947368421053,
+      "pointsFor": 2043.5400000000002,
+      "pointsAgainst": 1949.2000000000003,
+      "avgPointsFor": 107.55473684210527,
+      "avgPointsAgainst": 102.58947368421055,
       "highestScore": 188.6,
       "lowestScore": 54.92,
       "biggestWin": 47.760000000000005,
@@ -17548,10 +17628,10 @@
       "ties": 0,
       "winPercentage": 0.5,
       "totalGames": 24,
-      "pointsFor": 3311.0,
-      "pointsAgainst": 3264.98,
+      "pointsFor": 3311.0000000000005,
+      "pointsAgainst": 3264.980000000001,
       "avgPointsFor": 118.25,
-      "avgPointsAgainst": 116.60642857142857,
+      "avgPointsAgainst": 116.60642857142861,
       "highestScore": 182.0,
       "lowestScore": 62.94,
       "biggestWin": 64.4,
@@ -18279,9 +18359,9 @@
       "winPercentage": 0.631578947368421,
       "totalGames": 19,
       "pointsFor": 2412.32,
-      "pointsAgainst": 2283.18,
+      "pointsAgainst": 2283.1800000000007,
       "avgPointsFor": 114.87238095238096,
-      "avgPointsAgainst": 108.72285714285714,
+      "avgPointsAgainst": 108.72285714285718,
       "highestScore": 172.0,
       "lowestScore": 48.12,
       "biggestWin": 107.68,
@@ -18940,7 +19020,7 @@
       "ties": 0,
       "winPercentage": 0.5,
       "totalGames": 22,
-      "pointsFor": 2659.44,
+      "pointsFor": 2659.439999999999,
       "pointsAgainst": 2608.38,
       "avgPointsFor": 110.81,
       "avgPointsAgainst": 108.6825,
@@ -20294,7 +20374,7 @@
       "ties": 0,
       "winPercentage": 0.4444444444444444,
       "totalGames": 18,
-      "pointsFor": 2358.36,
+      "pointsFor": 2358.3599999999997,
       "pointsAgainst": 2512.54,
       "avgPointsFor": 117.918,
       "avgPointsAgainst": 125.627,
@@ -20840,14 +20920,14 @@
     },
     "Randell Crawford": {
       "wins": 9,
-      "losses": 7,
+      "losses": 8,
       "ties": 0,
-      "winPercentage": 0.5625,
-      "totalGames": 16,
-      "pointsFor": 1949.3600000000001,
-      "pointsAgainst": 1899.1200000000001,
-      "avgPointsFor": 102.5978947368421,
-      "avgPointsAgainst": 99.95368421052632,
+      "winPercentage": 0.5294117647058824,
+      "totalGames": 17,
+      "pointsFor": 2089.28,
+      "pointsAgainst": 2056.06,
+      "avgPointsFor": 104.46399999999998,
+      "avgPointsAgainst": 102.803,
       "highestScore": 162.72,
       "lowestScore": 58.96,
       "biggestWin": 40.3,
@@ -20855,7 +20935,7 @@
       "longestWinStreak": 6,
       "currentStreak": {
         "type": "LOSS",
-        "length": 3
+        "length": 4
       },
       "matchups": [
         {
@@ -21330,6 +21410,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 5,
+            "teamName": "LOOK AT THIS GRAPH",
+            "owner": "Ben Bingert",
+            "score": 139.92,
+            "weeklyScores": [
+              139.92
+            ]
+          },
+          "away": {
+            "teamId": 10,
+            "teamName": "Pop Rockin' Beats",
+            "owner": "Randell Crawford",
+            "score": 156.94,
+            "weeklyScores": [
+              156.94
+            ]
+          },
+          "winner": "AWAY"
         }
       ]
     },
@@ -21339,8 +21448,8 @@
       "ties": 0,
       "winPercentage": 0.47619047619047616,
       "totalGames": 21,
-      "pointsFor": 3068.92,
-      "pointsAgainst": 3087.78,
+      "pointsFor": 3068.9199999999996,
+      "pointsAgainst": 3087.7800000000007,
       "avgPointsFor": 113.6637037037037,
       "avgPointsAgainst": 114.36222222222223,
       "highestScore": 191.16,
@@ -21989,9 +22098,9 @@
       "winPercentage": 0.6875,
       "totalGames": 16,
       "pointsFor": 2058.94,
-      "pointsAgainst": 1907.64,
+      "pointsAgainst": 1907.6400000000003,
       "avgPointsFor": 121.11411764705883,
-      "avgPointsAgainst": 112.21411764705883,
+      "avgPointsAgainst": 112.21411764705884,
       "highestScore": 176.94,
       "lowestScore": 68.7,
       "biggestWin": 150.20000000000002,
@@ -22533,7 +22642,7 @@
       "pointsFor": 2121.7,
       "pointsAgainst": 2162.26,
       "avgPointsFor": 111.66842105263157,
-      "avgPointsAgainst": 113.80315789473683,
+      "avgPointsAgainst": 113.80315789473686,
       "highestScore": 163.4,
       "lowestScore": 48.54,
       "biggestWin": 39.64,
@@ -23718,9 +23827,9 @@
       "winPercentage": 0.5238095238095238,
       "totalGames": 21,
       "pointsFor": 2453.42,
-      "pointsAgainst": 2569.46,
-      "avgPointsFor": 106.6704347826087,
-      "avgPointsAgainst": 111.71565217391304,
+      "pointsAgainst": 2569.4599999999996,
+      "avgPointsFor": 106.67043478260872,
+      "avgPointsAgainst": 111.71565217391303,
       "highestScore": 176.02,
       "lowestScore": 69.4,
       "biggestWin": 79.66000000000001,
@@ -24435,7 +24544,7 @@
       "winPercentage": 0.5,
       "totalGames": 22,
       "pointsFor": 2608.38,
-      "pointsAgainst": 2659.44,
+      "pointsAgainst": 2659.439999999999,
       "avgPointsFor": 108.6825,
       "avgPointsAgainst": 110.81,
       "highestScore": 173.1,
@@ -25101,9 +25210,9 @@
       "winPercentage": 0.55,
       "totalGames": 20,
       "pointsFor": 2878.28,
-      "pointsAgainst": 2780.32,
+      "pointsAgainst": 2780.3199999999997,
       "avgPointsFor": 115.1312,
-      "avgPointsAgainst": 111.2128,
+      "avgPointsAgainst": 111.21279999999997,
       "highestScore": 167.46,
       "lowestScore": 59.0,
       "biggestWin": 57.239999999999995,
@@ -26315,10 +26424,10 @@
       "ties": 0,
       "winPercentage": 0.38095238095238093,
       "totalGames": 21,
-      "pointsFor": 2577.02,
-      "pointsAgainst": 2772.74,
-      "avgPointsFor": 99.11615384615385,
-      "avgPointsAgainst": 106.64384615384614,
+      "pointsFor": 2577.0199999999995,
+      "pointsAgainst": 2772.7400000000002,
+      "avgPointsFor": 99.11615384615381,
+      "avgPointsAgainst": 106.64384615384617,
       "highestScore": 156.76,
       "lowestScore": 49.0,
       "biggestWin": 110.34,
@@ -26964,7 +27073,7 @@
       "pointsFor": 1763.08,
       "pointsAgainst": 1785.18,
       "avgPointsFor": 117.53866666666666,
-      "avgPointsAgainst": 119.012,
+      "avgPointsAgainst": 119.01200000000001,
       "highestScore": 154.64,
       "lowestScore": 83.48,
       "biggestWin": 55.480000000000004,
@@ -28000,6 +28109,57 @@
         }
       ]
     },
+    "Bethany Bingert": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "winPercentage": 1.0,
+      "totalGames": 1,
+      "pointsFor": 129.96,
+      "pointsAgainst": 121.38,
+      "avgPointsFor": 129.96,
+      "avgPointsAgainst": 121.38,
+      "highestScore": 129.96,
+      "lowestScore": 129.96,
+      "biggestWin": 8.580000000000013,
+      "closestWin": 8.580000000000013,
+      "longestWinStreak": 1,
+      "currentStreak": {
+        "type": "WIN",
+        "length": 1
+      },
+      "matchups": [
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 3,
+            "teamName": "FC Baseball",
+            "owner": "Bethany Bingert",
+            "score": 121.38,
+            "weeklyScores": [
+              121.38
+            ]
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "We Tried Our Best",
+            "owner": "Pete Solecki",
+            "score": 129.96,
+            "weeklyScores": [
+              129.96
+            ]
+          },
+          "winner": "AWAY"
+        }
+      ]
+    },
     "Nikkole Cummins": {
       "wins": 0,
       "losses": 1,
@@ -28822,9 +28982,9 @@
       "winPercentage": 0.5882352941176471,
       "totalGames": 17,
       "pointsFor": 2106.64,
-      "pointsAgainst": 2122.54,
+      "pointsAgainst": 2122.5399999999995,
       "avgPointsFor": 110.87578947368421,
-      "avgPointsAgainst": 111.71263157894737,
+      "avgPointsAgainst": 111.71263157894734,
       "highestScore": 185.98,
       "lowestScore": 63.62,
       "biggestWin": 44.42,
@@ -29343,9 +29503,9 @@
       "winPercentage": 0.3684210526315789,
       "totalGames": 19,
       "pointsFor": 2312.98,
-      "pointsAgainst": 2427.0,
+      "pointsAgainst": 2426.9999999999995,
       "avgPointsFor": 110.14190476190477,
-      "avgPointsAgainst": 115.57142857142857,
+      "avgPointsAgainst": 115.57142857142856,
       "highestScore": 170.66,
       "lowestScore": 60.64,
       "biggestWin": 118.89999999999999,
@@ -30609,9 +30769,9 @@
       "ties": 0,
       "winPercentage": 0.45,
       "totalGames": 20,
-      "pointsFor": 2780.32,
+      "pointsFor": 2780.3199999999997,
       "pointsAgainst": 2878.28,
-      "avgPointsFor": 111.2128,
+      "avgPointsFor": 111.21279999999997,
       "avgPointsAgainst": 115.1312,
       "highestScore": 166.12,
       "lowestScore": 57.0,
@@ -31302,14 +31462,14 @@
     },
     "Bill Solecki": {
       "wins": 6,
-      "losses": 13,
+      "losses": 14,
       "ties": 0,
-      "winPercentage": 0.3157894736842105,
-      "totalGames": 19,
-      "pointsFor": 2371.62,
-      "pointsAgainst": 2563.12,
-      "avgPointsFor": 112.9342857142857,
-      "avgPointsAgainst": 122.05333333333333,
+      "winPercentage": 0.3,
+      "totalGames": 20,
+      "pointsFor": 2525.2,
+      "pointsAgainst": 2722.5199999999995,
+      "avgPointsFor": 114.78181818181817,
+      "avgPointsAgainst": 123.75090909090908,
       "highestScore": 163.26,
       "lowestScore": 59.78,
       "biggestWin": 62.46000000000001,
@@ -31317,7 +31477,7 @@
       "longestWinStreak": 2,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -31876,6 +32036,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 7,
+            "teamName": "Titty Sprinkles",
+            "owner": "Carl Cummins",
+            "score": 153.58,
+            "weeklyScores": [
+              153.58
+            ]
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Kraft Mc-njigba Chase",
+            "owner": "Bill Solecki",
+            "score": 159.4,
+            "weeklyScores": [
+              159.4
+            ]
+          },
+          "winner": "AWAY"
         }
       ]
     },
@@ -31885,10 +32074,10 @@
       "ties": 0,
       "winPercentage": 0.5,
       "totalGames": 18,
-      "pointsFor": 2295.34,
-      "pointsAgainst": 2226.02,
-      "avgPointsFor": 114.76700000000001,
-      "avgPointsAgainst": 111.301,
+      "pointsFor": 2295.3399999999997,
+      "pointsAgainst": 2226.0200000000004,
+      "avgPointsFor": 114.76699999999998,
+      "avgPointsAgainst": 111.30100000000002,
       "highestScore": 157.5,
       "lowestScore": 66.9,
       "biggestWin": 78.46000000000001,
@@ -32436,9 +32625,9 @@
       "winPercentage": 0.42857142857142855,
       "totalGames": 21,
       "pointsFor": 2684.1,
-      "pointsAgainst": 2776.08,
-      "avgPointsFor": 111.83749999999999,
-      "avgPointsAgainst": 115.67,
+      "pointsAgainst": 2776.0800000000004,
+      "avgPointsFor": 111.83749999999998,
+      "avgPointsAgainst": 115.67000000000002,
       "highestScore": 150.08,
       "lowestScore": 72.34,
       "biggestWin": 79.68,
@@ -33076,9 +33265,9 @@
       "winPercentage": 0.4666666666666667,
       "totalGames": 15,
       "pointsFor": 1804.1,
-      "pointsAgainst": 1819.28,
+      "pointsAgainst": 1819.2800000000002,
       "avgPointsFor": 112.75625,
-      "avgPointsAgainst": 113.705,
+      "avgPointsAgainst": 113.70500000000001,
       "highestScore": 161.26,
       "lowestScore": 75.62,
       "biggestWin": 43.67999999999999,
@@ -34185,7 +34374,7 @@
       "ties": 0,
       "winPercentage": 0.6666666666666666,
       "totalGames": 15,
-      "pointsFor": 1822.66,
+      "pointsFor": 1822.6599999999999,
       "pointsAgainst": 1657.92,
       "avgPointsFor": 113.91625,
       "avgPointsAgainst": 103.62,
@@ -35291,10 +35480,10 @@
       "ties": 0,
       "winPercentage": 0.6111111111111112,
       "totalGames": 18,
-      "pointsFor": 2609.0,
-      "pointsAgainst": 2556.1,
-      "avgPointsFor": 118.5909090909091,
-      "avgPointsAgainst": 116.18636363636364,
+      "pointsFor": 2608.9999999999995,
+      "pointsAgainst": 2556.1000000000004,
+      "avgPointsFor": 118.59090909090911,
+      "avgPointsAgainst": 116.18636363636365,
       "highestScore": 183.64,
       "lowestScore": 61.28,
       "biggestWin": 63.14000000000004,
@@ -35848,7 +36037,7 @@
       "winPercentage": 0.5555555555555556,
       "totalGames": 18,
       "pointsFor": 2512.54,
-      "pointsAgainst": 2358.36,
+      "pointsAgainst": 2358.3599999999997,
       "avgPointsFor": 125.627,
       "avgPointsAgainst": 117.918,
       "highestScore": 187.84,
@@ -36878,15 +37067,15 @@
       ]
     },
     "Carl Cummins": {
-      "wins": 13,
+      "wins": 14,
       "losses": 6,
       "ties": 0,
-      "winPercentage": 0.6842105263157895,
-      "totalGames": 19,
-      "pointsFor": 2563.12,
-      "pointsAgainst": 2371.62,
-      "avgPointsFor": 122.05333333333333,
-      "avgPointsAgainst": 112.9342857142857,
+      "winPercentage": 0.7,
+      "totalGames": 20,
+      "pointsFor": 2722.5199999999995,
+      "pointsAgainst": 2525.2,
+      "avgPointsFor": 123.75090909090908,
+      "avgPointsAgainst": 114.78181818181817,
       "highestScore": 193.1,
       "lowestScore": 66.88,
       "biggestWin": 71.53999999999999,
@@ -36894,7 +37083,7 @@
       "longestWinStreak": 6,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -37450,6 +37639,35 @@
             "score": 112.22,
             "weeklyScores": [
               112.22
+            ]
+          },
+          "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 7,
+            "teamName": "Titty Sprinkles",
+            "owner": "Carl Cummins",
+            "score": 153.58,
+            "weeklyScores": [
+              153.58
+            ]
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Kraft Mc-njigba Chase",
+            "owner": "Bill Solecki",
+            "score": 159.4,
+            "weeklyScores": [
+              159.4
             ]
           },
           "winner": "AWAY"
@@ -38009,10 +38227,10 @@
       "ties": 0,
       "winPercentage": 0.38095238095238093,
       "totalGames": 21,
-      "pointsFor": 2898.16,
+      "pointsFor": 2898.1600000000008,
       "pointsAgainst": 2861.82,
-      "avgPointsFor": 126.00695652173913,
-      "avgPointsAgainst": 124.42695652173914,
+      "avgPointsFor": 126.00695652173914,
+      "avgPointsAgainst": 124.42695652173916,
       "highestScore": 190.38,
       "lowestScore": 72.38,
       "biggestWin": 72.86000000000001,
@@ -38647,7 +38865,7 @@
       "winPercentage": 0.47058823529411764,
       "totalGames": 17,
       "pointsFor": 2491.42,
-      "pointsAgainst": 2440.2799999999997,
+      "pointsAgainst": 2440.28,
       "avgPointsFor": 113.24636363636364,
       "avgPointsAgainst": 110.92181818181817,
       "highestScore": 164.04,
@@ -39229,9 +39447,9 @@
       "ties": 0,
       "winPercentage": 0.5294117647058824,
       "totalGames": 17,
-      "pointsFor": 2198.28,
+      "pointsFor": 2198.2799999999997,
       "pointsAgainst": 2195.96,
-      "avgPointsFor": 115.69894736842106,
+      "avgPointsFor": 115.69894736842105,
       "avgPointsAgainst": 115.57684210526315,
       "highestScore": 219.08,
       "lowestScore": 41.32,
@@ -39751,9 +39969,9 @@
       "winPercentage": 0.631578947368421,
       "totalGames": 19,
       "pointsFor": 2475.12,
-      "pointsAgainst": 2525.08,
+      "pointsAgainst": 2525.0800000000004,
       "avgPointsFor": 117.86285714285714,
-      "avgPointsAgainst": 120.24190476190476,
+      "avgPointsAgainst": 120.24190476190478,
       "highestScore": 181.98,
       "lowestScore": 58.14,
       "biggestWin": 22.97999999999999,
@@ -40330,9 +40548,9 @@
       "winPercentage": 0.5,
       "totalGames": 16,
       "pointsFor": 1936.94,
-      "pointsAgainst": 2033.6000000000001,
+      "pointsAgainst": 2033.6000000000004,
       "avgPointsFor": 101.94421052631579,
-      "avgPointsAgainst": 107.03157894736843,
+      "avgPointsAgainst": 107.03157894736844,
       "highestScore": 172.54,
       "lowestScore": 64.92,
       "biggestWin": 47.7,
@@ -40819,23 +41037,23 @@
       ]
     },
     "Ben Bingert": {
-      "wins": 7,
+      "wins": 8,
       "losses": 9,
       "ties": 0,
-      "winPercentage": 0.4375,
-      "totalGames": 16,
-      "pointsFor": 1899.1200000000001,
-      "pointsAgainst": 1949.3600000000001,
-      "avgPointsFor": 99.95368421052632,
-      "avgPointsAgainst": 102.5978947368421,
+      "winPercentage": 0.47058823529411764,
+      "totalGames": 17,
+      "pointsFor": 2056.06,
+      "pointsAgainst": 2089.28,
+      "avgPointsFor": 102.803,
+      "avgPointsAgainst": 104.46399999999998,
       "highestScore": 170.88,
       "lowestScore": 44.62,
       "biggestWin": 53.84,
       "closestWin": 5.099999999999994,
-      "longestWinStreak": 3,
+      "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 3
+        "length": 4
       },
       "matchups": [
         {
@@ -41310,6 +41528,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 5,
+            "teamName": "LOOK AT THIS GRAPH",
+            "owner": "Ben Bingert",
+            "score": 139.92,
+            "weeklyScores": [
+              139.92
+            ]
+          },
+          "away": {
+            "teamId": 10,
+            "teamName": "Pop Rockin' Beats",
+            "owner": "Randell Crawford",
+            "score": 156.94,
+            "weeklyScores": [
+              156.94
+            ]
+          },
+          "winner": "AWAY"
         }
       ]
     },
@@ -41319,10 +41566,10 @@
       "ties": 0,
       "winPercentage": 0.6190476190476191,
       "totalGames": 21,
-      "pointsFor": 2772.74,
-      "pointsAgainst": 2577.02,
-      "avgPointsFor": 106.64384615384614,
-      "avgPointsAgainst": 99.11615384615385,
+      "pointsFor": 2772.7400000000002,
+      "pointsAgainst": 2577.0199999999995,
+      "avgPointsFor": 106.64384615384617,
+      "avgPointsAgainst": 99.11615384615381,
       "highestScore": 160.32,
       "lowestScore": 40.18,
       "biggestWin": 67.96000000000001,
@@ -41965,10 +42212,10 @@
       "ties": 0,
       "winPercentage": 0.5,
       "totalGames": 18,
-      "pointsFor": 2226.02,
-      "pointsAgainst": 2295.34,
-      "avgPointsFor": 111.301,
-      "avgPointsAgainst": 114.76700000000001,
+      "pointsFor": 2226.0200000000004,
+      "pointsAgainst": 2295.3399999999997,
+      "avgPointsFor": 111.30100000000002,
+      "avgPointsAgainst": 114.76699999999998,
       "highestScore": 201.88,
       "lowestScore": 76.88,
       "biggestWin": 34.16,
@@ -43642,7 +43889,7 @@
       "winPercentage": 0.4444444444444444,
       "totalGames": 18,
       "pointsFor": 2225.5,
-      "pointsAgainst": 2282.58,
+      "pointsAgainst": 2282.5800000000004,
       "avgPointsFor": 111.275,
       "avgPointsAgainst": 114.12899999999999,
       "highestScore": 178.46,
@@ -44295,9 +44542,9 @@
       "ties": 0,
       "winPercentage": 0.3333333333333333,
       "totalGames": 18,
-      "pointsFor": 2043.2,
-      "pointsAgainst": 2384.56,
-      "avgPointsFor": 102.16,
+      "pointsFor": 2043.2000000000003,
+      "pointsAgainst": 2384.5600000000004,
+      "avgPointsFor": 102.16000000000001,
       "avgPointsAgainst": 119.228,
       "highestScore": 135.62,
       "lowestScore": 66.4,
@@ -44841,21 +45088,21 @@
     },
     "Mike Kovacs": {
       "wins": 7,
-      "losses": 5,
+      "losses": 6,
       "ties": 0,
-      "winPercentage": 0.5833333333333334,
-      "totalGames": 12,
-      "pointsFor": 1391.9,
-      "pointsAgainst": 1313.5,
-      "avgPointsFor": 115.99166666666667,
-      "avgPointsAgainst": 109.45833333333333,
+      "winPercentage": 0.5384615384615384,
+      "totalGames": 13,
+      "pointsFor": 1492.98,
+      "pointsAgainst": 1465.8600000000001,
+      "avgPointsFor": 114.84461538461538,
+      "avgPointsAgainst": 112.75846153846155,
       "highestScore": 174.46,
       "lowestScore": 73.76,
       "biggestWin": 50.06000000000002,
       "closestWin": 11.280000000000001,
       "longestWinStreak": 5,
       "currentStreak": {
-        "type": "WIN",
+        "type": "LOSS",
         "length": 1
       },
       "matchups": [
@@ -45206,6 +45453,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 2,
+            "teamName": "Waddle and Come Chase Maye",
+            "owner": "Mike Kovacs",
+            "score": 152.36,
+            "weeklyScores": [
+              152.36
+            ]
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Fran Tarkenton",
+            "owner": "Joe Jaramillo",
+            "score": 101.08,
+            "weeklyScores": [
+              101.08
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -45215,10 +45491,10 @@
       "ties": 0,
       "winPercentage": 0.8,
       "totalGames": 15,
-      "pointsFor": 2029.78,
-      "pointsAgainst": 1679.82,
+      "pointsFor": 2029.7799999999997,
+      "pointsAgainst": 1679.8200000000002,
       "avgPointsFor": 112.76555555555555,
-      "avgPointsAgainst": 93.32333333333332,
+      "avgPointsAgainst": 93.32333333333334,
       "highestScore": 166.32,
       "lowestScore": 69.24,
       "biggestWin": 65.54,
@@ -45681,8 +45957,8 @@
       "ties": 0,
       "winPercentage": 0.5238095238095238,
       "totalGames": 21,
-      "pointsFor": 3087.78,
-      "pointsAgainst": 3068.92,
+      "pointsFor": 3087.7800000000007,
+      "pointsAgainst": 3068.9199999999996,
       "avgPointsFor": 114.36222222222223,
       "avgPointsAgainst": 113.6637037037037,
       "highestScore": 187.42,
@@ -46332,7 +46608,7 @@
       "totalGames": 14,
       "pointsFor": 1785.18,
       "pointsAgainst": 1763.08,
-      "avgPointsFor": 119.012,
+      "avgPointsFor": 119.01200000000001,
       "avgPointsAgainst": 117.53866666666666,
       "highestScore": 162.18,
       "lowestScore": 75.24,
@@ -46761,10 +47037,10 @@
       "ties": 0,
       "winPercentage": 0.5714285714285714,
       "totalGames": 21,
-      "pointsFor": 2776.08,
+      "pointsFor": 2776.0800000000004,
       "pointsAgainst": 2684.1,
-      "avgPointsFor": 115.67,
-      "avgPointsAgainst": 111.83749999999999,
+      "avgPointsFor": 115.67000000000002,
+      "avgPointsAgainst": 111.83749999999998,
       "highestScore": 180.3,
       "lowestScore": 53.06,
       "biggestWin": 79.58,
@@ -47402,9 +47678,9 @@
       "winPercentage": 0.6190476190476191,
       "totalGames": 21,
       "pointsFor": 2861.82,
-      "pointsAgainst": 2898.16,
-      "avgPointsFor": 124.42695652173914,
-      "avgPointsAgainst": 126.00695652173913,
+      "pointsAgainst": 2898.1600000000008,
+      "avgPointsFor": 124.42695652173916,
+      "avgPointsAgainst": 126.00695652173914,
       "highestScore": 169.22,
       "lowestScore": 75.64,
       "biggestWin": 54.82000000000001,
@@ -48617,10 +48893,10 @@
       "ties": 0,
       "winPercentage": 0.3181818181818182,
       "totalGames": 22,
-      "pointsFor": 2700.94,
-      "pointsAgainst": 2739.38,
-      "avgPointsFor": 108.0376,
-      "avgPointsAgainst": 109.57520000000001,
+      "pointsFor": 2700.9400000000005,
+      "pointsAgainst": 2739.3799999999997,
+      "avgPointsFor": 108.03760000000003,
+      "avgPointsAgainst": 109.57519999999998,
       "highestScore": 157.46,
       "lowestScore": 61.2,
       "biggestWin": 57.760000000000005,
@@ -49831,9 +50107,9 @@
       "ties": 0,
       "winPercentage": 0.3157894736842105,
       "totalGames": 19,
-      "pointsFor": 2302.58,
+      "pointsFor": 2302.5800000000004,
       "pointsAgainst": 2588.14,
-      "avgPointsFor": 109.64666666666666,
+      "avgPointsFor": 109.64666666666669,
       "avgPointsAgainst": 123.2447619047619,
       "highestScore": 188.24,
       "lowestScore": 77.36,
@@ -50411,7 +50687,7 @@
       "winPercentage": 0.3125,
       "totalGames": 16,
       "pointsFor": 2133.54,
-      "pointsAgainst": 2149.84,
+      "pointsAgainst": 2149.8399999999997,
       "avgPointsFor": 118.53,
       "avgPointsAgainst": 119.43555555555557,
       "highestScore": 180.3,
@@ -50902,9 +51178,9 @@
       "ties": 0,
       "winPercentage": 0.3125,
       "totalGames": 16,
-      "pointsFor": 1907.64,
+      "pointsFor": 1907.6400000000003,
       "pointsAgainst": 2058.94,
-      "avgPointsFor": 112.21411764705883,
+      "avgPointsFor": 112.21411764705884,
       "avgPointsAgainst": 121.11411764705883,
       "highestScore": 181.18,
       "lowestScore": 76.44,
@@ -52005,9 +52281,9 @@
       "ties": 0,
       "winPercentage": 0.5333333333333333,
       "totalGames": 15,
-      "pointsFor": 1819.28,
+      "pointsFor": 1819.2800000000002,
       "pointsAgainst": 1804.1,
-      "avgPointsFor": 113.705,
+      "avgPointsFor": 113.70500000000001,
       "avgPointsAgainst": 112.75625,
       "highestScore": 172.06,
       "lowestScore": 68.72,
@@ -52465,7 +52741,7 @@
       "ties": 0,
       "winPercentage": 0.5294117647058824,
       "totalGames": 17,
-      "pointsFor": 2440.2799999999997,
+      "pointsFor": 2440.28,
       "pointsAgainst": 2491.42,
       "avgPointsFor": 110.92181818181817,
       "avgPointsAgainst": 113.24636363636364,
@@ -52995,7 +53271,7 @@
       "ties": 0,
       "winPercentage": 0.5555555555555556,
       "totalGames": 18,
-      "pointsFor": 2282.58,
+      "pointsFor": 2282.5800000000004,
       "pointsAgainst": 2225.5,
       "avgPointsFor": 114.12899999999999,
       "avgPointsAgainst": 111.275,
@@ -53545,10 +53821,10 @@
       "ties": 0,
       "winPercentage": 0.6818181818181818,
       "totalGames": 22,
-      "pointsFor": 2739.38,
-      "pointsAgainst": 2700.94,
-      "avgPointsFor": 109.57520000000001,
-      "avgPointsAgainst": 108.0376,
+      "pointsFor": 2739.3799999999997,
+      "pointsAgainst": 2700.9400000000005,
+      "avgPointsFor": 109.57519999999998,
+      "avgPointsAgainst": 108.03760000000003,
       "highestScore": 164.86,
       "lowestScore": 64.12,
       "biggestWin": 37.14,
@@ -54261,6 +54537,57 @@
         }
       ]
     },
+    "Pete Solecki": {
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "winPercentage": 0.0,
+      "totalGames": 1,
+      "pointsFor": 121.38,
+      "pointsAgainst": 129.96,
+      "avgPointsFor": 121.38,
+      "avgPointsAgainst": 129.96,
+      "highestScore": 121.38,
+      "lowestScore": 121.38,
+      "biggestWin": 0,
+      "closestWin": 0,
+      "longestWinStreak": 0,
+      "currentStreak": {
+        "type": "LOSS",
+        "length": 1
+      },
+      "matchups": [
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 3,
+            "teamName": "FC Baseball",
+            "owner": "Bethany Bingert",
+            "score": 121.38,
+            "weeklyScores": [
+              121.38
+            ]
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "We Tried Our Best",
+            "owner": "Pete Solecki",
+            "score": 129.96,
+            "weeklyScores": [
+              129.96
+            ]
+          },
+          "winner": "AWAY"
+        }
+      ]
+    },
     "Carl Cummins": {
       "wins": 0,
       "losses": 1,
@@ -54467,6 +54794,57 @@
     }
   },
   "Nikkole Cummins": {
+    "Daniel Keating": {
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "winPercentage": 0.0,
+      "totalGames": 1,
+      "pointsFor": 117.68,
+      "pointsAgainst": 121.72,
+      "avgPointsFor": 117.68,
+      "avgPointsAgainst": 121.72,
+      "highestScore": 117.68,
+      "lowestScore": 117.68,
+      "biggestWin": 0,
+      "closestWin": 0,
+      "longestWinStreak": 0,
+      "currentStreak": {
+        "type": "LOSS",
+        "length": 1
+      },
+      "matchups": [
+        {
+          "year": 2026,
+          "week": 6,
+          "weeks": [
+            6
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 6,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 9,
+            "teamName": "Why Was I on the 415 Shuttle?",
+            "owner": "Daniel Keating",
+            "score": 121.72,
+            "weeklyScores": [
+              121.72
+            ]
+          },
+          "away": {
+            "teamId": 8,
+            "teamName": "Lights, Camera, Jackson",
+            "owner": "Nikkole Cummins",
+            "score": 117.68,
+            "weeklyScores": [
+              117.68
+            ]
+          },
+          "winner": "HOME"
+        }
+      ]
+    },
     "Mike Kovacs": {
       "wins": 0,
       "losses": 1,
