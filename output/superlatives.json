@@ -457,7 +457,7 @@
       "owners": [
         "Mike Kovacs"
       ],
-      "count": 33,
+      "count": 34,
       "tied": false
     },
     "mostWeeklyLowScores": {
@@ -893,7 +893,7 @@
       "owners": [
         "Mike Kovacs"
       ],
-      "count": 23,
+      "count": 24,
       "tied": false
     },
     "mostWeeklyLowScores": {
@@ -941,31 +941,31 @@
         "owner": "Bill Solecki",
         "teamName": "Kraft Mc-njigba Chase",
         "year": 2026,
-        "pointsAgainst": 794.54
-      },
-      {
-        "owner": "Nikkole Cummins",
-        "teamName": "Lights, Camera, Jackson",
-        "year": 2026,
-        "pointsAgainst": 808.7
+        "pointsAgainst": 907.22
       },
       {
         "owner": "Daniel Keating",
         "teamName": "Why Was I on the 415 Shuttle?",
         "year": 2026,
-        "pointsAgainst": 830.8599999999999
+        "pointsAgainst": 950.6999999999999
       },
       {
-        "owner": "Bethany Bingert",
-        "teamName": "FC Baseball",
-        "year": 2026,
-        "pointsAgainst": 867.1000000000001
+        "owner": "Randell Crawford",
+        "teamName": "Alabama of Europe",
+        "year": 2015,
+        "pointsAgainst": 960.4599999999999
       },
       {
-        "owner": "Pete Solecki",
-        "teamName": "We Tried Our Best",
+        "owner": "Daniel Keating",
+        "teamName": "Why Was I On The 415 Shuttle",
+        "year": 2019,
+        "pointsAgainst": 962.5
+      },
+      {
+        "owner": "Nikkole Cummins",
+        "teamName": "Lights, Camera, Jackson",
         "year": 2026,
-        "pointsAgainst": 885.4
+        "pointsAgainst": 982.1
       }
     ]
   }
