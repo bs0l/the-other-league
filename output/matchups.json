@@ -31386,9 +31386,9 @@
       "teamName": "LOOK AT THIS GRAPH",
       "teamAbbrev": "GRPH",
       "owner": "Ben Bingert",
-      "score": 173.4,
+      "score": 174.9,
       "weeklyScores": [
-        173.4
+        174.9
       ],
       "adjustment": 0.0
     },
@@ -31500,6 +31500,181 @@
     "winner": "AWAY",
     "weeks": [
       7
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_8_9_5",
+    "year": 2026,
+    "week": 8,
+    "matchupPeriodId": 8,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 9,
+      "teamName": "Why Was I on the 415 Shuttle?",
+      "teamAbbrev": "TB12",
+      "owner": "Daniel Keating",
+      "score": 143.74,
+      "weeklyScores": [
+        143.74
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 5,
+      "teamName": "LOOK AT THIS GRAPH",
+      "teamAbbrev": "GRPH",
+      "owner": "Ben Bingert",
+      "score": 155.3,
+      "weeklyScores": [
+        155.3
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "AWAY",
+    "weeks": [
+      8
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_8_2_3",
+    "year": 2026,
+    "week": 8,
+    "matchupPeriodId": 8,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 2,
+      "teamName": "Waddle and Come Chase Maye",
+      "teamAbbrev": "RIP",
+      "owner": "Mike Kovacs",
+      "score": 175.18,
+      "weeklyScores": [
+        175.18
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "FC Baseball",
+      "teamAbbrev": "FCB",
+      "owner": "Bethany Bingert",
+      "score": 102.8,
+      "weeklyScores": [
+        102.8
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      8
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_8_7_8",
+    "year": 2026,
+    "week": 8,
+    "matchupPeriodId": 8,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 7,
+      "teamName": "Titty Sprinkles",
+      "teamAbbrev": "CUM",
+      "owner": "Carl Cummins",
+      "score": 143.9,
+      "weeklyScores": [
+        143.9
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 8,
+      "teamName": "Lights, Camera, Jackson",
+      "teamAbbrev": "LCJ",
+      "owner": "Nikkole Cummins",
+      "score": 119.5,
+      "weeklyScores": [
+        119.5
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      8
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_8_1_6",
+    "year": 2026,
+    "week": 8,
+    "matchupPeriodId": 8,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 1,
+      "teamName": "Kraft Mc-njigba Chase",
+      "teamAbbrev": "KRFT",
+      "owner": "Bill Solecki",
+      "score": 161.26,
+      "weeklyScores": [
+        161.26
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "We Tried Our Best",
+      "teamAbbrev": "WTOB",
+      "owner": "Pete Solecki",
+      "score": 123.44,
+      "weeklyScores": [
+        123.44
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      8
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_8_4_10",
+    "year": 2026,
+    "week": 8,
+    "matchupPeriodId": 8,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 4,
+      "teamName": "Fran Tarkenton",
+      "teamAbbrev": "RKO",
+      "owner": "Joe Jaramillo",
+      "score": 136.7,
+      "weeklyScores": [
+        136.7
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 10,
+      "teamName": "Pop Rockin' Beats",
+      "teamAbbrev": "BUCK",
+      "owner": "Randell Crawford",
+      "score": 178.98,
+      "weeklyScores": [
+        178.98
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "AWAY",
+    "weeks": [
+      8
     ],
     "isTwoWeek": false
   }

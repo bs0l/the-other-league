@@ -16,9 +16,9 @@
     "abbrev": "TB12",
     "allTeamNames": [
       "Why Was I On The 415 Shuttle",
-      "Denver Bronkers",
       "Bradys and Edelman",
-      "Why Was I on the 415 Shuttle?"
+      "Why Was I on the 415 Shuttle?",
+      "Denver Bronkers"
     ],
     "playoffYears": [
       2019,
@@ -28,12 +28,12 @@
       2014
     ],
     "seasonsPlayed": 13,
-    "totalGames": 181,
+    "totalGames": 182,
     "regularSeason": {
       "wins": 85,
-      "losses": 86,
+      "losses": 87,
       "ties": 0,
-      "winPercentage": 0.497
+      "winPercentage": 0.494
     },
     "playoffs": {
       "wins": 4,
@@ -43,9 +43,9 @@
     },
     "overall": {
       "wins": 89,
-      "losses": 92,
+      "losses": 93,
       "ties": 0,
-      "winPercentage": 0.492
+      "winPercentage": 0.489
     },
     "playoffAppearances": 5,
     "championships": 0,
@@ -53,11 +53,11 @@
     "championshipYears": [],
     "mostMovesSeason": 51,
     "mostMovesSeasonYear": 2025,
-    "weeksPlayed": 205,
-    "totalPointsFor": 23186.78,
-    "totalPointsAgainst": 23064.100000000024,
-    "avgPointsFor": 113.10624390243902,
-    "avgPointsAgainst": 112.5078048780489,
+    "weeksPlayed": 206,
+    "totalPointsFor": 23330.52,
+    "totalPointsAgainst": 23219.400000000023,
+    "avgPointsFor": 113.25495145631068,
+    "avgPointsAgainst": 112.71553398058263,
     "highestScore": 218.9,
     "lowestScore": 43.68,
     "totalTrades": 1,
@@ -68,8 +68,8 @@
     "longestWinStreak": 11,
     "longestLossStreak": 8,
     "currentStreak": {
-      "type": "WIN",
-      "length": 2
+      "type": "LOSS",
+      "length": 1
     },
     "yearlyRecords": {
       "2014": {
@@ -242,15 +242,15 @@
       },
       "2026": {
         "wins": 5,
-        "losses": 2,
+        "losses": 3,
         "ties": 0,
-        "winPercentage": 0.714,
-        "pointsFor": 978.04,
-        "pointsAgainst": 950.6999999999999,
-        "avgPointsFor": 139.72,
+        "winPercentage": 0.625,
+        "pointsFor": 1121.78,
+        "pointsAgainst": 1106.0,
+        "avgPointsFor": 140.2225,
         "madePlayoffs": false,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 2,
+        "regularSeasonLosses": 3,
         "regularSeasonGames": 13,
         "seasonComplete": false
       }
@@ -301,16 +301,16 @@
     "teamName": "Waddle and Come Chase Maye",
     "abbrev": "RIP",
     "allTeamNames": [
-      "Fresh Prince of Helaire",
-      "Chasing the Repeat",
-      "Takin the Browns to Super Bowl",
-      "Lucky Kamario",
-      "To See or Not Kelce",
-      "Waddle and Come Chase Maye",
-      "My Ba ss Hurts",
       "Guess Whos Back Shindig's Back",
+      "Chasing the Repeat",
+      "Lucky Kamario",
       "Frankly, Ameer, IDontGiveaDamn",
-      "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh"
+      "To See or Not Kelce",
+      "ughhhhhhhhhhhhh hhhhhhhhhhhhhhh",
+      "Waddle and Come Chase Maye",
+      "Takin the Browns to Super Bowl",
+      "My Ba ss Hurts",
+      "Fresh Prince of Helaire"
     ],
     "playoffYears": [
       2016,
@@ -322,12 +322,12 @@
       2014
     ],
     "seasonsPlayed": 13,
-    "totalGames": 181,
+    "totalGames": 182,
     "regularSeason": {
-      "wins": 89,
+      "wins": 90,
       "losses": 78,
       "ties": 0,
-      "winPercentage": 0.533
+      "winPercentage": 0.536
     },
     "playoffs": {
       "wins": 8,
@@ -336,10 +336,10 @@
       "winPercentage": 0.571
     },
     "overall": {
-      "wins": 97,
+      "wins": 98,
       "losses": 84,
       "ties": 0,
-      "winPercentage": 0.536
+      "winPercentage": 0.538
     },
     "playoffAppearances": 7,
     "championships": 3,
@@ -351,11 +351,11 @@
     ],
     "mostMovesSeason": 41,
     "mostMovesSeasonYear": 2018,
-    "weeksPlayed": 205,
-    "totalPointsFor": 24478.340000000004,
-    "totalPointsAgainst": 23263.98000000001,
-    "avgPointsFor": 119.40653658536587,
-    "avgPointsAgainst": 113.48282926829273,
+    "weeksPlayed": 206,
+    "totalPointsFor": 24653.520000000004,
+    "totalPointsAgainst": 23366.78000000001,
+    "avgPointsFor": 119.67728155339807,
+    "avgPointsAgainst": 113.43097087378645,
     "highestScore": 243.5,
     "lowestScore": 49.84,
     "totalTrades": 0,
@@ -367,7 +367,7 @@
     "longestLossStreak": 7,
     "currentStreak": {
       "type": "WIN",
-      "length": 2
+      "length": 3
     },
     "yearlyRecords": {
       "2014": {
@@ -539,15 +539,15 @@
         "seasonComplete": true
       },
       "2026": {
-        "wins": 4,
+        "wins": 5,
         "losses": 3,
         "ties": 0,
-        "winPercentage": 0.571,
-        "pointsFor": 1114.0800000000002,
-        "pointsAgainst": 1044.8200000000002,
-        "avgPointsFor": 159.15428571428575,
+        "winPercentage": 0.625,
+        "pointsFor": 1289.2600000000002,
+        "pointsAgainst": 1147.6200000000001,
+        "avgPointsFor": 161.15750000000003,
         "madePlayoffs": false,
-        "regularSeasonWins": 4,
+        "regularSeasonWins": 5,
         "regularSeasonLosses": 3,
         "regularSeasonGames": 13,
         "seasonComplete": false
@@ -598,15 +598,15 @@
     "teamName": "Tommy F'n Cutlets",
     "abbrev": "TC",
     "allTeamNames": [
+      "Qaaron Rodgers",
       "Sal's Infirmary",
-      "Bill Solecki: Amazing",
-      "Tommy F'n Cutlets",
+      "Drew Stanton Celebrations",
       "Adams, Cooper and Prescott",
       "SAM DARNOLD IS LITERALLY JESUS",
-      "Qaaron Rodgers",
-      "DANIEL JONES IS LITERALLY TRASH",
+      "Tommy F'n Cutlets",
+      "Bill Solecki: Amazing",
       "\u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af \u00c2\u00af\\_(\u00e3\u0083\u0084)_/\u00c2\u00af",
-      "Drew Stanton Celebrations"
+      "DANIEL JONES IS LITERALLY TRASH"
     ],
     "playoffYears": [
       2018,
@@ -977,19 +977,19 @@
     "teamName": "LOOK AT THIS GRAPH",
     "abbrev": "GRPH",
     "allTeamNames": [
-      "Bobby Boots",
       "Franky Fedoras",
-      "Harry Hats",
-      "Willy 3rd Place",
-      "Kenny Kilts",
       "Franoc knthall",
-      "Barry Boxers",
+      "Harry Hats",
       "LOOK AT THIS GRAPH",
-      "Dan sits when he pees",
-      "Dan Missed The Party",
       "Josh Allen's Blueberries",
+      "Willy 3rd Place",
+      "Dan Missed The Party",
+      "Dan sits when he pees",
+      "Kenny Kilts",
+      "Joey Jorts",
       "Free Candy and Wins",
-      "Joey Jorts"
+      "Bobby Boots",
+      "Barry Boxers"
     ],
     "playoffYears": [
       2016,
@@ -1000,12 +1000,12 @@
       2015
     ],
     "seasonsPlayed": 13,
-    "totalGames": 181,
+    "totalGames": 182,
     "regularSeason": {
-      "wins": 90,
+      "wins": 91,
       "losses": 79,
       "ties": 0,
-      "winPercentage": 0.533
+      "winPercentage": 0.535
     },
     "playoffs": {
       "wins": 7,
@@ -1014,10 +1014,10 @@
       "winPercentage": 0.583
     },
     "overall": {
-      "wins": 97,
+      "wins": 98,
       "losses": 84,
       "ties": 0,
-      "winPercentage": 0.536
+      "winPercentage": 0.538
     },
     "playoffAppearances": 6,
     "championships": 1,
@@ -1027,11 +1027,11 @@
     ],
     "mostMovesSeason": 29,
     "mostMovesSeasonYear": 2014,
-    "weeksPlayed": 205,
-    "totalPointsFor": 23508.64,
-    "totalPointsAgainst": 23067.89999999999,
-    "avgPointsFor": 114.67629268292683,
-    "avgPointsAgainst": 112.52634146341458,
+    "weeksPlayed": 206,
+    "totalPointsFor": 23665.44,
+    "totalPointsAgainst": 23211.639999999992,
+    "avgPointsFor": 114.88077669902911,
+    "avgPointsAgainst": 112.67786407766987,
     "highestScore": 191.16,
     "lowestScore": 48.12,
     "totalTrades": 5,
@@ -1043,7 +1043,7 @@
     "longestLossStreak": 14,
     "currentStreak": {
       "type": "WIN",
-      "length": 1
+      "length": 2
     },
     "yearlyRecords": {
       "2014": {
@@ -1215,23 +1215,23 @@
         "seasonComplete": true
       },
       "2026": {
-        "wins": 2,
+        "wins": 3,
         "losses": 5,
         "ties": 0,
-        "winPercentage": 0.286,
-        "pointsFor": 1063.8,
-        "pointsAgainst": 1103.8400000000001,
-        "avgPointsFor": 151.97142857142856,
+        "winPercentage": 0.375,
+        "pointsFor": 1220.6,
+        "pointsAgainst": 1247.5800000000002,
+        "avgPointsFor": 152.575,
         "madePlayoffs": false,
-        "regularSeasonWins": 2,
+        "regularSeasonWins": 3,
         "regularSeasonLosses": 5,
         "regularSeasonGames": 13,
         "seasonComplete": false
       }
     },
     "bestOpponent": "Daniel Keating",
-    "bestOpponentRecord": "11-7",
-    "bestOpponentWinPct": 0.6111111111111112,
+    "bestOpponentRecord": "12-7",
+    "bestOpponentWinPct": 0.631578947368421,
     "worstOpponent": "Carl Cummins",
     "worstOpponentRecord": "8-12",
     "worstOpponentWinPct": 0.4,
@@ -1248,12 +1248,13 @@
     "mostLossesSeason": 12,
     "mostLossesSeasonYear": 2018,
     "logoUrl": "output/logos/7c0c2d30-a1a3-11f1-8b95-b1e59b7020ef.jpg",
-    "mostLoyalPlayer": "Jordy Nelson",
-    "mostLoyalPlayerSeasons": 3,
+    "mostLoyalPlayer": "Dak Prescott",
+    "mostLoyalPlayerSeasons": 4,
     "mostLoyalPlayerYears": [
-      2014,
-      2016,
-      2017
+      2019,
+      2021,
+      2023,
+      2026
     ]
   },
   "Pete Solecki": {
@@ -1271,9 +1272,9 @@
     "teamName": "We Tried Our Best",
     "abbrev": "WTOB",
     "allTeamNames": [
-      "DJ Khalad",
+      "This Sauce Is Boss",
       "We Tried Our Best",
-      "This Sauce Is Boss"
+      "DJ Khalad"
     ],
     "playoffYears": [
       2025,
@@ -1281,12 +1282,12 @@
       2022
     ],
     "seasonsPlayed": 13,
-    "totalGames": 181,
+    "totalGames": 182,
     "regularSeason": {
       "wins": 81,
-      "losses": 94,
+      "losses": 95,
       "ties": 0,
-      "winPercentage": 0.463
+      "winPercentage": 0.46
     },
     "playoffs": {
       "wins": 4,
@@ -1296,9 +1297,9 @@
     },
     "overall": {
       "wins": 85,
-      "losses": 96,
+      "losses": 97,
       "ties": 0,
-      "winPercentage": 0.47
+      "winPercentage": 0.467
     },
     "playoffAppearances": 3,
     "championships": 1,
@@ -1308,11 +1309,11 @@
     ],
     "mostMovesSeason": 17,
     "mostMovesSeasonYear": 2024,
-    "weeksPlayed": 205,
-    "totalPointsFor": 22440.879999999997,
-    "totalPointsAgainst": 23103.40000000001,
-    "avgPointsFor": 109.46770731707316,
-    "avgPointsAgainst": 112.699512195122,
+    "weeksPlayed": 206,
+    "totalPointsFor": 22564.319999999996,
+    "totalPointsAgainst": 23264.660000000007,
+    "avgPointsFor": 109.5355339805825,
+    "avgPointsAgainst": 112.93524271844663,
     "highestScore": 176.02,
     "lowestScore": 46.72,
     "totalTrades": 1,
@@ -1324,7 +1325,7 @@
     "longestLossStreak": 8,
     "currentStreak": {
       "type": "LOSS",
-      "length": 1
+      "length": 2
     },
     "yearlyRecords": {
       "2014": {
@@ -1497,15 +1498,15 @@
       },
       "2026": {
         "wins": 4,
-        "losses": 3,
+        "losses": 4,
         "ties": 0,
-        "winPercentage": 0.571,
-        "pointsFor": 1041.7400000000002,
-        "pointsAgainst": 1068.86,
-        "avgPointsFor": 148.82000000000002,
+        "winPercentage": 0.5,
+        "pointsFor": 1165.1800000000003,
+        "pointsAgainst": 1230.12,
+        "avgPointsFor": 145.64750000000004,
         "madePlayoffs": false,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 3,
+        "regularSeasonLosses": 4,
         "regularSeasonGames": 13,
         "seasonComplete": false
       }
@@ -1514,8 +1515,8 @@
     "bestOpponentRecord": "8-6",
     "bestOpponentWinPct": 0.5714285714285714,
     "worstOpponent": "Bill Solecki",
-    "worstOpponentRecord": "4-12",
-    "worstOpponentWinPct": 0.25,
+    "worstOpponentRecord": "4-13",
+    "worstOpponentWinPct": 0.23529411764705882,
     "bestSeasonWinPct": 0.6153846153846154,
     "bestSeasonYear": 2021,
     "bestSeasonWins": 8,
@@ -1563,12 +1564,12 @@
       2015
     ],
     "seasonsPlayed": 13,
-    "totalGames": 181,
+    "totalGames": 182,
     "regularSeason": {
-      "wins": 81,
+      "wins": 82,
       "losses": 92,
       "ties": 0,
-      "winPercentage": 0.468
+      "winPercentage": 0.471
     },
     "playoffs": {
       "wins": 8,
@@ -1577,10 +1578,10 @@
       "winPercentage": 1.0
     },
     "overall": {
-      "wins": 89,
+      "wins": 90,
       "losses": 92,
       "ties": 0,
-      "winPercentage": 0.492
+      "winPercentage": 0.495
     },
     "playoffAppearances": 4,
     "championships": 4,
@@ -1593,11 +1594,11 @@
     ],
     "mostMovesSeason": 37,
     "mostMovesSeasonYear": 2021,
-    "weeksPlayed": 205,
-    "totalPointsFor": 23405.959999999995,
-    "totalPointsAgainst": 23347.199999999993,
-    "avgPointsFor": 114.17541463414632,
-    "avgPointsAgainst": 113.88878048780485,
+    "weeksPlayed": 206,
+    "totalPointsFor": 23549.859999999997,
+    "totalPointsAgainst": 23466.699999999993,
+    "avgPointsFor": 114.31970873786406,
+    "avgPointsAgainst": 113.9160194174757,
     "highestScore": 204.98,
     "lowestScore": 57.0,
     "totalTrades": 1,
@@ -1608,8 +1609,8 @@
     "longestWinStreak": 7,
     "longestLossStreak": 8,
     "currentStreak": {
-      "type": "LOSS",
-      "length": 2
+      "type": "WIN",
+      "length": 1
     },
     "yearlyRecords": {
       "2014": {
@@ -1781,15 +1782,15 @@
         "seasonComplete": true
       },
       "2026": {
-        "wins": 3,
+        "wins": 4,
         "losses": 4,
         "ties": 0,
-        "winPercentage": 0.429,
-        "pointsFor": 1140.02,
-        "pointsAgainst": 1058.28,
-        "avgPointsFor": 162.85999999999999,
+        "winPercentage": 0.5,
+        "pointsFor": 1283.92,
+        "pointsAgainst": 1177.78,
+        "avgPointsFor": 160.49,
         "madePlayoffs": false,
-        "regularSeasonWins": 3,
+        "regularSeasonWins": 4,
         "regularSeasonLosses": 4,
         "regularSeasonGames": 13,
         "seasonComplete": false
@@ -1943,15 +1944,15 @@
     "abbrev": "KRFT",
     "allTeamNames": [
       "Why Anyone On The 415 Shuttle?",
-      "Get CTE or Die Tryin",
-      "#1 Best Weekly Meme Team",
-      "Bucket, Mop; Macaroni, Pot",
-      "Business Expert Nathan Fielder",
-      "Kraft Mc-njigba Chase",
-      "John Cena",
-      "Boyz n da Hood",
       "Turbo Team Termites",
-      "RIP AC Shrader"
+      "Bucket, Mop; Macaroni, Pot",
+      "#1 Best Weekly Meme Team",
+      "Boyz n da Hood",
+      "RIP AC Shrader",
+      "Kraft Mc-njigba Chase",
+      "Get CTE or Die Tryin",
+      "John Cena",
+      "Business Expert Nathan Fielder"
     ],
     "playoffYears": [
       2016,
@@ -1961,12 +1962,12 @@
       2022
     ],
     "seasonsPlayed": 12,
-    "totalGames": 166,
+    "totalGames": 167,
     "regularSeason": {
-      "wins": 86,
+      "wins": 87,
       "losses": 70,
       "ties": 0,
-      "winPercentage": 0.551
+      "winPercentage": 0.554
     },
     "playoffs": {
       "wins": 5,
@@ -1975,10 +1976,10 @@
       "winPercentage": 0.5
     },
     "overall": {
-      "wins": 91,
+      "wins": 92,
       "losses": 75,
       "ties": 0,
-      "winPercentage": 0.548
+      "winPercentage": 0.551
     },
     "playoffAppearances": 5,
     "championships": 0,
@@ -1986,11 +1987,11 @@
     "championshipYears": [],
     "mostMovesSeason": 65,
     "mostMovesSeasonYear": 2020,
-    "weeksPlayed": 188,
-    "totalPointsFor": 22150.86000000001,
-    "totalPointsAgainst": 21621.899999999994,
-    "avgPointsFor": 117.82372340425538,
-    "avgPointsAgainst": 115.01010638297869,
+    "weeksPlayed": 189,
+    "totalPointsFor": 22312.12000000001,
+    "totalPointsAgainst": 21745.339999999993,
+    "avgPointsFor": 118.05354497354503,
+    "avgPointsAgainst": 115.05470899470896,
     "highestScore": 193.1,
     "lowestScore": 48.58,
     "totalTrades": 5,
@@ -2002,7 +2003,7 @@
     "longestLossStreak": 7,
     "currentStreak": {
       "type": "WIN",
-      "length": 3
+      "length": 4
     },
     "yearlyRecords": {
       "2015": {
@@ -2160,23 +2161,23 @@
         "seasonComplete": true
       },
       "2026": {
-        "wins": 5,
+        "wins": 6,
         "losses": 2,
         "ties": 0,
-        "winPercentage": 0.714,
-        "pointsFor": 986.02,
-        "pointsAgainst": 907.22,
-        "avgPointsFor": 140.85999999999999,
+        "winPercentage": 0.75,
+        "pointsFor": 1147.28,
+        "pointsAgainst": 1030.66,
+        "avgPointsFor": 143.41,
         "madePlayoffs": false,
-        "regularSeasonWins": 5,
+        "regularSeasonWins": 6,
         "regularSeasonLosses": 2,
         "regularSeasonGames": 13,
         "seasonComplete": false
       }
     },
     "bestOpponent": "Pete Solecki",
-    "bestOpponentRecord": "12-4",
-    "bestOpponentWinPct": 0.75,
+    "bestOpponentRecord": "13-4",
+    "bestOpponentWinPct": 0.7647058823529411,
     "worstOpponent": "Joe Jaramillo",
     "worstOpponentRecord": "9-13",
     "worstOpponentWinPct": 0.4090909090909091,
@@ -2217,9 +2218,9 @@
     "teamName": "Pop Rockin' Beats",
     "abbrev": "BUCK",
     "allTeamNames": [
-      "Pop Rockin' Beats",
+      "Alabama of Europe",
       "Down with the ( Covid) Sickness",
-      "Alabama of Europe"
+      "Pop Rockin' Beats"
     ],
     "playoffYears": [
       2016,
@@ -2228,12 +2229,12 @@
       2015
     ],
     "seasonsPlayed": 12,
-    "totalGames": 166,
+    "totalGames": 167,
     "regularSeason": {
-      "wins": 82,
+      "wins": 83,
       "losses": 76,
       "ties": 0,
-      "winPercentage": 0.519
+      "winPercentage": 0.522
     },
     "playoffs": {
       "wins": 4,
@@ -2242,10 +2243,10 @@
       "winPercentage": 0.5
     },
     "overall": {
-      "wins": 86,
+      "wins": 87,
       "losses": 80,
       "ties": 0,
-      "winPercentage": 0.518
+      "winPercentage": 0.521
     },
     "playoffAppearances": 4,
     "championships": 0,
@@ -2253,11 +2254,11 @@
     "championshipYears": [],
     "mostMovesSeason": 17,
     "mostMovesSeasonYear": 2020,
-    "weeksPlayed": 188,
-    "totalPointsFor": 20611.560000000005,
-    "totalPointsAgainst": 21009.88,
-    "avgPointsFor": 109.63595744680853,
-    "avgPointsAgainst": 111.75468085106384,
+    "weeksPlayed": 189,
+    "totalPointsFor": 20790.540000000005,
+    "totalPointsAgainst": 21146.58,
+    "avgPointsFor": 110.00285714285717,
+    "avgPointsAgainst": 111.88666666666667,
     "highestScore": 219.08,
     "lowestScore": 40.18,
     "totalTrades": 0,
@@ -2269,7 +2270,7 @@
     "longestLossStreak": 6,
     "currentStreak": {
       "type": "WIN",
-      "length": 2
+      "length": 3
     },
     "yearlyRecords": {
       "2015": {
@@ -2427,15 +2428,15 @@
         "seasonComplete": true
       },
       "2026": {
-        "wins": 3,
+        "wins": 4,
         "losses": 4,
         "ties": 0,
-        "winPercentage": 0.429,
-        "pointsFor": 944.5000000000001,
-        "pointsAgainst": 1104.48,
-        "avgPointsFor": 134.92857142857144,
+        "winPercentage": 0.5,
+        "pointsFor": 1123.48,
+        "pointsAgainst": 1241.18,
+        "avgPointsFor": 140.435,
         "madePlayoffs": false,
-        "regularSeasonWins": 3,
+        "regularSeasonWins": 4,
         "regularSeasonLosses": 4,
         "regularSeasonGames": 13,
         "seasonComplete": false
@@ -2445,8 +2446,8 @@
     "bestOpponentRecord": "12-7",
     "bestOpponentWinPct": 0.631578947368421,
     "worstOpponent": "Joe Jaramillo",
-    "worstOpponentRecord": "8-11",
-    "worstOpponentWinPct": 0.42105263157894735,
+    "worstOpponentRecord": "9-11",
+    "worstOpponentWinPct": 0.45,
     "bestSeasonWinPct": 0.8461538461538461,
     "bestSeasonYear": 2024,
     "bestSeasonWins": 11,
@@ -2485,15 +2486,15 @@
     "teamName": "Fran Tarkenton",
     "abbrev": "RKO",
     "allTeamNames": [
-      "Brady Sits When he Pees",
-      "Chili's Eat Fresh",
-      "For When the Bell Tolls",
-      "S e m i C h u b b",
-      "Belt Sanders",
-      "Fran Tarkenton",
-      "SAL is Literally Jesus",
       "RKO Out of Nowhere",
-      "Tua Time"
+      "For When the Bell Tolls",
+      "Belt Sanders",
+      "SAL is Literally Jesus",
+      "Tua Time",
+      "Chili's Eat Fresh",
+      "Fran Tarkenton",
+      "Brady Sits When he Pees",
+      "S e m i C h u b b"
     ],
     "playoffYears": [
       2018,
@@ -2503,12 +2504,12 @@
       2015
     ],
     "seasonsPlayed": 12,
-    "totalGames": 166,
+    "totalGames": 167,
     "regularSeason": {
       "wins": 82,
-      "losses": 74,
+      "losses": 75,
       "ties": 0,
-      "winPercentage": 0.526
+      "winPercentage": 0.522
     },
     "playoffs": {
       "wins": 3,
@@ -2518,9 +2519,9 @@
     },
     "overall": {
       "wins": 85,
-      "losses": 81,
+      "losses": 82,
       "ties": 0,
-      "winPercentage": 0.512
+      "winPercentage": 0.509
     },
     "playoffAppearances": 5,
     "championships": 1,
@@ -2530,11 +2531,11 @@
     ],
     "mostMovesSeason": 29,
     "mostMovesSeasonYear": 2022,
-    "weeksPlayed": 188,
-    "totalPointsFor": 21466.320000000007,
-    "totalPointsAgainst": 21235.899999999998,
-    "avgPointsFor": 114.1825531914894,
-    "avgPointsAgainst": 112.95691489361701,
+    "weeksPlayed": 189,
+    "totalPointsFor": 21603.020000000008,
+    "totalPointsAgainst": 21414.879999999997,
+    "avgPointsFor": 114.30169312169316,
+    "avgPointsAgainst": 113.30624338624337,
     "highestScore": 187.42,
     "lowestScore": 53.06,
     "totalTrades": 2,
@@ -2546,7 +2547,7 @@
     "longestLossStreak": 6,
     "currentStreak": {
       "type": "LOSS",
-      "length": 5
+      "length": 6
     },
     "yearlyRecords": {
       "2015": {
@@ -2705,15 +2706,15 @@
       },
       "2026": {
         "wins": 2,
-        "losses": 5,
+        "losses": 6,
         "ties": 0,
-        "winPercentage": 0.286,
-        "pointsFor": 931.2,
-        "pointsAgainst": 1028.96,
-        "avgPointsFor": 133.02857142857144,
+        "winPercentage": 0.25,
+        "pointsFor": 1067.9,
+        "pointsAgainst": 1207.94,
+        "avgPointsFor": 133.4875,
         "madePlayoffs": false,
         "regularSeasonWins": 2,
-        "regularSeasonLosses": 5,
+        "regularSeasonLosses": 6,
         "regularSeasonGames": 13,
         "seasonComplete": false
       }
@@ -2760,9 +2761,9 @@
     "teamName": "The Other Team",
     "abbrev": "OTHR",
     "allTeamNames": [
-      "So Fresh So Kareem",
+      "Balls to the Rawls",
       "The Other Team",
-      "Balls to the Rawls"
+      "So Fresh So Kareem"
     ],
     "playoffYears": [
       2017,
@@ -3021,12 +3022,12 @@
     ],
     "playoffYears": [],
     "seasonsPlayed": 1,
-    "totalGames": 7,
+    "totalGames": 8,
     "regularSeason": {
       "wins": 4,
-      "losses": 3,
+      "losses": 4,
       "ties": 0,
-      "winPercentage": 0.571
+      "winPercentage": 0.5
     },
     "playoffs": {
       "wins": 0,
@@ -3036,9 +3037,9 @@
     },
     "overall": {
       "wins": 4,
-      "losses": 3,
+      "losses": 4,
       "ties": 0,
-      "winPercentage": 0.571
+      "winPercentage": 0.5
     },
     "playoffAppearances": 0,
     "championships": 0,
@@ -3046,36 +3047,36 @@
     "championshipYears": [],
     "mostMovesSeason": 4,
     "mostMovesSeasonYear": 2026,
-    "weeksPlayed": 7,
-    "totalPointsFor": 1009.9000000000001,
-    "totalPointsAgainst": 1014.1000000000001,
-    "avgPointsFor": 144.27142857142857,
-    "avgPointsAgainst": 144.8714285714286,
+    "weeksPlayed": 8,
+    "totalPointsFor": 1112.7,
+    "totalPointsAgainst": 1189.2800000000002,
+    "avgPointsFor": 139.0875,
+    "avgPointsAgainst": 148.66000000000003,
     "highestScore": 180.68,
-    "lowestScore": 109.42,
+    "lowestScore": 102.8,
     "totalTrades": 0,
     "biggestWin": 79.78,
     "closestWin": 0.6799999999999784,
     "biggestLoss": 95.55999999999999,
     "closestLoss": 8.580000000000013,
     "longestWinStreak": 3,
-    "longestLossStreak": 2,
+    "longestLossStreak": 3,
     "currentStreak": {
       "type": "LOSS",
-      "length": 2
+      "length": 3
     },
     "yearlyRecords": {
       "2026": {
         "wins": 4,
-        "losses": 3,
+        "losses": 4,
         "ties": 0,
-        "winPercentage": 0.571,
-        "pointsFor": 1009.9000000000001,
-        "pointsAgainst": 1014.1000000000001,
-        "avgPointsFor": 144.27142857142857,
+        "winPercentage": 0.5,
+        "pointsFor": 1112.7,
+        "pointsAgainst": 1189.2800000000002,
+        "avgPointsFor": 139.0875,
         "madePlayoffs": false,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 3,
+        "regularSeasonLosses": 4,
         "regularSeasonGames": 13,
         "seasonComplete": false
       }
@@ -3116,12 +3117,12 @@
     ],
     "playoffYears": [],
     "seasonsPlayed": 1,
-    "totalGames": 7,
+    "totalGames": 8,
     "regularSeason": {
       "wins": 3,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
-      "winPercentage": 0.429
+      "winPercentage": 0.375
     },
     "playoffs": {
       "wins": 0,
@@ -3131,9 +3132,9 @@
     },
     "overall": {
       "wins": 3,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
-      "winPercentage": 0.429
+      "winPercentage": 0.375
     },
     "playoffAppearances": 0,
     "championships": 0,
@@ -3141,36 +3142,36 @@
     "championshipYears": [],
     "mostMovesSeason": 14,
     "mostMovesSeasonYear": 2026,
-    "weeksPlayed": 7,
-    "totalPointsFor": 1054.06,
-    "totalPointsAgainst": 982.1,
-    "avgPointsFor": 150.57999999999998,
-    "avgPointsAgainst": 140.3,
+    "weeksPlayed": 8,
+    "totalPointsFor": 1173.56,
+    "totalPointsAgainst": 1127.5,
+    "avgPointsFor": 146.695,
+    "avgPointsAgainst": 140.9375,
     "highestScore": 195.4,
     "lowestScore": 117.68,
     "totalTrades": 0,
     "biggestWin": 56.2,
     "closestWin": 35.27999999999999,
-    "biggestLoss": 40.920000000000016,
+    "biggestLoss": 42.420000000000016,
     "closestLoss": 0.6799999999999784,
     "longestWinStreak": 2,
-    "longestLossStreak": 2,
+    "longestLossStreak": 3,
     "currentStreak": {
       "type": "LOSS",
-      "length": 2
+      "length": 3
     },
     "yearlyRecords": {
       "2026": {
         "wins": 3,
-        "losses": 4,
+        "losses": 5,
         "ties": 0,
-        "winPercentage": 0.429,
-        "pointsFor": 1054.06,
-        "pointsAgainst": 982.1,
-        "avgPointsFor": 150.57999999999998,
+        "winPercentage": 0.375,
+        "pointsFor": 1173.56,
+        "pointsAgainst": 1127.5,
+        "avgPointsFor": 146.695,
         "madePlayoffs": false,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 4,
+        "regularSeasonLosses": 5,
         "regularSeasonGames": 13,
         "seasonComplete": false
       }

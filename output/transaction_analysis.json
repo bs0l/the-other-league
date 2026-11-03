@@ -114,15 +114,15 @@
     ],
     "2026": [
       {
+        "player": "Geno Smith",
+        "count": 3
+      },
+      {
         "player": "Ka'imi Fairbairn",
         "count": 3
       },
       {
         "player": "Matt Gay",
-        "count": 2
-      },
-      {
-        "player": "Sam Darnold",
         "count": 2
       }
     ]
@@ -1211,7 +1211,7 @@
       "Bill Solecki": [
         {
           "player": "Texans D/ST",
-          "count": 1
+          "count": 2
         },
         {
           "player": "Chris Godwin Jr.",
@@ -4361,6 +4361,14 @@
             ]
           },
           {
+            "player": "Sam Darnold",
+            "teamCount": 2,
+            "teams": [
+              "Daniel Keating",
+              "Mike Kovacs"
+            ]
+          },
+          {
             "player": "Deshaun Watson",
             "teamCount": 2,
             "teams": [
@@ -4393,6 +4401,14 @@
             ]
           },
           {
+            "player": "Jaguars D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Daniel Keating"
+            ]
+          },
+          {
             "player": "Will Reichard",
             "teamCount": 2,
             "teams": [
@@ -4407,27 +4423,35 @@
               "Bill Solecki",
               "Daniel Keating"
             ]
+          },
+          {
+            "player": "Patriots D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Daniel Keating",
+              "Bill Solecki"
+            ]
           }
         ],
         "teamTally": {
           "Carl Cummins": 2,
           "Pete Solecki": 1,
           "Joe Jaramillo": 1,
-          "Bill Solecki": 1,
+          "Mike Kovacs": 2,
+          "Bill Solecki": 2,
           "Nikkole Cummins": 1,
           "Ben Bingert": 2,
-          "Mike Kovacs": 1,
-          "Daniel Keating": 1
+          "Daniel Keating": 2
         },
         "sameWeekAddsFlagged": 1
       }
     },
     "allTimeTeamTally": {
       "Carl Cummins": 55,
-      "Daniel Keating": 73,
+      "Daniel Keating": 74,
       "Ray Engleking": 34,
-      "Bill Solecki": 74,
-      "Mike Kovacs": 55,
+      "Bill Solecki": 75,
+      "Mike Kovacs": 56,
       "Pete Solecki": 33,
       "Sal DeRose": 30,
       "Joe Jaramillo": 48,
@@ -4553,15 +4577,15 @@
       ],
       "2026": [
         {
+          "player": "Geno Smith",
+          "count": 3
+        },
+        {
           "player": "Ka'imi Fairbairn",
           "count": 3
         },
         {
           "player": "Matt Gay",
-          "count": 2
-        },
-        {
-          "player": "Sam Darnold",
           "count": 2
         }
       ]
@@ -5650,7 +5674,7 @@
         "Bill Solecki": [
           {
             "player": "Texans D/ST",
-            "count": 1
+            "count": 2
           },
           {
             "player": "Chris Godwin Jr.",
@@ -8183,6 +8207,14 @@
               ]
             },
             {
+              "player": "Sam Darnold",
+              "teamCount": 2,
+              "teams": [
+                "Daniel Keating",
+                "Mike Kovacs"
+              ]
+            },
+            {
               "player": "Deshaun Watson",
               "teamCount": 2,
               "teams": [
@@ -8215,6 +8247,14 @@
               ]
             },
             {
+              "player": "Jaguars D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Daniel Keating"
+              ]
+            },
+            {
               "player": "Will Reichard",
               "teamCount": 2,
               "teams": [
@@ -8229,27 +8269,35 @@
                 "Bill Solecki",
                 "Daniel Keating"
               ]
+            },
+            {
+              "player": "Patriots D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Daniel Keating",
+                "Bill Solecki"
+              ]
             }
           ],
           "teamTally": {
             "Carl Cummins": 2,
             "Pete Solecki": 1,
             "Joe Jaramillo": 1,
-            "Bill Solecki": 1,
+            "Mike Kovacs": 2,
+            "Bill Solecki": 2,
             "Nikkole Cummins": 1,
             "Ben Bingert": 2,
-            "Mike Kovacs": 1,
-            "Daniel Keating": 1
+            "Daniel Keating": 2
           },
           "sameWeekAddsFlagged": 1
         }
       },
       "allTimeTeamTally": {
         "Carl Cummins": 48,
-        "Daniel Keating": 51,
+        "Daniel Keating": 52,
         "Ray Engleking": 27,
-        "Bill Solecki": 52,
-        "Mike Kovacs": 35,
+        "Bill Solecki": 53,
+        "Mike Kovacs": 36,
         "Pete Solecki": 27,
         "Sal DeRose": 22,
         "Joe Jaramillo": 39,
