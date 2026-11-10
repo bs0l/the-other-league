@@ -90,6 +90,17 @@
         "matchupPeriodId": 10
       },
       {
+        "score": 213.28,
+        "team": "LOOK AT THIS GRAPH",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "Titty Sprinkles",
+        "opponentScore": 183.22,
+        "year": 2026,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
         "score": 212.5,
         "team": "Chasing the Repeat",
         "teamId": 2,
@@ -121,17 +132,6 @@
         "year": 2024,
         "week": 15,
         "matchupPeriodId": 14
-      },
-      {
-        "score": 201.88,
-        "team": "Pop Rockin' Beats",
-        "teamId": 10,
-        "owner": "Randell Crawford",
-        "opponent": "Titty Sprinkles",
-        "opponentScore": 100.6,
-        "year": 2022,
-        "week": 17,
-        "matchupPeriodId": 15
       }
     ],
     "top10LowestScores": [
@@ -539,6 +539,17 @@
         "matchupPeriodId": 10
       },
       {
+        "score": 213.28,
+        "team": "LOOK AT THIS GRAPH",
+        "teamId": 5,
+        "owner": "Ben Bingert",
+        "opponent": "Titty Sprinkles",
+        "opponentScore": 183.22,
+        "year": 2026,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
         "score": 204.98,
         "team": "Titty Sprinkles",
         "teamId": 7,
@@ -592,17 +603,6 @@
         "year": 2024,
         "week": 12,
         "matchupPeriodId": 12
-      },
-      {
-        "score": 190.86,
-        "team": "Dan sits when he pees",
-        "teamId": 5,
-        "owner": "Ben Bingert",
-        "opponent": "Brady Sits When he Pees",
-        "opponentScore": 112.68,
-        "year": 2023,
-        "week": 5,
-        "matchupPeriodId": 5
       }
     ],
     "top10LowestScores": [
