@@ -2729,22 +2729,22 @@
     },
     "Carl Cummins": {
       "wins": 9,
-      "losses": 16,
+      "losses": 17,
       "ties": 0,
-      "winPercentage": 0.36,
-      "totalGames": 25,
-      "pointsFor": 3297.14,
-      "pointsAgainst": 3526.26,
-      "avgPointsFor": 109.90466666666666,
-      "avgPointsAgainst": 117.542,
+      "winPercentage": 0.34615384615384615,
+      "totalGames": 26,
+      "pointsFor": 3465.48,
+      "pointsAgainst": 3718.42,
+      "avgPointsFor": 111.78967741935485,
+      "avgPointsAgainst": 119.94903225806452,
       "highestScore": 178.62,
       "lowestScore": 65.08,
       "biggestWin": 88.47999999999999,
       "closestWin": 0.12000000000000455,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": "WIN",
-        "length": 2
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -3483,6 +3483,35 @@
             "score": 157.56,
             "weeklyScores": [
               157.56
+            ]
+          },
+          "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 9,
+            "teamName": "Why Was I on the 415 Shuttle?",
+            "owner": "Daniel Keating",
+            "score": 168.34,
+            "weeklyScores": [
+              168.34
+            ]
+          },
+          "away": {
+            "teamId": 7,
+            "teamName": "Titty Sprinkles",
+            "owner": "Carl Cummins",
+            "score": 192.16,
+            "weeklyScores": [
+              192.16
             ]
           },
           "winner": "AWAY"
@@ -9029,14 +9058,14 @@
     },
     "Bill Solecki": {
       "wins": 12,
-      "losses": 9,
+      "losses": 10,
       "ties": 0,
-      "winPercentage": 0.5714285714285714,
-      "totalGames": 21,
-      "pointsFor": 3064.48,
-      "pointsAgainst": 2913.4,
-      "avgPointsFor": 117.86461538461539,
-      "avgPointsAgainst": 112.05384615384615,
+      "winPercentage": 0.5454545454545454,
+      "totalGames": 22,
+      "pointsFor": 3195.76,
+      "pointsAgainst": 3094.2400000000002,
+      "avgPointsFor": 118.36148148148149,
+      "avgPointsAgainst": 114.60148148148149,
       "highestScore": 198.24,
       "lowestScore": 62.2,
       "biggestWin": 67.07999999999998,
@@ -9044,7 +9073,7 @@
       "longestWinStreak": 9,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -9670,6 +9699,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 1,
+            "teamName": "Kraft Mc-njigba Chase",
+            "owner": "Bill Solecki",
+            "score": 180.84,
+            "weeklyScores": [
+              180.84
+            ]
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Waddle and Come Chase Maye",
+            "owner": "Mike Kovacs",
+            "score": 131.28,
+            "weeklyScores": [
+              131.28
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -21719,22 +21777,22 @@
       ]
     },
     "Joe Jaramillo": {
-      "wins": 10,
+      "wins": 11,
       "losses": 11,
       "ties": 0,
-      "winPercentage": 0.47619047619047616,
-      "totalGames": 21,
-      "pointsFor": 3068.9199999999996,
-      "pointsAgainst": 3087.7800000000007,
-      "avgPointsFor": 113.6637037037037,
-      "avgPointsAgainst": 114.36222222222223,
+      "winPercentage": 0.5,
+      "totalGames": 22,
+      "pointsFor": 3225.6399999999994,
+      "pointsAgainst": 3230.8000000000006,
+      "avgPointsFor": 115.20142857142856,
+      "avgPointsAgainst": 115.38571428571429,
       "highestScore": 191.16,
       "lowestScore": 54.54,
       "biggestWin": 78.18,
       "closestWin": 5.800000000000011,
       "longestWinStreak": 4,
       "currentStreak": {
-        "type": "LOSS",
+        "type": "WIN",
         "length": 1
       },
       "matchups": [
@@ -22361,6 +22419,35 @@
             "score": 162.02,
             "weeklyScores": [
               162.02
+            ]
+          },
+          "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 4,
+            "teamName": "Fran Tarkenton",
+            "owner": "Joe Jaramillo",
+            "score": 143.02,
+            "weeklyScores": [
+              143.02
+            ]
+          },
+          "away": {
+            "teamId": 5,
+            "teamName": "LOOK AT THIS GRAPH",
+            "owner": "Ben Bingert",
+            "score": 156.72,
+            "weeklyScores": [
+              156.72
             ]
           },
           "winner": "AWAY"
@@ -28576,22 +28663,22 @@
     },
     "Nikkole Cummins": {
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
       "winPercentage": 0.0,
-      "totalGames": 1,
-      "pointsFor": 151.16,
-      "pointsAgainst": 195.4,
-      "avgPointsFor": 151.16,
-      "avgPointsAgainst": 195.4,
+      "totalGames": 2,
+      "pointsFor": 261.76,
+      "pointsAgainst": 324.58000000000004,
+      "avgPointsFor": 130.88,
+      "avgPointsAgainst": 162.29000000000002,
       "highestScore": 151.16,
-      "lowestScore": 151.16,
+      "lowestScore": 110.6,
       "biggestWin": 0,
       "closestWin": 0,
       "longestWinStreak": 0,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -28622,29 +28709,58 @@
             ]
           },
           "winner": "HOME"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 6,
+            "teamName": "We Tried Our Best",
+            "owner": "Pete Solecki",
+            "score": 110.6,
+            "weeklyScores": [
+              110.6
+            ]
+          },
+          "away": {
+            "teamId": 8,
+            "teamName": "Lights, Camera, Jackson",
+            "owner": "Nikkole Cummins",
+            "score": 129.18,
+            "weeklyScores": [
+              129.18
+            ]
+          },
+          "winner": "AWAY"
         }
       ]
     }
   },
   "Carl Cummins": {
     "Daniel Keating": {
-      "wins": 16,
+      "wins": 17,
       "losses": 9,
       "ties": 0,
-      "winPercentage": 0.64,
-      "totalGames": 25,
-      "pointsFor": 3526.26,
-      "pointsAgainst": 3297.14,
-      "avgPointsFor": 117.542,
-      "avgPointsAgainst": 109.90466666666666,
-      "highestScore": 180.38,
+      "winPercentage": 0.6538461538461539,
+      "totalGames": 26,
+      "pointsFor": 3718.42,
+      "pointsAgainst": 3465.48,
+      "avgPointsFor": 119.94903225806452,
+      "avgPointsAgainst": 111.78967741935485,
+      "highestScore": 192.16,
       "lowestScore": 75.12,
       "biggestWin": 83.60000000000001,
       "closestWin": 10.439999999999998,
       "longestWinStreak": 9,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 2
+        "type": "WIN",
+        "length": 1
       },
       "matchups": [
         {
@@ -29383,6 +29499,35 @@
             "score": 157.56,
             "weeklyScores": [
               157.56
+            ]
+          },
+          "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 9,
+            "teamName": "Why Was I on the 415 Shuttle?",
+            "owner": "Daniel Keating",
+            "score": 168.34,
+            "weeklyScores": [
+              168.34
+            ]
+          },
+          "away": {
+            "teamId": 7,
+            "teamName": "Titty Sprinkles",
+            "owner": "Carl Cummins",
+            "score": 192.16,
+            "weeklyScores": [
+              192.16
             ]
           },
           "winner": "AWAY"
@@ -35352,23 +35497,23 @@
       ]
     },
     "Mike Kovacs": {
-      "wins": 9,
+      "wins": 10,
       "losses": 12,
       "ties": 0,
-      "winPercentage": 0.42857142857142855,
-      "totalGames": 21,
-      "pointsFor": 2913.4,
-      "pointsAgainst": 3064.48,
-      "avgPointsFor": 112.05384615384615,
-      "avgPointsAgainst": 117.86461538461539,
-      "highestScore": 155.94,
+      "winPercentage": 0.45454545454545453,
+      "totalGames": 22,
+      "pointsFor": 3094.2400000000002,
+      "pointsAgainst": 3195.76,
+      "avgPointsFor": 114.60148148148149,
+      "avgPointsAgainst": 118.36148148148149,
+      "highestScore": 180.84,
       "lowestScore": 57.4,
       "biggestWin": 56.86,
       "closestWin": 1.740000000000009,
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -35994,6 +36139,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 1,
+            "teamName": "Kraft Mc-njigba Chase",
+            "owner": "Bill Solecki",
+            "score": 180.84,
+            "weeklyScores": [
+              180.84
+            ]
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Waddle and Come Chase Maye",
+            "owner": "Mike Kovacs",
+            "score": 131.28,
+            "weeklyScores": [
+              131.28
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -45153,22 +45327,22 @@
     },
     "Bethany Bingert": {
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
       "winPercentage": 0.0,
-      "totalGames": 1,
-      "pointsFor": 87.78,
-      "pointsAgainst": 167.56,
-      "avgPointsFor": 87.78,
-      "avgPointsAgainst": 167.56,
-      "highestScore": 87.78,
+      "totalGames": 2,
+      "pointsFor": 187.14,
+      "pointsAgainst": 350.06,
+      "avgPointsFor": 93.57,
+      "avgPointsAgainst": 175.03,
+      "highestScore": 99.36,
       "lowestScore": 87.78,
       "biggestWin": 0,
       "closestWin": 0,
       "longestWinStreak": 0,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -45199,6 +45373,35 @@
             ]
           },
           "winner": "HOME"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 10,
+            "teamName": "Pop Rockin' Beats",
+            "owner": "Randell Crawford",
+            "score": 99.36,
+            "weeklyScores": [
+              99.36
+            ]
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "FC Baseball",
+            "owner": "Bethany Bingert",
+            "score": 182.5,
+            "weeklyScores": [
+              182.5
+            ]
+          },
+          "winner": "AWAY"
         }
       ]
     },
@@ -46672,21 +46875,21 @@
     },
     "Ben Bingert": {
       "wins": 11,
-      "losses": 10,
+      "losses": 11,
       "ties": 0,
-      "winPercentage": 0.5238095238095238,
-      "totalGames": 21,
-      "pointsFor": 3087.7800000000007,
-      "pointsAgainst": 3068.9199999999996,
-      "avgPointsFor": 114.36222222222223,
-      "avgPointsAgainst": 113.6637037037037,
+      "winPercentage": 0.5,
+      "totalGames": 22,
+      "pointsFor": 3230.8000000000006,
+      "pointsAgainst": 3225.6399999999994,
+      "avgPointsFor": 115.38571428571429,
+      "avgPointsAgainst": 115.20142857142856,
       "highestScore": 187.42,
       "lowestScore": 62.88,
       "biggestWin": 74.80000000000001,
       "closestWin": 5.519999999999996,
       "longestWinStreak": 6,
       "currentStreak": {
-        "type": "WIN",
+        "type": "LOSS",
         "length": 1
       },
       "matchups": [
@@ -47313,6 +47516,35 @@
             "score": 162.02,
             "weeklyScores": [
               162.02
+            ]
+          },
+          "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 4,
+            "teamName": "Fran Tarkenton",
+            "owner": "Joe Jaramillo",
+            "score": 143.02,
+            "weeklyScores": [
+              143.02
+            ]
+          },
+          "away": {
+            "teamId": 5,
+            "teamName": "LOOK AT THIS GRAPH",
+            "owner": "Ben Bingert",
+            "score": 156.72,
+            "weeklyScores": [
+              156.72
             ]
           },
           "winner": "AWAY"
@@ -55621,23 +55853,23 @@
       ]
     },
     "Randell Crawford": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
       "ties": 0,
       "winPercentage": 1.0,
-      "totalGames": 1,
-      "pointsFor": 167.56,
-      "pointsAgainst": 87.78,
-      "avgPointsFor": 167.56,
-      "avgPointsAgainst": 87.78,
-      "highestScore": 167.56,
+      "totalGames": 2,
+      "pointsFor": 350.06,
+      "pointsAgainst": 187.14,
+      "avgPointsFor": 175.03,
+      "avgPointsAgainst": 93.57,
+      "highestScore": 182.5,
       "lowestScore": 167.56,
-      "biggestWin": 79.78,
+      "biggestWin": 83.14,
       "closestWin": 79.78,
-      "longestWinStreak": 1,
+      "longestWinStreak": 2,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -55668,6 +55900,35 @@
             ]
           },
           "winner": "HOME"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 10,
+            "teamName": "Pop Rockin' Beats",
+            "owner": "Randell Crawford",
+            "score": 99.36,
+            "weeklyScores": [
+              99.36
+            ]
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "FC Baseball",
+            "owner": "Bethany Bingert",
+            "score": 182.5,
+            "weeklyScores": [
+              182.5
+            ]
+          },
+          "winner": "AWAY"
         }
       ]
     },
@@ -55929,23 +56190,23 @@
       ]
     },
     "Pete Solecki": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
       "ties": 0,
       "winPercentage": 1.0,
-      "totalGames": 1,
-      "pointsFor": 195.4,
-      "pointsAgainst": 151.16,
-      "avgPointsFor": 195.4,
-      "avgPointsAgainst": 151.16,
+      "totalGames": 2,
+      "pointsFor": 324.58000000000004,
+      "pointsAgainst": 261.76,
+      "avgPointsFor": 162.29000000000002,
+      "avgPointsAgainst": 130.88,
       "highestScore": 195.4,
-      "lowestScore": 195.4,
+      "lowestScore": 129.18,
       "biggestWin": 44.24000000000001,
-      "closestWin": 44.24000000000001,
-      "longestWinStreak": 1,
+      "closestWin": 18.580000000000013,
+      "longestWinStreak": 2,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -55976,6 +56237,35 @@
             ]
           },
           "winner": "HOME"
+        },
+        {
+          "year": 2026,
+          "week": 10,
+          "weeks": [
+            10
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 10,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 6,
+            "teamName": "We Tried Our Best",
+            "owner": "Pete Solecki",
+            "score": 110.6,
+            "weeklyScores": [
+              110.6
+            ]
+          },
+          "away": {
+            "teamId": 8,
+            "teamName": "Lights, Camera, Jackson",
+            "owner": "Nikkole Cummins",
+            "score": 129.18,
+            "weeklyScores": [
+              129.18
+            ]
+          },
+          "winner": "AWAY"
         }
       ]
     },

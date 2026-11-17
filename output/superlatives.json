@@ -583,6 +583,17 @@
         "matchupPeriodId": 5
       },
       {
+        "score": 192.16,
+        "team": "Titty Sprinkles",
+        "teamId": 7,
+        "owner": "Carl Cummins",
+        "opponent": "Why Was I on the 415 Shuttle?",
+        "opponentScore": 168.34,
+        "year": 2026,
+        "week": 10,
+        "matchupPeriodId": 10
+      },
+      {
         "score": 191.54,
         "team": "Takin the Browns to Super Bowl",
         "teamId": 2,
@@ -592,17 +603,6 @@
         "year": 2024,
         "week": 8,
         "matchupPeriodId": 8
-      },
-      {
-        "score": 191.16,
-        "team": "Franoc knthall",
-        "teamId": 5,
-        "owner": "Ben Bingert",
-        "opponent": "Chili's Eat Fresh",
-        "opponentScore": 145.5,
-        "year": 2024,
-        "week": 12,
-        "matchupPeriodId": 12
       }
     ],
     "top10LowestScores": [

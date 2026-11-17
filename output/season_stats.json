@@ -4170,7 +4170,7 @@
     "biggestBlowoutTwoWeek": null,
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 5,
+      "length": 6,
       "owners": [
         "Bill Solecki"
       ],
@@ -4183,14 +4183,15 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
     },
     "longestLossStreak": {
       "owner": "Joe Jaramillo",
-      "length": 7,
+      "length": 8,
       "owners": [
         "Joe Jaramillo"
       ],
@@ -4205,7 +4206,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -4215,7 +4217,7 @@
       "owners": [
         "Carl Cummins"
       ],
-      "count": 2,
+      "count": 3,
       "tied": false,
       "games": [
         {
@@ -4231,6 +4233,13 @@
           "matchupPeriodId": 5,
           "teamId": 7,
           "score": 185.98
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 7,
+          "score": 192.16
         }
       ]
     },
@@ -4290,7 +4299,7 @@
     "bestBenchWarmers": {
       "owner": "Ben Bingert",
       "teamName": "LOOK AT THIS GRAPH",
-      "benchPoints": 529.4200000000001
+      "benchPoints": 571.34
     },
     "playoffPayouts": [],
     "keeperAnalysis": {
@@ -4300,7 +4309,7 @@
           "player": "Lamar Jackson",
           "roundKept": 3,
           "pointsScored": 158.16,
-          "pointsThroughWeek": 10,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4313,8 +4322,8 @@
           "owner": "Mike Kovacs",
           "player": "Ja'Marr Chase",
           "roundKept": 4,
-          "pointsScored": 319.4,
-          "pointsThroughWeek": 10,
+          "pointsScored": 387.6,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4328,7 +4337,7 @@
           "player": "DeVonta Smith",
           "roundKept": 5,
           "pointsScored": 138.0,
-          "pointsThroughWeek": 10,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4341,8 +4350,8 @@
           "owner": "Nikkole Cummins",
           "player": "Chris Olave",
           "roundKept": 6,
-          "pointsScored": 282.8,
-          "pointsThroughWeek": 10,
+          "pointsScored": 294.8,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4355,8 +4364,8 @@
           "owner": "Carl Cummins",
           "player": "Brock Bowers",
           "roundKept": 6,
-          "pointsScored": 292.0,
-          "pointsThroughWeek": 10,
+          "pointsScored": 299.6,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4369,8 +4378,8 @@
           "owner": "Carl Cummins",
           "player": "Joe Burrow",
           "roundKept": 7,
-          "pointsScored": 398.28,
-          "pointsThroughWeek": 10,
+          "pointsScored": 464.6,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4383,8 +4392,8 @@
           "owner": "Daniel Keating",
           "player": "Cam Skattebo",
           "roundKept": 8,
-          "pointsScored": 140.8,
-          "pointsThroughWeek": 10,
+          "pointsScored": 195.2,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4397,8 +4406,8 @@
           "owner": "Bill Solecki",
           "player": "Chase Brown",
           "roundKept": 9,
-          "pointsScored": 202.8,
-          "pointsThroughWeek": 10,
+          "pointsScored": 259.4,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4411,8 +4420,8 @@
           "owner": "Pete Solecki",
           "player": "Tyler Warren",
           "roundKept": 9,
-          "pointsScored": 168.2,
-          "pointsThroughWeek": 10,
+          "pointsScored": 173.0,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4425,8 +4434,8 @@
           "owner": "Bill Solecki",
           "player": "Matthew Stafford",
           "roundKept": 10,
-          "pointsScored": 285.72,
-          "pointsThroughWeek": 10,
+          "pointsScored": 325.24,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4439,8 +4448,8 @@
           "owner": "Mike Kovacs",
           "player": "Brock Purdy",
           "roundKept": 12,
-          "pointsScored": 342.6,
-          "pointsThroughWeek": 10,
+          "pointsScored": 405.92,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4454,7 +4463,7 @@
           "player": "Caleb Williams",
           "roundKept": 12,
           "pointsScored": 220.68,
-          "pointsThroughWeek": 10,
+          "pointsThroughWeek": 11,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
