@@ -30427,7 +30427,7 @@
     "playoffType": "NONE",
     "home": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 195.4,
@@ -30602,7 +30602,7 @@
     "playoffType": "NONE",
     "home": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 134.58,
@@ -30753,7 +30753,7 @@
     },
     "away": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 139.72,
@@ -30882,7 +30882,7 @@
     "playoffType": "NONE",
     "home": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 161.42,
@@ -31033,7 +31033,7 @@
     },
     "away": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 172.78,
@@ -31173,7 +31173,7 @@
     },
     "away": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 117.68,
@@ -31372,7 +31372,7 @@
     "playoffType": "NONE",
     "home": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 132.48,
@@ -31593,7 +31593,7 @@
     },
     "away": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 119.5,
@@ -31792,7 +31792,7 @@
     "playoffType": "NONE",
     "home": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 141.92,
@@ -32013,7 +32013,7 @@
     },
     "away": {
       "teamId": 8,
-      "teamName": "Lights, Camera, Jackson",
+      "teamName": "Lights, Camera, NO Jackson",
       "teamAbbrev": "LCJ",
       "owner": "Nikkole Cummins",
       "score": 129.18,
@@ -32025,6 +32025,181 @@
     "winner": "AWAY",
     "weeks": [
       10
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_11_1_9",
+    "year": 2026,
+    "week": 11,
+    "matchupPeriodId": 11,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 1,
+      "teamName": "Kraft Mc-njigba Chase",
+      "teamAbbrev": "KRFT",
+      "owner": "Bill Solecki",
+      "score": 150.98,
+      "weeklyScores": [
+        150.98
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 9,
+      "teamName": "Why Was I on the 415 Shuttle?",
+      "teamAbbrev": "TB12",
+      "owner": "Daniel Keating",
+      "score": 159.98,
+      "weeklyScores": [
+        159.98
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "AWAY",
+    "weeks": [
+      11
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_11_7_4",
+    "year": 2026,
+    "week": 11,
+    "matchupPeriodId": 11,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 7,
+      "teamName": "Titty Sprinkles",
+      "teamAbbrev": "CUM",
+      "owner": "Carl Cummins",
+      "score": 145.06,
+      "weeklyScores": [
+        145.06
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 4,
+      "teamName": "Fran Tarkenton",
+      "teamAbbrev": "RKO",
+      "owner": "Joe Jaramillo",
+      "score": 126.92,
+      "weeklyScores": [
+        126.92
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      11
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_11_2_10",
+    "year": 2026,
+    "week": 11,
+    "matchupPeriodId": 11,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 2,
+      "teamName": "Waddle and Come Chase Maye",
+      "teamAbbrev": "RIP",
+      "owner": "Mike Kovacs",
+      "score": 134.78,
+      "weeklyScores": [
+        134.78
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 10,
+      "teamName": "Pop Rockin' Beats",
+      "teamAbbrev": "BUCK",
+      "owner": "Randell Crawford",
+      "score": 109.22,
+      "weeklyScores": [
+        109.22
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      11
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_11_5_6",
+    "year": 2026,
+    "week": 11,
+    "matchupPeriodId": 11,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 5,
+      "teamName": "LOOK AT THIS GRAPH",
+      "teamAbbrev": "GRPH",
+      "owner": "Ben Bingert",
+      "score": 147.74,
+      "weeklyScores": [
+        147.74
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "We Tried Our Best",
+      "teamAbbrev": "WTOB",
+      "owner": "Pete Solecki",
+      "score": 110.16,
+      "weeklyScores": [
+        110.16
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      11
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_11_3_8",
+    "year": 2026,
+    "week": 11,
+    "matchupPeriodId": 11,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 3,
+      "teamName": "FC Baseball",
+      "teamAbbrev": "FCB",
+      "owner": "Bethany Bingert",
+      "score": 141.54,
+      "weeklyScores": [
+        141.54
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 8,
+      "teamName": "Lights, Camera, NO Jackson",
+      "teamAbbrev": "LCJ",
+      "owner": "Nikkole Cummins",
+      "score": 127.18,
+      "weeklyScores": [
+        127.18
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      11
     ],
     "isTwoWeek": false
   }

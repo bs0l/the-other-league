@@ -118,11 +118,11 @@
         "count": 5
       },
       {
-        "player": "Mike Washington Jr.",
-        "count": 3
+        "player": "Chiefs D/ST",
+        "count": 4
       },
       {
-        "player": "Sam Darnold",
+        "player": "Jalen Coker",
         "count": 3
       }
     ]
@@ -1140,15 +1140,15 @@
       ],
       "Daniel Keating": [
         {
+          "player": "Jalen Coker",
+          "count": 2
+        },
+        {
           "player": "Michael Wilson",
           "count": 2
         },
         {
           "player": "Geno Smith",
-          "count": 2
-        },
-        {
-          "player": "Ka'imi Fairbairn",
           "count": 2
         }
       ],
@@ -1214,11 +1214,11 @@
           "count": 2
         },
         {
-          "player": "Chris Godwin Jr.",
-          "count": 1
+          "player": "Packers D/ST",
+          "count": 2
         },
         {
-          "player": "Buccaneers D/ST",
+          "player": "Chris Godwin Jr.",
           "count": 1
         }
       ],
@@ -4328,6 +4328,16 @@
       "2026": {
         "players": [
           {
+            "player": "Chiefs D/ST",
+            "teamCount": 4,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki",
+              "Carl Cummins",
+              "Daniel Keating"
+            ]
+          },
+          {
             "player": "Geno Smith",
             "teamCount": 4,
             "teams": [
@@ -4335,15 +4345,6 @@
               "Ben Bingert",
               "Mike Kovacs",
               "Randell Crawford"
-            ]
-          },
-          {
-            "player": "Chiefs D/ST",
-            "teamCount": 3,
-            "teams": [
-              "Mike Kovacs",
-              "Bill Solecki",
-              "Carl Cummins"
             ]
           },
           {
@@ -4362,6 +4363,15 @@
               "Mike Kovacs",
               "Bill Solecki",
               "Nikkole Cummins"
+            ]
+          },
+          {
+            "player": "Kenny Gainwell",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Daniel Keating",
+              "Ben Bingert"
             ]
           },
           {
@@ -4386,6 +4396,14 @@
             "teams": [
               "Carl Cummins",
               "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Buccaneers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
             ]
           },
           {
@@ -4437,11 +4455,27 @@
             ]
           },
           {
+            "player": "Bears D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki"
+            ]
+          },
+          {
             "player": "Bills D/ST",
             "teamCount": 2,
             "teams": [
               "Mike Kovacs",
               "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Justin Herbert",
+            "teamCount": 2,
+            "teams": [
+              "Nikkole Cummins",
+              "Daniel Keating"
             ]
           },
           {
@@ -4485,6 +4519,14 @@
             ]
           },
           {
+            "player": "Baker Mayfield",
+            "teamCount": 2,
+            "teams": [
+              "Nikkole Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
             "player": "Chris Boswell",
             "teamCount": 2,
             "teams": [
@@ -4509,7 +4551,23 @@
             ]
           },
           {
+            "player": "Brenton Strange",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
             "player": "Emmett Johnson",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Daniel Keating"
+            ]
+          },
+          {
+            "player": "Adonai Mitchell",
             "teamCount": 2,
             "teams": [
               "Mike Kovacs",
@@ -4518,24 +4576,24 @@
           }
         ],
         "teamTally": {
-          "Carl Cummins": 3,
+          "Carl Cummins": 4,
           "Pete Solecki": 2,
           "Joe Jaramillo": 2,
-          "Bill Solecki": 3,
-          "Daniel Keating": 4,
+          "Bill Solecki": 6,
+          "Daniel Keating": 7,
           "Mike Kovacs": 4,
           "Nikkole Cummins": 4,
           "Ben Bingert": 3,
           "Randell Crawford": 2
         },
-        "sameWeekAddsFlagged": 1
+        "sameWeekAddsFlagged": 3
       }
     },
     "allTimeTeamTally": {
-      "Carl Cummins": 56,
-      "Daniel Keating": 76,
+      "Carl Cummins": 57,
+      "Daniel Keating": 79,
       "Ray Engleking": 34,
-      "Bill Solecki": 76,
+      "Bill Solecki": 79,
       "Mike Kovacs": 58,
       "Pete Solecki": 34,
       "Sal DeRose": 30,
@@ -4544,7 +4602,7 @@
       "Ben Bingert": 29,
       "Nikkole Cummins": 4
     },
-    "allTimeSameWeekAddsFlagged": 8
+    "allTimeSameWeekAddsFlagged": 10
   },
   "regularSeasonOnly": {
     "leagueWideMostDropped": {
@@ -4666,11 +4724,11 @@
           "count": 5
         },
         {
-          "player": "Mike Washington Jr.",
-          "count": 3
+          "player": "Chiefs D/ST",
+          "count": 4
         },
         {
-          "player": "Sam Darnold",
+          "player": "Jalen Coker",
           "count": 3
         }
       ]
@@ -5688,15 +5746,15 @@
         ],
         "Daniel Keating": [
           {
+            "player": "Jalen Coker",
+            "count": 2
+          },
+          {
             "player": "Michael Wilson",
             "count": 2
           },
           {
             "player": "Geno Smith",
-            "count": 2
-          },
-          {
-            "player": "Ka'imi Fairbairn",
             "count": 2
           }
         ],
@@ -5762,11 +5820,11 @@
             "count": 2
           },
           {
-            "player": "Chris Godwin Jr.",
-            "count": 1
+            "player": "Packers D/ST",
+            "count": 2
           },
           {
-            "player": "Buccaneers D/ST",
+            "player": "Chris Godwin Jr.",
             "count": 1
           }
         ],
@@ -8259,6 +8317,16 @@
         "2026": {
           "players": [
             {
+              "player": "Chiefs D/ST",
+              "teamCount": 4,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki",
+                "Carl Cummins",
+                "Daniel Keating"
+              ]
+            },
+            {
               "player": "Geno Smith",
               "teamCount": 4,
               "teams": [
@@ -8266,15 +8334,6 @@
                 "Ben Bingert",
                 "Mike Kovacs",
                 "Randell Crawford"
-              ]
-            },
-            {
-              "player": "Chiefs D/ST",
-              "teamCount": 3,
-              "teams": [
-                "Mike Kovacs",
-                "Bill Solecki",
-                "Carl Cummins"
               ]
             },
             {
@@ -8293,6 +8352,15 @@
                 "Mike Kovacs",
                 "Bill Solecki",
                 "Nikkole Cummins"
+              ]
+            },
+            {
+              "player": "Kenny Gainwell",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Daniel Keating",
+                "Ben Bingert"
               ]
             },
             {
@@ -8317,6 +8385,14 @@
               "teams": [
                 "Carl Cummins",
                 "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Buccaneers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins"
               ]
             },
             {
@@ -8368,11 +8444,27 @@
               ]
             },
             {
+              "player": "Bears D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki"
+              ]
+            },
+            {
               "player": "Bills D/ST",
               "teamCount": 2,
               "teams": [
                 "Mike Kovacs",
                 "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Justin Herbert",
+              "teamCount": 2,
+              "teams": [
+                "Nikkole Cummins",
+                "Daniel Keating"
               ]
             },
             {
@@ -8416,6 +8508,14 @@
               ]
             },
             {
+              "player": "Baker Mayfield",
+              "teamCount": 2,
+              "teams": [
+                "Nikkole Cummins",
+                "Bill Solecki"
+              ]
+            },
+            {
               "player": "Chris Boswell",
               "teamCount": 2,
               "teams": [
@@ -8440,7 +8540,23 @@
               ]
             },
             {
+              "player": "Brenton Strange",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki"
+              ]
+            },
+            {
               "player": "Emmett Johnson",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Daniel Keating"
+              ]
+            },
+            {
+              "player": "Adonai Mitchell",
               "teamCount": 2,
               "teams": [
                 "Mike Kovacs",
@@ -8449,24 +8565,24 @@
             }
           ],
           "teamTally": {
-            "Carl Cummins": 3,
+            "Carl Cummins": 4,
             "Pete Solecki": 2,
             "Joe Jaramillo": 2,
-            "Bill Solecki": 3,
-            "Daniel Keating": 4,
+            "Bill Solecki": 6,
+            "Daniel Keating": 7,
             "Mike Kovacs": 4,
             "Nikkole Cummins": 4,
             "Ben Bingert": 3,
             "Randell Crawford": 2
           },
-          "sameWeekAddsFlagged": 1
+          "sameWeekAddsFlagged": 3
         }
       },
       "allTimeTeamTally": {
-        "Carl Cummins": 49,
-        "Daniel Keating": 54,
+        "Carl Cummins": 50,
+        "Daniel Keating": 57,
         "Ray Engleking": 27,
-        "Bill Solecki": 54,
+        "Bill Solecki": 57,
         "Mike Kovacs": 38,
         "Pete Solecki": 28,
         "Sal DeRose": 22,
@@ -8475,7 +8591,7 @@
         "Ben Bingert": 27,
         "Nikkole Cummins": 4
       },
-      "allTimeSameWeekAddsFlagged": 7
+      "allTimeSameWeekAddsFlagged": 9
     }
   },
   "metadata": {
